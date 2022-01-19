@@ -1,0 +1,341 @@
+/obj/item/clothing/accessory/tajaran
+	name = "fur scarf"
+	desc = "A furred scarf, a common tajaran vanity item, this one is brown."
+	icon = 'icons/obj/tajara_items.dmi'
+	icon_state = "furscarf_brown"
+	item_state = "furscarf_brown"
+	contained_sprite = TRUE
+	desc_fluff = "Today the fashion that dominates Adhomai shares few similarities to the clothing of old Furs, linen, hemp, silk and other such fabrics were traded for \
+	synthetic versions, creating a massive boom in the nylon industry and textile industry in the cities. Jeans, overcoats, army uniforms, parade uniforms, flags, pants, shirts, ties, \
+	suspenders, overalls are now the fashion of every Tajara from Nal'Tor to Kaltir. The protests of \"Old fashion\" supporters can't stand against how undeniably effective and cheap \
+	to produce Human clothes are. There are a few notable branches, the long-coat and fedora \"gangster style\". Leather jacket wearing \"Greaser\" or the popular amongst females, short \
+	and colorful dress wearing \"Flapper\" variety of clothing."
+
+/obj/item/clothing/accessory/tajaran/lbrown
+	desc = "A furred scarf, a common tajaran vanity item, this one is light brown."
+	icon_state = "furscarf_lbrown"
+	item_state = "furscarf_lbrown"
+
+/obj/item/clothing/accessory/tajaran/cinnamon
+	desc = "A furred scarf, a common tajaran vanity item, this one is cinnamon."
+	icon_state = "furscarf_cinnamon"
+	item_state = "furscarf_cinnamon"
+
+/obj/item/clothing/accessory/tajaran/blue
+	desc = "A furred scarf, a common tajaran vanity item, this one is blue."
+	icon_state = "furscarf_blue"
+	item_state = "furscarf_blue"
+
+/obj/item/clothing/accessory/tajaran/silver
+	desc = "A furred scarf, a common tajaran vanity item, this one is silver."
+	icon_state = "furscarf_silver"
+	item_state = "furscarf_silver"
+
+/obj/item/clothing/accessory/tajaran/black
+	desc = "A furred scarf, a common tajaran vanity item, this one is black."
+	icon_state = "furscarf_black"
+	item_state = "furscarf_black"
+
+/obj/item/clothing/accessory/tajaran/ruddy
+	desc = "A furred scarf, a common tajaran vanity item, this one is ruddy."
+	icon_state = "furscarf_ruddy"
+	item_state = "furscarf_ruddy"
+
+/obj/item/clothing/accessory/tajaran/orange
+	desc = "A furred scarf, a common tajaran vanity item, this one is orange."
+	icon_state = "furscarf_lasaga"
+	item_state = "furscarf_lasaga"
+
+/obj/item/clothing/accessory/tajaran/cream
+	desc = "A furred scarf, a common tajaran vanity item, this one is cream."
+	icon_state = "furscarf_cream"
+	item_state = "furscarf_cream"
+
+/obj/item/clothing/accessory/tajaran/summershirt
+	name = "adhomian summerwear shirt"
+	desc = "A simple piece of adhomian summerwear made with linen."
+	icon_state = "summer-shirt"
+	item_state = "summer-shirt"
+
+/obj/item/clothing/accessory/poncho/tajarancloak
+	name = "common cloak"
+	desc = "A tajaran cloak made with the middle class in mind, fancy but nothing special."
+	icon = 'icons/obj/tajara_items.dmi'
+	icon_state = "taj_commoncloak"
+	item_state = "taj_commoncloak"
+	desc_fluff = "Today the fashion that dominates Adhomai shares few similarities to the clothing of old Furs, linen, hemp, silk and other such fabrics were traded for \
+	synthetic versions, creating a massive boom in the nylon industry and textile industry in the cities. Jeans, overcoats, army uniforms, parade uniforms, flags, pants, shirts, ties, \
+	suspenders, overalls are now the fashion of every Tajara from Nal'Tor to Kaltir. The protests of \"Old fashion\" supporters can't stand against how undeniably effective and cheap \
+	to produce Human clothes are. There are a few notable branches, the long-coat and fedora \"gangster style\". Leather jacket wearing \"Greaser\" or the popular amongst females, short \
+	and colorful dress wearing \"Flapper\" variety of clothing."
+	icon_override = null
+	contained_sprite = TRUE
+	no_overheat = TRUE
+
+/obj/item/clothing/accessory/poncho/tajarancloak/fancy
+	name = "fancy cloak"
+	desc = "A cloak fashioned from the best materials, meant for tajara of high standing."
+	icon_state = "taj_fancycloak"
+	item_state = "taj_fancycloak"
+
+/obj/item/clothing/accessory/tajaran_wrap
+	name = "marriage wrap"
+	desc = "A holy cloth wrap that signifies marriage amongst tajara, it has white and gold markings. This one is meant for the husband."
+	icon = 'icons/obj/tajara_items.dmi'
+	icon_state = "wrap_male"
+	item_state = "wrap_male"
+	contained_sprite = TRUE
+	desc_fluff = "Marriage wraps are the symbol of the union of a Tajaran couple in the tradition known as S'rendal'Mati. At the noon, during the marriage celebration, the bride \
+	and groom meet at the main altar of the church, a present priest recites the holy vows and with the wedding wrist wraps, one blue for the bride and one golden for the groom, ties \
+	their hands together ending the ceremony. From then on celebration begins, feats of strength, endurance and agility are a common sight and many use wedding days to secure their own \
+	future brides and grooms, the bride and groom are required to stay tied together by these wrist wraps until the suns set and celebrations end, solidifying their marriage. The next \
+	morning the wedded couple untie these wraps but keep them on their respective wrists to showcase that they are already taken, furthermore the couple is required to visit the local \
+	office and register in the marriage registry to be a certified wedded pair. "
+
+/obj/item/clothing/accessory/tajaran_wrap/female
+	desc = "A holy cloth wrap that signifies marriage amongst tajara, it has blue and light blue markings. This one is meant for the wife."
+	icon_state = "wrap_female"
+	item_state = "wrap_female"
+
+/obj/item/clothing/accessory/tajaran_pelt
+	name = "ceremonial pelt"
+	desc = "A piece of pelt that signifies the union between two followers of Ma'ta'ke."
+	icon = 'icons/obj/tajara_items.dmi'
+	icon_state = "pelt"
+	item_state = "pelt"
+	contained_sprite = TRUE
+	desc_fluff = "Tajara under the worship of Ma'ta'ke have a less celebratory and less ritualistic wedding ceremony, instead having a simple meeting between families with a \
+	clergyman to proclaim the lovers \"Zrrazhil Ekrratul\" (Continuation of the families), named for the simple notion of propagating the blood of the families involved."
+
+/obj/item/clothing/accessory/badge/hadii_card
+	name = "honorary party member card"
+	desc = "A card denoting a honorary member of the Hadiist party."
+	icon_state = "hadii-id"
+	overlay_state = "hadii-id"
+	slot_flags = SLOT_TIE
+	badge_string = "Honorary Member of Party of the Free Tajara under the Leadership of Hadii"
+	desc_fluff = "The Party of the Free Tajara under the Leadership of Hadii is the only and ruling party in the PRA, with its leader always being the elected president. \
+	They follow Hadiism as their main ideology, with the objective of securing the tajaran freedom and place in the galactic community. Membership of the Hadiist Party is not open. \
+	For anyone to become a member, they must be approved by a committee that will consider their qualifications and past. Goverment officials can grant honorary memberships, this is \
+	seen as nothing but a honor and does not grant any status or position that a regular Party member would have."
+	w_class = ITEMSIZE_TINY
+	flippable = TRUE
+	v_flippable = FALSE
+
+	drop_sound = 'sound/items/drop/card.ogg'
+	pickup_sound = 'sound/items/pickup/card.ogg'
+
+/obj/item/clothing/accessory/dpra_badge
+	name = "almariist pin"
+	desc = "A pin worn by supporters of the Democratic People's Republic of Adhomai and the ideals of almariism."
+	icon_state = "dpra-badge"
+	overlay_state = "dpra-badge"
+	desc_fluff = "The government of the DPRA seeks to dismantle the ethnic caste system present in Tajaran society. Instead of creating policies and using the force of the state \
+	to do so, they believe that this goal can be reached by giving the necessary opportunities and freedom from external influences to the Tajara species. Local autonomy and regional \
+	cultures are protected by the authorities. Traditional Zhan communities, rock nomads and Amohdan lodges are allowed to thrive in the territories of the Democratic People's Republic. \
+	This ideology is known as Al'mariism, as it seeks to preserve the initial ideals of the first revolution."
+	slot_flags = SLOT_TIE
+	w_class = ITEMSIZE_TINY
+	flippable = TRUE
+
+	drop_sound = 'sound/items/drop/ring.ogg'
+	pickup_sound = 'sound/items/pickup/ring.ogg'
+
+/obj/item/clothing/accessory/nka_badge
+	name = "royalist badge"
+	desc = "A badge worn by the supporters of the New Kingdom of Adhomai and its royalist ideals."
+	icon_state = "nka-badge"
+	overlay_state = "nka-badge"
+	desc_fluff = "The New Kingdom of Adhomai culture is characterized as traditional; instead of trying to change the Tajaran caste system, those divisions are seen as a natural \
+	part of the Adhomian way of life. While the government makes no effort in enforcing this separation, there is a great societal expectation that each Tajara will attempt to stay in \
+	their customary roles related to their ethnicity."
+	slot_flags = SLOT_TIE
+	w_class = ITEMSIZE_TINY
+	flippable = TRUE
+
+	drop_sound = 'sound/items/drop/ring.ogg'
+	pickup_sound = 'sound/items/pickup/ring.ogg'
+
+/obj/item/clothing/accessory/hadii_pin
+	name = "hadiist party pin"
+	desc = "A small, red flag pin worn by members of the Hadiist party."
+	icon_state = "hadii-pin"
+	item_state = "hadii-pin"
+	overlay_state = "hadii-pin"
+	desc_fluff = "The Party of the Free Tajara under the Leadership of Hadii is the only and ruling party in the PRA, with its leader always being the elected president. \
+	They follow Hadiism as their main ideology, with the objective of securing the Tajaran freedom and place in the galactic community. Membership of the Hadiist Party is not open. \
+	For anyone to become a member, they must be approved by a committee that will consider their qualifications and past. Goverment officials can grant honorary memberships, this is \
+	seen as nothing but a honor and does not grant any status or position that a regular Party member would have."
+	flippable = TRUE
+
+	drop_sound = 'sound/items/drop/ring.ogg'
+	pickup_sound = 'sound/items/pickup/ring.ogg'
+
+/obj/item/clothing/accessory/dpra_pin
+	name = "almariist representative pin"
+	desc = "A small, black flag pin worn by government officials of the Democratic People's Republic of Adhomai."
+	icon_state = "pin-ala"
+	item_state = "pin-ala"
+	overlay_state = "pin-ala"
+	desc_fluff = "The government of the DPRA seeks to dismantle the ethnic caste system present in Tajaran society. Instead of creating policies and using the force of the state \
+	to do so, they believe that this goal can be reached by giving the necessary opportunities and freedom from external influences to the Tajara species. Local autonomy and regional \
+	cultures are protected by the authorities. Traditional Zhan communities, rock nomads and Amohdan lodges are allowed to thrive in the territories of the Democratic People's Republic. \
+	This ideology is known as Al'mariism, as it seeks to preserve the initial ideals of the first revolution."
+	flippable = TRUE
+
+	drop_sound = 'sound/items/drop/ring.ogg'
+	pickup_sound = 'sound/items/pickup/ring.ogg'
+
+/obj/item/clothing/accessory/nka_pin
+	name = "diplomatic service order"
+	desc = "A medal issued to the diplomats and consular officers under the service of the New Kingdom of Adhomai."
+	icon_state = "pin-nka"
+	item_state = "pin-nka"
+	overlay_state = "pin-nka"
+	desc_fluff = "The New Kingdom of Adhomai culture is characterized as traditional; instead of trying to change the Tajaran caste system, those divisions are seen as a natural \
+	part of the Adhomian way of life. While the government makes no effort in enforcing this separation, there is a great societal expectation that each Tajara will attempt to stay in \
+	their customary roles related to their ethnicity."
+
+	flippable = TRUE
+	drop_sound = 'sound/items/drop/ring.ogg'
+	pickup_sound = 'sound/items/pickup/ring.ogg'
+
+/obj/item/clothing/accessory/badge/pra_passport
+	name = "people's republic of adhomai passport"
+	desc = "A passport issued to the citizens of the People's Republic of Adhomai."
+	icon_state = "pra-passport"
+	overlay_state = "pra-passport"
+	slot_flags = null
+	w_class = ITEMSIZE_TINY
+	flippable = FALSE
+	v_flippable = FALSE
+
+	badge_string = "People's Republic of Adhomai Citizen"
+
+	drop_sound = 'sound/items/drop/paper.ogg'
+	pickup_sound = 'sound/items/pickup/paper.ogg'
+
+/obj/item/clothing/accessory/badge/dpra_passport
+	name = "democratic people's republic of adhomai passport"
+	desc = "A passport issued to the citizens of the Democratic People's Republic of Adhomai."
+	icon_state = "dpra-passport"
+	overlay_state = "dpra-passport"
+	slot_flags = null
+	w_class = ITEMSIZE_TINY
+	flippable = FALSE
+	v_flippable = FALSE
+
+	badge_string = "Democratic People's Republic of Adhomai Citizen"
+
+	drop_sound = 'sound/items/drop/paper.ogg'
+	pickup_sound = 'sound/items/pickup/paper.ogg'
+
+/obj/item/clothing/accessory/badge/nka_passport
+	name = "new kingdom of adhomai passport"
+	desc = "A passport issued to the citizens of the New Kingdom of Adhomai."
+	icon_state = "nka-passport"
+	overlay_state = "nka-passport"
+	slot_flags = null
+	w_class = ITEMSIZE_TINY
+	flippable = FALSE
+	v_flippable = FALSE
+
+	badge_string = "New Kingdom of Adhomai Citizen"
+
+	drop_sound = 'sound/items/drop/paper.ogg'
+	pickup_sound = 'sound/items/pickup/paper.ogg'
+
+/obj/item/clothing/accessory/tajaran/srendarr
+	name = "holy sun rosette"
+	desc = "A simple rosette accessory depicting the Tajaran god S'rendarr."
+	icon_state = "rosette"
+	item_state = "rosette"
+	slot_flags = SLOT_MASK | SLOT_TIE
+	w_class = ITEMSIZE_TINY
+
+/obj/item/clothing/accessory/tajaran/srendarr/get_mask_examine_text(mob/user)
+	return "around [user.get_pronoun("his")] neck"
+
+/obj/item/clothing/accessory/tajaran/council_badge
+	name = "free tajaran council badge"
+	desc = "A medal badge used by the members of the Free Tajaran Council."
+	icon_state = "council_badge"
+	item_state = "council_badge"
+	overlay_state = "council_badge"
+	desc_fluff = "The Free Tajaran Council is the largest Tajaran community in Himeo; its origin can be traced back to the First Revolution. Born in the city of Shungsta during the war, \
+	the Tajaran Free Council was a political movement that advocated for the total abolishment of authoritarian governments in favor of independent democratic councils. "
+	flippable = TRUE
+
+	drop_sound = 'sound/items/drop/ring.ogg'
+	pickup_sound = 'sound/items/pickup/ring.ogg'
+
+/obj/item/clothing/accessory/tajaran/charm
+	name = "wooden charm"
+	desc = "A hand carved wooden charm of tajaran origin."
+	icon_state = "wooden_talisman"
+	item_state = "wooden_talisman"
+	desc_fluff = "Talismans and charms are common among religious and superstitious tajara, with many believing them to be able to bring good fortune or ward off raskara and other evils. \
+	Hand-carved tajani charms are held in special regards, often being thought of as being particularly fortunate."
+	w_class = ITEMSIZE_TINY
+	flags = NOBLUDGEON
+	slot_flags = SLOT_MASK | SLOT_WRISTS | SLOT_EARS | SLOT_TIE
+
+/obj/item/clothing/accessory/tajaran/charm/get_mask_examine_text(mob/user)
+	return "around [user.get_pronoun("his")] neck"
+
+/obj/item/clothing/accessory/tajaran/charm/attack(mob/M as mob, mob/living/user as mob, target_zone = BP_CHEST)
+	if(user.a_intent != I_HURT && M != user)
+		if(target_zone == BP_HEAD | M.lying)
+			user.visible_message("<b>\The [user]</b> holds \the [src] above <b>\the [M]</b>")
+		else if(target_zone == BP_CHEST)
+			user.visible_message("<b>\The [user]</b> holds \the [src] out in front of <b>\the [M]</b>")
+		else
+			user.visible_message("<b>\The [user]</b> holds \the [src] up near <b>\the [M]</b>")
+	else
+		return ..()
+
+/obj/item/clothing/accessory/tajaran/charm/afterattack(mob/M, var/mob/living/user, proximity_flag)
+	if(proximity_flag)
+		return
+	if(!ishuman(M))
+		return
+	user.visible_message("<b>\The [user]</b> points \the [src] at <b>\the [M]</b>")
+
+/obj/item/clothing/accessory/tajaran/charm/stone
+	name = "stone charm"
+	desc = "A strong stone charm of tajaran origin."
+	icon_state = "stone_talisman"
+	item_state = "stone_talisman"
+
+/obj/item/clothing/accessory/tajaran/charm/steel
+	name = "steel charm"
+	desc = "A warding metallic of tajaran origin."
+	icon_state = "steel_talisman"
+	item_state = "steel_talisman"
+	flags = CONDUCT | NOBLUDGEON
+
+/obj/item/clothing/accessory/tajaran/charm/steel/silver
+	name = "silver charm"
+	desc = "An expensive silver charm of tajaran origin."
+	icon_state = "silver_talisman"
+	item_state = "silver_talisman"
+
+/obj/item/clothing/accessory/tajaran/charm/bone
+	name = "bone charm"
+	desc = "A charm of tajaran origin carved from animal bones."
+	icon_state = "bone_talisman"
+	item_state = "bone_talisman"
+
+/obj/item/clothing/accessory/tajaran/charm/steel/silver/seashell
+	name = "silver seashell charm"
+	desc = "A necklace made of soft rope with a silver charm attached in the shape of a seashell."
+	desc_fluff = "Followers of Ma'ta'ke who reverers the amohdan goddess Minharzka can sometimes be found wearing silvery seashell charms. \
+	Her tears having filled the oceans and risen to become the rain in the sky and it is thought that her mood is what controls the treacherous adhomian seas. \
+	Minharzka's name is often invoked and offerings left at her altars for those hoping for safe travels, impressive cargo hauls or for the weather to change \
+	and her fanatics are well known across tajaran history as being fearless and dangerous sailors and warriors of the sea."
+
+/obj/item/clothing/accessory/tajaran/charm/tajani
+	name = "wooden tajani charm"
+	desc = "A hand carved charm of one of the mythical tajani."
+	desc_fluff = "Tajani, also known as 'short people' in basic, are good-willed tiny elder Tajara who serve as guardians of nature and homes. \
+	Hand carved charms of them is considered a symbol of luck and as such many superstitious tajara keeps one around."
