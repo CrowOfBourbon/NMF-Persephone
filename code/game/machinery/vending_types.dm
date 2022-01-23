@@ -1226,3 +1226,24 @@
 	)
 	restock_items = 0
 	light_color = COLOR_BABY_BLUE
+
+/obj/machinery/vending/battlemonsters
+	name = "\improper Mr. Chang"
+	desc = "A self-serving Interstellar Republic food machine, for all your East Asia food needs."
+	icon_state = "chang"
+	icon_vend = "chang-vend"
+	vend_id = "chang"
+	products = list(
+		/obj/item/reagent_containers/food/snacks/friedrice = 6,
+		/obj/item/reagent_containers/food/snacks/sweet_and_sour = 6,
+		/obj/item/reagent_containers/food/snacks/fortunecookie = 6,
+		/obj/item/reagent_containers/food/snacks/porkbowl = 6,
+		/obj/item/reagent_containers/food/snacks/stewedsoymeat = 6,
+	)
+	prices = list(
+		/obj/item/reagent_containers/food/snacks/friedrice = 30,
+		/obj/item/reagent_containers/food/snacks/sweet_and_sour = 25,
+		/obj/item/reagent_containers/food/snacks/fortunecookie = 8,
+		/obj/item/reagent_containers/food/snacks/porkbowl = 16,
+		/obj/item/reagent_containers/food/snacks/stewedsoymeat = 26,
+	)
