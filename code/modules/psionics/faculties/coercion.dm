@@ -152,7 +152,7 @@
 		if(!target.mind || !target.key)
 			to_chat(user, SPAN_WARNING("\The [target] is mindless!"))
 			return TRUE
-		for (var/obj/item/implant/mindshield/I in target)
+		for (var/obj/item/implant/loyalty/I in target)
 			if (I.implanted)
 				to_chat(user, SPAN_WARNING("\The [target]'s mind is protected from the mindslaving."))
 				return TRUE

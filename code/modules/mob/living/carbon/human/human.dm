@@ -275,11 +275,11 @@
 /mob/living/carbon/human/proc/implant_loyalty(mob/living/carbon/human/M, override = FALSE) // Won't override by default.
 	if(!config.use_loyalty_implants && !override) return // Nuh-uh.
 
-	var/obj/item/implant/mindshield/L
+	var/obj/item/implant/loyalty/L
 	if(isipc(M))
-		L = new/obj/item/implant/mindshield/ipc(M)
+		L = new/obj/item/implant/loyalty/ipc(M)
 	else
-		L = new/obj/item/implant/mindshield(M)
+		L = new/obj/item/implant/loyalty(M)
 	L.imp_in = M
 	L.implanted = 1
 	var/obj/item/organ/external/affected = M.organs_by_name[BP_HEAD]
@@ -289,7 +289,7 @@
 
 /mob/living/carbon/human/proc/is_loyalty_implanted(mob/living/carbon/human/M)
 	for(var/L in M.contents)
-		if(istype(L, /obj/item/implant/mindshield))
+		if(istype(L, /obj/item/implant/loyalty))
 			for(var/obj/item/organ/external/O in M.organs)
 				if(L in O.implants)
 					return 1

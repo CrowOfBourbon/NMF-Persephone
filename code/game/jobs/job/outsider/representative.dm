@@ -40,7 +40,7 @@
 	)
 
 	implants = list(
-		/obj/item/implant/mindshield
+		/obj/item/implant/loyalty
 	)
 
 /datum/outfit/job/representative/post_equip(mob/living/carbon/human/H, visualsOnly)

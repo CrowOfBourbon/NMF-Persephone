@@ -57,7 +57,7 @@
 	)
 
 	implants = list(
-		/obj/item/implant/mindshield
+		/obj/item/implant/loyalty
 	)
 	id_icon = "ccia"
 	id_access = "CCIA Agent"
@@ -101,7 +101,7 @@
 	)
 
 	implants = list(
-		/obj/item/implant/mindshield
+		/obj/item/implant/loyalty
 	)
 
 	id_access = "BlackOps Commander"
@@ -153,7 +153,7 @@
 	)
 
 	implants = list(
-		/obj/item/implant/mindshield
+		/obj/item/implant/loyalty
 	)
 
 	id_access = "Odin Security"
@@ -184,7 +184,7 @@
 	r_pocket = /obj/item/flame/lighter/zippo
 
 	implants = list(
-		/obj/item/implant/mindshield
+		/obj/item/implant/loyalty
 	)
 
 	id_access = "Death Commando"

@@ -1255,7 +1255,7 @@
 			if(I.implanted)
 				if(istype(I,/obj/item/implant/tracking))
 					holder1.icon_state = "hud_imp_tracking"
-				if(istype(I,/obj/item/implant/mindshield))
+				if(istype(I,/obj/item/implant/loyalty))
 					holder2.icon_state = "hud_imp_loyal"
 				if(istype(I,/obj/item/implant/chem))
 					holder3.icon_state = "hud_imp_chem"

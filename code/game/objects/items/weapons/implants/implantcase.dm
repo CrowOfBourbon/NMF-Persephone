@@ -96,12 +96,12 @@
 
 
 /obj/item/implantcase/loyalty
-	name = "glass case - 'mind shield'"
-	desc = "A case containing a mind shield implant."
+	name = "glass case - 'neural implant'"
+	desc = "A case containing a neural implant."
 	icon_state = "implantcase-r"
 
 /obj/item/implantcase/loyalty/New()
-	src.imp = new /obj/item/implant/mindshield( src )
+	src.imp = new /obj/item/implant/loyalty( src )
 	..()
 	return
 
