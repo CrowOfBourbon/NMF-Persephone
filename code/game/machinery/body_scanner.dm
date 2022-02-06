@@ -252,7 +252,7 @@
 	icon = 'icons/obj/sleeper.dmi'
 	icon_state = "body_scannerconsole"
 	var/obj/machinery/bodyscanner/connected
-	var/known_implants = list(/obj/item/implant/chem, /obj/item/implant/death_alarm, /obj/item/implant/mindshield, /obj/item/implant/tracking)
+	var/known_implants = list(/obj/item/implant/chem, /obj/item/implant/death_alarm, /obj/item/implant/loyalty, /obj/item/implant/tracking)
 	var/collapse_desc = ""
 	var/broken_desc = ""
 	var/has_internal_injuries = FALSE

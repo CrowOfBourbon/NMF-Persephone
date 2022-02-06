@@ -273,7 +273,7 @@
 		to_chat(src, SPAN_WARNING("You cannot infest someone who is already infested!"))
 		return
 
-	for (var/obj/item/implant/mindshield/I in M)
+	for (var/obj/item/implant/loyalty/I in M)
 		if (I.implanted)
 			to_chat(src, SPAN_WARNING("\The [host]'s mind is shielded against your powers."))
 			return
@@ -296,7 +296,7 @@
 		to_chat(src, SPAN_NOTICE("You cannot do that in your current state."))
 		return
 
-	for (var/obj/item/implant/mindshield/I in host)
+	for (var/obj/item/implant/loyalty/I in host)
 		if (I.implanted)
 			to_chat(src, SPAN_WARNING("\The [host]'s mind is shielded against your powers."))
 			return
@@ -459,7 +459,7 @@
 		to_chat(src, SPAN_WARNING("Your host is already psionically active!"))
 		return
 
-	for (var/obj/item/implant/mindshield/I in host)
+	for (var/obj/item/implant/loyalty/I in host)
 		if (I.implanted)
 			to_chat(src, SPAN_WARNING("\The [host]'s mind is shielded against your powers."))
 			return
@@ -502,7 +502,7 @@
 		to_chat(src, SPAN_WARNING("You don't have enough chemicals!"))
 		return
 
-	for (var/obj/item/implant/mindshield/I in host)
+	for (var/obj/item/implant/loyalty/I in host)
 		if (I.implanted)
 			to_chat(src, SPAN_WARNING("\The [host]'s mind is shielded against your powers."))
 			return

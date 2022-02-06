@@ -52,7 +52,7 @@
 	)
 
 	implants = list(
-		/obj/item/implant/mindshield
+		/obj/item/implant/loyalty
 	)
 
 	backpack = /obj/item/storage/backpack/security
