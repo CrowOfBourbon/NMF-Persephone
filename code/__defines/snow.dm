@@ -1,0 +1,1 @@
+#define  FOOTSTEP_SPRITE_AMT "Footprint Sprite"

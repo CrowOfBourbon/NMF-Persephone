@@ -9,7 +9,7 @@
 
 	plane = PLANE_SPACE_BACKGROUND
 
-	temperature = T20C
+	temperature = TCMB
 	thermal_conductivity = OPEN_HEAT_TRANSFER_COEFFICIENT
 //	heat_capacity = 700000 No.
 	is_hole = TRUE
