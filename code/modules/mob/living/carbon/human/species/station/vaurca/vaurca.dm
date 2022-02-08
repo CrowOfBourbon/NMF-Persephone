@@ -52,24 +52,24 @@
 	breath_eff_mul = 6 // 1/6 * breath_eff_mul = fraction of gas consumed
 	poison_type = GAS_NITROGEN //a species that breathes plasma shouldn't be poisoned by it.
 	breathing_sound = null //They don't work that way I guess? I'm a coder not a purple man.
-	mob_size = 13 //their half an inch thick exoskeleton and impressive height, plus all of their mechanical organs.
+	mob_size = 13 //their half an inch thick exoskeleton and impressive height.
 	natural_climbing = TRUE
 	climb_coeff = 0.75
 
-	blurb = "Type A are the most common type of Vaurca and can be seen as the 'backbone' of Vaurcae societies. Their most prevalent feature is their hardened exoskeleton, varying in colors \
-	in accordance to their hive. It is approximately half an inch thick among all Type A Vaurca. The carapace provides protection against harsh radiation, solar \
-	and otherwise, and acts as a pressure-suit to seal their soft inner core from the outside world. This allows most Type A Vaurca to have extended EVA \
-	expeditions, assuming they have internals. They are bipedal, and compared to warriors they are better suited for EVA and environments, and more resistant to brute force thanks to their \
-	thicker carapace, but also a fair bit slower and less agile. \
+	blurb = "Ka or Type A: Worker forms, endlessly ranging in variety depending on what one was designed to do. \
+	Workers can range from 4 feet tall with two stubby legs and two long arms to 10 feet tall with four arms, two bulky legs and several pairs of small eyes. \
+	Workers are typically bulkier than warriors, having increased durability at the cost of mobility. Some forms are of course exempt from this. \
+	It should be noted that workers are typically very uncomfortable with violence. \
+	But due to conflicts with the Tilla hive, workers have been instructed by their local MV forms to be especially ready for conflict at all times, negating their natural pacifism. \
 	<b>Type A are comfortable in any department except security. There will almost never be a Worker in a security position, as they are as a type disposed against combat.</b>"
 
-	cold_level_1 = 50
-	cold_level_2 = -1
-	cold_level_3 = -1
+	cold_level_1 = 100 // Spaceproof, but space still feels cold to them.
+	cold_level_2 = 50
+	cold_level_3 = 1
 
-	heat_level_1 = 330 //Default 360
-	heat_level_2 = 380 //Default 400
-	heat_level_3 = 600 //Default 1000
+	heat_level_1 = 420 // They evolved on a volcanic deathworld.
+	heat_level_2 = 450
+	heat_level_3 = 600
 	flags = NO_SLIP | NO_CHUBBY | NO_ARTERIES | PHORON_IMMUNE
 	spawn_flags = CAN_JOIN | IS_WHITELISTED | NO_AGE_MINIMUM
 	appearance_flags = HAS_SKIN_COLOR | HAS_HAIR_COLOR
@@ -97,7 +97,7 @@
 	stamina_recovery = 2	//slow recovery
 
 	has_organ = list(
-		BP_NEURAL_SOCKET        = /obj/item/organ/vaurca/neuralsocket,
+		BP_PHEROMONE_PROCESSOR = /obj/item/organ/internal/pheromoneprocessor/vaurca,
 		BP_LUNGS               = /obj/item/organ/internal/lungs/vaurca,
 		BP_FILTRATION_BIT       = /obj/item/organ/vaurca/filtrationbit,
 		BP_HEART               = /obj/item/organ/internal/heart/vaurca,
@@ -128,12 +128,12 @@
 
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
 
-	allowed_citizenships = list(CITIZENSHIP_NONE, CITIZENSHIP_IZWESKI, CITIZENSHIP_BIESEL, CITIZENSHIP_ERIDANI, CITIZENSHIP_JARGON)
-	allowed_religions = list(RELIGION_HIVEPANTHEON, RELIGION_PREIMMINENNCE, RELIGION_PILOTDREAM, RELIGION_NONE, RELIGION_OTHER)
+	allowed_citizenships = list(CITIZENSHIP_NONE, CITIZENSHIP_XAL)
+	allowed_religions = list(RELIGION_COALESCENCE_OF_MINDS, RELIGION_PAST_GODDESS, RELIGION_NONE, RELIGION_OTHER)
 	default_citizenship = CITIZENSHIP_NONE
 
 	default_accent = ACCENT_TTS
-	allowed_accents = list(ACCENT_TTS, ACCENT_ZORA, ACCENT_KLAX, ACCENT_CTHUR)
+	allowed_accents = list(ACCENT_TTS)
 
 	alterable_internal_organs = list(BP_HEART, BP_EYES, BP_LUNGS, BP_STOMACH, BP_APPENDIX)
 

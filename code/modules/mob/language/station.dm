@@ -251,7 +251,7 @@
 		return 0
 	if(within_jamming_range(other))
 		return 0
-	if(M.internal_organs_by_name[BP_NEURAL_SOCKET])
+	if(M.internal_organs_by_name[BP_PHEROMONE_PROCESSOR])
 		return 1
 	if(M.internal_organs_by_name["blackkois"])
 		return 1

@@ -121,7 +121,7 @@
 #define BP_APPENDIX "appendix"
 
 //Vaurca organs
-#define BP_NEURAL_SOCKET "neural socket"
+#define BP_PHEROMONE_PROCESSOR "pheromone processor"
 #define BP_PHORON_RESERVE "phoron reserve tank"
 #define BP_FILTRATION_BIT "filtration bit"
 #define BP_PHORON_RESERVOIR "phoron reservoir"

@@ -70,13 +70,13 @@
 
 /datum/unarmed_attack/claws/strong
 	attack_verb = list("slashed")
-	damage = 10
+	damage = 7
 	shredding = TRUE
 	attack_name = "strong claws"
 
 /datum/unarmed_attack/bite/strong
 	attack_verb = list("mauled")
-	damage = 10
+	damage = 7
 	shredding = TRUE
 	attack_name = "strong bite"
 

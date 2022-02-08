@@ -14,9 +14,7 @@
 #define CITIZENSHIP_DPRA "Democratic People's Republic of Adhomai"
 #define CITIZENSHIP_NKA "New Kingdom of Adhomai"
 
-#define CITIZENSHIP_ZORA "Zo'ra Hive"
-#define CITIZENSHIP_KLAX "K'lax Hive"
-#define CITIZENSHIP_CTHUR "C'thur Hive"
+#define CITIZENSHIP_XAL "Xallian Hive"
 
 #define CITIZENSHIP_NONE "None"
 #define CITIZENSHIP_GOLDEN "Golden Deep"
@@ -49,9 +47,8 @@
 #define RELIGION_MATAKE "Ma'ta'ke"
 #define RELIGION_RASKARA "Raskariim"
 
-#define RELIGION_HIVEPANTHEON "Hive Pantheon"
-#define RELIGION_PREIMMINENNCE "Preimminennce"
-#define RELIGION_PILOTDREAM "Pilot Dream"
+#define RELIGION_COALESCENCE_OF_MINDS "The Coalesence Of Minds"
+#define RELIGION_PAST_GODDESS "The Past Goddess"
 
 #define RELIGION_ETERNAL "The Eternal"
 
@@ -125,7 +122,5 @@
 
 #define ACCENT_BLUESPACE "Bluespace"
 
-#define ACCENT_ZORA "Zo'rane"
-#define ACCENT_KLAX "K'laxane"
-#define ACCENT_CTHUR "C'thuric"
-#define ACCENT_LIIDRA "Lii'draic"
+#define ACCENT_XAL "Xalliac"
+#define ACCENT_TILLAN "Tillic"
