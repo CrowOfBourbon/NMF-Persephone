@@ -70,7 +70,7 @@
 
 /datum/unarmed_attack/claws/strong
 	attack_verb = list("slashed")
-	damage = 10
+	damage = 7
 	shredding = TRUE
 	attack_name = "strong claws"
 

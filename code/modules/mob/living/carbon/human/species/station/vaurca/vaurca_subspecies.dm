@@ -25,9 +25,9 @@
 	allowing for greater mobility at the cost of some trauma resistance. \
 	<b>Type BA are most comfortable obviously in security positions, but can rarely be found in the lower hierarchies of other departments.</b>"
 
-	heat_level_1 = 360 //Default 360
-	heat_level_2 = 400 //Default 400
-	heat_level_3 = 800 //Default 1000
+	heat_level_1 = 450 // Warriors spend more time on the heated surface.
+	heat_level_2 = 500
+	heat_level_3 = 600
 
 	stamina = 115
 	sprint_speed_factor = 1.0
@@ -66,12 +66,12 @@
 	The Type C caste is not suitable for physical work and will often delegate any duties to the rest of the Vaurcae, which are below them in the hierarchy.<br>
 	<b>Vaurca Breeders can only be played as Hive Representatives of Queens affiliated to the Court of Queens.</b>"}
 
-	age_max = 1000
+	age_max = 60
 	default_genders = list(FEMALE)
 	economic_modifier = 3
 
 	speech_sounds = list('sound/voice/hiss1.ogg','sound/voice/hiss2.ogg','sound/voice/hiss3.ogg','sound/voice/hiss4.ogg')
-	speech_chance = 100
+	speech_chance = 50
 
 	death_sound = 'sound/voice/hiss6.ogg'
 	damage_overlays = 'icons/mob/human_races/masks/dam_breeder.dmi'
@@ -235,9 +235,9 @@ Similar to Workers, Bulwarks are generally passive, and prefer to flee a fight r
 Bulwarks are much larger and have significantly thicker carapaces than most Vaurca, making them slow but resistant to most hits, including a complete immunity to radiation. Their powerful arms and claws grant them stronger punches, enough to bend metal, and is often used to pry open non-functional doors.<br>
 <b>Type E Vaurca are typically used for heavy lifting, agricultural and industrial work, thus they can typically be found as Engineers, Cargo Technicians, Miners and similar jobs, though they can also be found in positions such as janitor and Assistant should they be needed.</b>"}
 
-	heat_level_1 = 360 //Default 360
-	heat_level_2 = 400 //Default 400
-	heat_level_3 = 800 //Default 1000
+	heat_level_1 = 520 // Typically the building blocks of exterior structures. Immune to extremely heated temperatures.
+	heat_level_2 = 600
+	heat_level_3 = 750
 
 	sprint_speed_factor = 1.4
 

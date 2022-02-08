@@ -5,7 +5,7 @@
 	category_name = "Vaurca"
 	bodytype = BODYTYPE_VAURCA
 	age_min = 1
-	age_max = 20
+	age_max = 10
 	default_genders = list(NEUTER)
 	selectable_pronouns = null
 	economic_modifier = 2
@@ -52,7 +52,7 @@
 	breath_eff_mul = 6 // 1/6 * breath_eff_mul = fraction of gas consumed
 	poison_type = GAS_NITROGEN //a species that breathes plasma shouldn't be poisoned by it.
 	breathing_sound = null //They don't work that way I guess? I'm a coder not a purple man.
-	mob_size = 13 //their half an inch thick exoskeleton and impressive height, plus all of their mechanical organs.
+	mob_size = 13 //their half an inch thick exoskeleton and impressive height.
 	natural_climbing = TRUE
 	climb_coeff = 0.75
 
@@ -63,13 +63,13 @@
 	thicker carapace, but also a fair bit slower and less agile. \
 	<b>Type A are comfortable in any department except security. There will almost never be a Worker in a security position, as they are as a type disposed against combat.</b>"
 
-	cold_level_1 = 50
-	cold_level_2 = -1
-	cold_level_3 = -1
+	cold_level_1 = 100 // Spaceproof, but space still feels cold to them.
+	cold_level_2 = 50
+	cold_level_3 = 1
 
-	heat_level_1 = 330 //Default 360
-	heat_level_2 = 380 //Default 400
-	heat_level_3 = 600 //Default 1000
+	heat_level_1 = 420 // They evolved on a volcanic deathworld.
+	heat_level_2 = 450
+	heat_level_3 = 600
 	flags = NO_SLIP | NO_CHUBBY | NO_ARTERIES | PHORON_IMMUNE
 	spawn_flags = CAN_JOIN | IS_WHITELISTED | NO_AGE_MINIMUM
 	appearance_flags = HAS_SKIN_COLOR | HAS_HAIR_COLOR
