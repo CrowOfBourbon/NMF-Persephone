@@ -85,8 +85,8 @@
 	sprint_cost_factor = 0.80
 	stamina_recovery = 3
 
-	allowed_citizenships = list(CITIZENSHIP_ZORA, CITIZENSHIP_KLAX, CITIZENSHIP_CTHUR)
-	default_citizenship = CITIZENSHIP_ZORA
+	allowed_citizenships = list(CITIZENSHIP_XAL)
+	default_citizenship = CITIZENSHIP_XAL
 
 	flags =  NO_SLIP | NO_ARTERIES | PHORON_IMMUNE
 
