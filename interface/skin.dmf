@@ -1058,7 +1058,7 @@ window "mainwindow"
 		background-color = none
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
-		title = "Space Station 13 - Aurora Station"
+		title = "Space Station 13 - NMF Persephone"
 		is-maximized = true
 		icon = 'icons\\ss13_64.png'
 		macro = "macro"
