@@ -166,7 +166,7 @@
 		)
 
 	has_organ = list(
-		BP_NEURAL_SOCKET       = /obj/item/organ/vaurca/neuralsocket,
+		BP_PHEROMONE_PROCESSOR       = /obj/item/organ/internal/pheromoneprocessor/vaurca,
 		BP_LUNGS              = /obj/item/organ/internal/lungs/vaurca,
 		BP_HEART              = /obj/item/organ/internal/heart/vaurca,
 		BP_PHORON_RESERVOIR    = /obj/item/organ/vaurca/reservoir,

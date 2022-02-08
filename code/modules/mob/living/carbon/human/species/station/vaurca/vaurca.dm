@@ -97,6 +97,7 @@
 	stamina_recovery = 2	//slow recovery
 
 	has_organ = list(
+		BP_PHEROMONE_PROCESSOR = /obj/item/organ/internal/pheromoneprocessor/vaurca,
 		BP_LUNGS               = /obj/item/organ/internal/lungs/vaurca,
 		BP_FILTRATION_BIT       = /obj/item/organ/vaurca/filtrationbit,
 		BP_HEART               = /obj/item/organ/internal/heart/vaurca,

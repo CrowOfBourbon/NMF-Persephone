@@ -1,4 +1,4 @@
-/datum/religion/hivepantheon
+/datum/religion/coalesience
 	name = RELIGION_COALESCENCE_OF_MINDS
 	description = "The first and oldest religion of the Vaurcae, developing around 200 years ago. The belief follows the idea of a being beyond the universe, \
 	made up of an in-conceivable amount of Vaurcae structural forms and queens. Making up a deity-like being, able to shape the universe at its will. \
@@ -6,7 +6,7 @@
 	book_name = "Latticed Apocrypha"
 	book_sprite = "latticed_apocrypha"
 
-/datum/religion/preimminennce
+/datum/religion/past_goddess
 	name = RELIGION_PAST_GODDESS
 	description = "A newer religion, following the first Queen documented on Ka`xillia. Statues and ancient ruins on the planet's surface decorate the terrain. \
 	Due to the general hostility of the planet's surface, prolonged existence outside is deemed impossible for Queens, therefore the structures, \

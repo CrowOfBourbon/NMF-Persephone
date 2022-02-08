@@ -44,6 +44,13 @@
 	desc = "The brain of a Vaurca, being similar to that of an insect; and that of a mammal."	
 	icon_state = "brain_vaurca"
 
+/obj/item/organ/internal/pheromoneprocessor/vaurca
+	name = BP_PHEROMONE_PROCESSOR
+	organ_tag = BP_PHEROMONE_PROCESSOR
+	icon_state = "pheromone_processor"
+	desc = "A small, complex organ usually attached to a brain. Used to comprehend complex pheromone carried messages."
+	parent_organ = BP_HEAD
+
 /obj/item/organ/vaurca/reservoir
 	name = BP_PHORON_RESERVOIR
 	organ_tag = BP_PHORON_RESERVOIR
@@ -56,14 +63,6 @@
 	organ_tag = BP_FILTRATION_BIT
 	parent_organ = BP_HEAD
 	icon_state = "filter"
-	robotic = ROBOTIC_MECHANICAL
-
-/obj/item/organ/vaurca/neuralsocket
-	name = BP_NEURAL_SOCKET
-	organ_tag = BP_NEURAL_SOCKET
-	icon_state = "neural_socket"
-	desc = "The single most important organ for a Vaurca, able to copy their mind into their Virtual Reality Afterlife upon death."
-	parent_organ = BP_HEAD
 	robotic = ROBOTIC_MECHANICAL
 
 obj/item/organ/vaurca/neuralsocket/process()
