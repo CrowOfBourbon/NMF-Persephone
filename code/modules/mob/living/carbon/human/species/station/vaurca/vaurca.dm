@@ -97,7 +97,6 @@
 	stamina_recovery = 2	//slow recovery
 
 	has_organ = list(
-		BP_NEURAL_SOCKET        = /obj/item/organ/vaurca/neuralsocket,
 		BP_LUNGS               = /obj/item/organ/internal/lungs/vaurca,
 		BP_FILTRATION_BIT       = /obj/item/organ/vaurca/filtrationbit,
 		BP_HEART               = /obj/item/organ/internal/heart/vaurca,
@@ -129,7 +128,7 @@
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
 
 	allowed_citizenships = list(CITIZENSHIP_NONE, CITIZENSHIP_IZWESKI, CITIZENSHIP_BIESEL, CITIZENSHIP_ERIDANI, CITIZENSHIP_JARGON)
-	allowed_religions = list(RELIGION_HIVEPANTHEON, RELIGION_PREIMMINENNCE, RELIGION_PILOTDREAM, RELIGION_NONE, RELIGION_OTHER)
+	allowed_religions = list(RELIGION_COALESCENCE_OF_MINDS, RELIGION_PAST_GODDESS, RELIGION_NONE, RELIGION_OTHER)
 	default_citizenship = CITIZENSHIP_NONE
 
 	default_accent = ACCENT_TTS

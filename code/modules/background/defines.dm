@@ -49,9 +49,8 @@
 #define RELIGION_MATAKE "Ma'ta'ke"
 #define RELIGION_RASKARA "Raskariim"
 
-#define RELIGION_HIVEPANTHEON "Hive Pantheon"
-#define RELIGION_PREIMMINENNCE "Preimminennce"
-#define RELIGION_PILOTDREAM "Pilot Dream"
+#define RELIGION_COALESCENCE_OF_MINDS "The Coalesence Of Minds"
+#define RELIGION_PAST_GODDESS "The Past Goddess"
 
 #define RELIGION_ETERNAL "The Eternal"
 
