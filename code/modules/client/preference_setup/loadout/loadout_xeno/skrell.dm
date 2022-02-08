@@ -69,37 +69,11 @@
 	capes["galaxy cape"] = /obj/item/clothing/accessory/poncho/shouldercape/galaxy
 	gear_tweaks += new /datum/gear_tweak/path(capes)
 
-/datum/gear/accessory/qeblak
-	display_name = "qeblak mantle"
-	path = /obj/item/clothing/accessory/poncho/shouldercape/qeblak
-	whitelisted = list(SPECIES_SKRELL, SPECIES_SKRELL_AXIORI, SPECIES_DIONA, SPECIES_DIONA_COEUS)
-	sort_category = "Xenowear - Skrell"
-
-/datum/gear/uniform/skrell
-	display_name = "qeblak ceremonial garment"
-	path = /obj/item/clothing/under/skrell/qeblak
-	whitelisted = list(SPECIES_SKRELL, SPECIES_SKRELL_AXIORI)
-	sort_category = "Xenowear - Skrell"
-	flags = GEAR_HAS_DESC_SELECTION
-
 /datum/gear/stellascope
 	display_name = "stellascope"
 	path = /obj/item/stellascope
 	whitelisted = list(SPECIES_SKRELL, SPECIES_SKRELL_AXIORI)
 	sort_category = "Xenowear - Skrell"
-
-/datum/gear/skrell_projector
-	display_name = "nralakk projector"
-	path = /obj/item/skrell_projector
-	whitelisted = list(SPECIES_SKRELL, SPECIES_SKRELL_AXIORI, SPECIES_DIONA, SPECIES_DIONA_COEUS)
-	sort_category = "Xenowear - Skrell"
-
-/datum/gear/ears/skrell/goop
-	display_name = "glowing algae"
-	path = /obj/item/clothing/ears/skrell/goop
-	whitelisted = list(SPECIES_SKRELL, SPECIES_SKRELL_AXIORI)
-	sort_category = "Xenowear - Skrell"
-	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/ears/skrell/goop/New()
 	..()
@@ -121,22 +95,6 @@
 	whitelisted = list(SPECIES_SKRELL, SPECIES_SKRELL_AXIORI)
 	sort_category = "Xenowear - Skrell"
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
-
-/datum/gear/accessory/skrell_passport
-	display_name = "jargon federation passport"
-	path = /obj/item/clothing/accessory/badge/passport/jargon
-	sort_category = "Xenowear - Skrell"
-	whitelisted = list(SPECIES_SKRELL, SPECIES_SKRELL_AXIORI, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_WORKER, SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER, SPECIES_DIONA, SPECIES_DIONA_COEUS)
-	flags = GEAR_NO_SELECTION
-	cost = 0
-
-/datum/gear/accessory/skrell_residency
-	display_name = "starlight residency card"
-	path = /obj/item/clothing/accessory/badge/starlight
-	sort_category = "Xenowear - Skrell"
-	whitelisted = list(SPECIES_SKRELL, SPECIES_SKRELL_AXIORI)
-	flags = GEAR_NO_SELECTION
-	cost = 0
 
 /datum/gear/accessory/skrell_passport/New()
 	. = ..()

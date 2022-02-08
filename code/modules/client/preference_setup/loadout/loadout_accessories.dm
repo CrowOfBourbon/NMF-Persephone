@@ -39,7 +39,6 @@
 /datum/gear/accessory/armband/New()
 	..()
 	var/list/armbands = list()
-	armbands["Stellar Corporate Conglomerate armband"] = /obj/item/clothing/accessory/armband/scc
 	armbands["red armband"] = /obj/item/clothing/accessory/armband
 	armbands["security armband"] = /obj/item/clothing/accessory/armband/sec
 	armbands["cargo armband"] = /obj/item/clothing/accessory/armband/cargo
@@ -48,8 +47,6 @@
 	armbands["engineering armband"] = /obj/item/clothing/accessory/armband/engine
 	armbands["hydroponics armband"] = /obj/item/clothing/accessory/armband/hydro
 	armbands["science armband"] = /obj/item/clothing/accessory/armband/science
-	armbands["IAC armband"] = /obj/item/clothing/accessory/armband/iac
-	armbands["tau ceti armband"] = /obj/item/clothing/accessory/armband/tauceti
 	gear_tweaks += new /datum/gear_tweak/path(armbands)
 
 /datum/gear/accessory/armband_coloured
@@ -229,20 +226,7 @@
 	shirt["puffy blouse"] = /obj/item/clothing/accessory/puffyblouse
 	gear_tweaks += new /datum/gear_tweak/path(shirt)
 
-/datum/gear/accessory/silversun
-	display_name = "silversun floral shirt selection"
-	path = /obj/item/clothing/accessory/silversun
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/accessory/silversun/New()
-	..()
-	var/list/shirts = list()
-	shirts["cyan silversun shirt"] = /obj/item/clothing/accessory/silversun
-	shirts["red silversun shirt"] = /obj/item/clothing/accessory/silversun/red
-	shirts["random colored silversun shirt"] = /obj/item/clothing/accessory/silversun/random
-	gear_tweaks += new /datum/gear_tweak/path(shirts)
-
-/datum/gear/accessory/university 
+/datum/gear/accessory/university
 	display_name = "university sweatshirt selection"
 	path = /obj/item/clothing/accessory/university
 	description = "A selection of university sweatshirts."
@@ -326,7 +310,7 @@
 /datum/gear/accessory/ribbon
 	display_name = "ribbon (colourable)"
 	path = /obj/item/clothing/accessory/ribbon
-	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION 
+	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/accessory/sleeve_patch
 	display_name = "shoulder sleeve patch"
@@ -337,37 +321,6 @@
 	display_name = "stellar corporate conglomerate sleeve patch"
 	path = /obj/item/clothing/accessory/sleevepatch/scc
 	flags = 0
-
-/datum/gear/accessory/whalebone
-	display_name = "europan bone charm"
-	path = /obj/item/clothing/accessory/whalebone
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/accessory/gadpathur
-	display_name = "gadpathurian cadre brassard selection"
-	description = "A selection of cadre brassards from Gadpathur."
-	path = /obj/item/clothing/accessory/armband/gadpathur
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/accessory/gadpathur/New()
-	..()
-	var/list/gadpathur = list()
-	gadpathur["cadre brassard"] = /obj/item/clothing/accessory/armband/gadpathur
-	gadpathur["industrial cadre brassard"] = /obj/item/clothing/accessory/armband/gadpathur/ind
-	gadpathur["medical cadre brassard"] = /obj/item/clothing/accessory/armband/gadpathur/med
-	gear_tweaks += new /datum/gear_tweak/path(gadpathur)
-
-/datum/gear/accessory/gadpathur_leader
-	display_name = "gadpathurian section leader badge"
-	description = "A small metal badge worn by Gadpathurian Section Leaders."
-	path = /obj/item/clothing/accessory/gadpathurian_leader
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/accessory/gadpathur_dogtags
-	display_name = "gadpathurian dogtags"
-	description = "Dogtags issued to Gadpathurians."
-	path = /obj/item/clothing/accessory/dogtags/gadpathur
-	flags = GEAR_HAS_DESC_SELECTION
 
 /datum/gear/accessory/sash_coloured
 	display_name = "sash (colourable)"
@@ -394,57 +347,6 @@
 	display_name = "human passcard selection"
 	path = /obj/item/clothing/accessory/badge/passcard
 	cost = 0
-
-/datum/gear/accessory/passcard/New()
-	..()
-	var/list/passcard = list()
-	passcard["passcard, tau ceti"] = /obj/item/clothing/accessory/badge/passcard
-	passcard["passcard, sol"] = /obj/item/clothing/accessory/badge/passcard/sol
-	passcard["passcard, pluto"] = /obj/item/clothing/accessory/badge/passcard/sol/pluto
-	passcard["passcard, jovian"] = /obj/item/clothing/accessory/badge/passcard/sol/jupiter
-	passcard["passcard, luna"] = /obj/item/clothing/accessory/badge/passcard/sol/luna
-	passcard["passcard, europa"] = /obj/item/clothing/accessory/badge/passcard/sol/europa
-	passcard["passcard, cytherean"] = /obj/item/clothing/accessory/badge/passcard/sol/cytherean
-	passcard["passcard, jintarian"] = /obj/item/clothing/accessory/badge/passcard/sol/jintarian
-	passcard["passcard, eridani"] = /obj/item/clothing/accessory/badge/passcard/eridani
-	passcard["passcard, elyra"] = /obj/item/clothing/accessory/badge/passcard/elyra
-	passcard["passcard, dominia"] = /obj/item/clothing/accessory/badge/passcard/dominia
-	passcard["passcard, coalition"] = /obj/item/clothing/accessory/badge/passcard/coalition
-	passcard["passcard, himeo"] = /obj/item/clothing/accessory/badge/passcard/himeo
-	passcard["passcard, vysoka"] = /obj/item/clothing/accessory/badge/passcard/vysoka
-	passcard["passcard, gadpathur"] = /obj/item/clothing/accessory/badge/passcard/gad
-	passcard["passcard, assunzione"] = /obj/item/clothing/accessory/badge/passcard/assu
-	passcard["passcard, techno-conglomerate"] = /obj/item/clothing/accessory/badge/passcard/techno
-	passcard["passcard, konyang"] = /obj/item/clothing/accessory/badge/passcard/konyang
-	passcard["passcard, visegrad"] = /obj/item/clothing/accessory/badge/passcard/sol/visegrad
-	gear_tweaks += new /datum/gear_tweak/path(passcard)
-
-/datum/gear/accessory/passport
-	display_name = "human passport selection"
-	path = /obj/item/clothing/accessory/badge/passport
-	cost = 0
-
-/datum/gear/accessory/passport/New()
-	..()
-	var/list/passport = list()
-	passport["passport, biesel"] = /obj/item/clothing/accessory/badge/passport
-	passport["passport, sol"] = /obj/item/clothing/accessory/badge/passport/sol
-	passport["passport, elyra"] = /obj/item/clothing/accessory/badge/passport/elyra
-	passport["passport, dominia"] = /obj/item/clothing/accessory/badge/passport/dominia
-	passport["passport, coalition"] = /obj/item/clothing/accessory/badge/passport/coc
-	gear_tweaks += new /datum/gear_tweak/path(passport)
-
-/datum/gear/accessory/TCFLcard
-	display_name = "TCFL service cards"
-	description = "Identification cards given to active and former members of the Tau Ceti Foreign Legion."
-	path = /obj/item/clothing/accessory/badge/tcfl_papers
-
-/datum/gear/accessory/TCFLcard/New()
-	..()
-	var/list/TCFLcard = list()
-	TCFLcard["active service"] = /obj/item/clothing/accessory/badge/tcfl_papers/service
-	TCFLcard["veteran"] = /obj/item/clothing/accessory/badge/tcfl_papers/service/veteran
-	gear_tweaks += new /datum/gear_tweak/path(TCFLcard)
 
 /datum/gear/accessory/kneepads
 	display_name = "kneepads"

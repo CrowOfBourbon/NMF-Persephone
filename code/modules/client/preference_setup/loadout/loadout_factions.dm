@@ -1,4 +1,4 @@
-/datum/gear/faction
+//datum/gear/faction
 	display_name = "idris cap"
 	path = /obj/item/clothing/head/softcap/security/idris
 	slot = slot_head
@@ -6,17 +6,17 @@
 	cost = 1
 	faction = "Idris Incorporated"
 
-/datum/gear/faction/idris_beret
+//datum/gear/faction/idris_beret
 	display_name = "idris beret"
 	path = /obj/item/clothing/head/beret/security/idris
 	faction = "Idris Incorporated"
 
-/datum/gear/faction/idris_beret_alt
+//datum/gear/faction/idris_beret_alt
 	display_name = "idris beret (alt)"
 	path = /obj/item/clothing/head/beret/security/idris/alt
 	faction = "Idris Incorporated"
 
-/datum/gear/faction/idris_uniform_alt
+//datum/gear/faction/idris_uniform_alt
 	display_name = "idris service skirt"
 	description = "Not for security usage."
 	path = /obj/item/clothing/under/rank/idris/service/alt

@@ -273,13 +273,6 @@
 	display_name = "non la hat"
 	path = /obj/item/clothing/head/nonla
 
-/datum/gear/head/iac
-	display_name = "IAC headgear selection"
-	description = "A selection of hats worn by Interstellar Aid Corps volunteers."
-	path = /obj/item/clothing/head/softcap/iac
-	allowed_roles = list("Chief Medical Officer", "Physician", "Surgeon", "Pharmacist", "First Responder", "Medical Intern")
-	flags = GEAR_HAS_DESC_SELECTION
-
 /datum/gear/head/iac/New()
 	..()
 	var/list/iac = list()
@@ -291,63 +284,15 @@
 	display_name = "headwear, circuitry (empty)"
 	path = /obj/item/clothing/head/circuitry
 
-/datum/gear/head/tcfl
-	display_name = "tcfl hat selection"
-	path = /obj/item/clothing/head/beret/legion
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/head/tcfl/New()
-	..()
-	var/list/tcfl = list()
-	tcfl["tcfl beret, dress"] = /obj/item/clothing/head/beret/legion
-	tcfl["tcfl beret, field"] = /obj/item/clothing/head/beret/legion/field
-	gear_tweaks += new /datum/gear_tweak/path(tcfl)
-
 /datum/gear/head/padded_cap
 	display_name = "padded cap"
 	path = /obj/item/clothing/head/padded
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
 
-/datum/gear/head/himeo
-	display_name = "himean cap"
-	path = /obj/item/clothing/head/softcap/himeo
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/head/vysoka
-	display_name = "vysokan fur cap"
-	path = /obj/item/clothing/head/softcap/vysoka
-	flags = GEAR_HAS_DESC_SELECTION
-
 /datum/gear/head/buckethat
 	display_name = "bucket hat"
 	path = /obj/item/clothing/head/buckethat
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
-
-/datum/gear/head/gadpathur
-	display_name = "gadpathurian headgear selection"
-	description = "A selection of headgear from Gadpathur."
-	path = /obj/item/clothing/head/gadpathur
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/head/gadpathur/New()
-	..()
-	var/list/gadpathur = list()
-	gadpathur["gadpathurian sidecap"] = /obj/item/clothing/head/gadpathur
-	gadpathur["gadpathurian beret"] = /obj/item/clothing/head/beret/gadpathur
-	gadpathur["gadpathurian engineer beret"] = /obj/item/clothing/head/beret/gadpathur/engineer
-	gadpathur["gadpathurian medical beret"] = /obj/item/clothing/head/beret/gadpathur/medical
-	gadpathur["gadpathurian turban"] = /obj/item/clothing/head/turban/gadpathur
-	gear_tweaks += new /datum/gear_tweak/path(gadpathur)
-
-/datum/gear/head/dominia
-	display_name = "fisanduhian ushanka"
-	path = /obj/item/clothing/head/ushanka/dominia
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/head/dominia_consular
-	display_name = "dominian consular cap"
-	path = /obj/item/clothing/head/dominia
-	allowed_roles = list("Consular Officer")
 
 /datum/gear/head/hairnet
 	display_name = "hairnet"

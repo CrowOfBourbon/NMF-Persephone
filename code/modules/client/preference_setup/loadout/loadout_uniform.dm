@@ -5,11 +5,6 @@
 	slot = slot_w_uniform
 	sort_category = "Uniforms and Casual Dress"
 
-/datum/gear/uniform/iacjumpsuit
-	display_name = "IAC Jumpsuit"
-	path = /obj/item/clothing/under/rank/iacjumpsuit
-	allowed_roles = list("Chief Medical Officer", "Physician", "Surgeon", "Pharmacist", "First Responder", "Medical Intern")
-
 /datum/gear/uniform/jumpsuit
 	display_name = "generic jumpsuits"
 	description = "A selection of generic colored jumpsuits."
@@ -213,67 +208,6 @@
 	display_name = "tacticool turtleneck"
 	path = /obj/item/clothing/under/syndicate/tacticool
 
-/datum/gear/uniform/dominia
-	display_name = "dominian clothing selection"
-	description = "A selection of Dominian clothing."
-	path = /obj/item/clothing/under/dominia
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/uniform/dominia/New()
-	..()
-	var/list/suit = list()
-	suit["dominia suit, red"] = /obj/item/clothing/under/dominia
-	suit["dominia suit, black"] = /obj/item/clothing/under/dominia/black
-	suit["lyodsuit"] = /obj/item/clothing/under/dominia/lyodsuit
-	suit["hoodied lyodsuit"] = /obj/item/clothing/under/dominia/lyodsuit/hoodie
-	suit["dominia noblewoman dress"] = /obj/item/clothing/under/dominia/dress
-	suit["dominia summer dress"] = /obj/item/clothing/under/dominia/dress/summer
-	gear_tweaks += new /datum/gear_tweak/path(suit)
-
-/datum/gear/uniform/dominia_dress
-	display_name = "dominian dress selection"
-	description = "A selection of fancy Dominian dresses."
-	path = /obj/item/clothing/under/dominia/dress
-
-/datum/gear/uniform/dominia_dress/New()
-	..()
-	var/list/suit = list()
-	for(var/dress in typesof(/obj/item/clothing/under/dominia/dress/fancy))
-		var/obj/item/clothing/under/dominia/dress/D = new dress //I'm not typing all this shit manually. Jesus christ.
-		suit["[D.name]"] = D.type
-	gear_tweaks += new /datum/gear_tweak/path(suit)
-
-/datum/gear/uniform/dominia_consular
-	display_name = "dominian consular clothing selection"
-	description = "A selection of Dominian clothing belonging to the Diplomatic Service."
-	path = /obj/item/clothing/under/dominia/consular
-	allowed_roles = list("Consular Officer")
-
-/datum/gear/uniform/dominia_consular/New()
-	..()
-	var/list/consular = list()
-	consular["dominian consular officer's uniform, masculine"] = /obj/item/clothing/under/dominia/consular
-	consular["dominian consular officer's uniform, feminine"] = /obj/item/clothing/under/dominia/consular/dress
-	gear_tweaks += new /datum/gear_tweak/path(consular)
-
-/datum/gear/uniform/fisanduhian_sweater
-	display_name = "fisanduhian sweater"
-	path = /obj/item/clothing/under/dominia/sweater
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/uniform/elyra_holo
-	display_name = "elyran holographic suit selection"
-	description = "A marvel of Elyran technology, uses hardlight fabric and masks to transform a skin-tight, cozy suit into cultural apparel of your choosing. Has a dial for Midenean, Aemaqii and Persepolis clothes respectively."
-	path = /obj/item/clothing/under/elyra_holo
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/uniform/elyra_holo/New()
-	..()
-	var/list/suit = list()
-	suit["elyran holographic suit, feminine"] = /obj/item/clothing/under/elyra_holo
-	suit["elyran holographic suit, masculine"] = /obj/item/clothing/under/elyra_holo/masc
-	gear_tweaks += new /datum/gear_tweak/path(suit)
-
 /datum/gear/uniform/miscellaneous/kimono
 	display_name = "kimono"
 	path = /obj/item/clothing/under/kimono
@@ -353,10 +287,6 @@
 	pyjamas["red pyjamas"] = /obj/item/clothing/under/pj/red
 	gear_tweaks += new /datum/gear_tweak/path(pyjamas)
 
-/datum/gear/uniform/miscellaneous/hanbok
-	display_name = "hanbok selection"
-	description = "A selection of Konyanger formalwear."
-	path = /obj/item/clothing/under/konyang
 
 /datum/gear/uniform/miscellaneous/hanbok/New()
 	..()
@@ -364,20 +294,3 @@
 	hanbok["magenta-blue hanbok"] = /obj/item/clothing/under/konyang
 	hanbok["white-pink hanbok"] = /obj/item/clothing/under/konyang/pink
 	gear_tweaks += new /datum/gear_tweak/path(hanbok)
-
-/datum/gear/uniform/gadpathur
-	display_name = "gadpathurian fatigues"
-	path = /obj/item/clothing/under/uniform/gadpathur
-	flags = GEAR_HAS_DESC_SELECTION
-
-/datum/gear/uniform/miscellaneous/qipao
-	display_name = "qipao"
-	path = /obj/item/clothing/under/qipao
-	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
-
-/datum/gear/uniform/miscellaneous/qipao/New()
-	..()
-	var/list/qipao = list()
-	qipao["qipao"] = /obj/item/clothing/under/qipao
-	qipao["slim qipao"] = /obj/item/clothing/under/qipao2
-	gear_tweaks += new /datum/gear_tweak/path(qipao)
