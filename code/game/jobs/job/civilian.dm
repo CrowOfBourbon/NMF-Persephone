@@ -148,7 +148,6 @@
 	ideal_character_age = 40
 
 	outfit = /datum/outfit/job/qm
-	blacklisted_species = list(SPECIES_VAURCA_BREEDER)
 
 /datum/outfit/job/qm
 	name = "Quartermaster"

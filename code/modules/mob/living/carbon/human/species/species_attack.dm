@@ -76,7 +76,7 @@
 
 /datum/unarmed_attack/bite/strong
 	attack_verb = list("mauled")
-	damage = 10
+	damage = 7
 	shredding = TRUE
 	attack_name = "strong bite"
 

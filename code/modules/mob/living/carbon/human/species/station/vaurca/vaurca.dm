@@ -56,11 +56,11 @@
 	natural_climbing = TRUE
 	climb_coeff = 0.75
 
-	blurb = "Type A are the most common type of Vaurca and can be seen as the 'backbone' of Vaurcae societies. Their most prevalent feature is their hardened exoskeleton, varying in colors \
-	in accordance to their hive. It is approximately half an inch thick among all Type A Vaurca. The carapace provides protection against harsh radiation, solar \
-	and otherwise, and acts as a pressure-suit to seal their soft inner core from the outside world. This allows most Type A Vaurca to have extended EVA \
-	expeditions, assuming they have internals. They are bipedal, and compared to warriors they are better suited for EVA and environments, and more resistant to brute force thanks to their \
-	thicker carapace, but also a fair bit slower and less agile. \
+	blurb = "Ka or Type A: Worker forms, endlessly ranging in variety depending on what one was designed to do. \
+	Workers can range from 4 feet tall with two stubby legs and two long arms to 10 feet tall with four arms, two bulky legs and several pairs of small eyes. \
+	Workers are typically bulkier than warriors, having increased durability at the cost of mobility. Some forms are of course exempt from this. \
+	It should be noted that workers are typically very uncomfortable with violence. \
+	But due to conflicts with the Tilla hive, workers have been instructed by their local MV forms to be especially ready for conflict at all times, negating their natural pacifism. \
 	<b>Type A are comfortable in any department except security. There will almost never be a Worker in a security position, as they are as a type disposed against combat.</b>"
 
 	cold_level_1 = 100 // Spaceproof, but space still feels cold to them.
