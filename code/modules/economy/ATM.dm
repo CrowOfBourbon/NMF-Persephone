@@ -15,7 +15,7 @@ log transactions
 /obj/item/card/id/var/money = 2000
 
 /obj/machinery/atm
-	name = "Idris SelfServ Teller"
+	name = "NanoTrasen Token Teller"
 	desc = "For all your monetary needs! Astronomical figures!"
 	icon = 'icons/obj/terminals.dmi'
 	icon_state = "atm"
@@ -35,7 +35,7 @@ log transactions
 
 /obj/machinery/atm/Initialize()
 	. = ..()
-	machine_id = "Idris SelfServ #[SSeconomy.num_financial_terminals++]"
+	machine_id = "NanoTrasen Token Teller #[SSeconomy.num_financial_terminals++]"
 	update_icon()
 
 /obj/machinery/atm/Destroy()
@@ -133,7 +133,7 @@ log transactions
 			//create a transaction log entry
 			var/datum/transaction/T = new()
 			T.target_name = authenticated_account.owner_name
-			T.purpose = "Credit deposit"
+			T.purpose = "Token deposit"
 			T.amount = I:worth
 			T.source_terminal = machine_id
 			T.date = worlddate2text()
@@ -342,7 +342,7 @@ log transactions
 						//create an entry in the account transaction log
 						var/datum/transaction/T = new()
 						T.target_name = authenticated_account.owner_name
-						T.purpose = "Credit withdrawal"
+						T.purpose = "Token withdrawal"
 						T.amount = "([amount])"
 						T.source_terminal = machine_id
 						T.date = worlddate2text()
@@ -368,7 +368,7 @@ log transactions
 						//create an entry in the account transaction log
 						var/datum/transaction/T = new()
 						T.target_name = authenticated_account.owner_name
-						T.purpose = "Credit withdrawal"
+						T.purpose = "Token withdrawal"
 						T.amount = "([amount])"
 						T.source_terminal = machine_id
 						T.date = worlddate2text()

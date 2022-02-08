@@ -1,7 +1,7 @@
 /obj/machinery/orderterminal
-	name = "Idris Ordering Terminal"
-	desc = "An ordering terminal designed by Idris for quicker expedition."
-	desc_info = "To edit the menu, select 'Toggle Lock' and swipe with an id with either kitchen or bar access. Afterwards click 'Toggle Lock' again to exit editting mode.\nAll credits from the machine will automatically go to the civilian account."
+	name = "Ordering Terminal"
+	desc = "An ordering terminal designed for quicker expedition."
+	desc_info = "To edit the menu, select 'Toggle Lock' and swipe with an id with either kitchen or bar access. Afterwards click 'Toggle Lock' again to exit editting mode.\nAll tokens from the machine will automatically go to the civilian account."
 	icon = 'icons/obj/terminals.dmi'
 	icon_state = "kitchenterminal"
 	anchored = 1
@@ -22,7 +22,7 @@
 
 /obj/machinery/orderterminal/Initialize()
 	. = ..()
-	machine_id = "Idris Ordering Terminal #[SSeconomy.num_financial_terminals++]"
+	machine_id = "Ordering Terminal #[SSeconomy.num_financial_terminals++]"
 	update_icon()
 
 /obj/machinery/orderterminal/power_change()
@@ -51,7 +51,7 @@
 /obj/machinery/orderterminal/ui_interact(mob/user)
 	var/datum/vueui/ui = SSvueui.get_open_ui(usr, src)
 	if (!ui)
-		ui = new(usr, src, "machinery-orderterminal-ordering", 450, 450, "Idris Ordering Terminal")
+		ui = new(usr, src, "machinery-orderterminal-ordering", 450, 450, "Ordering Terminal")
 	ui.open()
 
 /obj/machinery/orderterminal/proc/print_receipt() // Print the receipt followed by the order ticket
@@ -74,11 +74,11 @@
 		R.stamped = new
 	R.stamped += /obj/item/stamp
 	R.add_overlay(stampoverlay)
-	R.stamps += "<HR><i>This paper has been stamped by the Idris Ordering Terminal.</i>"
+	R.stamps += "<HR><i>This paper has been stamped by the Ordering Terminal.</i>"
 
 /obj/machinery/orderterminal/attackby(obj/O, mob/user)
 	var/obj/item/card/id/I = O.GetID()
-	if (!I) 
+	if (!I)
 		return
 	if (!istype(O))
 		return
@@ -90,10 +90,10 @@
 			unlocking = FALSE
 		else
 			to_chat(user, SPAN_WARNING("Access denied."))
-	
+
 	else if (confirmorder)
 		var/transaction_amount = sum
-		var/transaction_purpose = "Idris Ordering Terminal order."
+		var/transaction_purpose = "Ordering Terminal order."
 		var/transaction_terminal = machine_id
 		if(sum > 0) // it will just get denied if the order is 0 credits. We still need the id regardless for the name
 			var/transaction = SSeconomy.transfer_money(I.associated_account_number, SSeconomy.get_department_account(destinationact)?.account_number,transaction_purpose,transaction_terminal,transaction_amount,null,usr)
@@ -105,7 +105,7 @@
 				ticket += "<br><b>Customer:</b> [I.registered_name]"
 				receipt += "<br><b>Customer:</b> [I.registered_name]"
 				print_receipt()
-				sum = 0 
+				sum = 0
 				receipt = ""
 				ticket = ""
 				to_chat(src.loc, SPAN_NOTICE("Transaction completed, please return to the home screen."))
@@ -170,8 +170,8 @@
 		confirmorder = TRUE
 		var/buying = ui.data["buying"]
 		var/items = ui.data["items"]
-		receipt += "<center><font size=\"4\"><b>Idris Food Terminal Receipt</b></font></br><img src = idrislogo.png></center><hr>"
-		ticket += "<center><font size=\"4\"><b>Idris Food Terminal Ticket</b></font></br><img src = idrislogo.png></center><hr>"
+		receipt += "<center><font size=\"4\"><b>Food Terminal Receipt</b></font></br><img src = idrislogo.png></center><hr>"
+		ticket += "<center><font size=\"4\"><b>Food Terminal Ticket</b></font></br><img src = idrislogo.png></center><hr>"
 		for(var/name in buying)
 			if(buying[name])
 				sum += items[name] * buying[name]
