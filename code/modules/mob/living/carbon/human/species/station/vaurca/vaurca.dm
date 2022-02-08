@@ -5,7 +5,7 @@
 	category_name = "Vaurca"
 	bodytype = BODYTYPE_VAURCA
 	age_min = 1
-	age_max = 10
+	age_max = 20
 	default_genders = list(NEUTER)
 	selectable_pronouns = null
 	economic_modifier = 2
