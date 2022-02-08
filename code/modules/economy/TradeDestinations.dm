@@ -18,8 +18,8 @@ var/list/weighted_mundaneevent_locations = list()
 
 //distance is measured in AU and co-relates to travel time
 /datum/trade_destination/centcomm
-	name = "CentComm"
-	description = "NanoTrasen's administrative centre for Tau Ceti."
+	name = "StarComm"
+	description = "NanoTrasen's administrative centre for NMF Persephone."
 	distance = 1.2
 	willing_to_buy = list()
 	willing_to_sell = list()
@@ -27,7 +27,7 @@ var/list/weighted_mundaneevent_locations = list()
 	viable_mundane_events = list(ELECTION, RESIGNATION, CELEBRITY_DEATH)
 
 /datum/trade_destination/anansi
-	name = "NSS Anansi"
+	name = "NMS Onward Towards Dawn"
 	description = "Medical station ran by Second Red Cross (but owned by NT) for handling emergency cases from nearby colonies."
 	distance = 1.7
 	willing_to_buy = list()
@@ -37,21 +37,21 @@ var/list/weighted_mundaneevent_locations = list()
 
 /datum/trade_destination/anansi/get_custom_eventstring(var/event_type)
 	if(event_type == RESEARCH_BREAKTHROUGH)
-		return "Thanks to research conducted on the NSS Anansi, Second Red Cross Society wishes to announce a major breakthough in the field of \
+		return "Thanks to research conducted on the NMS Onward Towards Dawn, Second Red Cross Society wishes to announce a major breakthough in the field of \
 		[pick("mind-machine interfacing","neuroscience","nano-augmentation","genetics")]. [current_map.company_name] is expected to announce a co-exploitation deal within the fortnight."
 	return null
 
 /datum/trade_destination/icarus
-	name = "NDV Icarus"
-	description = "Corvette assigned to patrol local space."
+	name = "NDV Styx"
+	description = "Battleship assigned to patrol local space."
 	distance = 0.1
 	willing_to_buy = list()
 	willing_to_sell = list()
 	viable_random_events = list(SECURITY_BREACH, AI_LIBERATION, PIRATES)
 
 /datum/trade_destination/redolant
-	name = "OAV Redolant"
-	description = "Osiris Atmospherics station in orbit around the only gas giant insystem. They retain tight control over shipping rights, and Osiris warships protecting their prize are not an uncommon sight in Tau Ceti."
+	name = "ZAV Lightning"
+	description = "Zeus Atmospherics Station in orbit around the only gas giant insystem. They retain tight control over shipping rights, and Zeus warships protecting their prize are not an uncommon sight in Kepler."
 	distance = 0.6
 	willing_to_buy = list()
 	willing_to_sell = list()
@@ -60,13 +60,13 @@ var/list/weighted_mundaneevent_locations = list()
 
 /datum/trade_destination/redolant/get_custom_eventstring(var/event_type)
 	if(event_type == RESEARCH_BREAKTHROUGH)
-		return "Thanks to research conducted on the OAV Redolant, Osiris Atmospherics wishes to announce a major breakthough in the field of \
+		return "Thanks to research conducted on the ZAV Lightning, Zeus Atmospherics wishes to announce a major breakthough in the field of \
 		[pick("phoron research","high energy flux capacitance","super-compressed materials","theoretical particle physics")]. [current_map.company_name] is expected to announce a co-exploitation deal within the fortnight."
 	return null
 
 /datum/trade_destination/beltway
-	name = "Beltway mining chain"
-	description = "A co-operative effort between Beltway and NanoTrasen to exploit the rich outer asteroid belt of the Tau Ceti system."
+	name = "Luna Mining Colony"
+	description = "A mining colony owned by the Interstellar Republic."
 	distance = 7.5
 	willing_to_buy = list()
 	willing_to_sell = list()
@@ -74,8 +74,8 @@ var/list/weighted_mundaneevent_locations = list()
 	viable_mundane_events = list(TOURISM)
 
 /datum/trade_destination/biesel
-	name = "Biesel"
-	description = "Large ship yards, strong economy and a stable, well-educated populace, Biesel largely owes allegiance to Sol / Vessel Contracting and begrudgingly tolerates NT. Capital is Lowell City."
+	name = "Hades"
+	description = "Large ship yards, strong economy and a stable, well-educated populace, Biesel largely owes allegiance to Nanotrasen / Vessel Contracting and begrudgingly tolerates NT. Capital is Keep."
 	distance = 2.3
 	willing_to_buy = list()
 	willing_to_sell = list()

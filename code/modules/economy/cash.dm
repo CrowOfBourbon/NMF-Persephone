@@ -1,6 +1,6 @@
 /obj/item/spacecash
-	name = "0 credit chip"
-	desc = "It's worth 0 credits."
+	name = "0 token chip"
+	desc = "It's worth 0 tokens."
 	gender = PLURAL
 	icon = 'icons/obj/cash.dmi'
 	icon_state = "spacecash1"
@@ -38,14 +38,14 @@
 			h_user.drop_from_inventory(src)
 			h_user.drop_from_inventory(bundle)
 			h_user.put_in_hands(bundle)
-		to_chat(user, "<span class='notice'>You add [src.worth] credits worth of money to the bundles.<br>It holds [bundle.worth] credits now.</span>")
+		to_chat(user, "<span class='notice'>You add [src.worth] tokens worth of money to the bundles.<br>It holds [bundle.worth] tokens now.</span>")
 		qdel(src)
 
 /obj/item/spacecash/bundle
-	name = "credit chips"
+	name = "token chips"
 	icon_state = ""
 	gender = PLURAL
-	desc = "They are worth 0 credits."
+	desc = "They are worth 0 tokens."
 	worth = 0
 
 /obj/item/spacecash/bundle/update_icon()
@@ -73,10 +73,10 @@
 
 	add_overlay(ovr)
 	compile_overlays()	// The delay looks weird, so we force an update immediately.
-	src.desc = "They are worth [worth] credits."
+	src.desc = "They are worth [worth] tokens."
 
 /obj/item/spacecash/bundle/attack_self(mob/user as mob)
-	var/amount = input(user, "How many credits do you want to take? (0 to [src.worth])", "Take Money", 20) as num
+	var/amount = input(user, "How many tokens do you want to take? (0 to [src.worth])", "Take Money", 20) as num
 
 	if(QDELETED(src))
 		return 0
@@ -106,51 +106,51 @@
 		qdel(src)
 
 /obj/item/spacecash/c1
-	name = "1 credit chip"
+	name = "1 token chip"
 	icon_state = "spacecash1"
-	desc = "It's worth 1 credit."
+	desc = "It's worth 1 tokens."
 	worth = 1
 
 /obj/item/spacecash/c10
-	name = "10 credit chip"
+	name = "10 token chip"
 	icon_state = "spacecash10"
-	desc = "It's worth 10 credits."
+	desc = "It's worth 10 tokens."
 	worth = 10
 
 /obj/item/spacecash/c20
-	name = "20 credit chip"
+	name = "20 token chip"
 	icon_state = "spacecash20"
-	desc = "It's worth 20 credits."
+	desc = "It's worth 20 tokens."
 	worth = 20
 
 /obj/item/spacecash/c50
-	name = "50 credit chip"
+	name = "50 token chip"
 	icon_state = "spacecash50"
-	desc = "It's worth 50 credits."
+	desc = "It's worth 50 tokens."
 	worth = 50
 
 /obj/item/spacecash/c100
-	name = "100 credit chip"
+	name = "100 token chip"
 	icon_state = "spacecash100"
-	desc = "It's worth 100 credits."
+	desc = "It's worth 100 tokens."
 	worth = 100
 
 /obj/item/spacecash/c200
-	name = "200 credit chip"
+	name = "200 token chip"
 	icon_state = "spacecash200"
-	desc = "It's worth 200 credits."
+	desc = "It's worth 200 tokens."
 	worth = 200
 
 /obj/item/spacecash/c500
-	name = "500 credit chip"
+	name = "500 token chip"
 	icon_state = "spacecash500"
-	desc = "It's worth 500 credits."
+	desc = "It's worth 500 tokenss."
 	worth = 500
 
 /obj/item/spacecash/c1000
-	name = "1000 credit chip"
+	name = "1000 token chip"
 	icon_state = "spacecash1000"
-	desc = "It's worth 1000 credits."
+	desc = "It's worth 1000 tokens."
 	worth = 1000
 
 proc/spawn_money(var/sum, spawnloc, mob/living/carbon/human/human_user as mob)
@@ -178,10 +178,10 @@ proc/spawn_money(var/sum, spawnloc, mob/living/carbon/human/human_user as mob)
 /obj/item/spacecash/ewallet/examine(mob/user)
 	..(user)
 	if (!(user in view(2)) && user!=src.loc) return
-	to_chat(user, "<span class='notice'>Charge card's owner: [src.owner_name]. Credit chips remaining: [src.worth].</span>")
+	to_chat(user, "<span class='notice'>Charge card's owner: [src.owner_name]. Tokens remaining: [src.worth].</span>")
 
 /obj/item/spacecash/ewallet/lotto
-	name = "space lottery card"
+	name = "lottery card"
 	icon_state = "lottocard_3"
 	desc = "A virtual scratch-action charge card that contains a variable amount of money."
 	worth = 0
@@ -207,34 +207,34 @@ proc/spawn_money(var/sum, spawnloc, mob/living/carbon/human/human_user as mob)
 		var/result = rand(1,10000)
 		if(result <= 4000) // 40% chance to not earn anything at all.
 			won = 0
-			speak("You've won: [won] CREDITS. Better luck next time!")
+			speak("You've won: [won] TOKENS. Better luck next time!")
 		else if (result <= 8000) // 40% chance
 			won = 50
-			speak("You've won: [won] CREDITS. Partial winner!")
+			speak("You've won: [won] TOKENS. Partial winner!")
 		else if (result <= 9000) // 10% chance
 			won = 100
-			speak("You've won: [won] CREDITS. Winner!")
+			speak("You've won: [won] TOKENS. Winner!")
 		else if (result <= 9500) // 5% chance
 			won = 200
-			speak("You've won: [won] CREDITS. SUPER WINNER! You're lucky!")
+			speak("You've won: [won] TOKENS. SUPER WINNER! You're lucky!")
 		else if (result <= 9750) // 2.5% chance
 			won = 500
-			speak("You've won: [won] CREDITS. MEGA WINNER! You're super lucky!")
+			speak("You've won: [won] TOKENS. MEGA WINNER! You're super lucky!")
 		else if (result <= 9900) // 1.5% chance
 			won = 1000
-			speak("You've won: [won] CREDITS. ULTRA WINNER! You're mega lucky!")
+			speak("You've won: [won] TOKENS. ULTRA WINNER! You're mega lucky!")
 		else if (result <= 9950) // 0.5% chance
 			won = 2500
-			speak("You've won: [won] CREDITS. ULTIMATE WINNER! You're ultra lucky!")
+			speak("You've won: [won] TOKENS. ULTIMATE WINNER! You're ultra lucky!")
 		else if (result <= 9975) // 0.25% chance
 			won = 5000
-			speak("You've won: [won] CREDITS. ULTIMATE WINNER! You're ultra lucky!")
+			speak("You've won: [won] TOKENS. ULTIMATE WINNER! You're ultra lucky!")
 		else if (result <= 9999) // 0.24% chance
 			won = 10000
-			speak("You've won: [won] CREDITS. ULTIMATE WINNER! You're ultra lucky!")
+			speak("You've won: [won] TOKENS. ULTIMATE WINNER! You're ultra lucky!")
 		else ///0.01% chance
 			won = 25000
-			speak("You've won: [won] CREDITS. JACKPOT WINNER! You're JACKPOT lucky!")
+			speak("You've won: [won] TOKENS. JACKPOT WINNER! You're JACKPOT lucky!")
 
 		scratches_remaining -= 1
 		update_icon()
@@ -243,7 +243,7 @@ proc/spawn_money(var/sum, spawnloc, mob/living/carbon/human/human_user as mob)
 		if(scratches_remaining > 0)
 			to_chat(user, "<span class='notice'>The card flashes: You have: [scratches_remaining] SCRATCHES remaining! Scratch again!</span>")
 		else
-			to_chat(user, "<span class='notice'>The card flashes: You have: [scratches_remaining] SCRATCHES remaining! You won a total of: [worth] CREDITS. Thanks for playing the space lottery!</span>")
+			to_chat(user, "<span class='notice'>The card flashes: You have: [scratches_remaining] SCRATCHES remaining! You won a total of: [worth] TOKENS. Thanks for playing the lottery!</span>")
 
 		owner_name = user.name
 
