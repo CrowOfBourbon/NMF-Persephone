@@ -1,7 +1,7 @@
 /datum/citizenship/xal
 	name = CITIZENSHIP_XAL
 	description = "The Xallian Hive, currently the most powerful hive on Ka'xillia. Only very recently initiated first contact with Humanity via NanoTrasen, this young civilization only several hundreds of years old, \
-	facing heavy discrimination in Human space, though with their homeworld extremely high phoron content, they are a wealthy and powerful ally to have. Vaurcae born within the Hive are the only eligible for citizenship."
+	facing heavy discrimination in Human space, though with their homeworlds' extremely high phoron content, they are a wealthy and powerful ally to have. Vaurcae born within the Hive are the only eligible for citizenship."
 
 	consular_outfit = /datum/outfit/job/representative/consular/xal
 
