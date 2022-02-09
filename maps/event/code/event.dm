@@ -6,7 +6,7 @@
 
 	force_spawnpoint = TRUE
 
-	lobby_icons = list('icons/misc/titlescreens/aurora/nss_aurora.dmi', 'icons/misc/titlescreens/aurora/synthetics.dmi', 'icons/misc/titlescreens/aurora/tajara.dmi')
+	lobby_icons = list('icons/misc/titlescreens/aurora/nss_aurora.dmi')
 	lobby_transitions = 10 SECONDS
 
 	station_levels = list(1)
