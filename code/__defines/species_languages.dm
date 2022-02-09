@@ -51,7 +51,8 @@
 #define LANGUAGE_ROOTSONG "Rootsong"
 #define LANGUAGE_LUNIAN "Lunian"
 #define LANGUAGE_MARTIAN "Martian"
-#define LANGUAGE_VAURCA "Hivenet"
+#define LANGUAGE_VAURCA "Hive network"
+#define LANGUAGE_VAURCA_SIGN "Warrior Coordination"
 #define LANGUAGE_AZAZIBA "Sinta'azaziba"
 #define LANGUAGE_SIGN "Sign Language"
 

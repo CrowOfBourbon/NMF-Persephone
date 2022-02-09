@@ -68,6 +68,7 @@
 		interpreter.SetVar("L_GUTTER",	LANGUAGE_MARTIAN)
 		interpreter.SetVar("L_MAAS",	LANGUAGE_SIIK_MAAS)
 		interpreter.SetVar("L_YASSA",	LANGUAGE_YA_SSA)
+		interpreter.SetVar("L_VAURCASIGN", LANGUAGE_VAURCA_SIGN)
 		interpreter.SetVar("L_DELVAHII",LANGUAGE_DELVAHII)
 		interpreter.SetVar("L_DIONAEA", LANGUAGE_ROOTSONG)
 		interpreter.SetVar("L_MHOSTUM",  LANGUAGE_MHOSTUM)

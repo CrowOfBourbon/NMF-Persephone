@@ -72,7 +72,7 @@
 			"ci" = list("z", "zz"),
 			"v" = list("vv", "vvv")
 		)
-	autohiss_exempt = list(LANGUAGE_VAURCA)
+	autohiss_exempt = list(LANGUAGE_VAURCA, LANGUAGE_VAURCA_SIGN)
 
 /datum/species/bug/type_b
 	autohiss_basic_map = list(
@@ -85,7 +85,7 @@
 			"ci" = list("z", "zz"),
 			"v" = list("vv", "vvv")
 		)
-	autohiss_exempt = list(LANGUAGE_VAURCA)
+	autohiss_exempt = list(LANGUAGE_VAURCA, LANGUAGE_VAURCA_SIGN)
 
 /datum/species/diona
 

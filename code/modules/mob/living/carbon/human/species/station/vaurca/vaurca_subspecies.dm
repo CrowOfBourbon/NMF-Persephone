@@ -38,6 +38,9 @@
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/bugbite //weaker version of gut.
 		)
+	
+	//num_alternate_languages = 1
+	//secondary_langs = list(LANGUAGE_VAURCA, LANGUAGE_VAURCA_SIGN)
 
 /datum/species/bug/type_c
 	name = SPECIES_VAURCA_BREEDER

@@ -28,7 +28,7 @@ var/global/list/golem_types = list(SPECIES_GOLEM_COAL,
 	bodytype = BODYTYPE_GOLEM
 	default_accent = ACCENT_BLUESPACE
 
-	language = "Ceti Basic"
+	language = "English"
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch)
 	flags = NO_BREATHE | NO_PAIN | NO_BLOOD | NO_SCAN | NO_POISON | NO_EMBED | PHORON_IMMUNE
 	spawn_flags = IS_RESTRICTED

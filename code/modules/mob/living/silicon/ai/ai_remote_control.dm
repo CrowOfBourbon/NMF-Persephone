@@ -18,7 +18,8 @@
 					LANGUAGE_SIIK_TAJR =   FALSE,
 					LANGUAGE_AZAZIBA =     FALSE,
 					LANGUAGE_DELVAHII =    FALSE,
-					LANGUAGE_YA_SSA =      FALSE
+					LANGUAGE_YA_SSA =      FALSE,
+					LANGUAGE_VAURCA_SIGN = FALSE
 					)
 
 	sprites = list("Basic" = "shell")

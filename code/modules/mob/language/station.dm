@@ -64,9 +64,9 @@
 	short = "AGK"
 	desc = "Spoken on Zakkera by its population of Human and Unathi. It began as a conlang between the Unathi and Humans present on the planet. It's \
 	associated with the planet's radicalism, free-spirit, and alien customs. It has only a handful of dialects, but all of them are intelligible to one another."
-	speech_verb = list("voices")
+	speech_verb = list("growls")
 	ask_verb = list("questions")
-	exclaim_verb = list("roars")
+	exclaim_verb = list("barks")
 	sing_verb = list("hisses")
 	colour = "soghun_alt" 
 	allow_accents = TRUE
@@ -242,6 +242,18 @@
 	for(var/mob/player in player_list)
 		if(istype(player,/mob/abstract/observer) || ((src in player.languages && !within_jamming_range(player)) || check_special_condition(player)))
 			to_chat(player, msg)
+
+/datum/language/bug_sign
+	name = LANGUAGE_VAURCA_SIGN
+	desc = "WORK IN PROGRESS LORE-WISE"
+	speech_verb = list("gesticulates")
+	signlang_verb = list("flicks its antennae", "waves its antennae", "swivels its antennae", "scratches at its eyes", "clacks its mandibles", "clicks its fingers", "waves its hand")
+	sign_adv_length = list("", " briefly", " a few times", " several times in quick succession", " for a while", " quietly")
+	sing_verb = null
+	colour = "i"
+	key = "8"
+	flags = NO_STUTTER | SIGNLANG | WHITELISTED
+	partial_understanding = list(LANGUAGE_VAURCA = 5) // Very small amounts of pheromones are released during gesticulation
 
 /datum/language/bug/check_special_condition(var/mob/other)
 	if(istype(other, /mob/living/silicon))

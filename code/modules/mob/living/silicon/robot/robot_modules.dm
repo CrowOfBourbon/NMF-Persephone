@@ -32,9 +32,9 @@ var/global/list/robot_modules = list(
 					LANGUAGE_SIGN =        FALSE,
 					LANGUAGE_SIGN_TAJARA = FALSE,
 					LANGUAGE_SIIK_TAJR =   FALSE,
-					LANGUAGE_AZAZIBA =     FALSE,
 					LANGUAGE_DELVAHII =    FALSE,
-					LANGUAGE_YA_SSA =      FALSE
+					LANGUAGE_YA_SSA =      FALSE,
+					LANGUAGE_VAURCA_SIGN = FALSE
 					)
 	var/sprites = list()
 	var/can_be_pushed = TRUE
@@ -621,7 +621,8 @@ var/global/list/robot_modules = list(
 					LANGUAGE_SIGN_TAJARA = FALSE,
 					LANGUAGE_SIIK_TAJR =   FALSE,
 					LANGUAGE_DELVAHII =    FALSE,
-					LANGUAGE_YA_SSA =      FALSE
+					LANGUAGE_YA_SSA =      FALSE,
+					LANGUAGE_VAURCA_SIGN = FALSE
 					)
 
 	sprites = list(
@@ -852,7 +853,8 @@ var/global/list/robot_modules = list(
 					LANGUAGE_SIGN_TAJARA = FALSE,
 					LANGUAGE_SIIK_TAJR =   FALSE,
 					LANGUAGE_DELVAHII =    FALSE,
-					LANGUAGE_YA_SSA =      FALSE
+					LANGUAGE_YA_SSA =      FALSE,
+					LANGUAGE_VAURCA_SIGN = FALSE
 					)
 	sprites = list(
 					"Bloodhound" = "syndie_bloodhound",
