@@ -247,7 +247,7 @@
 	name = LANGUAGE_VAURCA_SIGN
 	desc = "WORK IN PROGRESS LORE-WISE"
 	speech_verb = list("gesticulates")
-	signlang_verb = list("flicks its antennae", "waves its antennae", "swivels its antennae", "scratches at its eyes", "clacks its mandibles", "clicks its fingers", "waves its hand")
+	signlang_verb = list("flicks its antennae", "waves its antennae", "swivels its antennae", "scratches at its eyes", "clacks its mandibles", "clicks its fingers", "waves its hands")
 	sign_adv_length = list("", " briefly", " a few times", " several times in quick succession", " for a while", " quietly")
 	sing_verb = null
 	colour = "i"
