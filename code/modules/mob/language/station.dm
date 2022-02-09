@@ -1,5 +1,5 @@
 /datum/language/diona
-	name = LANGUAGE_ROOTSONG
+	name = LANGUAGE_ROOTSONG //TREES DONT EXIST YET
 	desc = "A creaking, subvocal language spoken instinctively by the Dionaea. Due to the unique makeup of the average Diona, a phrase of Rootspeak can be a combination of anywhere from one to twelve individual voices and notes."
 	speech_verb = list("creaks and rustles")
 	ask_verb = list("creaks")
@@ -23,51 +23,62 @@
 
 
 // Unathi languages
-/datum/language/unathi
-	name = LANGUAGE_UNATHI
-	short = "UNA"
-	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Unathi."
+/datum/language/mhostum
+	name = LANGUAGE_MHOSTUM
+	short = "MOS"
+	desc = "Spoken on Moghes and associated with the planet's conservative noble elite. Aside from new terminology being introduced this \
+	language remains relatively unchanged from the time of the ancient God-Kings and as a result it's difficult to learn. There is only one dialect."
 	speech_verb = list("hisses")
 	ask_verb = list("hisses")
 	exclaim_verb = list("roars")
-	sing_verb = list("hisses")
+	sing_verb = list("hisses rhythmically")
 	colour = "soghun"
-	written_style = "sintaunathi"
+	written_style = "sintaunathi" // Written languages are hard, we'll leave them with the old lizard languages for now.
 	key = "o"
 	flags = WHITELISTED|TCOMSSIM
 	allow_accents = TRUE
 	space_chance = 40
 	syllables = list(
-		"za", "az", "ze", "ez", "zi", "iz", "zo", "oz", "zu", "uz", "zs", "sz",
-		"ha", "ah", "he", "eh", "hi", "ih", "ho", "oh", "hu", "uh", "hs", "sh",
-		"la", "al", "le", "el", "li", "il", "lo", "ol", "lu", "ul", "ls", "sl",
-		"ka", "ak", "ke", "ek", "ki", "ik", "ko", "ok", "ku", "uk", "ks", "sk",
-		"sa", "as", "se", "es", "si", "is", "so", "os", "su", "us", "ss", "ss",
-		"ra", "ar", "re", "er", "ri", "ir", "ro", "or", "ru", "ur", "rs", "sr",
-		"a",  "a",  "e",  "e",  "i",  "i",  "o",  "o",  "u",  "u",  "s",  "s"
+	"ser","bilab","kinya","abilu","nes","muh","go","sin-i","sura-","tum","ebash","nelme","nus","mi-sa","babon","nazze","mabum","ilshm","shezz","pubil","za","bu","inuu","tuu","ni","duk","benib","bos"
 	)
-	partial_understanding = list(LANGUAGE_AZAZIBA = 25)
-	allow_accents = TRUE
 
-/datum/language/unathi_azaziba
-	name = LANGUAGE_AZAZIBA
-	short = "AZA"
-	desc = "A language of Moghes consisting of a combination of spoken word and gesticulation. While waning since Moghes entered the galactic stage, it enjoys popular use by Unathi that never fell to the Hegemony's cultural dominance."
+/datum/language/yzaltum
+	name = LANGUAGE_YZALTUM
+	short = "YLZ"
+	desc = "Spoken on Yzali and is associated with the planets luxuriates, Trade-Princes, and modernity. It evolved from the language families of the Trade League that settled the planet. \
+	There are hundreds of dialects across the planet, but all of them are, more or less, mutually intelligible."
 	speech_verb = list("hisses")
 	ask_verb = list("hisses")
 	exclaim_verb = list("roars")
-	signlang_verb = list("signs", "gestures aggressively")
-	sing_verb = list("hisses")
-	colour = "soghun_alt"
+	sing_verb = list("hisses melodically")
+	colour = "soghun_alt" 
+	allow_accents = TRUE
 	written_style = "sintaazaziba"
 	key = "p"
-	flags = WHITELISTED | NONVERBAL
-	syllables = list("azs","zis","zau","azua","skiu","zuakz","izo","aei","ki","kut","zo")
-	partial_understanding = list(LANGUAGE_UNATHI = 50)
+	flags = WHITELISTED|TCOMSSIM
+	space_chance = 20
+	syllables = list("hasti","erthi","git","moth-","hazek","sh-bi","gen","tes","bel","ka","hibal","shibe","yzimu","gymet","carni","seggo","ago","jelal","tesdr","madon","zirid","je","lal","sipha")
+
+/datum/language/anglikirtan
+	name = LANGUAGE_ANGLIKIRTAN
+	short = "AGK"
+	desc = "Spoken on Zakkera by its population of Human and Unathi. It began as a conlang between the Unathi and Humans present on the planet. It's \
+	associated with the planet's radicalism, free-spirit, and alien customs. It has only a handful of dialects, but all of them are intelligible to one another."
+	speech_verb = list("voices")
+	ask_verb = list("questions")
+	exclaim_verb = list("roars")
+	sing_verb = list("hisses")
+	colour = "soghun_alt" 
 	allow_accents = TRUE
+	// REMEMBER TO ADD WRITTEN LNAGUAGE LATER
+	key = "l"
+	flags = WHITELISTED|TCOMSSIM
+	space_chance = 30
+	syllables = list("ganca","her","vintm","sing","auto","pre","clus","da","ro","ght","cormh","strib","bri","gri","ga",
+	"vi","cott","mc","man","tenco","xot","xi","hui","xo","tl","aztl","teh")
 
 // tajaran languages
-/datum/language/tajaran
+/datum/language/tajaran //NEEDS CHANGE
 	name = LANGUAGE_SIIK_MAAS
 	short = "MAAS"
 	desc = "The traditionally employed tongue of Adhomai, composed of expressive yowls and chirps. Native to the Tajara."
@@ -97,7 +108,7 @@
 	new_name += pick(list("Alfarsi","Alekseev","Al-Barik","Al-Hamdan","Al-Mansur","Al-Kandari","Al-Shahrani","Antonov","Bogdanov","El-Hasem","El-Amin","Rrhakaslav","Mrrazhughran","Jrruzhani","Rrhamrare","Mrakiizar","Hirron","Prruzhulkanich","El-Tusi","Nejem","Hanar","Karimi","Markov","Saif","Yakub","Zaman","Zaydan","Zidan","Zahawi"))
 	return new_name
 
-/datum/language/tajaran_sign
+/datum/language/tajaran_sign //NEEDS CHANGE
 	name = LANGUAGE_SIGN_TAJARA
 	desc = "A sign language developed by Adhomai hunters"
 	speech_verb = list("signs")
@@ -109,7 +120,7 @@
 	flags = NO_STUTTER | SIGNLANG | WHITELISTED
 	partial_understanding = list(LANGUAGE_SIIK_TAJR = 50)
 
-/datum/language/siik_tajr
+/datum/language/siik_tajr //NEEDS CHANGE
 	name = LANGUAGE_SIIK_TAJR
 	desc = "A language native to the tajaran, it employes both verbal and non-verbal elements."
 	speech_verb = list("mrowls")
@@ -127,7 +138,7 @@
 	"hal","ket","jurl","mah","tul","cresh","azu","ragh","mro","mra","mrro","mrra")
 	partial_understanding = list(LANGUAGE_SIIK_MAAS = 50, LANGUAGE_SIGN_TAJARA = 25)
 
-/datum/language/yassa
+/datum/language/yassa //NEEDS CHANGE
 	name = LANGUAGE_YA_SSA
 	short = "YAS"
 	desc = "The traditional language of the tajaran nobility."
@@ -146,7 +157,7 @@
 	partial_understanding = list(LANGUAGE_SIIK_MAAS = 50)
 	allow_accents = TRUE
 
-/datum/language/delvahhi
+/datum/language/delvahhi //NEEDS CHANGE
 	name = LANGUAGE_DELVAHII
 	short = "DEL"
 	desc = "A dialect developed by the Zhan-Khazan communities, commonly used in religious ceremonies dedicated to the Snow God and amongst settlements comprised mostly of Zhan-Khazan."
@@ -165,7 +176,7 @@
 	partial_understanding = list(LANGUAGE_SIIK_MAAS = 50)
 	allow_accents = TRUE
 
-/datum/language/skrell
+/datum/language/skrell //NEEDS CHANGE...?
 	name = LANGUAGE_SKRELLIAN
 	short = "NRAL"
 	desc = "A melodic and complex language spoken by the Skrell of Qerrbalak. Some of the notes are inaudible to humans."
@@ -210,14 +221,6 @@
 	syllables = list("vaur","uyek","uyit","avek","sc'theth","k'ztak","teth","wre'ge","lii","dra'","zo'","ra'","k'lax'","zz","vh","ik","ak",
 	"uhk","zir","sc'orth","sc'er","thc'yek","th'zirk","th'esk","k'ayek","ka'mil","sc'","ik'yir","yol","kig","k'zit","'","'","zrk","krg","isk'yet","na'k",
 	"sc'azz","th'sc","nil","n'ahk","sc'yeth","aur'sk","iy'it","azzg","a'","i'","o'","u'","a","i","o","u","zz","kr","ak","nrk")
-
-/datum/language/bug/get_random_name()
-	var/new_name = "[pick(list("Ka'","Za'","Ka'"))]"
-	new_name += "[pick(list("Akaix'","Viax'"))]"
-	new_name += "[pick(list("Uyek","Uyit","Avek","Theth","Ztak","Teth","Zir","Yek","Zirk","Ayek","Yir","Kig","Yol","'Zrk","Nazgr","Yet","Nak","Kiihr","Gruz","Guurz","Nagr","Zkk","Zohd","Norc","Agraz","Yizgr","Yinzr","Nuurg","Iii","Lix","Nhagh","Xir","Z'zit","Zhul","Zgr","Na'k","Isk'yet","Aaaa"))]"
-	var/list/hive_names = list("Zo'ra" = 3, "K'lax" = 1, "C'thur" = 1)
-	new_name += " [pickweight(hive_names)]"
-	return new_name
 
 /datum/language/bug/broadcast(var/mob/living/speaker,var/message,var/speaker_mask)
 	log_say("[key_name(speaker)] : ([name]) [message]",ckey=key_name(speaker))
@@ -271,9 +274,9 @@
 	return 0
 
 /datum/language/human
-	name = LANGUAGE_SOL_COMMON
-	short = "SOL"
-	desc = "With its roots in Mandarin Chinese, Common evolved as the official language of the Sol Alliance, with officials working to tie it together with a common tongue. It's spoken by state officials, taught in schools, and spoken by those who either feel a sense of national pride in the Alliance or otherwise fell sway to the culture."
+	name = LANGUAGE_NEW_MANDARIN
+	short = "MAN"
+	desc = "Another language original to Earth, New Mandarin expanded itself throughout World War 3 because of Chinese refugees escaping mainland Asia to other continents and countries. "
 	colour = "solcom"
 	written_style = "solcommon"
 	key = "1"

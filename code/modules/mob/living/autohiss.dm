@@ -44,8 +44,9 @@
 			"x" = list("ks", "kss", "ksss")
 		)
 	autohiss_exempt = list(
-			LANGUAGE_UNATHI,
-			LANGUAGE_AZAZIBA
+			LANGUAGE_MHOSTUM,
+			LANGUAGE_ANGLIKIRTAN,
+			LANGUAGE_YZALTUM
 		)
 
 /datum/species/tajaran

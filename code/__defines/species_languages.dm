@@ -34,12 +34,14 @@
 #define HAS_FBP           0x80   // If for whatever ungodly reason we decide to ever have non-Shell FBPs.
 #define HAS_SKIN_PRESET   0x100  // Skin color presets selectable in character generation.
 
-// Tau-Ceti basic, language common to all crew.
-#define LANGUAGE_TCB "Ceti Basic"
+// English, language common to all crew.
+#define LANGUAGE_ENGLISH "English"
 
 // Species languages
-#define LANGUAGE_SOL_COMMON "Sol Common"
-#define LANGUAGE_UNATHI "Sinta'unathi"
+#define LANGUAGE_NEW_MANDARIN "New Mandarin"
+#define LANGUAGE_MHOSTUM "Mhos-tum"
+#define LANGUAGE_YZALTUM "Yzal-tum"
+#define LANGUAGE_ANGLIKIRTAN "Anglikirtan"
 #define LANGUAGE_SIIK_MAAS "Siik'maas"
 #define LANGUAGE_SIIK_TAJR "Siik'tajr"
 #define LANGUAGE_SIGN_TAJARA "Nal'rasan"
@@ -47,8 +49,8 @@
 #define LANGUAGE_DELVAHII "Delvahhi"
 #define LANGUAGE_SKRELLIAN "Nral'Malic"
 #define LANGUAGE_ROOTSONG "Rootsong"
-#define LANGUAGE_TRADEBAND "Tradeband"
-#define LANGUAGE_GUTTER "Freespeak"
+#define LANGUAGE_LUNIAN "Lunian"
+#define LANGUAGE_MARTIAN "Martian"
 #define LANGUAGE_VAURCA "Hivenet"
 #define LANGUAGE_AZAZIBA "Sinta'azaziba"
 #define LANGUAGE_SIGN "Sign Language"

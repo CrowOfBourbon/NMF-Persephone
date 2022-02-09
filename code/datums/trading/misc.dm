@@ -164,7 +164,7 @@
 
 /datum/trader/ship/hardsuit
 	name = "Azazi Guild Seller"
-	name_language = LANGUAGE_UNATHI
+	name_language = LANGUAGE_MHOSTUM
 	origin = "Azazi Bulk Supply Guild"
 	possible_trading_items = list(
 		/obj/item/rig/unathi                    = TRADER_ALL,

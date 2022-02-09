@@ -519,7 +519,7 @@ var/list/diona_banned_languages = list(
 		if (istype(L, /datum/language/diona))
 			continue
 
-		if (istype(L, /datum/language/common)) //more likely to keep common
+		if (istype(L, /datum/language/english)) //more likely to keep common
 			chance = 85
 
 

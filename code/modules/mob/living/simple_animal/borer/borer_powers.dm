@@ -482,7 +482,7 @@
 
 	to_chat(src, SPAN_NOTICE("You succeed in interfacing with the host's zona bovinae, this will be a painful process for them."))
 	host.awaken_psi_basic("something in your head", FALSE)
-	host.add_language(LANGUAGE_TCB) // if we don't have TCB, give them TCB | this allows monkey borers to RP
+	host.add_language(LANGUAGE_ENGLISH) // if we don't have TCB, give them TCB | this allows monkey borers to RP
 
 /mob/living/simple_animal/borer/verb/advance_faculty()
 	set category = "Abilities"

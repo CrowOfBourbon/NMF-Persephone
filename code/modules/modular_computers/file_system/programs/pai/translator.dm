@@ -17,7 +17,7 @@
 	var/mob/living/silicon/pai/host = true_computer.computer_host
 
 	if(!host.translator_on)
-		host.add_language(LANGUAGE_UNATHI)
+		host.add_language(LANGUAGE_MHOSTUM)
 		host.add_language(LANGUAGE_SIIK_MAAS)
 		host.add_language(LANGUAGE_SKRELLIAN)
 		host.add_language(LANGUAGE_ROOTSONG)
@@ -34,7 +34,7 @@
 	var/mob/living/silicon/pai/host = true_computer.computer_host
 
 	if(host.translator_on)
-		host.remove_language(LANGUAGE_UNATHI)
+		host.remove_language(LANGUAGE_MHOSTUM)
 		host.remove_language(LANGUAGE_SIIK_MAAS)
 		host.remove_language(LANGUAGE_SKRELLIAN)
 		host.remove_language(LANGUAGE_ROOTSONG)

@@ -99,6 +99,9 @@ h1.alert, h2.alert		{color: #000000;}
 .soghun					{color: #228B22;}
 .solcom					{color: #22228B;}
 .soghun_alt				{color: #024402;}
+.unathi1				{color: #BA1D1D;}
+.unathi2				{color: #31B22C;}
+.unathi3				{color: #DC502D;}
 .changeling				{color: #800080;}
 .rough					{font-family: "Trebuchet MS", cursive, sans-serif;}
 .say_quote				{font-family: Georgia, Verdana, sans-serif;}

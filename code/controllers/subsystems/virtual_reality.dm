@@ -66,7 +66,7 @@
 
 	if(old_mob)
 		ckey_transfer(old_mob)
-		languages = list(all_languages[LANGUAGE_TCB])
+		languages = list(all_languages[LANGUAGE_ENGLISH])
 		to_chat(old_mob, SPAN_NOTICE("System exited safely, we hope you enjoyed your stay."))
 		old_mob = null
 	else
@@ -79,7 +79,7 @@
 
 	if(old_mob)
 		ckey_transfer(old_mob)
-		speech_synthesizer_langs = list(all_languages[LANGUAGE_TCB])
+		speech_synthesizer_langs = list(all_languages[LANGUAGE_ENGLISH])
 		to_chat(old_mob, SPAN_NOTICE("System exited safely, we hope you enjoyed your stay."))
 		old_mob = null
 	else
@@ -92,7 +92,7 @@
 
 	if(old_mob)
 		ckey_transfer(old_mob)
-		languages = list(all_languages[LANGUAGE_TCB])
+		languages = list(all_languages[LANGUAGE_ENGLISH])
 		internal_id.access = list()
 		if(ismech(loc))
 			var/mob/living/heavy_vehicle/HV = loc
@@ -109,7 +109,7 @@
 
 	if(old_mob)
 		ckey_transfer(old_mob)
-		languages = list(all_languages[LANGUAGE_TCB])
+		languages = list(all_languages[LANGUAGE_ENGLISH])
 		to_chat(old_mob, SPAN_NOTICE("System exited safely, we hope you enjoyed your stay."))
 		old_mob = null
 		qdel(src)
@@ -118,11 +118,11 @@
 		to_chat(src, SPAN_WARNING("Ahelp to get back into your body, a bug has occurred."))
 
 /mob/living/proc/vr_mob_exit_languages()
-	languages = list(all_languages[LANGUAGE_TCB])
+	languages = list(all_languages[LANGUAGE_ENGLISH])
 
 /mob/living/silicon/vr_mob_exit_languages()
 	..()
-	speech_synthesizer_langs = list(all_languages[LANGUAGE_TCB])
+	speech_synthesizer_langs = list(all_languages[LANGUAGE_ENGLISH])
 
 // Handles saving of the original mob and assigning the new mob
 /datum/controller/subsystem/virtualreality/proc/mind_transfer(var/mob/living/M, var/mob/living/target)
