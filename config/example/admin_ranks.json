@@ -1,13 +1,13 @@
 [
     {
         "role_id": 4,
-        "name": "Head Admin/Dev",
+        "name": "Game Master",
         "auths": [
             "R_ALL"
         ]
     },
     {
-        "role_id": 18,
+        "role_id": 18, //unused at this time
         "name": "Primary Administrator",
         "auths": [
             "R_BUILDMODE", "R_ADMIN", "R_BAN", "R_FUN", "R_STEALTH", "R_SERVER",
@@ -17,7 +17,7 @@
     },
     {
         "role_id": 8,
-        "name": "Secondary Administrator",
+        "name": "Administrator",
         "auths": [
             "R_BUILDMODE", "R_ADMIN", "R_BAN", "R_FUN", "R_STEALTH", "R_SERVER",
             "R_REJUVINATE", "R_VAREDIT", "R_SOUND", "R_SPAWN", "R_MODERATOR",
@@ -47,14 +47,14 @@
     },
     {
         "role_id": 13,
-        "name": "CCIA Agent",
+        "name": "SCIAA Agent",
         "auths": [
             "R_CCIAA"
         ]
     },
     {
         "role_id": 16,
-        "name": "CCIA Leader",
+        "name": "SCIAA Leader",
         "auths": [
             "R_CCIAA"
         ]
