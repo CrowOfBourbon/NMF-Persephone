@@ -277,7 +277,7 @@
 
 	grab_mod = 1.25
 
-	name_language = LANGUAGE_SKRELLIAN
+	name_language = LANGUAGE_TUQ
 
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_SOCKS
 

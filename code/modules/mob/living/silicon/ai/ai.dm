@@ -162,7 +162,7 @@ var/list/ai_verbs_default = list(
 	add_language(LANGUAGE_YZALTUM, TRUE)
 	add_language(LANGUAGE_ANGLIKIRTAN, TRUE)
 	add_language(LANGUAGE_SIIK_MAAS, FALSE)
-	add_language(LANGUAGE_SKRELLIAN, FALSE)
+	add_language(LANGUAGE_TUQ, FALSE)
 	add_language(LANGUAGE_LUNIAN, TRUE)
 	add_language(LANGUAGE_MARTIAN, FALSE)
 	add_language(LANGUAGE_VAURCA, FALSE)

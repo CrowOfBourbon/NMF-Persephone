@@ -147,7 +147,7 @@
 	//..()
 	//var/list/language_processors = list()
 	//language_processors["K'laxan [LANGUAGE_UNATHI] language processor"] = /obj/item/organ/internal/augment/language/klax
-	//language_processors["C'thur [LANGUAGE_SKRELLIAN] language processor"] = /obj/item/organ/internal/augment/language/cthur
+	//language_processors["C'thur [LANGUAGE_TUQ] language processor"] = /obj/item/organ/internal/augment/language/cthur
 	//gear_tweaks += new /datum/gear_tweak/path(language_processors)
 
 /datum/gear/vaurca_lunchbox

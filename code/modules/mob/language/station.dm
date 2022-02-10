@@ -78,14 +78,15 @@
 	"vi","cott","mc","man","tenco","xot","xi","hui","xo","tl","aztl","teh")
 
 // tajaran languages
-/datum/language/tajaran //NEEDS CHANGE
+/datum/language/tajaran
 	name = LANGUAGE_SIIK_MAAS
 	short = "MAAS"
-	desc = "The traditionally employed tongue of Adhomai, composed of expressive yowls and chirps. Native to the Tajara."
+	desc = "A basic and traditional language spoken on Adhomai hailing from many generations long past, \
+	it is often described as being harsh on the ears when certain words are used, while others are heard as smooth and easy."
 	speech_verb = list("mrowls")
-	ask_verb = list("mrowls")
+	ask_verb = list("murrs")
 	exclaim_verb = list("yowls")
-	sing_verb = list("mrowls")
+	sing_verb = list("purrs")
 	colour = "tajaran"
 	written_style = "siikmaas"
 	key = "j"
@@ -108,7 +109,7 @@
 	new_name += pick(list("Alfarsi","Alekseev","Al-Barik","Al-Hamdan","Al-Mansur","Al-Kandari","Al-Shahrani","Antonov","Bogdanov","El-Hasem","El-Amin","Rrhakaslav","Mrrazhughran","Jrruzhani","Rrhamrare","Mrakiizar","Hirron","Prruzhulkanich","El-Tusi","Nejem","Hanar","Karimi","Markov","Saif","Yakub","Zaman","Zaydan","Zidan","Zahawi"))
 	return new_name
 
-/datum/language/tajaran_sign //NEEDS CHANGE
+/datum/language/tajaran_sign
 	name = LANGUAGE_SIGN_TAJARA
 	desc = "A sign language developed by Adhomai hunters"
 	speech_verb = list("signs")
@@ -120,32 +121,17 @@
 	flags = NO_STUTTER | SIGNLANG | WHITELISTED
 	partial_understanding = list(LANGUAGE_SIIK_TAJR = 50)
 
-/datum/language/siik_tajr //NEEDS CHANGE
-	name = LANGUAGE_SIIK_TAJR
-	desc = "A language native to the tajaran, it employes both verbal and non-verbal elements."
-	speech_verb = list("mrowls")
-	ask_verb = list("mrowls")
-	exclaim_verb = list("yowls")
-	signlang_verb = list("moves their tail", "flicks their ears", "swivels their ears", "flicks their tail", "shifts their ears and tail")
-	sign_adv_length = list("", " briefly", " a few times", " several times in quick succession", " for a while")
-	sing_verb = list("mrowls")
-	colour = "tajaran_signlang"
-	key = "w"
-	flags = WHITELISTED | NONVERBAL
-	syllables = list("mrr","rr","tajr","kir","raj","kii","mir","kra","ahk","nal","vah","khaz","jri","ran","darr",
-	"mi","jri","dynh","manq","rhe","zar","rrhaz","kal","chur","eech","thaa","dra","jurl","mah","sanu","dra","ii'r",
-	"ka","aasi","far","wa","baq","ara","qara","zir","sam","mak","hrar","nja","rir","khan","jun","dar","rik","kah",
-	"hal","ket","jurl","mah","tul","cresh","azu","ragh","mro","mra","mrro","mrra")
-	partial_understanding = list(LANGUAGE_SIIK_MAAS = 50, LANGUAGE_SIGN_TAJARA = 25)
-
-/datum/language/yassa //NEEDS CHANGE
+/datum/language/yassa
 	name = LANGUAGE_YA_SSA
 	short = "YAS"
-	desc = "The traditional language of the tajaran nobility."
+	desc = "An ancient aristocrats language, rarely seen anywhere other than the Royal Adhomian Empire. Characteristic of its origins, \
+	it is smooth and pleasing to hear with words simply rolling off the tongue. \
+	The language is rather difficult to learn due to its complexities and rather strange contradictions spoken within, \
+	but it has been slowly morphed to become more basic for non-noble learners to pick up."
 	speech_verb = list("mrowls")
-	ask_verb = list("mrowls")
+	ask_verb = list("murrs")
 	exclaim_verb = list("yowls")
-	sing_verb = list("mrowls")
+	sing_verb = list("purrs")
 	colour = "yassa"
 	written_style = "yassa"
 	key = "r"
@@ -157,14 +143,16 @@
 	partial_understanding = list(LANGUAGE_SIIK_MAAS = 50)
 	allow_accents = TRUE
 
-/datum/language/delvahhi //NEEDS CHANGE
+/datum/language/delvahhi
 	name = LANGUAGE_DELVAHII
 	short = "DEL"
-	desc = "A dialect developed by the Zhan-Khazan communities, commonly used in religious ceremonies dedicated to the Snow God and amongst settlements comprised mostly of Zhan-Khazan."
+	desc = "The language that is seen today is an incredibly confusing mish-mash of Siik'maas, Y'assa and various other ancient dead languages put together by Wisemen, \
+	Writers and multiple other intellectuals in a bid to speed up and streamline speech to its maximum degree by removing unnecessary words and phrases and replacing them with to the point, information packed words. \
+	This has resulted in a language that is completely foreign to any Adhomian's not being brought up with the language, despite the fact almost seventy percent of the language is made of Siik'maas and Y'assa. "
 	speech_verb = list("mrowls")
-	ask_verb = list("mrowls")
-	exclaim_verb = list("yowls")
-	sing_verb = list("mrowls")
+	ask_verb = list("murrs")
+	exclaim_verb = list("yowls deeply")
+	sing_verb = list("purrs deeply")
 	colour = "delvahhi"
 	written_style = "delvahhi"
 	key = "n"
@@ -176,19 +164,19 @@
 	partial_understanding = list(LANGUAGE_SIIK_MAAS = 50)
 	allow_accents = TRUE
 
-/datum/language/skrell //NEEDS CHANGE...?
-	name = LANGUAGE_SKRELLIAN
+/datum/language/skrell
+	name = LANGUAGE_TUQ
 	short = "NRAL"
-	desc = "A melodic and complex language spoken by the Skrell of Qerrbalak. Some of the notes are inaudible to humans."
+	desc = "A deep, melodic and complex language spoken across Skrellian space."
 	speech_verb = list("warbles")
 	ask_verb = list("warbles")
-	exclaim_verb = list("warbles")
+	exclaim_verb = list("chirps")
 	sing_verb = list("warbles")
 	colour = "skrell"
 	written_style = "nralmalic"
 	key = "k"
 	flags = WHITELISTED|TCOMSSIM
-	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!")
+	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix")
 	allow_accents = TRUE
 
 /datum/language/skrell/get_random_name()

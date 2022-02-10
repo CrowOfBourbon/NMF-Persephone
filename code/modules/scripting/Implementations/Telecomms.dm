@@ -74,7 +74,7 @@
 		interpreter.SetVar("L_MHOSTUM",  LANGUAGE_MHOSTUM)
 		interpreter.SetVar("L_ANGLIKIRTAN",  LANGUAGE_ANGLIKIRTAN)
 		interpreter.SetVar("L_YZALTUM",  LANGUAGE_YZALTUM)
-		interpreter.SetVar("L_SKRELL",  LANGUAGE_SKRELLIAN)
+		interpreter.SetVar("L_SKRELL",  LANGUAGE_TUQ)
 		interpreter.SetVar("L_VAURCA",  LANGUAGE_VAURCA)
 		interpreter.SetVar("L_MACHINE", LANGUAGE_EAL)
 

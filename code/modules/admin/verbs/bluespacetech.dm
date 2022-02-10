@@ -105,7 +105,7 @@
 	bst.add_language(LANGUAGE_SIIK_TAJR)
 	bst.add_language(LANGUAGE_SIGN_TAJARA)
 	// Other station species' languages
-	bst.add_language(LANGUAGE_SKRELLIAN)
+	bst.add_language(LANGUAGE_TUQ)
 	bst.add_language(LANGUAGE_NEW_MANDARIN)
 	bst.add_language(LANGUAGE_ROOTSONG)
 	bst.add_language(LANGUAGE_VAURCA)
