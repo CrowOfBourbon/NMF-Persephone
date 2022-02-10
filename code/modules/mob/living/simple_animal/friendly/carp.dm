@@ -150,6 +150,31 @@
 	.=..()
 	desc = "WHO KILLED GINNY?!"
 
+/mob/living/simple_animal/carp/fluff/royal
+	name = "Royal"
+	desc = "It looks like someone took a Space Carp.. Domesticated it and.. painted it red?"
+	icon = 'icons/mob/npc/pets.dmi'
+	icon_state = "royal"
+	item_state = "royal"
+	icon_living = "royal"
+	icon_dead = "royal_dead"
+	icon_rest = "royal_rest"
+	icon_gib = "royal_gib"
+
+	gender = FEMALE
+
+	emote_see = list("floats steadily", "inflates her gills", "gnashes its teeth")
+
+	can_nap = TRUE
+	mob_size = 3.5
+
+	befriend_job = "Chief Engineer"
+	holder_type = /obj/item/holder/carp/baby
+
+/mob/living/simple_animal/carp/fluff/royal/death()
+	.=..()
+	desc = "What a Royal load of Sh**"
+
 /mob/living/simple_animal/carp/baby
 	name = "baby space carp"
 	desc = "Awfully cute! Looks friendly!"
