@@ -21,7 +21,7 @@
 	new /obj/item/device/radio/headset/heads/captain(src)
 	new /obj/item/device/radio/headset/heads/captain/alt(src)
 	new /obj/item/device/megaphone/command(src)
-	new /obj/item/gun/energy/disruptorpistol(src)
+	new /obj/item/gun/energy/pistol(src)
 	new /obj/item/device/flash(src)
 	new /obj/item/melee/telebaton(src)
 	// uniform briefcases
@@ -82,7 +82,7 @@
 	new /obj/item/device/radio/headset/heads/hop/alt(src)
 	new /obj/item/device/megaphone/command(src)
 	new /obj/item/storage/box/goldstar(src)
-	new /obj/item/gun/energy/disruptorpistol(src)
+	new /obj/item/gun/energy/pistol(src)
 	new /obj/item/gun/projectile/sec/flash(src)
 	new /obj/item/device/flash(src)
 
@@ -152,7 +152,7 @@
 	new /obj/item/shield/riot/tact(src)
 	new /obj/item/melee/baton/loaded(src)
 	new /obj/item/melee/telebaton(src)
-	new /obj/item/gun/energy/disruptorpistol(src)
+	new /obj/item/gun/energy/pistol(src)
 	new /obj/item/taperoll/police(src)
 	new /obj/item/device/flash(src)
 	new /obj/item/device/holowarrant(src)
@@ -238,14 +238,13 @@
 	new /obj/item/taperoll/police(src)
 	new /obj/item/reagent_containers/spray/pepper(src)
 	new /obj/item/melee/baton/loaded(src)
-	new /obj/item/gun/energy/disruptorpistol(src)
+	new /obj/item/gun/energy/pistol(src)
 	new /obj/item/handcuffs(src)
 	new /obj/item/device/holowarrant(src)
 	//Belts
 	new /obj/item/clothing/accessory/storage/black_vest(src)
 	new /obj/item/clothing/accessory/holster/waist(src)
 	new /obj/item/storage/belt/security(src)
-
 
 /obj/structure/closet/secure_closet/security_cadet
 	name = "security cadet's locker"
