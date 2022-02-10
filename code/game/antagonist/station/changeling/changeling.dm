@@ -4,9 +4,9 @@
 	role_text_plural = "Changelings"
 	bantype = "changeling"
 	feedback_tag = "changeling_objective"
-	restricted_jobs = list("AI", "Cyborg", "Head of Security", "Captain", "Chief Engineer", "Research Director", "Chief Medical Officer", "Head of Personnel")
+	restricted_jobs = list("AI", "Cyborg", "Head of Security", "Captain", "Head of Personnel")
 
-	protected_jobs = list("Security Officer", "Security Cadet", "Warden", "Investigator")
+	protected_jobs = list()
 	restricted_species = list(
 		SPECIES_IPC,
 		SPECIES_IPC_SHELL,
