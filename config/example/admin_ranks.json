@@ -7,7 +7,7 @@
         ]
     },
     {
-        "role_id": 18, //unused at this time
+        "role_id": 18,
         "name": "Primary Administrator",
         "auths": [
             "R_BUILDMODE", "R_ADMIN", "R_BAN", "R_FUN", "R_STEALTH", "R_SERVER",
