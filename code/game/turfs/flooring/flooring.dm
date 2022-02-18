@@ -59,6 +59,15 @@
 	build_type = null
 	footstep_sound = /decl/sound_category/asteroid_footstep
 
+/decl/flooring/snow
+	name = "snow"
+	desc = "Cold and wet."
+	icon = 'icons/turf/snow.dmi'
+	icon_base = "snowwhite"
+	flags = TURF_HAS_EDGES | TURF_REMOVE_SHOVEL
+	build_type = null
+	footstep_sound = /decl/sound_category/snow_footstep
+
 /decl/flooring/carpet
 	name = "carpet"
 	desc = "Imported and comfy."
