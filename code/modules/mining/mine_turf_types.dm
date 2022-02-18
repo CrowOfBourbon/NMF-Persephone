@@ -117,7 +117,7 @@
 	name = "Snow"
 	icon_state = "snow"
 	smooth = SMOOTH_MORE | SMOOTH_BORDER | SMOOTH_NO_CLEAR_ICON
-	footstep_sound = /decl/sound_category/sand_footstep
+	footstep_sound = /decl/sound_category/snow_footstep
 	does_footprint = TRUE
 	base_icon_state = "snow"
 	footprint_color = COLOR_ASH
