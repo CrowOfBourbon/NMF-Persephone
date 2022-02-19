@@ -542,3 +542,54 @@ var/const/enterloopsanity = 100
 		return 15
 	else
 		return 0
+
+/turf/proc/dig_for_ore(var/probability = 25)
+	if(prob(probability) && has_resources)
+		var/list/material_list = list()
+		for(var/material in resources)
+			if(resources[material]) // check if the turf contains this resource
+				material_list += material
+		if(length(material_list))
+			var/chosen_material = pick(material_list)
+			resources[chosen_material]-- // reduce the amount of resources in the turf
+			var/ore_path = get_ore_from_material(chosen_material)
+			return new ore_path(src)
+	return null
+
+/turf/proc/get_ore_from_material(var/material)
+	switch(material)
+		if("silicates")
+			return /obj/item/ore/glass
+		if("carbonaceous rock")
+			return /obj/item/ore/coal
+		if("iron")
+			return /obj/item/ore/iron
+		if("gold")
+			return /obj/item/ore/gold
+		if("silver")
+			return /obj/item/ore/silver
+		if("diamond")
+			return /obj/item/ore/diamond
+		if("uranium")
+			return /obj/item/ore/uranium
+		if("phoron")
+			return /obj/item/ore/phoron
+		if("osmium")
+			return /obj/item/ore/osmium
+		if("hydrogen")
+			return /obj/item/ore/hydrogen
+		else
+			if(prob(25))
+				switch(rand(1,5))
+					if(1)
+						return /obj/random/junk
+					if(2)
+						return /obj/random/powercell
+					if(3)
+						return /obj/random/coin
+					if(4)
+						return /obj/random/loot
+					if(5)
+						return /obj/item/ore/glass
+			else
+				return /obj/item/ore/glass

@@ -18,14 +18,14 @@
 	accessible_z_levels = list("2" = 60, "6" = 20, "7" = 20)
 	meteor_levels = list(6)
 	base_turf_by_z = list(
-		"1" = /turf/space,
-		"2" = /turf/space,
-		"3" = /turf/simulated/floor/tiled/asteroid,
-		"4" = /turf/simulated/floor/tiled/asteroid,
-		"5" = /turf/simulated/floor/tiled/asteroid,
-		"6" = /turf/simulated/floor/tiled/asteroid,
-		"7" = /turf/space,
-		"8" = /turf/space
+		"1" = /turf/simulated/floor/snow/base,
+		"2" = /turf/simulated/floor/snow/base,
+		"3" = /turf/simulated/floor/snow/base,
+		"4" = /turf/simulated/floor/snow/base,
+		"5" = /turf/simulated/floor/snow/base,
+		"6" = /turf/simulated/floor/snow/base,
+		"7" = /turf/simulated/floor/snow/base,
+		"8" = /turf/simulated/floor/snow/base
 	)
 
 	station_name = "NMF Persephone"
