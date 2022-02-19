@@ -38,7 +38,7 @@ var/list/mineral_can_smooth_with = list(
 	density = TRUE
 	blocks_air = TRUE
 	temperature = T0C
-	var/mined_turf = /turf/unsimulated/floor/asteroid/ash/rocky,
+	var/mined_turf = /turf/unsimulated/floor/asteroid/ash/rocky
 	var/ore/mineral
 	var/mined_ore = 0
 	var/last_act = 0
@@ -756,49 +756,7 @@ var/list/asteroid_floor_smooth = list(
 
 	if(prob(75))
 		new /obj/item/ore/glass(src)
-	if(prob(25) && has_resources)
-		var/list/ore = list()
-		for(var/metal in resources)
-			switch(metal)
-				if("silicates")
-					ore += /obj/item/ore/glass
-				if("carbonaceous rock")
-					ore += /obj/item/ore/coal
-				if("iron")
-					ore += /obj/item/ore/iron
-				if("gold")
-					ore += /obj/item/ore/gold
-				if("silver")
-					ore += /obj/item/ore/silver
-				if("diamond")
-					ore += /obj/item/ore/diamond
-				if("uranium")
-					ore += /obj/item/ore/uranium
-				if("phoron")
-					ore += /obj/item/ore/phoron
-				if("osmium")
-					ore += /obj/item/ore/osmium
-				if("hydrogen")
-					ore += /obj/item/ore/hydrogen
-				else
-					if(prob(25))
-						switch(rand(1,5))
-							if(1)
-								ore += /obj/random/junk
-							if(2)
-								ore += /obj/random/powercell
-							if(3)
-								ore += /obj/random/coin
-							if(4)
-								ore += /obj/random/loot
-							if(5)
-								ore += /obj/item/ore/glass
-					else
-						ore += /obj/item/ore/glass
-		if(length(ore))
-			var/ore_path = pick(ore)
-			if(ore)
-				new ore_path(src)
+	dig_for_ore()
 
 	if(dug <= 10)
 		dug += 1
