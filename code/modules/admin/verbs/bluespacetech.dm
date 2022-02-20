@@ -102,7 +102,6 @@
 	bst.add_language(LANGUAGE_ANGLIKIRTAN)
 	// Tajara languages
 	bst.add_language(LANGUAGE_SIIK_MAAS)
-	bst.add_language(LANGUAGE_SIIK_TAJR)
 	bst.add_language(LANGUAGE_SIGN_TAJARA)
 	// Other station species' languages
 	bst.add_language(LANGUAGE_TUQ)

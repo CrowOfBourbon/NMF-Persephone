@@ -51,7 +51,7 @@
 	ask_verb = list("hisses")
 	exclaim_verb = list("roars")
 	sing_verb = list("hisses melodically")
-	colour = "soghun_alt" 
+	colour = "unathi1" 
 	allow_accents = TRUE
 	written_style = "sintaazaziba"
 	key = "p"
@@ -68,7 +68,7 @@
 	ask_verb = list("questions")
 	exclaim_verb = list("barks")
 	sing_verb = list("hisses")
-	colour = "soghun_alt" 
+	colour = "unathi2" 
 	allow_accents = TRUE
 	// REMEMBER TO ADD WRITTEN LNAGUAGE LATER
 	key = "l"
@@ -95,7 +95,7 @@
 	"mi","jri","dynh","manq","rhe","zar","rrhaz","kal","chur","eech","thaa","dra","jurl","mah","sanu","dra","ii'r",
 	"ka","aasi","far","wa","baq","ara","qara","zir","sam","mak","hrar","nja","rir","khan","jun","dar","rik","kah",
 	"hal","ket","jurl","mah","tul","cresh","azu","ragh","mro","mra","mrro","mrra")
-	partial_understanding = list(LANGUAGE_SIIK_TAJR = 50, LANGUAGE_YA_SSA = 25, LANGUAGE_DELVAHII = 50)
+	partial_understanding = list(LANGUAGE_YA_SSA = 25, LANGUAGE_DELVAHII = 50)
 	allow_accents = TRUE
 
 /datum/language/tajaran/get_random_name(var/gender)
@@ -119,7 +119,6 @@
 	colour = "i"
 	key = "i"
 	flags = NO_STUTTER | SIGNLANG | WHITELISTED
-	partial_understanding = list(LANGUAGE_SIIK_TAJR = 50)
 
 /datum/language/yassa
 	name = LANGUAGE_YA_SSA
@@ -214,7 +213,7 @@
 	log_say("[key_name(speaker)] : ([name]) [message]",ckey=key_name(speaker))
 
 	if(!speaker_mask)
-		speaker_mask = speaker.name
+		speaker_mask = speaker.real_name
 
 	var/msg = "<i><span class='game say'>[name], <span class='name'>[speaker_mask]</span>[format_message(message, get_spoken_verb(message))]</span></i>"
 
@@ -230,6 +229,20 @@
 	for(var/mob/player in player_list)
 		if(istype(player,/mob/abstract/observer) || ((src in player.languages && !within_jamming_range(player)) || check_special_condition(player)))
 			to_chat(player, msg)
+
+/datum/language/bug/format_message(message, verb, speaker_mask)
+	var/message_color = colour
+	var/list/speaker_surname = splittext(speaker_mask, " ")
+	switch(speaker_surname[2])
+		if("Xal")
+			message_color = "vaurca_xal"
+		if("Tila")
+			message_color = "vaurca_til"
+		if("Kix")
+			message_color = "vaurca_unkn"
+	if(copytext(message, 1, 2) == "!")
+		return " projects <span class='message'><span class='[message_color]'>[copytext(message, 2)]</span></span>"
+	return "[verb], <span class='message'><span class='[message_color]'>\"[capitalize(message)]\"</span></span>"
 
 /datum/language/bug_sign
 	name = LANGUAGE_VAURCA_SIGN

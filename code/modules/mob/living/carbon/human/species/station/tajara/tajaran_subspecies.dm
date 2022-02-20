@@ -9,7 +9,7 @@
 	from their fellow Tajara who cite their lackluster test scores, even among Tajara, and their higher \
 	crime rates."
 
-	secondary_langs = list(LANGUAGE_SIIK_MAAS, LANGUAGE_SIIK_TAJR, LANGUAGE_DELVAHII)
+	secondary_langs = list(LANGUAGE_SIIK_MAAS, LANGUAGE_DELVAHII)
 
 	slowdown = -0.8 //As opposed to -1 for Base tajara
 	sprint_speed_factor = 0.55 // As opposed to 0.65
@@ -65,7 +65,7 @@
 
 	default_h_style = "M'sai Ears"
 
-	secondary_langs = list(LANGUAGE_SIIK_MAAS, LANGUAGE_SIIK_TAJR, LANGUAGE_SIGN_TAJARA)
+	secondary_langs = list(LANGUAGE_SIIK_MAAS, LANGUAGE_SIGN_TAJARA)
 	allowed_accents = list(ACCENT_REPUBICLANSIIK, ACCENT_NAZIRASIIK, ACCENT_CREVAN, ACCENT_DASNRRASIIK, ACCENT_HIGHHARRSIIK, ACCENT_LOWHARRSIIK, ACCENT_AMOHDASIIK, ACCENT_NORTHRASNRR, ACCENT_DINAKK, ACCENT_HARRNRRI, ACCENT_ZARRJIRI)
 
 	max_nutrition_factor = 1.2
