@@ -3,7 +3,7 @@
 	full_name = "NMF Persephone"
 	description = "You're working on the <b>NMF Persephone</b>, a state-of-the-art facility specializing in phoron acquisition and scientific discoveries. \
 				   It is staffed by Nanotrasen personnel that live in the nearby Keep on the planet Hades.. \
-				   Orbiting at the very edge of the Kepler system, \
+				   Orbiting at the very edge of the Cerberus system, \
 				   it is under the joint administration of Hades and the trans-stellar corporation NanoTrasen."
 	path = "aurora"
 
@@ -38,7 +38,7 @@
 	company_short = "NT"
 
 	command_spawn_enabled = TRUE
-	command_spawn_message = "Welcome to the Demeter! Simply proceed down and to the right to board the shuttle to your workplace!"
+	command_spawn_message = "Welcome to the Persephone! NanoTrasen is glad you're here."
 
 	station_networks = list(
 		NETWORK_CIVILIAN_MAIN,
@@ -71,9 +71,6 @@
 	evac_controller_type = /datum/evacuation_controller/shuttle
 
 	map_shuttles = list(
-		/datum/shuttle/autodock/ferry/escape_pod/pod/escape_pod1,
-		/datum/shuttle/autodock/ferry/escape_pod/pod/escape_pod2,
-		/datum/shuttle/autodock/ferry/escape_pod/pod/escape_pod3,
 		/datum/shuttle/autodock/ferry/emergency/aurora,
 		/datum/shuttle/autodock/ferry/arrival/aurora,
 		/datum/shuttle/autodock/ferry/supply/aurora,

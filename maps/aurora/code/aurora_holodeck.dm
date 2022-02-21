@@ -50,23 +50,7 @@
 		"courtroom" = new /datum/holodeck_program(/area/holodeck/source_courtroom,
 			list('sound/music/traitor.ogg')
 		),
-		"burntest" = new /datum/holodeck_program(/area/holodeck/source_burntest, list()),
-		"wildlifecarp" = new /datum/holodeck_program(/area/holodeck/source_wildlife, list()),
-		"chapel" = new /datum/holodeck_program(/area/holodeck/source_chapel,
-			list(
-				'sound/ambience/chapel/chapel1.ogg',
-				'sound/ambience/chapel/chapel2.ogg',
-				'sound/ambience/chapel/chapel3.ogg',
-				'sound/ambience/chapel/chapel4.ogg'
-			)
-		),
 		"gym" = new /datum/holodeck_program(/area/holodeck/source_gym),
-		"battlemonsters" = new /datum/holodeck_program(/area/holodeck/source_battlemonsters,
-			list(
-				'sound/music/battlemonsters_theme.ogg'
-			),
-			FALSE
-		),
 		"turnoff" = new /datum/holodeck_program(/area/holodeck/source_plating)
 	)
 
@@ -84,9 +68,7 @@
 		"Theatre"           = "theatre",
 		"Meeting Hall"      = "meetinghall",
 		"Courtroom"         = "courtroom",
-		"Chapel"            = "chapel",
-		"Xavier Trasen Memorial Gymnasium" = "gym",
-		"Battle Monsters Duelling Arena" = "battlemonsters"
+		"Gymnasium"         = "gym",
 	)
 	holodeck_restricted_programs = list(
 		"Atmospheric Burn Simulation" = "burntest",
