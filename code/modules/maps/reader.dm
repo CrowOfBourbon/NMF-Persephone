@@ -316,7 +316,7 @@ var/global/dmm_suite/preloader/_preloader = new
 	if(T)
 		index = first_turf_index + 1
 		while(index <= members.len - 1) // Last item is an /area
-			crash_with("Tried to load additional turf at [model_key].")
+			crash_with("Tried to load additional turf at [model_key] ([T.x]-[T.y]-[T.z]).")
 			index++
 
 	//finally instance all remainings objects/mobs
