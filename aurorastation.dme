@@ -1212,6 +1212,8 @@
 #include "code\game\turfs\simulated\wall_types.dm"
 #include "code\game\turfs\simulated\walls.dm"
 #include "code\game\turfs\simulated\water.dm"
+#include "code\game\turfs\simulated\outside\snow.dm"
+#include "code\game\turfs\snow\snow.dm"
 #include "code\game\turfs\space\space.dm"
 #include "code\game\turfs\space\transit.dm"
 #include "code\game\turfs\unsimulated\beach.dm"

@@ -11,7 +11,7 @@
 
 /obj/machinery/mining/drill
 	name = "mining drill head"
-	desc = "A large industrial drill. Its bore does not penetrate deep enough to access the sublevels."
+	desc = "A large industrial drill. Its bore does not penetrate deep enough to dig through the permafrost."
 	desc_info = "You can upgrade this machine with better matter bins, capacitors, micro lasers, and power cells. You can also attach a mining satchel that has a warp pack and a linked ore box to it, to bluespace teleport any mined ore directly into the linked ore box."
 	icon_state = "mining_drill"
 	var/braces_needed = 2
@@ -99,7 +99,7 @@
 	else if(istype(get_turf(src), /turf/simulated/floor))
 		var/turf/simulated/floor/T = get_turf(src)
 		var/turf/below_turf = GetBelow(T)
-		if(!istype(below_turf.loc, /area/mine) && !istype(below_turf.loc, /area/template_noop))
+		if(below_turf && !istype(below_turf.loc, /area/mine) && !istype(below_turf.loc, /area/template_noop))
 			system_error("Potential station breach below.")
 			return
 		T.ex_act(2.0)
@@ -109,7 +109,7 @@
 		var/turf/harvesting = pick(resource_field)
 
 		while(length(resource_field) && !harvesting.resources)
-			harvesting.has_resources = FALSE
+			harvesting.has_resources = TRUE
 			harvesting.resources = null
 			resource_field -= harvesting
 			if(length(resource_field))
@@ -507,7 +507,7 @@
 
 	if(W.iswrench())
 		if(istype(get_turf(src), /turf/space))
-			to_chat(user, SPAN_NOTICE("You send \the [src] careening into space. Idiot."))
+			to_chat(user, SPAN_NOTICE("You send \the [src] careening away from you. Idiot."))
 			var/inertia = rand(10, 30)
 			for(var/i in 1 to inertia)
 				step_away(src, user, 15, 8)

@@ -276,13 +276,53 @@
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
 	footstep_sound = /decl/sound_category/snow_footstep
+	has_resources = TRUE
 	does_footprint = TRUE
 	footprint_color = COLOR_SNOW
 	track_distance = 4
+	temperature = TM200C
+
+	var/digging = FALSE
 
 /turf/simulated/floor/snow/Initialize()
 	. = ..()
 	icon_state = pick("snow[rand(1,12)]","snow0")
+
+/turf/simulated/floor/snow/attackby(obj/item/C, mob/user)
+	var/static/list/usable_tools = typecacheof(list(
+		/obj/item/shovel,
+		/obj/item/pickaxe/diamonddrill,
+		/obj/item/pickaxe/drill,
+		/obj/item/pickaxe/borgdrill
+	))
+
+	if(is_type_in_typecache(C, usable_tools))
+		if(digging)
+			to_chat(user, SPAN_WARNING("Someone's already digging here!"))
+			return
+		digging = TRUE
+
+		playsound(get_turf(user), 'sound/effects/stonedoor_openclose.ogg', 50, TRUE)
+		if(!do_after(user, 40 / C.toolspeed))
+			digging = FALSE
+			return
+
+		playsound(get_turf(user), 'sound/effects/stonedoor_openclose.ogg', 50, TRUE)
+
+		var/obj/item/ore/O = dig_for_ore(100)
+		to_chat(user, O ? SPAN_NOTICE("You dig up <b>[O.name]</b>.") : SPAN_WARNING("There isn't anything to dig up here!"))
+
+		digging = FALSE
+
+		return
+
+	return ..()
+
+/turf/simulated/floor/snow/ex_act(severity)
+	return
+
+/turf/simulated/floor/snow/base
+	temperature = T0C // a cold, but not super cold turf, so a break in the floor doesn't deep freeze the site
 
 /turf/simulated/floor/plating/snow
 	icon = 'icons/turf/snow.dmi'
@@ -291,7 +331,6 @@
 
 /turf/simulated/floor/airless/ceiling
 	icon_state = "asteroidplating"
-	baseturf = /turf/space
 
 /turf/simulated/floor/light
 

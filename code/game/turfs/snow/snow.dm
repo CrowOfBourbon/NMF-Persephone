@@ -1,7 +1,7 @@
 /turf/snow
     name = "snow"
 
-    dynamic_lighting = 1
+    dynamic_lighting = 2
     icon = 'icons/turf/snow.dmi'
     icon_state = "snow"
 

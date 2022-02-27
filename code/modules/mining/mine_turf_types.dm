@@ -112,3 +112,14 @@
 	base_icon_state = "rockyash"
 	base_icon = 'icons/turf/smooth/rocky_ash.dmi'
 	desc = "A fine grey ash. Seems to contain medium-sized rocks."
+
+/turf/simulated/floor/outdoors/snow
+	name = "Snow"
+	icon_state = "snow"
+	smooth = SMOOTH_MORE | SMOOTH_BORDER | SMOOTH_NO_CLEAR_ICON
+	footstep_sound = /decl/sound_category/snow_footstep
+	does_footprint = TRUE
+	base_icon_state = "snow"
+	footprint_color = COLOR_ASH
+	base_icon = 'icons/turf/snow.dmi'
+	desc = "A thick layer of perma-frost and snow. Seems to contain medium-sized rocks."
