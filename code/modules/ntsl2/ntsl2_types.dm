@@ -96,7 +96,7 @@
 				if(istype(sig))
 					var/datum/language/L = all_languages[S["language"]]
 					if(!L || !(L.flags & TCOMSSIM))
-						L = all_languages[LANGUAGE_TCB]
+						L = all_languages[LANGUAGE_ENGLISH]
 					sig.data["message"] = S["content"]
 					sig.frequency = S["freq"] || PUB_FREQ
 					sig.data["name"] = html_encode(S["source"])

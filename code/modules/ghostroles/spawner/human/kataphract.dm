@@ -20,7 +20,7 @@
 	assigned_role = "Kataphract-Hopeful"
 	special_role = "Kataphract-Hopeful"
 	respawn_flag = null
-	extra_languages = list(LANGUAGE_UNATHI, LANGUAGE_AZAZIBA)
+	extra_languages = list(LANGUAGE_MHOSTUM)
 	away_site = TRUE
 
 /datum/ghostspawner/human/kataphract/klax
@@ -132,10 +132,6 @@
 		H.w_uniform.color = uniform_colour
 	if(H?.shoes)
 		H.shoes.color = uniform_colour
-
-	var/obj/item/organ/A = new /obj/item/organ/internal/augment/language/klax(H)
-	var/obj/item/organ/external/affected = H.get_organ(A.parent_organ)
-	A.replaced(H, affected)
 	H.update_body()
 
 /datum/outfit/admin/kataphract/knight

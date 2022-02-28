@@ -109,7 +109,7 @@
 	key = "c"
 	syllables = list("grhhg", "ghrohg", "grgugh", "grrhh", "hghh", "rghghh", "gghhh", "ggrh", "aghrh")
 	flags = RESTRICTED
-	partial_understanding = list(LANGUAGE_TCB = 80)
+	partial_understanding = list(LANGUAGE_ENGLISH = 80)
 	always_parse_language = TRUE
 
 /datum/language/revenant/hivemind

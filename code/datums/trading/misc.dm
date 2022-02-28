@@ -1,6 +1,6 @@
 /datum/trader/pet_shop
 	name = "Pet Shop Owner"
-	name_language = LANGUAGE_SKRELLIAN
+	name_language = LANGUAGE_TUQ
 	origin = "Pet Shop"
 	trade_flags = TRADER_GOODS|TRADER_MONEY|TRADER_WANTED_ONLY
 	possible_origins = list("Paws-Out", "Pets-R-Smart", "Tentacle Companions", "Xeno-Pets and Assorted Goods", "Barks and Drools")
@@ -164,7 +164,7 @@
 
 /datum/trader/ship/hardsuit
 	name = "Azazi Guild Seller"
-	name_language = LANGUAGE_UNATHI
+	name_language = LANGUAGE_MHOSTUM
 	origin = "Azazi Bulk Supply Guild"
 	possible_trading_items = list(
 		/obj/item/rig/unathi                    = TRADER_ALL,

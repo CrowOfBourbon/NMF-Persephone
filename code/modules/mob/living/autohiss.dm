@@ -44,8 +44,9 @@
 			"x" = list("ks", "kss", "ksss")
 		)
 	autohiss_exempt = list(
-			LANGUAGE_UNATHI,
-			LANGUAGE_AZAZIBA
+			LANGUAGE_MHOSTUM,
+			LANGUAGE_ANGLIKIRTAN,
+			LANGUAGE_YZALTUM
 		)
 
 /datum/species/tajaran
@@ -54,7 +55,6 @@
 		)
 	autohiss_exempt = list(
 			LANGUAGE_SIIK_MAAS,
-			LANGUAGE_SIIK_TAJR,
 			LANGUAGE_SIGN_TAJARA,
 			LANGUAGE_YA_SSA,
 			LANGUAGE_DELVAHII
@@ -71,7 +71,7 @@
 			"ci" = list("z", "zz"),
 			"v" = list("vv", "vvv")
 		)
-	autohiss_exempt = list(LANGUAGE_VAURCA)
+	autohiss_exempt = list(LANGUAGE_VAURCA, LANGUAGE_VAURCA_SIGN)
 
 /datum/species/bug/type_b
 	autohiss_basic_map = list(
@@ -84,7 +84,7 @@
 			"ci" = list("z", "zz"),
 			"v" = list("vv", "vvv")
 		)
-	autohiss_exempt = list(LANGUAGE_VAURCA)
+	autohiss_exempt = list(LANGUAGE_VAURCA, LANGUAGE_VAURCA_SIGN)
 
 /datum/species/diona
 

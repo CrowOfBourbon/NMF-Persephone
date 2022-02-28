@@ -55,11 +55,11 @@
 		job = "?"
 
 	if(!language || language == "")
-		language = LANGUAGE_TCB
+		language = LANGUAGE_ENGLISH
 
 	var/datum/language/L = all_languages[language]
 	if(!L || !(L.flags & TCOMSSIM))
-		L = all_languages[LANGUAGE_TCB]
+		L = all_languages[LANGUAGE_ENGLISH]
 
 	newsign.data["mob"] = null
 	newsign.data["mobtype"] = /mob/living/carbon/human

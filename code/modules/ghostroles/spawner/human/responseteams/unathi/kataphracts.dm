@@ -8,7 +8,7 @@
 	mob_name_prefix = "Zosaa "
 	uses_species_whitelist = FALSE // Anyone should be able to play a Kataphract Unathi
 	possible_species = list(SPECIES_UNATHI)
-	extra_languages = list(LANGUAGE_UNATHI, LANGUAGE_AZAZIBA)
+	extra_languages = list(LANGUAGE_MHOSTUM)
 
 /datum/ghostspawner/human/ert/kataphract/klax
 	name = "Kataphract-Hopeful Klaxan"

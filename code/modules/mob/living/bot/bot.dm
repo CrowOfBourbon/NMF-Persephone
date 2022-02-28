@@ -29,8 +29,8 @@
 /mob/living/bot/Initialize()
 	. = ..()
 	update_icon()
-	add_language(LANGUAGE_TCB)
-	set_default_language(all_languages[LANGUAGE_TCB])
+	add_language(LANGUAGE_ENGLISH)
+	set_default_language(all_languages[LANGUAGE_ENGLISH])
 
 	botcard = new /obj/item/card/id(src)
 	botcard.access = botcard_access.Copy()
