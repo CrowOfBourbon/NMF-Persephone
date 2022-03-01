@@ -49,7 +49,7 @@
 		return FALSE
 
 	if(!at_station())
-		global_announcer.autosay("Central Command Arrivals shuttle inbound to [station_name()]. ETA: one minute.", "Arrivals Shuttle Oversight")
+		global_announcer.autosay("Star Command Arrivals shuttle inbound to [station_name()]. ETA: one minute.", "Arrivals Shuttle Oversight")
 	SSarrivals.failreturnnumber = 0
 	launch(SSarrivals)
 

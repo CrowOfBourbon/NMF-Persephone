@@ -50,8 +50,8 @@ var/list/weighted_mundaneevent_locations = list()
 	viable_random_events = list(SECURITY_BREACH, AI_LIBERATION, PIRATES)
 
 /datum/trade_destination/redolant
-	name = "ZAV Lightning"
-	description = "Zeus Atmospherics Station in orbit around the only gas giant insystem. They retain tight control over shipping rights, and Zeus warships protecting their prize are not an uncommon sight in Kepler."
+	name = "DCS Lightning"
+	description = "Dinoysus Conglomerate is in orbit around the only gas giant insystem. They retain tight control over shipping rights, and D.C Patrol Vessels protecting their prize are not an uncommon sight in Cerberus."
 	distance = 0.6
 	willing_to_buy = list()
 	willing_to_sell = list()
@@ -60,7 +60,7 @@ var/list/weighted_mundaneevent_locations = list()
 
 /datum/trade_destination/redolant/get_custom_eventstring(var/event_type)
 	if(event_type == RESEARCH_BREAKTHROUGH)
-		return "Thanks to research conducted on the ZAV Lightning, Zeus Atmospherics wishes to announce a major breakthough in the field of \
+		return "Thanks to research conducted on at Ascher Industries, Ascher wishes to announce a major breakthough in the field of \
 		[pick("phoron research","high energy flux capacitance","super-compressed materials","theoretical particle physics")]. [current_map.company_name] is expected to announce a co-exploitation deal within the fortnight."
 	return null
 
@@ -75,7 +75,7 @@ var/list/weighted_mundaneevent_locations = list()
 
 /datum/trade_destination/biesel
 	name = "Hades"
-	description = "Large ship yards, strong economy and a stable, well-educated populace, Biesel largely owes allegiance to Nanotrasen / Vessel Contracting and begrudgingly tolerates NT. Capital is Keep."
+	description = "A frozen tundra with rich resources, Hades largely owes allegiance to Nanotrasen / Vessel Contracting and begrudgingly tolerates NT. Capital is Keep."
 	distance = 2.3
 	willing_to_buy = list()
 	willing_to_sell = list()
@@ -83,16 +83,16 @@ var/list/weighted_mundaneevent_locations = list()
 	viable_mundane_events = list(BARGAINS, GOSSIP, SONG_DEBUT, MOVIE_RELEASE, ELECTION, TOURISM, RESIGNATION, CELEBRITY_DEATH)
 
 /datum/trade_destination/new_gibson
-	name = "New Gibson"
-	description = "Heavily industrialised rocky planet containing the majority of the planet-bound resources in the system, New Gibson is torn by unrest and has very little wealth to call it's own except in the hands of the corporations who jostle with NT for control."
+	name = "Rhea"
+	description = "Considered the Second Earth, Rhea is a lush planet with a stable economy and a prospering population."
 	distance = 6.6
 	willing_to_buy = list()
 	willing_to_sell = list()
 	viable_random_events = list(RIOTS, INDUSTRIAL_ACCIDENT, BIOHAZARD_OUTBREAK, CULT_CELL_REVEALED, FESTIVAL, MOURNING)
 	viable_mundane_events = list(ELECTION, TOURISM, RESIGNATION)
 
-/datum/trade_destination/luthien
-	name = "Luthien"
+//datum/trade_destination/luthien
+	name = "Hera"
 	description = "A small colony established on a feral, untamed world (largely jungle). Savages and wild beasts attack the outpost regularly, although NT maintains tight military control."
 	distance = 8.9
 	willing_to_buy = list()
@@ -100,7 +100,7 @@ var/list/weighted_mundaneevent_locations = list()
 	viable_random_events = list(WILD_ANIMAL_ATTACK, CULT_CELL_REVEALED, FESTIVAL, MOURNING, ANIMAL_RIGHTS_RAID, ALIEN_RAIDERS)
 	viable_mundane_events = list(ELECTION, TOURISM, BIG_GAME_HUNTERS, RESIGNATION)
 
-/datum/trade_destination/reade
+//datum/trade_destination/reade
 	name = "Reade"
 	description = "A cold, metal-deficient world, NT maintains large pastures in whatever available space in an attempt to salvage something from this profitless colony."
 	distance = 7.5

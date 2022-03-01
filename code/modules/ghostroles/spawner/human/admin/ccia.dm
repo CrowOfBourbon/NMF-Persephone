@@ -26,7 +26,7 @@
 
 	assigned_role = "CCIA Agent"
 	special_role = "CCIA Agent"
-	
+
 	mob_name_pick_message = "Pick a name."
 
 
@@ -126,7 +126,7 @@
 /datum/ghostspawner/human/admin/ert_commander
 	short_name = "ertcommander"
 	name = "ERT Commander"
-	desc = "Command the response team from Central Command"
+	desc = "Command the response team from Star Command"
 
 	tags = list("CCIA")
 	landmark_name = "ERTCommander"

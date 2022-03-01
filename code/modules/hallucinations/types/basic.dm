@@ -60,7 +60,7 @@
                         "Please avoid [pick("medical", "security", "the bar", "engineering", "cargo")] at this time due to [pick("a k'ois outbreak.", "a hostage situation.", "hostile boarders.", "[holder].")]",
 						"Due to various complaints about [holder], we have conducted an investigation and due to the findings, we will [pick("arrest them. Please turn yourself in, [holder]", "terminate their employment with us.", "inform their family of their shortcomings.", "cyborgify them immediately.")]. Thank you.",
 						"[pick("Boarders have", "The AI has", "Intruders have")] demanded we sacrifice a crewmember to them. After [pick("much", "little", "quick")] deliberation, we have chosen [holder]. Please turn yourself over, or [pick("we", "your family", "all of us", "those you love")] will die.",
-						"Central Command has chosen [holder] as the NanoTrasen employee of the month! Everyone please congratulate them.",
+						"Star Command has chosen [holder] as the NanoTrasen employee of the month! Everyone please congratulate them.",
 						"Everything is fine.",
 						"The tesla may or may not be loose.",
 						"This is your directive 11. [pick("Spiders have killed several crew.", "Boarders have taken a hostage.", "[holder] is armed and dangerous. Avoid them at all costs.", "Two black-suited individuals have taken items from the vault and armory.")]",

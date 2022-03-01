@@ -442,11 +442,11 @@ var/const/NO_EMAG_ACT = -50
 	..()
 
 /obj/item/card/id/centcom
-	name = "\improper CentCom. ID"
-	desc = "An ID straight from CentCom."
+	name = "\improper StarCom. ID"
+	desc = "An ID straight from StarCom."
 	icon_state = "centcom"
 	overlay_state = "centcom"
-	registered_name = "Central Command"
+	registered_name = "Star Command"
 	assignment = "General"
 
 /obj/item/card/id/centcom/New()
@@ -529,7 +529,7 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/distress/ap_eridani/New()
 	access = get_distress_access()
 	..()
- 
+
 /obj/item/card/id/distress/iac
 	name = "\improper Interstellar Aid Corps ID"
 	assignment = "Interstellar Aid Corps Responder"

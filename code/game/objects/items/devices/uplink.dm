@@ -365,7 +365,7 @@ A list of items and costs is stored under the datum of every game mode, alongsid
 	name = "relay positioning device"
 	icon = 'icons/obj/device.dmi'
 	icon_state = "locator"
-	desc_antag = "This device allows you to create a single central command report. It has only one use."
+	desc_antag = "This device allows you to create a single star command report. It has only one use."
 	w_class = ITEMSIZE_SMALL
 
 /obj/item/device/announcer/attack_self(mob/user as mob)

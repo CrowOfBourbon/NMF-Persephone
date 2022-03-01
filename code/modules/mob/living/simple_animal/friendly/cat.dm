@@ -316,7 +316,7 @@
 		to_chat(user, "It's a dead kitten! What kind of monster would do this?")
 
 /mob/living/simple_animal/cat/fluff/bones
-	name = "Bones"
+	name = "Buffy"
 	desc = "He's a laid back, black cat. Meow."
 	named = TRUE
 	gender = MALE
@@ -334,8 +334,8 @@
 	gender = pick(MALE, FEMALE)
 
 /mob/living/simple_animal/cat/penny
-	name = "Penny"
-	desc = "An important cat, straight from Central Command."
+	name = "Peaches"
+	desc = "An important cat, straight from Star Command."
 	named = TRUE
 	icon_state = "penny"
 	item_state = "penny"

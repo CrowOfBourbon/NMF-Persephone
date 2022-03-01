@@ -48,7 +48,7 @@
 	icon_state = "stamp-intaff"
 
 /obj/item/stamp/centcomm
-	name = "centcomm rubber stamp"
+	name = "StarComm rubber stamp"
 	icon_state = "stamp-cent"
 
 /obj/item/stamp/einstein

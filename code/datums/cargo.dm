@@ -570,7 +570,7 @@
 	invoice_data += "</tr>"
 	invoice_data += "</table>"
 
-	invoice_data += "<p>Central Command Message:</p>"
+	invoice_data += "<p>Star Command Message:</p>"
 	invoice_data += "<pre>[nl2br(message)]</pre>"
 
 	shipment_invoice = invoice_data.Join("")

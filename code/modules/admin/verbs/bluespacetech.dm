@@ -489,7 +489,7 @@
 //ID
 /obj/item/card/id/bst
 	icon_state = "centcom"
-	desc = "An ID straight from Central Command. This one looks highly classified."
+	desc = "An ID straight from Star Command. This one looks highly classified."
 
 /obj/item/card/id/bst/Initialize(mapload)
 	. = ..()
