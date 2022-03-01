@@ -69053,10 +69053,6 @@
 	},
 /area/engineering/foyer)
 "csO" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=AIE";
-	location = "AftH"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -82505,6 +82501,16 @@
 "fij" = (
 /turf/simulated/wall/r_wall,
 /area/hallway/primary/port)
+"ggk" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "12-0"
+	},
+/turf/simulated/floor/tiled{
+	icon_state = "darkmarble"
+	},
+/area/engineering/workshop)
 "iUR" = (
 /turf/simulated/wall,
 /area/hallway/primary/aft)
@@ -100912,7 +100918,7 @@ aBt
 aBt
 aBt
 aBt
-aBt
+bcd
 aBt
 aBt
 aBt
@@ -101426,7 +101432,7 @@ aBt
 aBt
 aBt
 aBt
-bcd
+aBt
 aBt
 aBt
 aBt
@@ -115084,7 +115090,7 @@ cyZ
 cvr
 cvr
 cvr
-cvr
+ggk
 cvr
 cTr
 cDK

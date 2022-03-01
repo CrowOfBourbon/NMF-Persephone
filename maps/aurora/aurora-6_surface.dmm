@@ -8,7 +8,14 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/wall/r_wall,
+/obj/structure/grille,
+/obj/structure/window/phoronreinforced{
+	dir = 8
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
 /area/tcommsat/computer)
 "ac" = (
 /obj/machinery/porta_turret/xray,
@@ -24,18 +31,34 @@
 /turf/simulated/floor/greengrid/nitrogen,
 /area/tcommsat/chamber)
 "ag" = (
-/turf/simulated/floor/fixed,
+/obj/machinery/computer/telecomms/traffic{
+	network = "tcommsat"
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "ah" = (
-/obj/machinery/alarm,
-/turf/simulated/floor/fixed,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "ai" = (
-/turf/simulated/floor/fixed,
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 4
+	},
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aj" = (
 /obj/machinery/telecomms/server/presets/unused,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "ak" = (
 /obj/machinery/telecomms/broadcaster/preset_right,
@@ -74,9 +97,6 @@
 /area/tcommsat/chamber)
 "ao" = (
 /obj/structure/window/phoronreinforced{
-	dir = 1
-	},
-/obj/structure/window/phoronreinforced{
 	dir = 8
 	},
 /obj/structure/grille,
@@ -84,29 +104,36 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/black,
 /turf/simulated/floor/plating,
 /area/tcommsat/computer)
 "ap" = (
-/obj/machinery/ntnet_relay,
 /obj/structure/cable/blue{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/fixed,
+/obj/machinery/computer/telecomms/monitor{
+	network = "tcommsat"
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "aq" = (
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/structure/cable/blue{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/fixed,
+/obj/structure/cable/blue{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "ar" = (
 /obj/structure/cable/blue{
@@ -114,7 +141,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/fixed,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "as" = (
 /obj/structure/cable/blue{
@@ -125,11 +155,15 @@
 	dir = 4;
 	pixel_x = 25
 	},
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "at" = (
 /obj/machinery/telecomms/server/presets/common,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "au" = (
 /obj/structure/cable/blue{
@@ -137,21 +171,23 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "av" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/machinery/atmospherics/unary/vent_pump/siphon/on{
+	dir = 4
+	},
 /turf/simulated/floor/fixed{
-	temperature = 278
+	icon_state = "dark"
 	},
 /area/tcommsat/chamber)
 "aw" = (
-/obj/machinery/atmospherics/unary/freezer{
-	icon_state = "freezer_1";
-	set_temperature = 73;
-	use_power = 1
+/obj/structure/bed/stool/chair/office/dark,
+/turf/simulated/floor/fixed{
+	temperature = 278
 	},
-/turf/simulated/floor/fixed,
 /area/tcommsat/computer)
 "ax" = (
 /obj/structure/cable/blue{
@@ -159,36 +195,58 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "ay" = (
-/obj/structure/bed/stool/chair/office/dark,
-/turf/simulated/floor/fixed,
+/obj/structure/cable/blue{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/black,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "az" = (
-/obj/structure/table/standard,
-/obj/item/book/manual/wiki/ntsl2,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/fixed,
-/area/tcommsat/computer)
+/area/tcommsat/entrance)
 "aA" = (
 /obj/machinery/telecomms/server/presets/engineering,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aB" = (
 /obj/machinery/telecomms/server/presets/science,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aC" = (
 /obj/machinery/bluespacerelay,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aD" = (
 /obj/machinery/telecomms/bus/preset_three,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aE" = (
 /obj/machinery/telecomms/processor/preset_three,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aF" = (
 /obj/structure/window/phoronreinforced{
@@ -202,25 +260,36 @@
 /turf/simulated/floor/plating,
 /area/tcommsat/computer)
 "aG" = (
-/obj/structure/table/standard,
-/obj/item/device/multitool,
-/turf/simulated/floor/fixed,
+/obj/machinery/computer/telecomms/server{
+	network = "tcommsat"
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "aH" = (
-/obj/structure/filingcabinet,
-/turf/simulated/floor/fixed,
-/area/tcommsat/computer)
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 4
+	},
+/turf/simulated/floor/greengrid/nitrogen,
+/area/tcommsat/chamber)
 "aI" = (
 /obj/machinery/telecomms/relay/preset/station,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aJ" = (
 /obj/machinery/telecomms/bus/preset_four,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aK" = (
 /obj/machinery/telecomms/processor/preset_four,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aL" = (
 /obj/structure/window/phoronreinforced,
@@ -232,62 +301,92 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 9
+	},
 /turf/simulated/floor/plating,
 /area/tcommsat/computer)
 "aM" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 10
+	},
 /obj/structure/cable/blue{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "aN" = (
-/obj/machinery/computer/telecomms/monitor,
-/turf/simulated/floor/fixed,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "aO" = (
 /obj/machinery/telecomms/server/presets/supply,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aP" = (
 /obj/machinery/telecomms/server/presets/medical,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aQ" = (
 /obj/item/device/radio/intercom{
 	pixel_x = -30
 	},
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "aR" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/fixed,
+/obj/structure/bed/stool/padded,
+/turf/simulated/floor/fixed{
+	icon_state = "bcarpet"
+	},
 /area/tcommsat/computer)
 "aS" = (
-/obj/machinery/computer/telecomms/server,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "bcarpet"
+	},
 /area/tcommsat/computer)
 "aT" = (
 /obj/machinery/telecomms/server/presets/security,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aU" = (
 /obj/machinery/telecomms/server/presets/command,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aV" = (
 /obj/machinery/telecomms/relay/preset/telecomms,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aW" = (
 /obj/machinery/telecomms/bus/preset_two,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aX" = (
 /obj/machinery/telecomms/processor/preset_two,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/chamber)
 "aY" = (
 /obj/effect/landmark/map_data{
@@ -296,16 +395,28 @@
 /turf/simulated/floor/tiled/old,
 /area/space)
 "aZ" = (
-/obj/machinery/computer/telecomms/traffic,
-/turf/simulated/floor/fixed,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1";
+	name = "adjusted light fixture";
+	pixel_y = 16
+	},
+/turf/simulated/floor/fixed{
+	icon_state = "bcarpet"
+	},
 /area/tcommsat/computer)
 "ba" = (
 /obj/machinery/firealarm/south,
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "bb" = (
 /obj/structure/table/standard,
-/turf/simulated/floor/fixed,
+/obj/item/device/multitool,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
 /area/tcommsat/computer)
 "bc" = (
 /obj/machinery/power/apc/super{
@@ -315,13 +426,19 @@
 /turf/simulated/floor/greengrid/nitrogen,
 /area/tcommsat/chamber)
 "bd" = (
-/obj/machinery/door/airlock/hatch,
 /obj/structure/cable/blue{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/hatch{
+	name = "TComms";
+	req_access = list(61)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/black,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/fixed,
 /area/tcommsat/computer)
 "be" = (
@@ -333,19 +450,35 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/blue{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "bg" = (
 /turf/simulated/floor/plating/snow,
 /area/tcommsat/chamber)
 "bh" = (
-/obj/machinery/door/airlock/hatch,
+/obj/machinery/door/airlock/hatch{
+	name = "TComms";
+	req_access = list(61)
+	},
 /obj/structure/cable/blue{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/black,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "bi" = (
@@ -358,10 +491,11 @@
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "bk" = (
+/obj/machinery/light/small,
 /obj/structure/cable/blue{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
@@ -371,61 +505,47 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/machinery/power/sensor,
-/turf/simulated/floor/fixed,
-/area/tcommsat/entrance)
-"bm" = (
-/obj/structure/cable/blue{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
+/obj/machinery/power/sensor{
+	name = "Telecom Power Sensor"
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"bm" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
 "bn" = (
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "bo" = (
 /obj/structure/cable/blue{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/machinery/door/airlock/hatch{
+	name = "TComms";
+	req_access = list(61)
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "bp" = (
-/obj/structure/cable/blue{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
+/turf/simulated/floor/fixed{
+	temperature = 278
 	},
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/fixed,
-/area/tcommsat/entrance)
+/area/tcommsat/computer)
 "bq" = (
 /obj/structure/cable/blue{
-	d2 = 8;
-	icon_state = "0-8"
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/machinery/power/apc{
-	dir = 4;
-	pixel_x = 25
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/black,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "br" = (
@@ -442,21 +562,27 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/fixed,
+/obj/machinery/alarm{
+	pixel_y = 25
+	},
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/entrance)
 "bt" = (
-/obj/structure/cable/blue{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/fixed,
+/obj/structure/cable/blue{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/entrance)
 "bu" = (
 /obj/machinery/power/terminal,
@@ -465,7 +591,9 @@
 	d2 = 2;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/entrance)
 "bv" = (
 /obj/structure/ladder,
@@ -476,7 +604,6 @@
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/zpipe/down/scrubbers,
 /obj/machinery/atmospherics/pipe/zpipe/down/supply,
-/obj/structure/lattice/catwalk/indoor,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -487,6 +614,10 @@
 "bx" = (
 /obj/machinery/firealarm/south,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/light/small{
+	dir = 4;
+	name = "adjusted light fixture"
+	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "by" = (
@@ -495,7 +626,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/fixed,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/entrance)
 "bz" = (
 /obj/machinery/power/smes/buildable,
@@ -505,11 +638,60 @@
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
-"dB" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
+"dp" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/obj/structure/cable/blue{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/hatch{
+	name = "TComms";
+	req_access = list(61)
+	},
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
+"dq" = (
+/obj/structure/cable/blue{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"dB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 10
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 8
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/obj/structure/grille,
+/turf/simulated/floor/plating,
+/area/tcommsat/computer)
+"fj" = (
+/obj/machinery/light/small{
+	dir = 4;
+	name = "adjusted light fixture"
+	},
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
+"fI" = (
+/obj/machinery/atmospherics/unary/freezer{
+	icon_state = "freezer_1";
+	set_temperature = 73;
+	use_power = 1
+	},
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
 /area/tcommsat/entrance)
 "ia" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -520,8 +702,79 @@
 	},
 /turf/simulated/wall/r_wall,
 /area/tcommsat/entrance)
+"ic" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/grille,
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced,
+/turf/simulated/floor/plating,
+/area/tcommsat/computer)
+"iV" = (
+/obj/structure/table/standard,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"jL" = (
+/obj/machinery/porta_turret/xray,
+/obj/machinery/light/small{
+	dir = 4;
+	name = "adjusted light fixture"
+	},
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
+/area/tcommsat/entrance)
+"jT" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	frequency = 1379;
+	icon_state = "door_locked";
+	id_tag = "tcommextdoor";
+	locked = 1;
+	name = "TComm Exterior";
+	req_access = list(11)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"kH" = (
+/obj/machinery/alarm{
+	pixel_y = 25
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"nI" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
 "nT" = (
-/obj/machinery/atmospherics/unary/vent_pump,
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 4
+	},
+/obj/structure/cable/blue{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/blue{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "oV" = (
@@ -529,50 +782,334 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+	dir = 9
 	},
 /turf/simulated/wall/r_wall,
+/area/tcommsat/entrance)
+"pf" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "qu" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 9
+	},
+/obj/structure/cable/blue{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
+"qB" = (
+/obj/structure/grille,
+/obj/structure/window/phoronreinforced,
+/obj/structure/window/phoronreinforced{
+	dir = 8
+	},
+/obj/structure/window/phoronreinforced{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/simulated/floor/plating,
 /area/tcommsat/entrance)
+"rg" = (
+/obj/structure/grille,
+/obj/structure/window/phoronreinforced{
+	dir = 8
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/tcommsat/entrance)
+"rN" = (
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1";
+	name = "adjusted light fixture";
+	pixel_y = 16
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"sj" = (
+/obj/structure/grille,
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/tcommsat/computer)
 "sF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /turf/simulated/wall/r_wall,
 /area/tcommsat/entrance)
+"tz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
+"tI" = (
+/obj/machinery/airlock_sensor/airlock_interior{
+	pixel_y = 30;
+	frequency = 1212;
+	id_tag = "tcommint";
+	master_tag = "tcommmaster"
+	},
+/turf/simulated/floor/greengrid/nitrogen,
+/area/tcommsat/chamber)
+"ul" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 4
+	},
+/obj/structure/cable/blue{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
+"uU" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	frequency = 1379;
+	icon_state = "door_locked";
+	id_tag = "tcommintdoor";
+	locked = 1;
+	name = "TComm Interior";
+	req_access = list(11)
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"vD" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/canister/air/airlock,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"zQ" = (
+/obj/structure/table/standard,
+/turf/simulated/floor/fixed{
+	icon_state = "bcarpet"
+	},
+/area/tcommsat/computer)
 "Ap" = (
 /obj/structure/cable/blue{
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/light/small,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
+/area/tcommsat/entrance)
+"AS" = (
+/obj/structure/grille,
+/obj/structure/window/phoronreinforced{
+	dir = 8
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/tcommsat/entrance)
+"Bq" = (
+/obj/machinery/turretid{
+	ailock = 1;
+	pixel_y = 30
+	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"Cq" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/wall/r_wall,
+/area/tcommsat/entrance)
+"Dy" = (
+/obj/structure/table/standard,
+/obj/item/book/manual/wiki/ntsl2,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"DB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"Et" = (
+/obj/structure/table/standard,
+/obj/random/pizzabox,
+/turf/simulated/floor/fixed{
+	icon_state = "bcarpet"
+	},
+/area/tcommsat/computer)
+"Id" = (
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
+/area/tcommsat/chamber)
+"Ln" = (
+/obj/structure/filingcabinet,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"LP" = (
+/obj/machinery/embedded_controller/radio/airlock/advanced_airlock_controller{
+	pixel_y = 30;
+	frequency = 1212;
+	id_tag = "tcommmaster";
+	tag_airpump = "tcommpump";
+	tag_chamber_sensor = "tcommsensor1";
+	tag_exterior_door = "tcommextdoor";
+	tag_exterior_sensor = "tcommext";
+	tag_interior_door = "tcommintdoor";
+	tag_interior_sensor = "tcommint";
+	tag_secure = 1
+	},
+/obj/machinery/airlock_sensor{
+	pixel_y = 20;
+	frequency = 1212;
+	id_tag = "tcommsensor1"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 4;
+	frequency = 1212;
+	id_tag = "tcommpump"
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"Mq" = (
+/obj/structure/cable/blue{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/black,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
 "ME" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/fixed,
-/area/tcommsat/entrance)
-"So" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 4
+	},
 /obj/structure/cable/blue{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"Pi" = (
+/turf/simulated/floor/fixed,
+/area/space)
+"Pj" = (
+/obj/structure/grille,
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/obj/structure/window/phoronreinforced,
+/turf/simulated/floor/plating,
+/area/tcommsat/computer)
+"PR" = (
+/obj/machinery/porta_turret/xray,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
+/area/tcommsat/entrance)
+"QM" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
+"So" = (
+/obj/machinery/power/apc{
+	dir = 4;
+	pixel_x = 25
+	},
+/obj/structure/cable/blue{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
+"Ub" = (
+/obj/machinery/airlock_sensor{
+	pixel_y = 30;
+	frequency = 1212;
+	id_tag = "tcommext";
+	master_tag = "tcommmaster"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
 "Vy" = (
 /turf/simulated/floor/tiled/old,
 /area/space)
+"WL" = (
+/obj/structure/cable/blue{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/blue{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
+"WN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
 "Xh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/fixed,
@@ -586,10 +1123,57 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"Yy" = (
+/obj/machinery/ntnet_relay,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	name = "adjusted light fixture";
+	pixel_y = 16
+	},
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
+"YC" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
 "YO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"Zb" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
+/area/tcommsat/chamber)
+"Zc" = (
+/obj/structure/cable/blue{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
+"Zq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 4
+	},
+/obj/structure/bed/stool/chair/office/dark,
+/turf/simulated/floor/fixed{
+	temperature = 278
+	},
+/area/tcommsat/computer)
 
 (1,1,1) = {"
 Vy
@@ -32341,14 +32925,14 @@ aa
 ad
 ad
 af
-ai
+Id
 aj
 at
 aA
-ai
+Id
 aO
 aT
-ai
+Id
 af
 ad
 ad
@@ -32598,14 +33182,14 @@ aa
 ad
 ad
 af
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
+Id
+Id
+Id
+Id
+Id
+Id
+Id
+Id
 af
 ad
 ad
@@ -32855,14 +33439,14 @@ aa
 ad
 ad
 af
-ai
-ai
-ai
+Id
+Id
+Id
 aB
-ai
+Id
 aP
 aU
-ai
+Id
 af
 ad
 ad
@@ -33369,14 +33953,14 @@ aa
 ad
 ad
 af
-ai
+Id
 al
 av
-ai
-ai
-ai
-ai
-ai
+Id
+Id
+Zb
+Id
+Id
 af
 ad
 ad
@@ -33626,7 +34210,7 @@ aa
 ad
 ad
 af
-ai
+Id
 am
 ai
 aC
@@ -33883,7 +34467,7 @@ ac
 ad
 ad
 af
-ai
+Id
 al
 ai
 aD
@@ -34140,7 +34724,7 @@ aa
 ad
 ad
 af
-ai
+Id
 an
 ai
 aE
@@ -34396,23 +34980,23 @@ aa
 aa
 ad
 ad
-af
+tI
 af
 al
+aH
 af
 af
-af
-af
+aH
 af
 af
 af
 ad
 ad
-be
-be
-be
-be
-be
+rg
+AS
+AS
+AS
+qB
 be
 be
 be
@@ -34653,10 +35237,10 @@ aa
 aa
 ae
 ae
-ae
-ae
+uU
+sj
 ab
-ae
+dB
 ao
 aF
 aL
@@ -34665,11 +35249,11 @@ ae
 ae
 be
 be
-be
-be
-be
-be
-be
+bi
+bi
+bi
+bi
+bi
 be
 be
 be
@@ -34910,22 +35494,22 @@ aa
 aa
 ae
 ae
-ag
-ag
+LP
+ic
 ap
 aw
 aG
-ag
+Zq
 ag
 aQ
-ag
+Yy
 ae
+PR
 be
-be
-bi
-bi
-bi
-bi
+bj
+pf
+Xh
+tz
 bi
 bv
 be
@@ -35167,21 +35751,21 @@ aa
 aa
 ae
 ae
-ag
-ag
+jT
+Pj
 aq
 ax
 ax
 aM
-ax
-ax
-ax
+Mq
+ay
+ay
 bd
-bf
+bq
 bh
+bq
 bf
-bf
-bf
+Zc
 bm
 br
 bw
@@ -35424,24 +36008,24 @@ aa
 aa
 ae
 ae
-ag
-ag
+Ub
+nI
 ar
-ag
-ag
-ag
-ag
-ag
+DB
+DB
+DB
+WN
+bp
 ba
 ae
+jL
 be
-be
-bi
-bi
-bi
+Bq
+ul
+az
 bn
-bs
-bi
+QM
+Xh
 oV
 be
 aa
@@ -35681,22 +36265,22 @@ aa
 aa
 ae
 ae
-ag
-ag
-ar
-ag
-ag
-ag
-ag
-ag
-ag
+kH
+bp
+dq
+bp
+bp
+bp
+aN
+bp
+Ln
 ae
 be
 be
-bi
+fj
 ME
+YC
 YO
-So
 XQ
 bx
 sF
@@ -35938,25 +36522,25 @@ aa
 aa
 ae
 ae
-ag
-ag
-ar
-ag
-ag
-ag
+ah
+bp
+dq
 aR
-ag
-ag
+zQ
+Et
+aR
+aS
+Dy
 ae
 be
 be
-bi
-bi
-bi
-bn
-bs
-bi
-qu
+be
+dp
+be
+be
+Cq
+be
+be
 be
 aa
 aa
@@ -36196,24 +36780,24 @@ aa
 ae
 ae
 ah
-ag
-ar
-ay
-ag
-ag
-ay
-ag
-ag
+bp
+dq
+aR
+zQ
+zQ
+aR
+aS
+iV
 ae
 be
 be
 bj
 nT
-Xh
+WL
 bo
 bt
 Ap
-dB
+be
 be
 aa
 aa
@@ -36452,22 +37036,22 @@ aa
 aa
 ae
 ae
-ag
-ag
+vD
+rN
 as
-az
-aH
-aN
+aS
+aS
+aS
 aS
 aZ
 bb
 ae
 be
 be
-bi
-bi
+fI
+qu
 bk
-bp
+be
 bs
 by
 be
@@ -36722,9 +37306,9 @@ ae
 be
 be
 bi
-bi
+So
 bl
-bq
+be
 bu
 bz
 be
@@ -37498,7 +38082,7 @@ aa
 aa
 aa
 aa
-aa
+Pi
 aa
 aa
 aa
