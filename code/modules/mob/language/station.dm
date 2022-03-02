@@ -51,7 +51,7 @@
 	ask_verb = list("hisses")
 	exclaim_verb = list("roars")
 	sing_verb = list("hisses melodically")
-	colour = "unathi1" 
+	colour = "unathi1"
 	allow_accents = TRUE
 	written_style = "sintaazaziba"
 	key = "p"
@@ -68,7 +68,7 @@
 	ask_verb = list("questions")
 	exclaim_verb = list("barks")
 	sing_verb = list("hisses")
-	colour = "unathi2" 
+	colour = "unathi2"
 	allow_accents = TRUE
 	// REMEMBER TO ADD WRITTEN LNAGUAGE LATER
 	key = "l"

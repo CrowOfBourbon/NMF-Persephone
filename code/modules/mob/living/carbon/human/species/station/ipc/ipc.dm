@@ -29,9 +29,9 @@
 	inherent_eye_protection = FLASH_PROTECTION_MAJOR
 	eyes_are_impermeable = TRUE
 
-	name_language = "Encoded Audio Language"
+	name_language = LANGUAGE_EAL
 	num_alternate_languages = 2
-	secondary_langs = list("Encoded Audio Language", "Sol Common")
+	secondary_langs = list(LANGUAGE_MARTIAN, LANGUAGE_NEW_MANDARIN, LANGUAGE_LUNIAN, LANGUAGE_ENGLISH, LANGUAGE_EAL)
 	ethanol_resistance = -1//Can't get drunk
 	radiation_mod = 0	// not affected by radiation
 	remains_type = /obj/effect/decal/remains/robot
@@ -120,7 +120,7 @@
 	default_citizenship = CITIZENSHIP_NONE
 	bodyfall_sound = /decl/sound_category/bodyfall_machine_sound
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_DION)
+	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_DION, ACCENT_TTS)
 	allowed_religions = list(RELIGION_NONE, RELIGION_OTHER, RELIGION_CHRISTIANITY, RELIGION_ISLAM, RELIGION_JUDAISM, RELIGION_HINDU, RELIGION_BUDDHISM, RELIGION_TAOISM)
 
 	alterable_internal_organs = list()
