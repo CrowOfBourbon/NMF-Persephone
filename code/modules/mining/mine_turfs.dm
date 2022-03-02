@@ -17,7 +17,7 @@ var/list/mineral_can_smooth_with = list(
 
 // Some extra types for the surface to keep things pretty.
 /turf/simulated/mineral/surface
-	mined_turf = /turf/unsimulated/floor/asteroid/ash
+	mined_turf = /turf/simulated/floor/asteroid/ash
 
 /turf/simulated/mineral //wall piece
 	name = "rock"
@@ -37,8 +37,8 @@ var/list/mineral_can_smooth_with = list(
 	opacity = TRUE
 	density = TRUE
 	blocks_air = TRUE
-	temperature = T0C
-	var/mined_turf = /turf/unsimulated/floor/asteroid/ash/rocky
+	temperature = T0C-50
+	var/mined_turf = /turf/simulated/floor/asteroid/ash/rocky
 	var/ore/mineral
 	var/mined_ore = 0
 	var/last_act = 0
