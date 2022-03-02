@@ -729,7 +729,7 @@
 /area/tcommsat/entrance)
 "jT" = (
 /obj/machinery/door/airlock/maintenance_hatch{
-	frequency = 1379;
+	frequency = 1212;
 	icon_state = "door_locked";
 	id_tag = "tcommextdoor";
 	locked = 1;
@@ -865,6 +865,10 @@
 	id_tag = "tcommint";
 	master_tag = "tcommmaster"
 	},
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1212;
+	pixel_y = 20
+	},
 /turf/simulated/floor/greengrid/nitrogen,
 /area/tcommsat/chamber)
 "ul" = (
@@ -880,7 +884,7 @@
 /area/tcommsat/entrance)
 "uU" = (
 /obj/machinery/door/airlock/maintenance_hatch{
-	frequency = 1379;
+	frequency = 1212;
 	icon_state = "door_locked";
 	id_tag = "tcommintdoor";
 	locked = 1;
@@ -1078,6 +1082,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
+	},
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1212;
+	pixel_y = 20
 	},
 /turf/simulated/floor/fixed{
 	temperature = 278

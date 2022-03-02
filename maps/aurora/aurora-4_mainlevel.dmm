@@ -4184,10 +4184,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/security_port)
 "ahN" = (
-/obj/machinery/deployable/barrier,
 /obj/machinery/camera/network/security{
 	c_tag = "Armory"
 	},
+/obj/machinery/anti_bluespace,
 /turf/simulated/floor/tiled/dark,
 /area/security/armory)
 "ahO" = (
@@ -26809,42 +26809,49 @@
 /turf/simulated/wall,
 /area/hallway/secondary/exit)
 "aVT" = (
-/obj/machinery/door/firedoor,
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 1
+/obj/effect/floor_decal/corner/red{
+	dir = 5
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
-/area/hallway/secondary/exit)
+/turf/simulated/floor/tiled/white,
+/area/mine/explored)
 "aVU" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/light/small,
+/obj/machinery/embedded_controller/radio/airlock/docking_port_multi{
+	frequency = 1380;
+	id_tag = "escape_dock_north_airlock";
+	master_tag = "escape_dock";
+	pixel_y = 30;
+	req_one_access = list(13);
+	tag_airpump = "escape_dock_north_pump";
+	tag_chamber_sensor = "escape_dock_north_sensor";
+	tag_exterior_door = "escape_dock_north_outer";
+	tag_interior_door = "escape_dock_north_inner"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	frequency = 1380;
+	id_tag = "escape_dock_north_pump"
+	},
+/turf/simulated/floor/plating,
+/area/mine/explored)
+"aVV" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/machinery/door/firedoor,
 /obj/structure/window/reinforced,
 /turf/simulated/floor/plating,
-/area/hallway/secondary/exit)
-"aVV" = (
-/obj/machinery/door/firedoor,
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 1
+/area/mine/explored)
+"aVW" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 5
 	},
-/obj/structure/window/reinforced{
+/obj/structure/bed/stool/chair,
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
-/area/hallway/secondary/exit)
-"aVW" = (
-/obj/effect/shuttle_landmark/emergency/dock,
-/turf/simulated/floor/snow{
-	temperature = 234.15
-	},
+/turf/simulated/floor/tiled/white,
 /area/mine/explored)
 "aVX" = (
 /obj/machinery/floodlight,
@@ -27071,10 +27078,20 @@
 	},
 /area/library)
 "aWt" = (
-/obj/effect/shuttle_landmark/ert/dock,
-/turf/simulated/floor/snow{
-	temperature = 234.15
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
 	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/sign/securearea{
+	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
+	name = "KEEP CLEAR: DOCKING AREA"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
 /area/mine/explored)
 "aWu" = (
 /obj/structure/table/wood,
@@ -27934,13 +27951,10 @@
 /turf/simulated/floor/tiled,
 /area/hallway/secondary/entry/departure_lounge)
 "aXK" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/machinery/door/firedoor,
-/obj/structure/window/reinforced{
-	dir = 8
+/obj/effect/floor_decal/corner/red/full{
+	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "aXL" = (
 /obj/structure/grille,
@@ -27952,20 +27966,9 @@
 /turf/simulated/floor/plating,
 /area/hallway/secondary/exit)
 "aXM" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
+/turf/simulated/floor/snow{
+	temperature = 234.15
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/sign/securearea{
-	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
-	name = "KEEP CLEAR: DOCKING AREA"
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
 /area/hallway/secondary/exit)
 "aXN" = (
 /obj/machinery/artifact_scanpad,
@@ -28324,14 +28327,14 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/central_two)
 "aYq" = (
-/obj/effect/floor_decal/corner/red/full{
-	dir = 8
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/obj/structure/bed/stool/chair{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/hallway/secondary/exit)
+/turf/simulated/floor/plating,
+/area/mine/explored)
 "aYr" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -28485,19 +28488,16 @@
 /turf/simulated/floor/wood,
 /area/hallway/primary/port)
 "aYF" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 5
+/obj/machinery/airlock_sensor{
+	frequency = 1380;
+	id_tag = "escape_dock_north_sensor";
+	master_tag = "escape_dock_north_airlock";
+	pixel_y = -25
 	},
-/turf/simulated/floor/tiled/white,
-/area/hallway/secondary/exit)
+/turf/simulated/floor/plating,
+/area/mine/explored)
 "aYG" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 5
-	},
-/obj/structure/bed/stool/chair,
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "aYH" = (
@@ -28849,17 +28849,27 @@
 	},
 /area/crew_quarters/bar)
 "aZk" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 5
-	},
-/obj/structure/bed/stool/chair,
-/turf/simulated/floor/tiled/white,
-/area/hallway/secondary/exit)
-"aZl" = (
 /obj/effect/floor_decal/corner/red/full{
 	dir = 1
 	},
-/obj/structure/bed/stool/chair,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/machinery/access_button{
+	command = "cycle_interior";
+	frequency = 1380;
+	master_tag = "escape_dock_center_airlock";
+	name = "interior access button";
+	pixel_x = 30;
+	pixel_y = -26;
+	req_one_access = list(13)
+	},
+/turf/simulated/floor/tiled/white,
+/area/mine/explored)
+"aZl" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "aZm" = (
@@ -29185,68 +29195,40 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/kitchen)
 "bab" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "door_locked";
-	id_tag = "escape_dock_north_inner";
-	locked = 1;
-	name = "Escape Airlock";
-	req_access = list(13)
+/obj/effect/floor_decal/corner/red{
+	dir = 6
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "bac" = (
-/obj/machinery/light/small,
-/obj/machinery/embedded_controller/radio/airlock/docking_port_multi{
-	frequency = 1380;
-	id_tag = "escape_dock_north_airlock";
-	master_tag = "escape_dock";
-	pixel_y = 30;
-	req_one_access = list(13);
-	tag_airpump = "escape_dock_north_pump";
-	tag_chamber_sensor = "escape_dock_north_sensor";
-	tag_exterior_door = "escape_dock_north_outer";
-	tag_interior_door = "escape_dock_north_inner"
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 8;
-	frequency = 1380;
-	id_tag = "escape_dock_north_pump"
-	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/hallway/secondary/exit)
+/area/mine/explored)
 "bad" = (
-/obj/machinery/airlock_sensor{
-	frequency = 1380;
-	id_tag = "escape_dock_north_sensor";
-	master_tag = "escape_dock_north_airlock";
-	pixel_y = -25
+/obj/structure/window/reinforced,
+/obj/effect/floor_decal/corner/red/full{
+	dir = 4
 	},
-/turf/simulated/floor/plating,
+/obj/machinery/camera/network/civilian_surface{
+	c_tag = "Surface - Red Dock Command";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "bae" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "door_locked";
-	id_tag = "escape_dock_north_outer";
-	locked = 1;
-	name = "Escape Airlock";
-	req_access = list(13)
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/obj/machinery/access_button{
-	command = "cycle_exterior";
-	frequency = 1380;
-	master_tag = "escape_dock_north_airlock";
-	name = "exterior access button";
-	pixel_x = 4;
-	pixel_y = -26;
-	req_one_access = list(13)
-	},
+/obj/structure/window/reinforced,
 /turf/simulated/floor/plating,
-/area/hallway/secondary/exit)
+/area/mine/explored)
 "baf" = (
 /turf/simulated/floor/ice,
 /area/mine/explored)
@@ -29808,12 +29790,10 @@
 	},
 /area/lawoffice)
 "bbm" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 6
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "bbn" = (
@@ -29823,27 +29803,12 @@
 	},
 /area/lawoffice)
 "bbo" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
+/obj/effect/floor_decal/corner/red{
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "bbp" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1380;
-	master_tag = "escape_dock_north_airlock";
-	name = "interior access button";
-	pixel_x = 30;
-	pixel_y = -26;
-	req_one_access = list(13)
-	},
 /turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "bbq" = (
@@ -30223,25 +30188,17 @@
 /turf/simulated/floor/plating,
 /area/hallway/secondary/exit)
 "bcb" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 1
+/obj/effect/shuttle_landmark/merc/start,
+/turf/simulated/floor/snow{
+	temperature = 234.15
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/hallway/secondary/exit)
+/area/mine/explored)
 "bcc" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/effect/shuttle_landmark/emergency/start,
+/turf/simulated/floor/snow{
+	temperature = 234.15
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/hallway/secondary/exit)
+/area/mine/explored)
 "bcd" = (
 /obj/effect/shuttle_landmark/supply/dock,
 /turf/simulated/floor/snow{
@@ -30584,12 +30541,7 @@
 /area/crew_quarters/kitchen)
 "bcC" = (
 /obj/structure/window/reinforced,
-/obj/effect/floor_decal/corner/red{
-	dir = 9
-	},
-/obj/structure/bed/stool/chair{
-	dir = 4
-	},
+/obj/effect/floor_decal/corner/red/full,
 /turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "bcD" = (
@@ -30608,6 +30560,9 @@
 /obj/machinery/door/window/brigdoor/southleft{
 	name = "Command Lobby";
 	req_access = list(19)
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
@@ -30646,18 +30601,24 @@
 /turf/simulated/floor/tiled/freezer,
 /area/storage/art)
 "bcJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/window/reinforced,
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "bcK" = (
 /obj/structure/window/reinforced,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
@@ -30708,14 +30669,10 @@
 /turf/simulated/floor/wood,
 /area/lawoffice)
 "bcP" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 6
-	},
-/obj/machinery/camera/network/civilian_surface{
-	c_tag = "Surface - Red Dock Command";
-	dir = 8
-	},
 /obj/structure/window/reinforced,
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "bcQ" = (
@@ -32536,10 +32493,22 @@
 /turf/simulated/floor/plating,
 /area/hallway/secondary/entry/aft)
 "bga" = (
-/turf/snow/plating{
-	icon_state = "plating"
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	icon_state = "door_locked";
+	id_tag = "escape_dock_north_inner";
+	locked = 1;
+	name = "Escape Airlock";
+	req_access = list(13)
 	},
-/area/outpost/research/eva)
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/mine/explored)
 "bgb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5
@@ -38464,21 +38433,22 @@
 /turf/simulated/floor/tiled/dark,
 /area/hallway/primary/starboard)
 "bqC" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
+/obj/machinery/camera/network/civilian_surface{
+	c_tag = "Surface - Red Dock Security";
 	dir = 8
 	},
-/obj/structure/window/reinforced{
-	dir = 1
+/turf/simulated/floor/tiled{
+	icon_state = "darkmarble"
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
 /area/hallway/secondary/exit)
 "bqD" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/hallway/secondary/exit)
 "bqE" = (
@@ -38733,17 +38703,9 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/locker/locker_toilet)
 "brc" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 6
-	},
-/obj/machinery/camera/network/civilian_surface{
-	c_tag = "Surface - Red Dock Security";
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	icon_state = "darkmarble"
-	},
-/area/hallway/secondary/exit)
+/obj/machinery/anti_bluespace,
+/turf/simulated/floor/tiled/dark,
+/area/maintenance/vault)
 "brd" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
@@ -38983,6 +38945,7 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/spline/plain,
+/obj/structure/stairs/east,
 /turf/simulated/floor/tiled/dark,
 /area/hallway/primary/starboard)
 "brx" = (
@@ -39534,55 +39497,33 @@
 	},
 /area/hallway/secondary/exit)
 "bsr" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "door_locked";
-	id_tag = "escape_dock_south_inner";
-	locked = 1;
-	name = "Escape Airlock";
-	req_access = list(13)
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/hallway/secondary/exit)
 "bss" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/embedded_controller/radio/airlock/docking_port_multi{
-	frequency = 1380;
-	id_tag = "escape_dock_south_airlock";
-	master_tag = "escape_dock";
-	pixel_y = -30;
-	req_one_access = list(13);
-	tag_airpump = "escape_dock_south_pump";
-	tag_chamber_sensor = "escape_dock_south_sensor";
-	tag_exterior_door = "escape_dock_south_outer";
-	tag_interior_door = "escape_dock_south_inner"
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 8;
-	frequency = 1380;
-	id_tag = "escape_dock_south_pump"
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/hallway/secondary/exit)
 "bst" = (
-/obj/machinery/airlock_sensor{
-	frequency = 1380;
-	id_tag = "escape_dock_south_sensor";
-	master_tag = "escape_dock_south_airlock";
-	pixel_y = 25
-	},
-/turf/simulated/floor/plating,
-/area/hallway/secondary/exit)
-"bsu" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "door_locked";
-	id_tag = "escape_dock_south_outer";
+	id_tag = "escape_dock_north_outer";
 	locked = 1;
 	name = "Escape Airlock";
 	req_access = list(13)
@@ -39590,13 +39531,16 @@
 /obj/machinery/access_button{
 	command = "cycle_exterior";
 	frequency = 1380;
-	master_tag = "escape_dock_south_airlock";
+	master_tag = "escape_dock_north_airlock";
 	name = "exterior access button";
 	pixel_x = 4;
-	pixel_y = 26;
+	pixel_y = -26;
 	req_one_access = list(13)
 	},
 /turf/simulated/floor/plating,
+/area/mine/explored)
+"bsu" = (
+/turf/simulated/floor/tiled/red,
 /area/hallway/secondary/exit)
 "bsv" = (
 /obj/machinery/power/apc{
@@ -39639,12 +39583,20 @@
 /turf/simulated/floor/tiled,
 /area/outpost/research/isolation_monitoring)
 "bsA" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled{
-	icon_state = "darkmarble"
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 9
 	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/window/brigdoor/eastright{
+	dir = 1;
+	name = "Secure Holding";
+	req_access = list(2)
+	},
+/turf/simulated/floor/tiled/red,
 /area/hallway/secondary/exit)
 "bsB" = (
 /obj/structure/disposalpipe/segment{
@@ -39670,25 +39622,17 @@
 /turf/simulated/floor/tiled,
 /area/assembly/robotics)
 "bsE" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 6
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
 	},
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1380;
-	master_tag = "escape_dock_south_airlock";
-	name = "interior access button";
-	pixel_x = 30;
-	pixel_y = 26;
-	req_one_access = list(13)
-	},
-/turf/simulated/floor/tiled{
-	icon_state = "darkmarble"
-	},
-/area/hallway/secondary/exit)
+/turf/simulated/floor/plating,
+/area/mine/explored)
 "bsF" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
@@ -41016,11 +40960,6 @@
 	},
 /area/crew_quarters/captain)
 "buZ" = (
-/obj/machinery/door/window/brigdoor/eastright{
-	dir = 1;
-	name = "Secure Holding";
-	req_access = list(2)
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/red,
@@ -41583,16 +41522,14 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/starboard)
 "bwj" = (
-/obj/machinery/door/firedoor,
-/obj/structure/grille,
-/obj/structure/window/reinforced{
+/obj/effect/floor_decal/corner/red/full{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/structure/bed/stool/chair{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
-/area/hallway/secondary/exit)
+/turf/simulated/floor/tiled/white,
+/area/mine/explored)
 "bwk" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -44463,6 +44400,7 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
+/mob/living/simple_animal/cat/penny,
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/cmo)
 "bBU" = (
@@ -44799,14 +44737,11 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/lab)
 "bCA" = (
-/obj/machinery/door/firedoor,
-/obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/effect/shuttle_landmark/ert/start,
+/turf/simulated/floor/snow{
+	temperature = 234.15
 	},
-/turf/simulated/floor/plating,
-/area/hallway/secondary/exit)
+/area/mine/explored)
 "bCB" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -55952,6 +55887,12 @@
 	dir = 1
 	},
 /obj/structure/cable/green,
+/obj/structure/window/reinforced,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "12-0"
+	},
 /turf/simulated{
 	icon_state = "steel_dirty"
 	},
@@ -82520,6 +82461,19 @@
 "kHW" = (
 /turf/simulated/wall,
 /area/maintenance/substation/engineering)
+"lpx" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/obj/structure/bed/stool/chair,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/mine/explored)
 "mKz" = (
 /turf/simulated/wall,
 /area/maintenance/library)
@@ -82529,6 +82483,18 @@
 "nAn" = (
 /turf/simulated/wall/r_wall,
 /area/maintenance/vault)
+"ocV" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/mine/explored)
 "pie" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
@@ -82553,6 +82519,11 @@
 "vgB" = (
 /turf/simulated/wall/r_wall,
 /area/assembly/chargebay)
+"wWX" = (
+/turf/simulated/floor/snow{
+	icon_state = "snow0"
+	},
+/area/hallway/secondary/exit)
 
 (1,1,1) = {"
 aaa
@@ -94483,8 +94454,8 @@ aBt
 bnz
 aBt
 aBt
-aWt
 aBt
+bCA
 aBt
 bnA
 aBt
@@ -94749,7 +94720,7 @@ bAN
 blQ
 aBt
 aBt
-aBt
+aTO
 aBt
 aBt
 aBt
@@ -95505,7 +95476,7 @@ aZM
 bcn
 aBt
 aBt
-aTO
+aBt
 aBt
 aBt
 bnC
@@ -111891,7 +111862,7 @@ abt
 abt
 abt
 abt
-abt
+brc
 nAn
 acC
 acC
@@ -124357,7 +124328,7 @@ aBt
 aBt
 aBt
 aBt
-cRy
+aBt
 aox
 aox
 aox
@@ -124614,7 +124585,7 @@ aBt
 aBt
 aBt
 aBt
-cRy
+aBt
 cRy
 aox
 aox
@@ -124871,7 +124842,7 @@ aBt
 aBt
 aBt
 aBt
-cRy
+aBt
 cRy
 aox
 aox
@@ -125127,8 +125098,8 @@ aBt
 aBt
 aBt
 aBt
-cRy
-cRy
+aBt
+aBt
 cRy
 aox
 aox
@@ -125384,8 +125355,8 @@ aBt
 aBt
 aBt
 aBt
-cRy
-cRy
+aBt
+aBt
 cRy
 cRy
 aox
@@ -125631,6 +125602,7 @@ aBt
 aBt
 aBt
 aBt
+bcb
 aBt
 aBt
 aBt
@@ -125640,9 +125612,8 @@ aBt
 aBt
 aBt
 aBt
-cRy
-cRy
-cRy
+aBt
+aBt
 cRy
 cRy
 aox
@@ -125899,7 +125870,7 @@ aBt
 aBt
 aBt
 aBt
-cRy
+aBt
 cRy
 cRy
 cRy
@@ -127430,7 +127401,7 @@ aBt
 aBt
 aBt
 aBt
-aBW
+aBt
 aBt
 aBt
 aBt
@@ -127698,7 +127669,7 @@ aBt
 aBt
 aac
 aac
-aox
+aac
 aox
 aox
 aac
@@ -127955,7 +127926,7 @@ aBt
 aBt
 aBt
 aac
-aox
+aac
 aox
 aox
 aox
@@ -132761,11 +132732,11 @@ baf
 aBt
 baf
 baf
-baf
-baf
-aVS
-aYq
+aaI
+bwj
 baZ
+baZ
+bbo
 bcC
 bef
 bfC
@@ -133018,10 +132989,10 @@ aBt
 aBt
 baf
 baf
-bYz
-bYz
-aVS
-aYF
+aaI
+aVT
+bbp
+bbp
 bbh
 bcE
 beg
@@ -133275,9 +133246,9 @@ aBt
 aBt
 baf
 baf
-baf
-baf
-aVS
+aaI
+lpx
+aYG
 aYG
 bbm
 bcJ
@@ -133532,11 +133503,11 @@ aBt
 aBt
 aBt
 aBt
-aBt
-aBt
-aVT
-aZk
-bbo
+bsE
+aVW
+bbp
+bbp
+bbp
 bcK
 bes
 bgg
@@ -133789,9 +133760,9 @@ aBt
 aBt
 aBt
 aBt
-aBt
-aBt
-aVU
+bae
+aZk
+bab
 aZl
 bbp
 bcP
@@ -133802,13 +133773,13 @@ bjP
 blt
 bnZ
 bnZ
-brc
-bsE
+bnZ
 buf
+bsu
 bxm
 byl
 bBn
-buf
+aVS
 bJF
 baf
 baf
@@ -134046,12 +134017,12 @@ aBt
 aBt
 aBt
 aBt
-aBt
-aBt
-aVV
+aYq
+bga
+bca
 aXK
 bab
-bca
+bad
 beu
 bgh
 bim
@@ -134060,12 +134031,12 @@ blM
 boa
 beu
 bqC
-bsr
 aXL
+bsu
 bxn
 byC
 bBn
-aXL
+aVS
 baf
 bOP
 baf
@@ -134303,13 +134274,13 @@ aBt
 aBt
 aBt
 aBt
-aBt
-aBt
-aBt
-aXL
 bac
-bcb
-beb
+aVU
+aVV
+aVS
+aVS
+aVS
+bsr
 bfQ
 bhM
 bjH
@@ -134318,11 +134289,11 @@ bnp
 beb
 bqD
 bss
-aXL
+bsu
 bxo
 byH
 bBn
-aXL
+aVS
 baf
 baf
 baf
@@ -134560,12 +134531,12 @@ aBt
 aBt
 aBt
 aBt
-aBt
-aBF
-aBt
-aXL
-bad
-aXL
+bac
+aYF
+bac
+aXM
+aXM
+aXM
 aBt
 aXL
 bhN
@@ -134573,13 +134544,13 @@ bjI
 blx
 aXL
 cUC
-aXL
-bst
-bcb
-bwj
-bwj
-bwj
-bCA
+wWX
+aVS
+aVS
+aVS
+aVS
+aVS
+aVS
 baf
 baf
 bGm
@@ -134817,12 +134788,12 @@ aBt
 aBt
 aBt
 aBt
-aBt
-aBt
-aBt
+aWt
+bst
+ocV
 aXM
-bae
-bcc
+aXM
+aXM
 aBt
 bfR
 bhO
@@ -134830,8 +134801,8 @@ bhO
 bly
 bfR
 cUC
-bcc
-bsu
+aXM
+aXM
 aXM
 aBt
 aBt
@@ -135092,10 +135063,10 @@ aBt
 aBt
 aBt
 aBt
-baf
-baf
-baf
-baf
+aBt
+aBt
+aBt
+aBt
 bGn
 bId
 bLT
@@ -135340,7 +135311,6 @@ aBt
 aBt
 aBt
 aBt
-aVW
 aBt
 aBt
 aBt
@@ -135351,8 +135321,9 @@ aBt
 aBt
 aBt
 aBt
-baf
-baf
+aBt
+aBt
+aBt
 bGo
 bIe
 bLU
@@ -135596,6 +135567,7 @@ aBt
 aBt
 aBt
 aBt
+bcc
 aBt
 aBt
 aBt
@@ -135608,8 +135580,7 @@ aBt
 aBt
 aBt
 aBt
-baf
-baf
+aBt
 bGn
 bIf
 bLV
@@ -135865,8 +135836,8 @@ aBt
 aBt
 aBt
 aBt
-baf
-baf
+aBt
+aBt
 bGo
 bIe
 bLW
@@ -136122,8 +136093,8 @@ aBt
 aBt
 aBt
 aBt
-baf
-baf
+aBt
+aBt
 bCB
 bIe
 bLX
@@ -136379,8 +136350,8 @@ aBt
 aBt
 aBt
 aBt
-baf
-baf
+aBt
+aBt
 bGm
 bdr
 bus
@@ -136636,8 +136607,8 @@ aBt
 aBt
 aBt
 aBt
-baf
-baf
+aBt
+aBt
 bGm
 bIh
 bLU
@@ -136894,7 +136865,7 @@ aBt
 aBt
 aBt
 aBt
-baf
+aBt
 bGm
 bIe
 bLZ
@@ -137151,7 +137122,7 @@ aBt
 aBt
 aBt
 aBt
-baf
+aBt
 bBW
 bIe
 bLU
@@ -137408,7 +137379,7 @@ aBt
 aBt
 aBt
 aBt
-baf
+aBt
 bCB
 bIe
 bLW
@@ -137665,7 +137636,7 @@ aBt
 aBt
 aBt
 aBt
-baf
+aBt
 bjS
 bIe
 bLX
@@ -143305,7 +143276,7 @@ aaa
 aac
 aQY
 aQY
-bga
+aQY
 aQY
 aQY
 aQY
