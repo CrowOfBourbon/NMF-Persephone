@@ -44,7 +44,6 @@ They sell generic supplies and ask for generic supplies.
 		/obj/item/device/spy_bug                    = TRADER_BLACKLIST, // Traitor stuff
 		/obj/item/device/spy_monitor                = TRADER_BLACKLIST, // Traitor stuff
 		/obj/item/device/suit_cooling_unit          = TRADER_BLACKLIST, // Not on Aurora
-		/obj/item/device/taperecorder/cciaa         = TRADER_BLACKLIST, // Admin item
 		/obj/item/device/batterer                   = TRADER_BLACKLIST, // Item too rare
 		/obj/item/device/contract_uplink            = TRADER_BLACKLIST, // Traitor stuff
 		/obj/item/device/uplink                     = TRADER_BLACKLIST_ALL, // Traitor stuff

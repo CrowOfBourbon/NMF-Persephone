@@ -70,7 +70,7 @@
 	name = "Exosuit Equipment"
 	restricted_antags = list(MODE_BURGLAR)
 
-/datum/uplink_category/corporate_equipment
+//datum/uplink_category/corporate_equipment
 	name = "Corporate Equipment"
 	restricted_antags = list(MODE_BURGLAR)
 
@@ -84,7 +84,7 @@
 	name = "Infiltration Items"
 	antag_roles = list(MODE_NINJA)
 
-/datum/uplink_category/gear_loadout
+//datum/uplink_category/gear_loadout
 	name = "Gear Loadout"
 	antag_roles = list(MODE_MERCENARY)
 

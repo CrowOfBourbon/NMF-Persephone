@@ -1,7 +1,7 @@
 /datum/game_mode/incursion
 	name = "Incursion (merc+ninjas)"
 	config_tag = "incursion"
-	round_description = "A group of mercenaries and a set of ninjas have their eyes set on the NSS Aurora."
+	round_description = "A group of mercenaries and a set of ninjas have their eyes set on the Persephone."
 	extended_round_description = "Nanotrasen has been playing with fire, maybe a little visit will teach them a lesson."
 	required_players = 20
 	required_enemies = 6

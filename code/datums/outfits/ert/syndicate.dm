@@ -1,5 +1,5 @@
 /datum/outfit/admin/deathsquad/syndicate
-	name = "Syndicate Commando"
+	name = "Syndicate Strike Team"
 
 	uniform = /obj/item/clothing/under/syndicate
 	belt = /obj/item/storage/belt/military/syndicate
@@ -25,6 +25,6 @@
 	id_iff = IFF_SYNDICATE
 
 /datum/outfit/admin/deathsquad/syndicate/leader
-	name = "Syndicate Commando Lead"
+	name = "Syndicate Team Lead"
 
 	l_pocket = /obj/item/pinpointer

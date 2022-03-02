@@ -60,7 +60,7 @@
 		/obj/item/implant/loyalty
 	)
 	id_icon = "ccia"
-	id_access = "CCIA Agent"
+	id_access = "SCIA Agent"
 
 /datum/outfit/admin/nt/protection_detail/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 
@@ -107,7 +107,7 @@
 	id_access = "BlackOps Commander"
 
 /datum/outfit/admin/nt/cciaa
-	name = "CCIA Agent"
+	name = "SCIA Agent"
 
 	uniform = /obj/item/clothing/under/rank/centcom_officer
 	suit = /obj/item/clothing/suit/storage/toggle/liaison
@@ -123,10 +123,10 @@
 	id = /obj/item/card/id/ccia
 
 	id_icon = "ccia"
-	id_access = "CCIA Agent"
+	id_access = "SCIA Agent"
 
 /datum/outfit/admin/nt/odinsec
-	name = "NTCC Odin Security Specialist"
+	name = "NTSC Demeter Security Specialist"
 
 	uniform = /obj/item/clothing/under/ccpolice
 	suit = /obj/item/clothing/suit/storage/vest/heavy/ert/peacekeeper
@@ -156,7 +156,7 @@
 		/obj/item/implant/loyalty
 	)
 
-	id_access = "Odin Security"
+	id_access = "Demeter Security"
 
 /datum/outfit/admin/nt/odinsec/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 
@@ -211,7 +211,7 @@
 	)
 
 	id_icon = "fib"
-	id_access = "CCIA Agent"
+	id_access = "SCIA Agent"
 
 /datum/outfit/admin/nt/fib/guard
 	name = "FIB Escort"
@@ -233,10 +233,10 @@
 		/obj/item/clothing/head/helmet = 1
 	)
 
-	id_access = "CCIA Agent"
+	id_access = "SCIA Agent"
 
 /datum/outfit/admin/nt/odindoc
-	name = "NTCC Odin Medical Specialist"
+	name = "NTSC Demeter Medical Specialist"
 
 	uniform = /obj/item/clothing/under/rank/medical/black
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/trauma
@@ -269,13 +269,13 @@
 		/obj/item/reagent_containers/glass/bottle/dexalin_plus = 1,
 		/obj/item/reagent_containers/glass/bottle/butazoline = 1,
 		/obj/item/reagent_containers/glass/bottle/dermaline = 1,
-		/obj/item/reagent_containers/glass/bottle/perconol = 1	
+		/obj/item/reagent_containers/glass/bottle/perconol = 1
 	)
 
 	id_access = "Medical Doctor"
 
 /datum/outfit/admin/nt/odinpharm
-	name = "NTCC Odin Pharmacy Specialist"
+	name = "NTSC Demeter Pharmacy Specialist"
 
 	uniform = /obj/item/clothing/under/rank/pharmacist
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/pharmacist
@@ -292,7 +292,7 @@
 	id_access = "Medical Doctor"
 
 /datum/outfit/admin/nt/odinbartender
-	name = "NTCC Odin Bartender"
+	name = "NTSC Demeter Bartender"
 
 	uniform = /obj/item/clothing/under/rank/bartender
 	shoes = /obj/item/clothing/shoes/laceup/all_species
@@ -302,7 +302,7 @@
 	id_access = "Service"
 
 /datum/outfit/admin/nt/odinchef
-	name = "NTCC Odin Chef"
+	name = "NTSC Demeter Chef"
 
 	uniform = /obj/item/clothing/under/rank/chef
 	suit = /obj/item/clothing/suit/chef
@@ -314,7 +314,7 @@
 	id_access = "Service"
 
 /datum/outfit/admin/nt/odinjanitor
-	name = "NTCC Odin Sanitation Specialist"
+	name = "NTSC Demeter Sanitation Specialist"
 
 	uniform = /obj/item/clothing/under/rank/janitor
 	pda = /obj/item/modular_computer/handheld/pda/civilian

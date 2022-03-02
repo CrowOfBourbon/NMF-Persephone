@@ -2,7 +2,7 @@
 	category = /datum/uplink_category/martial_arts
 
 /datum/uplink_item/item/martial_arts/solcom
-	name = "SolCom"
+	name = "InterstellarArts"
 	item_cost = 2
 	path = /obj/item/martial_manual
 

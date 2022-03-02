@@ -1,5 +1,5 @@
 /datum/ghostspawner/human/ert/commando
-	name = "Syndicate Commando"
+	name = "Syndicate Strike Team"
 	short_name = "syndc"
 	max_count = 3
 	desc = "Well-equipped commandos of the criminal Syndicate."
@@ -8,7 +8,7 @@
 	spawnpoints = list("SyndERTSpawn")
 
 /datum/ghostspawner/human/ert/commando/leader
-	name = "Syndicate Commando Leader"
+	name = "Syndicate Team Leader"
 	short_name = "syndl"
 	max_count = 1
 	desc = "The leader of the Syndicate's elite commandos."
