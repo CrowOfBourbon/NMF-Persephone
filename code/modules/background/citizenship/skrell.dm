@@ -1,5 +1,5 @@
-/datum/citizenship/jargon
-	name = CITIZENSHIP_JARGON
+/datum/citizenship/elodile_empire
+	name = CITIZENSHIP_ELODILE
 	description = "Home of the Skrell, a centralized union of solar systems run by councilors of different ranks and positions. The capital of the Federation is located at the city of \
 	Kal'lo on the core planet Jargon IV, also known as Qerrbalak, within the Jargon system. While the majority of Skrell live within the Jargon Federation, a sizable portion live \
 	abroad. The quality of life within Federation is considered to be the best in the galaxy due to their technological advances, allowing Federation Citizens access to a quality of \
@@ -37,21 +37,21 @@
 
 	switch(mission_level)
 		if(REPRESENTATIVE_MISSION_HIGH)
-			rep_objectives = pick("Some Skrell are not part of the Federation; attempt to convince them to become a citizen",
-							"Acquire information on dissidents towards the Federation, forwarding it to the embassy",
-							"Curtail the spreading of written literature or verbal notions that contain negative connotations towards the Federation")
+			rep_objectives = pick("Some Skrell are not part of the Empire; attempt to convince them to become a citizen",
+							"Acquire information on dissidents towards the Empire, forwarding it to the embassy",
+							"Curtail the spreading of written literature or verbal notions that contain negative connotations towards the Empire.")
 
 		if(REPRESENTATIVE_MISSION_MEDIUM)
-			rep_objectives = pick("Ensure the interests of Federation citizens are upheld by the station. This includes C'thur and Diona of Federation origin",
+			rep_objectives = pick("Ensure the interests of Elodile citizens are upheld by the station.",
 							"Legally curtail the advancements and liberal thinking towards synthetics",
-							"The Aurora hosts some of the brightest minds in the galaxy; winning them over towards the Federation is a major victory")
+							"Persephone hosts some of the brightest minds in the galaxy; winning them over towards the Empire is a major victory")
 		else
-			rep_objectives = pick("Consider assisting crew within the capacity of your role, an altruistic image is good PR towards the federation",
-							"Some Skrell are not part of the Federation; attempt to convince them to become a citizen")
+			rep_objectives = pick("Consider assisting crew within the capacity of your role, an altruistic image is good PR towards the empire",
+							"Some Skrell are not part of the Empire; attempt to convince them to become a citizen")
 
 	return rep_objectives
 
 /datum/outfit/job/representative/consular/jargon
-	name = "Jargon Consular Officer"
+	name = "Elodile Consular Officer"
 
 	uniform = /obj/item/clothing/under/skrell

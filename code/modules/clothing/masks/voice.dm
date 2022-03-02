@@ -3,7 +3,7 @@
 	desc = "A voice scrambling module. If you can see this, report it as a bug on the tracker."
 	var/voice //If set and item is present in mask/suit, this name will be used for the wearer's speech.
 	var/active
-	var/current_accent = ACCENT_CETI
+	var/current_accent = ACCENT_RHEA
 
 /obj/item/clothing/mask/gas/voice
 	var/obj/item/voice_changer/changer

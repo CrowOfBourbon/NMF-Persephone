@@ -1,6 +1,6 @@
 /mob/living/carbon
 	gender = MALE
-	accent = ACCENT_CETI
+	accent = ACCENT_RHEA
 	var/datum/species/species //Contains icon generation and language information, set during New().
 	//stomach contents redefined at mob/living level, removed from here
 

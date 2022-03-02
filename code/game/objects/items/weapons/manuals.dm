@@ -1640,7 +1640,7 @@
 			</html>
 			"}
 
-/obj/item/book/manual/tcfl_pamphlet
+//obj/item/book/manual/tcfl_pamphlet
 	name = "tau ceti foreign legion pamphlet"
 	desc = "A simple pamphlet containing information about the Tau Ceti Foreign Legion."
 	icon_state = "tcfl_book"

@@ -1,5 +1,5 @@
-/datum/citizenship/pra
-	name = CITIZENSHIP_PRA
+/datum/citizenship/royal_adhomian_empire
+	name = CITIZENSHIP_RAE
 	description = "Lead by President Njadrasanukii Hadii, the People's Republic of Adhomai are considered the 'loyalist' faction on Adhomai and enjoy galactic recognition as the \
 	government of Adhomai. It claims to be the true keeper of Al'mari's legacy. However, the PRA can be described as a Hadiist branch of Al'mari's revolutionary ideology - that means \
 	putting the State at the top of a hierarchy of power. The PRA is a very centralized state, but in recent years has slowly been able to start making true its promises to bring \
@@ -36,25 +36,21 @@
 /datum/citizenship/pra/get_objectives(mission_level, var/mob/living/carbon/human/H)
 	switch(mission_level)
 		if(REPRESENTATIVE_MISSION_LOW)
-			return "Ensure the loyalty of PRA Citizen to the Party and President Hadii. You must also promote the relationship between NanoTrasen and the People's Republic through diplomacy."
+			return "Ensure the loyalty of RAE Citizen to the empire."
 
 /datum/outfit/job/representative/consular/pra
-	name = "PRA Consular Officer"
+	name = "RAE Consular Officer"
 
 	glasses = null
 	uniform = /obj/item/clothing/under/tajaran/consular
 	head = /obj/item/clothing/head/tajaran/consular
 	backpack_contents = list(
-		/obj/item/storage/box/hadii_card = 1,
-		/obj/item/storage/box/hadii_manifesto = 1,
 		/obj/item/gun/projectile/pistol/adhomai = 1,
 		/obj/item/storage/field_ration = 1,
-		/obj/item/storage/box/syndie_kit/spy/hidden = 1
-	)
-	accessory = /obj/item/clothing/accessory/hadii_pin
+		/obj/item/storage/box/syndie_kit/spy/hidden = 1)
 
-/datum/citizenship/dpra
-	name = CITIZENSHIP_DPRA
+/datum/citizenship/united_republic_of_adhomai
+	name = CITIZENSHIP_URA
 	description = "The most pervasive and successful rebellion came from a group calling themselves the Adhomai Liberation Army, a group made up of Tajara from almost every walk of life. \
 	Opposing corporate claims on Tajaran soil and citing mismatched development and governmental negligence as the fault of humanity, they aim \
 	to \"free Tajara from the new shackles imposed upon them by the corporate overlords and return Adhomai to a free, prosperous planet like our ancestors dreamed of.\" They named the \
@@ -92,24 +88,21 @@
 /datum/citizenship/dpra/get_objectives(mission_level, var/mob/living/carbon/human/H)
 	switch(mission_level)
 		if(REPRESENTATIVE_MISSION_LOW)
-			return "Ensure that DPRA citizens are following the principles of Al'mariism. Defend the rights of the Tajara through diplomacy."
+			return "Ensure that URA citizens are following the right path in life. Defend the rights of the Tajara through diplomacy."
 
 /datum/outfit/job/representative/consular/dpra
-	name = "DPRA Consular Officer"
+	name = "URA Consular Officer"
 
 	glasses = null
 	uniform = /obj/item/clothing/under/tajaran/consular/dpra
 	head = /obj/item/clothing/head/tajaran/consular/dpra
 	backpack_contents = list(
 		/obj/item/gun/projectile/silenced = 1,
-		/obj/item/storage/box/dpra_manifesto = 1,
 		/obj/item/storage/field_ration/dpra = 1,
-		/obj/item/storage/box/syndie_kit/spy/hidden = 1
-	)
-	accessory = /obj/item/clothing/accessory/dpra_pin
+		/obj/item/storage/box/syndie_kit/spy/hidden = 1)
 
-/datum/citizenship/nka
-	name = CITIZENSHIP_NKA
+/datum/citizenship/naziir_coalition
+	name = CITIZENSHIP_NC
 	description = "The last major faction is the rebellious New Kingdom of Adhomai, which seceded and declared itself a nation in 2450. The New Kingdom is ruled by a Njarir'Akhran noble \
 	line that survived the previous Revolution by remaining in hiding, owing to the efforts of their supporters. Founded by King Vahzirthaamro Azunja specifically, he denounces both other \
 	factions in the civil war as illegitimate and himself as the only legitimate ruler of Adhomai. Supporters of the New Kingdom tend to be rare outside lands it controls. However, \
@@ -149,10 +142,10 @@
 /datum/citizenship/nka/get_objectives(mission_level, var/mob/living/carbon/human/H)
 	switch(mission_level)
 		if(REPRESENTATIVE_MISSION_LOW)
-			return "Ensure that NKA citizens are loyal to the Crown. You must also promote the relationship between NanoTrasen and the New Kingdom through diplomacy."
+			return "Ensure that NC citizens are loyal. You must also promote the relationship between NanoTrasen and the NC through diplomacy."
 
 /datum/outfit/job/representative/consular/nka
-	name = "NKA Consular Officer"
+	name = "NC Consular Officer"
 
 	glasses = null
 	uniform = /obj/item/clothing/under/tajaran/consular/nka
@@ -160,8 +153,5 @@
 	backpack_contents = list(
 		/obj/item/folder/blue/nka = 1,
 		/obj/item/gun/projectile/revolver/adhomian = 1,
-		/obj/item/storage/box/nka_manifesto = 1,
 		/obj/item/storage/field_ration/nka = 1,
-		/obj/item/storage/box/syndie_kit/spy/hidden = 1
-	)
-	accessory = /obj/item/clothing/accessory/nka_pin
+		/obj/item/storage/box/syndie_kit/spy/hidden = 1)

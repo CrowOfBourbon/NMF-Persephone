@@ -853,11 +853,6 @@
 	desc = "A box full of dominian honor codex "
 	starts_with = list(/obj/item/book/manual/dominia_honor = 6)
 
-/obj/item/storage/box/tcfl_pamphlet
-	name = "tau ceti foreign legion pamphlets box"
-	desc = "A box full of tau ceti foreign legion pamphlets."
-	starts_with = list(/obj/item/book/manual/tcfl_pamphlet = 6)
-
 /obj/item/storage/box/sharps
 	name = "sharps disposal box"
 	desc = "A plastic box for disposal of used needles and other sharp, potentially-contaminated tools. There is a large biohazard sign on the front."
@@ -991,7 +986,7 @@
 				if(choice == "SmileyFace")
 					var/obj/item/clothing/head/papersack/smiley/S = new()
 					user.put_in_hands(S)
-				else    
+				else
 					var/obj/item/clothing/head/papersack/PS = new()
 					user.put_in_hands(PS)
 				qdel(src)

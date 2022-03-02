@@ -708,7 +708,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_state = "solzippo"
 	item_state = "solzippo"
 
-/obj/item/flame/lighter/zippo/tcfl
+//obj/item/flame/lighter/zippo/tcfl
 	name = "\improper Bieselite Zippo lighter"
 	desc = "A zippo lighter with a depiction of the Bieselite flag."
 	desc_fluff = "In their rush to expand the Tau Ceti Foreign Legion, the Republic of Biesel manufactured thousands of Biesel-patterned zippo lighters to compliment the jackets and berets that were so often touted by recruiters. In the wake of Frost's Invasion, the popularity of such lighters has only increased and they serve as a small show of patriotism. A small NanoTrasen logo is stenciled on the base."

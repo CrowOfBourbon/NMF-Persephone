@@ -341,9 +341,6 @@ STOCK_ITEM_UNCOMMON(coin, 1.3)
 STOCK_ITEM_UNCOMMON(plushie, 1)
 	new /obj/random/plushie(L)
 
-STOCK_ITEM_UNCOMMON(flag, 1)
-	new /obj/random/random_flag(L)
-
 STOCK_ITEM_UNCOMMON(apiary, 1)
 	new /obj/item/bee_pack(L)
 	if(prob(75))
