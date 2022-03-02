@@ -8,11 +8,11 @@
 	name = ACCENT_DWELLER
 	description = "The typical accent of the Homeworld (or Qerrbalak), is very much more distinct and enunciated than other variations of Nral'Malic. It puts specific emphasis on a \
 	melodious manner of speaking, their tones often jumping out of the standard human hearing range."
-	tag_icon = "skrell_homeworld"
+	tag_icon = "skrell_dweller"
 
 /datum/accent/skrell/blirkite
 	name = ACCENT_BLIR
 	description = "The Qerr'Malic accent is known for being rather soft, even hushed at some points. Because of the moon's tourist industry, it borrows elements from other accents to \
 	form a rather unique mixture that makes specific reference to keeping low tones accessible to non-Skrell, further cementing the overall 'quietness' to other Skrell as their sentences \
 	sound half-finished."
-	tag_icon = "skrell_qerrmalic"
+	tag_icon = "skrell_blirk"
