@@ -1,12 +1,14 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aaa" = (
 /obj/machinery/door/window/southleft{
-	name = "CCIAP Penny"
+	name = "SCIAP Peaches"
 	},
 /obj/structure/window/reinforced/crescent{
 	dir = 8
 	},
-/mob/living/simple_animal/cat/penny,
+/mob/living/simple_animal/cat/fluff/Runtime{
+	name = "Peaches"
+	},
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -5518,6 +5520,10 @@
 /obj/item/clothing/suit/space/void/merc,
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/head/helmet/space/void/merc,
+/obj/item/clothing/suit/space/void/merc,
+/obj/item/clothing/head/helmet/space/void/merc,
+/obj/item/tank/oxygen,
+/obj/item/clothing/shoes/magboots,
 /turf/simulated/floor/tiled,
 /area/shuttle/skipjack)
 "aOp" = (
@@ -7743,15 +7749,12 @@
 /turf/unsimulated/wall/fakeairlock,
 /area/antag/raider)
 "bQM" = (
-/obj/effect/floor_decal/corner/grey{
-	dir = 10
+/obj/structure/shuttle_part/ert{
+	icon_state = "10,2";
+	opacity = 1
 	},
-/obj/machinery/door/airlock/glass_centcom{
-	name = "SCIA Auxillary Office";
-	req_access = list(109)
-	},
-/turf/unsimulated/floor,
-/area/centcom/control)
+/turf/space,
+/area/shuttle/specops)
 "bQP" = (
 /obj/machinery/body_scanconsole{
 	dir = 4
@@ -10357,6 +10360,7 @@
 /obj/structure/table/wood{
 	table_reinf = "wood"
 	},
+/obj/random/weapon_and_ammo,
 /turf/unsimulated/floor{
 	icon_state = "carpetnoconnect"
 	},
@@ -24384,47 +24388,6 @@
 	icon_state = "7,19"
 	},
 /area/shuttle/mercenary)
-"nRM" = (
-/obj/structure/closet{
-	icon_closed = "syndicate1";
-	icon_opened = "syndicate1open";
-	icon_state = "syndicate1";
-	name = "sol clothing"
-	},
-/obj/item/clothing/under/rank/fatigues,
-/obj/item/clothing/under/rank/fatigues,
-/obj/item/clothing/under/rank/fatigues,
-/obj/item/clothing/under/rank/fatigues,
-/obj/item/flag/sol,
-/obj/item/flag/sol,
-/obj/item/flag/sol/l,
-/obj/item/flag/sol/l,
-/obj/item/clothing/under/rank/fatigues/marine,
-/obj/item/clothing/under/rank/fatigues/marine,
-/obj/item/clothing/under/rank/fatigues/marine,
-/obj/item/clothing/under/rank/fatigues/marine,
-/obj/item/clothing/suit/storage/vest/sol,
-/obj/item/clothing/suit/storage/vest/sol,
-/obj/item/clothing/suit/storage/vest/sol,
-/obj/item/clothing/suit/storage/vest/sol,
-/obj/item/clothing/head/helmet/sol,
-/obj/item/clothing/head/helmet/sol,
-/obj/item/clothing/head/helmet/sol,
-/obj/item/clothing/head/helmet/sol,
-/obj/item/clothing/head/navy,
-/obj/item/clothing/head/navy,
-/obj/item/clothing/head/navy,
-/obj/item/clothing/head/navy,
-/obj/item/clothing/head/navy/marine,
-/obj/item/clothing/head/navy/marine,
-/obj/item/clothing/head/navy/marine,
-/obj/item/clothing/head/navy/garrison,
-/obj/item/clothing/head/dress/admiral,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/unsimulated/floor{
-	icon_state = "new_reinforced"
-	},
-/area/antag/mercenary)
 "nSz" = (
 /obj/item/storage/box/fancy/cigarettes/cigar{
 	pixel_y = 4
@@ -25497,13 +25460,6 @@
 	icon_state = "dark2"
 	},
 /area/centcom/control)
-"oOX" = (
-/obj/structure/shuttle_part/ert{
-	icon_state = "10,2";
-	opacity = 1
-	},
-/turf/unsimulated/floor/plating,
-/area/shuttle/specops)
 "oPn" = (
 /obj/effect/floor_decal/corner/beige/full{
 	dir = 4
@@ -32284,6 +32240,7 @@
 	pixel_x = 1;
 	pixel_y = 6
 	},
+/obj/random/weapon_and_ammo,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -32633,14 +32590,6 @@
 /turf/space/dynamic,
 /area/shuttle/mercenary)
 "uIj" = (
-/obj/machinery/embedded_controller/radio/simple_docking_controller{
-	frequency = 1380;
-	id_tag = "specops_shuttle_fore";
-	name = "forward docking hatch controller";
-	pixel_x = -10;
-	pixel_y = -23;
-	tag_door = "specops_shuttle_fore_hatch"
-	},
 /obj/structure/bed/stool/chair/shuttle{
 	dir = 8
 	},
@@ -32823,12 +32772,17 @@
 /turf/space/dynamic,
 /area/antag/raider)
 "uOx" = (
-/obj/effect/floor_decal/spline/plain{
-	dir = 8
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "specops_shuttle_fore";
+	name = "forward docking hatch controller";
+	pixel_x = -10;
+	pixel_y = -23;
+	tag_door = "specops_shuttle_fore_hatch"
 	},
-/obj/effect/floor_decal/industrial/warning,
-/turf/unsimulated/floor,
-/area/antag/mercenary)
+/turf/simulated/floor/shuttle/black,
+/area/shuttle/specops)
 "uOL" = (
 /obj/machinery/computer/shuttle_control/multi/raider,
 /obj/effect/floor_decal/corner/red{
@@ -46615,8 +46569,8 @@ xVl
 apD
 gzU
 mLI
-nux
-nRM
+uaE
+uaE
 xVl
 wGs
 wGs
@@ -46873,7 +46827,7 @@ iIg
 pWU
 uaE
 jXb
-uOx
+ybY
 hOM
 iIg
 mLI
@@ -55793,7 +55747,7 @@ ujN
 pMe
 pQe
 pZi
-glr
+bQM
 qer
 iLs
 ugV
@@ -58105,7 +58059,7 @@ ujN
 ujN
 ufj
 aCx
-aCK
+uOx
 aCX
 vht
 iLs
@@ -58362,7 +58316,7 @@ oQM
 ujN
 hQg
 aCy
-oOX
+glr
 xYs
 wCf
 iLs
@@ -61142,7 +61096,7 @@ vVC
 vVC
 bYs
 kjq
-bQM
+vNR
 uJw
 vVC
 ixg
