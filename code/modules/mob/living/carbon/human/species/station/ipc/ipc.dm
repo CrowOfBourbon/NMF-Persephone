@@ -10,7 +10,11 @@
 	default_genders = list(NEUTER)
 	selectable_pronouns = list(NEUTER, PLURAL)
 
-	blurb = "IPCs are, quite simply, \"Integrated Positronic Chassis.\" In this scenario, 'positronic' implies that the chassis possesses a positronic processing core (or positronic brain), meaning that an IPC must be positronic to be considered an IPC. The Baseline model is more of a category - the long of the short is that they represent all unbound synthetic units. Baseline models cover anything that is not an Industrial chassis or a Shell chassis. They can be custom made or assembly made. The most common feature of the Baseline model is a simple design, skeletal or semi-humanoid, and ordinary atmospheric diffusion cooling systems."
+	blurb = "IPCs, or Integrated Positronic Chassis, are humanoid robots with a Positronic Brain as their core processor. \
+The \"Baseline\" model is a broad category of simplistic, utilitarian designs that make up the bulk of IPC populations. \
+They are often notable for their skeletal frames and iconic \"TV-Head\". Variations between chassis of the Baseline frame are mainly aesthetic, \
+either due to company design or customer wishes.While many manufactuers of baseline frames exist, \
+Titan Universal Manufacturing dominates this market."
 
 	icobase = 'icons/mob/human_races/ipc/r_machine.dmi'
 	deform = 'icons/mob/human_races/ipc/r_machine.dmi'
@@ -120,7 +124,7 @@
 	default_citizenship = CITIZENSHIP_NONE
 	bodyfall_sound = /decl/sound_category/bodyfall_machine_sound
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_DION, ACCENT_TTS)
+	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 	allowed_religions = list(RELIGION_NONE, RELIGION_OTHER, RELIGION_CHRISTIANITY, RELIGION_ISLAM, RELIGION_JUDAISM, RELIGION_HINDU, RELIGION_BUDDHISM, RELIGION_TAOISM)
 
 	alterable_internal_organs = list()
