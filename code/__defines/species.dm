@@ -88,7 +88,7 @@
 
 #define BODYTYPE_IPC				"Machine"
 #define BODYTYPE_IPC_INDUSTRIAL		"Heavy Machine"
-#define BODYTYPE_IPC_ZENGHU			"Zeng-Hu Frame"
+#define BODYTYPE_IPC_ZENGHU			"Rook Frame"
 #define BODYTYPE_IPC_BISHOP			"Bishop Frame"
 
 #define BODYTYPE_GOLEM				"Golem"
