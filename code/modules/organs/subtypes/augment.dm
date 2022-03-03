@@ -389,13 +389,13 @@
 			owner.remove_language(language)
 	owner.set_default_language(pick(owner.languages))
 
-/obj/item/organ/internal/augment/language/klax
-	name = "K'laxan language processor"
-	augment_languages = list(LANGUAGE_UNATHI)
-
-/obj/item/organ/internal/augment/language/cthur
-	name = "C'thur language processor"
-	augment_languages = list(LANGUAGE_SKRELLIAN)
+///obj/item/organ/internal/augment/language/klax
+//	name = "K'laxan language processor"
+//	augment_languages = list(LANGUAGE_UNATHI)
+// Lizards and frogs aren't friends with the bugs yet.
+///obj/item/organ/internal/augment/language/cthur
+//	name = "C'thur language processor"
+//	augment_languages = list(LANGUAGE_TUQ)
 
 /obj/item/organ/internal/augment/gustatorial
 	name = "gustatorial centre"

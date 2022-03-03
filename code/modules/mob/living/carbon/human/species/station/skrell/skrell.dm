@@ -25,8 +25,8 @@
 	adapted to live on land they are still able to breathe and see underwater; however, their swimming is not as agile."
 
 	num_alternate_languages = 3
-	language = LANGUAGE_SKRELLIAN
-	name_language = LANGUAGE_SKRELLIAN
+	language = LANGUAGE_TUQ
+	name_language = LANGUAGE_TUQ
 	rarity_value = 3
 
 	grab_mod = 2
@@ -84,13 +84,12 @@
 
 	default_h_style = "Skrell Short Tentacles"
 
-	allowed_citizenships = list(CITIZENSHIP_JARGON, CITIZENSHIP_BIESEL, CITIZENSHIP_SOL, CITIZENSHIP_COALITION, CITIZENSHIP_ELYRA, CITIZENSHIP_ERIDANI)
-	allowed_religions = list(RELIGION_QEBLAK, RELIGION_WEISHII, RELIGION_SUURKA, RELIGION_KIRGUL, RELIGION_NONE, RELIGION_OTHER)
-	default_citizenship = CITIZENSHIP_JARGON
+	allowed_citizenships = list(CITIZENSHIP_ELODILE, CITIZENSHIP_GALACTICA, CITIZENSHIP_IR)
+	allowed_religions = list(RELIGION_MULUK, RELIGION_NONE, RELIGION_OTHER)
+	default_citizenship = CITIZENSHIP_ELODILE
 
-	default_accent = ACCENT_SKRELL
-	allowed_accents = list(ACCENT_SKRELL, ACCENT_HOMEWORLD, ACCENT_QERRMALIC, ACCENT_ALIOSE, ACCENT_AWEIJI, ACCENT_TRAVERSE, ACCENT_CETI, ACCENT_GIBSON, ACCENT_COC, ACCENT_ERIDANI,
-							ACCENT_ERIDANIDREG, ACCENT_VENUS, ACCENT_JUPITER, ACCENT_MARTIAN, ACCENT_ELYRA, ACCENT_SILVERSUN_EXPATRIATE, ACCENT_EUROPA, ACCENT_VALKYRIE, ACCENT_MICTLAN)
+	default_accent = ACCENT_ELO
+	allowed_accents = list(ACCENT_ELO, ACCENT_DWELLER, ACCENT_BLIR)
 
 	zombie_type = SPECIES_ZOMBIE_SKRELL
 	bodyfall_sound = /decl/sound_category/bodyfall_skrell_sound

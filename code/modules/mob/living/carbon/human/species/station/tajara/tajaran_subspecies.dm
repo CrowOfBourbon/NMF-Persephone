@@ -9,7 +9,7 @@
 	from their fellow Tajara who cite their lackluster test scores, even among Tajara, and their higher \
 	crime rates."
 
-	secondary_langs = list(LANGUAGE_SIIK_MAAS, LANGUAGE_SIIK_TAJR, LANGUAGE_DELVAHII)
+	secondary_langs = list(LANGUAGE_SIIK_MAAS, LANGUAGE_DELVAHII)
 
 	slowdown = -0.8 //As opposed to -1 for Base tajara
 	sprint_speed_factor = 0.55 // As opposed to 0.65
@@ -28,7 +28,7 @@
 	heat_level_2 = 360 //RaceDefault 380 Default 400
 	heat_level_3 = 700 //RaceDefault 800 Default 1000
 
-	allowed_accents = list(ACCENT_REPUBICLANSIIK, ACCENT_NAZIRASIIK, ACCENT_CREVAN, ACCENT_DASNRRASIIK, ACCENT_HIGHHARRSIIK, ACCENT_LOWHARRSIIK, ACCENT_AMOHDASIIK, ACCENT_NORTHRASNRR, ACCENT_RURALDELVAHHI, ACCENT_NOMADDELVAHHI, ACCENT_DINAKK, ACCENT_HARRNRRI)
+	allowed_accents = list(ACCENT_NAZEER, ACCENT_RAE, ACCENT_TANJIR)
 
 	stomach_capacity = 7
 
@@ -65,8 +65,8 @@
 
 	default_h_style = "M'sai Ears"
 
-	secondary_langs = list(LANGUAGE_SIIK_MAAS, LANGUAGE_SIIK_TAJR, LANGUAGE_SIGN_TAJARA)
-	allowed_accents = list(ACCENT_REPUBICLANSIIK, ACCENT_NAZIRASIIK, ACCENT_CREVAN, ACCENT_DASNRRASIIK, ACCENT_HIGHHARRSIIK, ACCENT_LOWHARRSIIK, ACCENT_AMOHDASIIK, ACCENT_NORTHRASNRR, ACCENT_DINAKK, ACCENT_HARRNRRI, ACCENT_ZARRJIRI)
+	secondary_langs = list(LANGUAGE_SIIK_MAAS, LANGUAGE_SIGN_TAJARA)
+	allowed_accents = list(ACCENT_NAZEER, ACCENT_RAE, ACCENT_TANJIR)
 
 	max_nutrition_factor = 1.2
 	max_hydration_factor = 1.2

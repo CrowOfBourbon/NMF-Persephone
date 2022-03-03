@@ -153,7 +153,7 @@
 	//Set the report footer for CCIA Announcements
 	if (reporttype == "ccia")
 		if (reportsender)
-			reportbody += "<br><br>- [reportsender], Central Command Internal Affairs Agent, [commstation_name()]"
+			reportbody += "<br><br>- [reportsender], Star Command Internal Affairs Agent, [commstation_name()]"
 		else
 			reportbody += "<br><br>- CCIAAMS, [commstation_name()]"
 
@@ -221,9 +221,9 @@
 	//Announce that the fax has been sent
 	if(faxannounce == 1 || (faxannounce==2 && notifyresult==0))
 		if(sendsuccess.len < 1)
-			command_announcement.Announce("A fax message from Central Command could not be delivered because all of the following fax machines are inoperational: <br>"+jointext(targetlist, ", "), "Fax Delivery Failure", new_sound = 'sound/AI/commandreport.ogg', msg_sanitized = 1);
+			command_announcement.Announce("A fax message from Star Command could not be delivered because all of the following fax machines are inoperational: <br>"+jointext(targetlist, ", "), "Fax Delivery Failure", new_sound = 'sound/AI/commandreport.ogg', msg_sanitized = 1);
 		else
-			command_announcement.Announce("A fax message from Central Command has been sent to the following fax machines: <br>"+jointext(sendsuccess, ", "), "Fax Received", new_sound = 'sound/AI/commandreport.ogg', msg_sanitized = 1);
+			command_announcement.Announce("A fax message from Star Command has been sent to the following fax machines: <br>"+jointext(sendsuccess, ", "), "Fax Received", new_sound = 'sound/AI/commandreport.ogg', msg_sanitized = 1);
 
 	log_admin("[senderkey] sent a fax via the API: : [faxbody]",admin_key=senderkey)
 	message_admins("[senderkey] sent a fax via the API", 1)
@@ -247,7 +247,7 @@
 		P.stamped = new
 	P.stamped += /obj/item/stamp
 	P.add_overlay(stampoverlay)
-	P.stamps += "<HR><i>This paper has been stamped by the Central Command Quantum Relay.</i>"
+	P.stamps += "<HR><i>This paper has been stamped by the Star Command Quantum Relay.</i>"
 
 	if(F.receivefax(P))
 		log_and_message_admins("[senderkey] sent a fax message to the [F.department] fax machine via the api. (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[F.x];Y=[F.y];Z=[F.z]'>JMP</a>)")

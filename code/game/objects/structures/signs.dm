@@ -776,25 +776,25 @@
 	known for its naval officers and patronage of the Dominian shipbuilding and naval industries."
 	icon_state = "zhao"
 
-/obj/structure/sign/flag/biesel
+//obj/structure/sign/flag/biesel
 	name = "Republic of Biesel flag"
 	desc = "The colours and symbols of the Republic of Biesel."
 	icon_state = "biesel"
 
-/obj/structure/sign/flag/biesel/left
+//obj/structure/sign/flag/biesel/left
 	icon_state = "biesel_l"
 
-/obj/structure/sign/flag/biesel/right
+//obj/structure/sign/flag/biesel/right
 	icon_state = "biesel_r"
 
-/obj/item/flag/biesel
+//obj/item/flag/biesel
 	name = "Republic of Biesel flag"
 	desc = "The flag representing the Republic of Biesel."
-	flag_path = "biesel"
+	//flag_path = "biesel"
 
-/obj/item/flag/biesel/l
+//obj/item/flag/biesel/l
 	name = "Large Republic of Biesel flag"
-	flag_size = 1
+	//flag_size = 1
 
 /obj/structure/sign/flag/scc
 	name = "Stellar Corporate Conglomerate flag"

@@ -29,9 +29,9 @@
 	inherent_eye_protection = FLASH_PROTECTION_MAJOR
 	eyes_are_impermeable = TRUE
 
-	name_language = "Encoded Audio Language"
+	name_language = LANGUAGE_EAL
 	num_alternate_languages = 2
-	secondary_langs = list("Encoded Audio Language", "Sol Common")
+	secondary_langs = list(LANGUAGE_MARTIAN, LANGUAGE_NEW_MANDARIN, LANGUAGE_LUNIAN, LANGUAGE_ENGLISH, LANGUAGE_EAL)
 	ethanol_resistance = -1//Can't get drunk
 	radiation_mod = 0	// not affected by radiation
 	remains_type = /obj/effect/decal/remains/robot
@@ -116,13 +116,12 @@
 	max_hydration_factor = -1
 	max_nutrition_factor = -1
 
-	allowed_citizenships = list(CITIZENSHIP_NONE, CITIZENSHIP_BIESEL, CITIZENSHIP_COALITION, CITIZENSHIP_ERIDANI, CITIZENSHIP_ELYRA, CITIZENSHIP_GOLDEN)
+	allowed_citizenships = list(CITIZENSHIP_NONE, CITIZENSHIP_GALACTICA, CITIZENSHIP_IR)
 	default_citizenship = CITIZENSHIP_NONE
 	bodyfall_sound = /decl/sound_category/bodyfall_machine_sound
 
-	allowed_accents = list(ACCENT_CETI, ACCENT_GIBSON, ACCENT_SOL, ACCENT_COC, ACCENT_ERIDANI, ACCENT_ERIDANIDREG, ACCENT_ELYRA, ACCENT_KONYAN, ACCENT_JUPITER, ACCENT_MARTIAN, ACCENT_LUNA,
-							ACCENT_HIMEO, ACCENT_VENUS, ACCENT_VENUSJIN, ACCENT_PHONG, ACCENT_SILVERSUN_EXPATRIATE, ACCENT_TTS, ACCENT_EUROPA, ACCENT_EARTH, ACCENT_PLUTO, ACCENT_ASSUNZIONE, ACCENT_VALKYRIE)
-	allowed_religions = list(RELIGION_NONE, RELIGION_OTHER, RELIGION_CHRISTIANITY, RELIGION_ISLAM, RELIGION_JUDAISM, RELIGION_HINDU, RELIGION_BUDDHISM, RELIGION_TRINARY, RELIGION_SCARAB, RELIGION_TAOISM, RELIGION_LUCEISM)
+	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_DION, ACCENT_TTS)
+	allowed_religions = list(RELIGION_NONE, RELIGION_OTHER, RELIGION_CHRISTIANITY, RELIGION_ISLAM, RELIGION_JUDAISM, RELIGION_HINDU, RELIGION_BUDDHISM, RELIGION_TAOISM)
 
 	alterable_internal_organs = list()
 
@@ -176,7 +175,7 @@
 		if(tag)
 			tag.serial_number = uppertext(dd_limittext(md5(new_machine.real_name), 12))
 			tag.ownership_info = IPC_OWNERSHIP_COMPANY
-			tag.citizenship_info = CITIZENSHIP_BIESEL
+			tag.citizenship_info = CITIZENSHIP_GALACTICA
 		return
 
 	var/obj/item/organ/internal/ipc_tag/tag = new_machine.internal_organs_by_name[BP_IPCTAG]
@@ -318,42 +317,6 @@
 
 		if ("nanotrasen IPC screen")
 			return LIGHT_COLOR_BLUE
-
-		if ("hephaestus IPC screen")
-			return LIGHT_COLOR_ORANGE
-
-		if ("idris IPC screen")
-			return LIGHT_COLOR_CYAN
-
-		if ("zavodskoi IPC screen")
-			return LIGHT_COLOR_RED
-
-		if ("zeng-hu IPC screen")
-			return "#FFFFFF"
-
-		if ("scc IPC screen")
-			return LIGHT_COLOR_BLUE
-
-		if ("republic of biesel IPC screen")
-			return "#FFFFFF"
-
-		if ("sol alliance IPC screen")
-			return "#FFFFFF"
-
-		if ("coalition of colonies IPC screen")
-			return LIGHT_COLOR_BLUE
-
-		if ("republic of elyra IPC screen")
-			return LIGHT_COLOR_YELLOW
-
-		if ("eridani IPC screen")
-			return "#FFFFFF"
-
-		if ("burzsia IPC screen")
-			return LIGHT_COLOR_ORANGE
-
-		if ("trinary perfection IPC screen")
-			return LIGHT_COLOR_RED
 
 /datum/species/machine/before_equip(var/mob/living/carbon/human/H)
 	. = ..()

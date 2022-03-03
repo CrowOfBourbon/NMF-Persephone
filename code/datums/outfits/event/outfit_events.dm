@@ -1,5 +1,5 @@
-/datum/outfit/admin/event/lance
-	name = "Lancer"
+//datum/outfit/admin/event/lance
+	//name = "Lancer"
 
 	uniform = /obj/item/clothing/under/lance
 	back = /obj/item/gun/energy/rifle/pulse
@@ -41,47 +41,47 @@
 /datum/outfit/admin/event/lance/post_equip(mob/living/carbon/human/H, visualsOnly)
 	organize_voidsuit(H)
 
-/datum/outfit/admin/event/lance/get_id_access()
-	return get_syndicate_access(id_access)
+//datum/outfit/admin/event/lance/get_id_access()
+	//return get_syndicate_access(id_access)
 
-/datum/outfit/admin/event/lance/engineer
-	name = "Lance Engineer"
+//datum/outfit/admin/event/lance/engineer
+	//name = "Lance Engineer"
 
-	back = /obj/item/gun/projectile/shotgun/pump/combat/sol
+	//back = /obj/item/gun/projectile/shotgun/pump/combat/sol
 
-	gloves = /obj/item/clothing/gloves/yellow
-	species_gloves = list(
+	//gloves = /obj/item/clothing/gloves/yellow
+	//species_gloves = list(
 		SPECIES_UNATHI = /obj/item/clothing/gloves/yellow/specialu
 	)
 
-	belt = /obj/item/storage/belt/utility/very_full
-	belt_contents = null
+	//belt = /obj/item/storage/belt/utility/very_full
+	//belt_contents = null
 
-	accessory = /obj/item/clothing/accessory/storage/brown_vest
-	accessory_contents = list(
+	//accessory = /obj/item/clothing/accessory/storage/brown_vest
+	//accessory_contents = list(
 			/obj/item/plastique = 3,
 			/obj/item/grenade/frag = 1,
 			/obj/item/device/flash = 1
 	)
-	id_access = "Lance Engineer"
+	//id_access = "Lance Engineer"
 
-/datum/outfit/admin/event/lance/medic
+//datum/outfit/admin/event/lance/medic
 	name = "Lance Medic"
 
-	gloves = /obj/item/clothing/gloves/latex/nitrile
-	species_gloves = list(
+	//gloves = /obj/item/clothing/gloves/latex/nitrile
+	//species_gloves = list(
 		SPECIES_UNATHI = /obj/item/clothing/gloves/latex/nitrile/unathi
 	)
 
-	belt = /obj/item/storage/belt/medical
-	mask = /obj/item/clothing/mask/surgical
+	//belt = /obj/item/storage/belt/medical
+	//mask = /obj/item/clothing/mask/surgical
 
-	l_pocket = /obj/item/reagent_containers/glass/bottle/inaprovaline
-	r_pocket = /obj/item/reagent_containers/glass/bottle/thetamycin
+	//l_pocket = /obj/item/reagent_containers/glass/bottle/inaprovaline
+	//r_pocket = /obj/item/reagent_containers/glass/bottle/thetamycin
 
-	accessory = /obj/item/clothing/accessory/holster/thigh
-	accessory_contents = list(/obj/item/gun/energy/pulse/pistol = 1)
-	belt_contents = list(
+	//accessory = /obj/item/clothing/accessory/holster/thigh
+	//accessory_contents = list(/obj/item/gun/energy/pulse/pistol = 1)
+	//belt_contents = list(
 			/obj/item/device/healthanalyzer = 1,
 			/obj/item/reagent_containers/hypospray/combat = 1,
 			/obj/item/reagent_containers/syringe = 1,
@@ -89,47 +89,47 @@
 			/obj/item/reagent_containers/personal_inhaler_cartridge/large = 2,
 			/obj/item/reagent_containers/glass/bottle/dexalin_plus = 1
 			)
-	id_access = "Lance Medic"
+	//id_access = "Lance Medic"
 
-/datum/outfit/admin/event/lance/operative
-	name = "Lance Operative"
+//datum/outfit/admin/event/lance/operative
+	//name = "Lance Operative"
 
-	uniform = /obj/item/clothing/under/dress/lance_dress/male
-	back = /obj/item/storage/backpack/satchel
-	gloves = /obj/item/clothing/gloves/latex
-	shoes = /obj/item/clothing/shoes/laceup
-	belt = /obj/item/storage/belt/utility/very_full
-	accessory = /obj/item/clothing/accessory/holster/thigh
-	accessory_contents = list(/obj/item/gun/energy/pulse/pistol = 1)
+	//uniform = /obj/item/clothing/under/dress/lance_dress/male
+	//back = /obj/item/storage/backpack/satchel
+	//gloves = /obj/item/clothing/gloves/latex
+	//shoes = /obj/item/clothing/shoes/laceup
+	//belt = /obj/item/storage/belt/utility/very_full
+	//accessory = /obj/item/clothing/accessory/holster/thigh
+	//accessory_contents = list(/obj/item/gun/energy/pulse/pistol = 1)
 
-	backpack_contents = list(
+	//backpack_contents = list(
 		/obj/item/device/flash = 1,
 		/obj/item/clothing/gloves/yellow = 1
 	)
-	id_access = "Lance Operative"
+	//id_access = "Lance Operative"
 
-/datum/outfit/admin/event/lance/operative/post_equip(mob/living/carbon/human/H, visualsOnly)
+//datum/outfit/admin/event/lance/operative/post_equip(mob/living/carbon/human/H, visualsOnly)
 	return
 
-/datum/outfit/admin/event/sol_marine
-	name = "Solarian Marine"
+//datum/outfit/admin/event/sol_marine
+	//name = "Solarian Marine"
 
-	uniform = /obj/item/clothing/under/rank/fatigues
-	shoes = /obj/item/clothing/shoes/magboots
-	gloves = /obj/item/clothing/gloves/combat
-	l_ear = /obj/item/device/radio/headset/syndicate
-	glasses = /obj/item/clothing/glasses/thermal
-	l_pocket = /obj/item/tank/emergency_oxygen/double
-	r_pocket = /obj/item/crowbar/red
-	id = /obj/item/card/id/syndicate
-	head = /obj/item/clothing/head/helmet/space/void/sol
-	suit = /obj/item/clothing/suit/space/void/sol
-	mask = /obj/item/clothing/mask/gas/tactical
-	back = /obj/item/tank/jetpack/carbondioxide
-	suit_store = /obj/item/gun/projectile/automatic/rifle/sol
+	//uniform = /obj/item/clothing/under/rank/fatigues
+	//shoes = /obj/item/clothing/shoes/magboots
+	//gloves = /obj/item/clothing/gloves/combat
+	//l_ear = /obj/item/device/radio/headset/syndicate
+	//glasses = /obj/item/clothing/glasses/thermal
+	//l_pocket = /obj/item/tank/emergency_oxygen/double
+	//r_pocket = /obj/item/crowbar/red
+	//id = /obj/item/card/id/syndicate
+	//head = /obj/item/clothing/head/helmet/space/void/sol
+	//suit = /obj/item/clothing/suit/space/void/sol
+	//mask = /obj/item/clothing/mask/gas/tactical
+	//back = /obj/item/tank/jetpack/carbondioxide
+	//suit_store = /obj/item/gun/projectile/automatic/rifle/sol
 
-	belt = /obj/item/storage/belt/military
-	belt_contents = list(
+	//belt = /obj/item/storage/belt/military
+	//belt_contents = list(
 			/obj/item/ammo_magazine/c762/sol = 3,
 			/obj/item/ammo_magazine/mc9mm = 2,
 			/obj/item/shield/energy = 1,
@@ -139,19 +139,19 @@
 	)
 
 
-	accessory = /obj/item/clothing/accessory/holster/hip/brown
-	accessory_contents = list(/obj/item/gun/projectile/pistol/sol = 1)
+	//accessory = /obj/item/clothing/accessory/holster/hip/brown
+	//accessory_contents = list(/obj/item/gun/projectile/pistol/sol = 1)
 
-	id_iff = IFF_SOL
+	//id_iff = IFF_SOL
 
-/datum/outfit/admin/event/sol_marine/heavy
-	name = "Heavy Solarian Marine"
+//datum/outfit/admin/event/sol_marine/heavy
+	//name = "Heavy Solarian Marine"
 
-	head = null
-	suit = null
-	mask = /obj/item/clothing/mask/gas/tactical
-	back = /obj/item/rig/military/equipped
-	belt_contents = list(
+	//head = null
+	//suit = null
+	//mask = /obj/item/clothing/mask/gas/tactical
+	//back = /obj/item/rig/military/equipped
+	//belt_contents = list(
 			/obj/item/gun/projectile/pistol/sol = 1,
 			/obj/item/ammo_magazine/mc9mm = 2,
 			/obj/item/shield/energy = 1,
@@ -160,8 +160,8 @@
 			/obj/item/grenade/flashbang = 2
 	)
 
-	l_hand = /obj/item/gun/projectile/shotgun/pump/combat/sol
+	//l_hand = /obj/item/gun/projectile/shotgun/pump/combat/sol
 
-	accessory = /obj/item/clothing/accessory/storage/bandolier
-	accessory_contents = list(/obj/item/ammo_casing/shotgun = 8,
+	//accessory = /obj/item/clothing/accessory/storage/bandolier
+	//accessory_contents = list(/obj/item/ammo_casing/shotgun = 8,
 							/obj/item/ammo_casing/shotgun/pellet = 8)

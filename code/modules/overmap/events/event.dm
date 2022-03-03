@@ -198,11 +198,11 @@
 	. = ..()
 	overmap_event_handler.update_hazards(T)
 
-/obj/effect/overmap/event/meteor
-	name = "asteroid field"
-	events = list(/datum/event/meteor_wave/overmap)
-	event_icon_states = list("meteor1", "meteor2", "meteor3", "meteor4")
-	difficulty = EVENT_LEVEL_MAJOR
+//obj/effect/overmap/event/meteor
+	//name = "asteroid field"
+	//events = list(/datum/event/meteor_wave/overmap)
+	//event_icon_states = list("meteor1", "meteor2", "meteor3", "meteor4")
+	//difficulty = EVENT_LEVEL_MAJOR
 
 /obj/effect/overmap/event/electric
 	name = "electrical storm"
@@ -211,10 +211,10 @@
 	event_icon_states = list("electrical1", "electrical2")
 	difficulty = EVENT_LEVEL_MAJOR
 
-/obj/effect/overmap/event/dust
-	name = "dust cloud"
-	events = list(/datum/event/meteor_wave/dust/overmap)
-	event_icon_states = list("dust1", "dust2", "dust3", "dust4")
+//obj/effect/overmap/event/dust
+	//name = "dust cloud"
+	//events = list(/datum/event/meteor_wave/dust/overmap)
+	//event_icon_states = list("dust1", "dust2", "dust3", "dust4")
 
 /obj/effect/overmap/event/ion
 	name = "ion cloud"
@@ -248,12 +248,12 @@
 	var/opacity = 1
 	var/continuous = TRUE //if it should form continous blob, or can have gaps
 
-/datum/overmap_event/meteor
-	name = "asteroid field"
-	count = 15
-	radius = 4
-	continuous = FALSE
-	hazards = /obj/effect/overmap/event/meteor
+//datum/overmap_event/meteor
+	//name = "asteroid field"
+	//count = 15
+	////radius = 4
+	//continuous = FALSE
+	//hazards = /obj/effect/overmap/event/meteor
 
 /datum/overmap_event/electric
 	name = "electrical storm"
@@ -262,11 +262,11 @@
 	opacity = 0
 	hazards = /obj/effect/overmap/event/electric
 
-/datum/overmap_event/dust
-	name = "dust cloud"
-	count = 16
-	radius = 4
-	hazards = /obj/effect/overmap/event/dust
+//datum/overmap_event/dust
+	//name = "dust cloud"
+	//count = 16
+	//radius = 4
+	//hazards = /obj/effect/overmap/event/dust
 
 /datum/overmap_event/ion
 	name = "ion cloud"

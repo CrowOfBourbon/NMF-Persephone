@@ -17,7 +17,7 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 	var/geneticpoints = 5
 	var/list/purchasedpowers = list()
 	var/mimicing = ""
-	var/mimiced_accent = "Biesellite"
+	var/mimiced_accent = "Galactica"
 	var/justate
 
 /datum/changeling/New(var/gender=FEMALE)

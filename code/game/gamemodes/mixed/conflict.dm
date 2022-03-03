@@ -1,6 +1,6 @@
 /datum/game_mode/conflict
 	name = "Conflict (Burglar+Heist)"
-	round_description = "Two underprepared teams of fools pick the same day to rob a highly valuable space station."
+	round_description = "Two underprepared teams of fools pick the same day to rob a highly valuable mining facility."
 	extended_round_description = "Burglars and heisters spawn during this round."
 	config_tag = "conflict"
 	required_players = 15

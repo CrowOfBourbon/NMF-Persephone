@@ -251,7 +251,7 @@
 
 			if (!istype(l_ear, /obj/item/clothing/ears/earmuffs) && !istype(r_ear, /obj/item/clothing/ears/earmuffs))
 				adjustEarDamage(30, 120)
-				
+
 			if (prob(70))
 				Paralyse(10)
 
@@ -387,9 +387,9 @@
 // this handles mulebots and vehicles
 /mob/living/carbon/human/Crossed(var/atom/movable/AM)
 	..()
-	if(istype(AM, /obj/machinery/bot/mulebot))
-		var/obj/machinery/bot/mulebot/MB = AM
-		MB.RunOver(src)
+	//if(istype(AM, /obj/machinery/bot/mulebot))
+		//var/obj/machinery/bot/mulebot/MB = AM
+		//MB.RunOver(src)
 
 	if(istype(AM, /obj/vehicle))
 		var/obj/vehicle/V = AM
@@ -2017,7 +2017,7 @@
 	var/obj/item/organ/internal/augment/synthetic_cords/voice/aug = internal_organs_by_name[BP_AUG_ACC_CORDS] //checks for augments, thanks grey
 	if(aug)
 		used_accent = aug.accent
-	
+
 	for(var/obj/item/gear in list(wear_mask,wear_suit,head)) //checks for voice changers masks now
 		if(gear)
 			var/obj/item/voice_changer/changer = locate() in gear
@@ -2027,7 +2027,7 @@
 	return ..(speaking, hearer, used_accent)
 
 /mob/living/carbon/human/proc/generate_valid_languages()
-	var/list/available_languages = species.secondary_langs.Copy() + LANGUAGE_TCB
+	var/list/available_languages = species.secondary_langs.Copy() + LANGUAGE_ENGLISH
 	for(var/L in all_languages)
 		var/datum/language/lang = all_languages[L]
 		if(!(lang.flags & RESTRICTED) && (!config.usealienwhitelist || is_alien_whitelisted(src, L) || !(lang.flags & WHITELISTED)))
@@ -2109,7 +2109,7 @@
 // Intensity 1: mild, 2: hurts, 3: very painful, 4: extremely painful, 5: that's going to leave some damage
 // Sensitive_only: If yes, only those with sensitive hearing are affected
 // Listening_pain: Increases the intensity by the listed amount if the person is listening in
-/mob/living/carbon/human/proc/earpain(var/intensity, var/sensitive_only = FALSE, var/listening_pain = 0) 
+/mob/living/carbon/human/proc/earpain(var/intensity, var/sensitive_only = FALSE, var/listening_pain = 0)
 	if (ear_deaf)
 		return
 	if (sensitive_only && !get_hearing_sensitivity())
@@ -2118,7 +2118,7 @@
 		intensity += listening_pain
 	else if (sensitive_only)
 		return
-	
+
 	var/obj/item/organ/external/E = organs_by_name[BP_HEAD]
 	switch (intensity)
 		if (1)

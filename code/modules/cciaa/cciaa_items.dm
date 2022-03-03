@@ -325,7 +325,7 @@
 //ccia headset, only command and ert channel are on by default
 
 /obj/item/device/radio/headset/ert/ccia
-	name = "central command internal affairs radio headset"
+	name = "star command internal affairs radio headset"
 	ks2type = /obj/item/device/encryptionkey/ccia
 
 /obj/item/device/encryptionkey/ccia
@@ -333,7 +333,7 @@
 	channels = list("Response Team" = 1, "Science" = 0, "Command" = 1, "Medical" = 0, "Engineering" = 0, "Security" = 0, "Supply" = 0, "Service" = 0)
 
 /obj/item/clothing/suit/storage/toggle/internalaffairs/cciaa
-	name = "central command internal affairs jacket"
+	name = "star command internal affairs jacket"
 
 /obj/item/storage/lockbox/cciaa
 	req_access = list(access_cent_ccia)

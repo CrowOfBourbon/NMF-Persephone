@@ -137,14 +137,14 @@
 /obj/item/xmasgift/Initialize()
 	..()
 	randpixel_xy()
-	var/gift_benefactor = pick("the NanoTrasen Department of Christmas Affairs", "Miranda Trasen", "Joseph Dorne", "Isaac Asimov", "Baal D. Griffon", "the Sol Alliance (Sorry about the blockade!)",
-		"Hephaestus Industries", "Idris Incorporated", "Glorsh Omega II", "the Jargon Federation", "the People's Republic of Adhomai", "the Adhomai Liberation Army", "the Izweski Hegemony",
-		"the Zo'ra Hive","the Coalition of Colonies", "Digital Dingo", "Optimum Jeffrey", "Lemmy and the Clockworks", "President Hadii", "King Azunja","Supreme Commander Nated'Hakhan",
-		"Lord-Regent Not'zar","Jesus Christ","Santa Claus","Mrs. Claus","Sandy Claws","Buddha","Gary","Jesus Christ!","the True Queen of Biesel, God-Lady Seon-rin von Illdenberg, First of Her Name",
-		"Admiral Frost","Pirate King Frost", "The Secret NanoTrasen Cabal of Duty Officers", "The Society for the Preservation of Rats", "Officer Beepsky","Lieutenant Columbo","Crew of the NSS Upsilon","Runtime",
-		"Bones","Chauncey","Ian","Pun Pun","Nup Nup","Waldo","Odlaw","Crew of the NSS Exodus", "Custodial Staff of the NTCC Odin","ERT Phoenix","grey slime (357)","Bob the Blob","People for the Ethical Treatment of Bluespace Bears",
-		"Mr. Clown and Mrs. Mime from New Puerto Rico","the Grinch","the Krampus","Satan","Mega-Satan","<span class='danger'>\[BENEFACTOR REDACTED]\</span>","Bluespace Cat","Union of Bluespace Technicians Tau Ceti","the New Kingdom of Adhomai",
-		"Ginny", "Boleslaw Keesler", "The Queen in Blue", "Cuban Pete", "Ceres' Lance", "the real Odin Killer (Still out here, guys!)", "the K'lax Hive", "the C'thur Hive")
+	var/gift_benefactor = pick("the NanoTrasen Department of Christmas Affairs", "Ethan Trasen", "Joseph Dorne", "Isaac Asimov", "Baal D. Griffon", "Interstellar Republic (Sorry about the blockade!)",
+		"Mercius Interstellar", "Ascher Industries", "Dionysus Conglameratetata", "the Elodile Empire", "Rhea Council for Seasons Greetings",
+		"the Zo'ra Hive","Galactica", "Digital Dingo", "Optimum Jeffrey", "Lemmy and the Clockworks",
+		"Lord-Regent Not'zar","Jesus Christ","Santa Claus","Mrs. Claus","Sandy Claws","Buddha","Gary","Jesus Christ!",
+		"Admiral Frost","Pirate King Frost", "The Secret NanoTrasen Cabal of Duty Officers", "The Society for the Preservation of Rats", "Officer Beepsky", "Royal",
+		"Buffy","Sakura","Scoot","Pun Pun","Waldo","Odlaw","Crew of the NMF Persephone", "Custodial Staff of the NTSC Demeter","ERT Commander Riker","grey slime (357)","Bob the Blob","People for the Ethical Treatment of Bluespace Bears",
+		"Mr. Clown and Mrs. Mime from New Puerto Rico","the Grinch","the Krampus","Satan","Mega-Satan",
+		"Peaches", "Cuban Pete")
 	var/pick_emotion = pick("love","platonic admiration","approval","love (not in a sexual way or anything, though)","apathy", "schadenfreude","love","God's blessing","Santa's blessing","Non-demoninational deity's blessing","love","compassion","appreciation",
 		"respect","begrudging respect","love", "seasonal obligation")
 	desc = "To: <i>The [station_name()]</i><BR>From: <i>[gift_benefactor], with [pick_emotion]</i>"
@@ -245,7 +245,6 @@
 /obj/item/xmasgift/medium/get_gift_type()
 	var/picked_gift_type = pick(
 		/obj/random/booze,
-		/obj/random/random_flag,
 		/obj/item/storage/belt/champion,
 		/obj/item/pickaxe/silver,
 		/obj/item/grenade/smokebomb,

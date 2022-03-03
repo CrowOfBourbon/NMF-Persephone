@@ -26,7 +26,7 @@
 
 	assigned_role = "CCIA Agent"
 	special_role = "CCIA Agent"
-	
+
 	mob_name_pick_message = "Pick a name."
 
 
@@ -50,39 +50,39 @@
 	mob_name_prefix = "Ofc. "
 	mob_name_pick_message = "Pick a callsign or last-name."
 
-/datum/ghostspawner/human/admin/corporate/scc_agent
-	short_name = "sccagent"
-	name = "SCC Agent"
-	desc = "Board the Aurora, annoy crew with your interviews and get squashed by your own shuttle. But this time you're blue."
+//datum/ghostspawner/human/admin/corporate/scc_agent
+	//short_name = "sccagent"
+	//name = "SCC Agent"
+	//desc = "Board the Aurora, annoy crew with your interviews and get squashed by your own shuttle. But this time you're blue."
 
-	outfit = /datum/outfit/admin/scc
+	//outfit = /datum/outfit/admin/scc
 
 	//take this block of code out once CCIA moves over to SCC proper
-	enabled = FALSE
-	req_perms_edit = R_ADMIN
+	//enabled = FALSE
+	//req_perms_edit = R_ADMIN
 
-	assigned_role = "SCC Agent"
-	special_role = "SCC Agent"
+	//assigned_role = "SCC Agent"
+	//special_role = "SCC Agent"
 
-/datum/ghostspawner/human/admin/corporate/scc_bodyguard
-	short_name = "sccbodyguard"
-	name = "SCC Bodyguard"
-	desc = "Protect the SCC agent you're assigned to with your life. In fact, protect them if you die as well, if possible."
+//datum/ghostspawner/human/admin/corporate/scc_bodyguard
+	//short_name = "sccbodyguard"
+	//name = "SCC Bodyguard"
+	//desc = "Protect the SCC agent you're assigned to with your life. In fact, protect them if you die as well, if possible."
 
-	landmark_name = "CCIAEscort"
+	//landmark_name = "CCIAEscort"
 
-	outfit = /datum/outfit/admin/scc/bodyguard
+	//outfit = /datum/outfit/admin/scc/bodyguard
 
-	enabled = FALSE
-	req_perms = null
-	req_perms_edit = R_ADMIN // change this to R_CCIAA when CCIA moves to SCC
-	max_count = 1
+	//enabled = FALSE
+	//req_perms = null
+	//req_perms_edit = R_ADMIN // change this to R_CCIAA when CCIA moves to SCC
+	//max_count = 1
 
-	assigned_role = "SCC Bodyguard"
-	special_role = "SCC Bodyguard"
+	//assigned_role = "SCC Bodyguard"
+	//special_role = "SCC Bodyguard"
 
-	mob_name_prefix = "Spc. "
-	mob_name_pick_message = "Pick a name."
+	//mob_name_prefix = "Spc. "
+	//mob_name_pick_message = "Pick a name."
 
 /datum/ghostspawner/human/admin/corporate/fib
 	short_name = "fib"
@@ -126,7 +126,7 @@
 /datum/ghostspawner/human/admin/ert_commander
 	short_name = "ertcommander"
 	name = "ERT Commander"
-	desc = "Command the response team from Central Command"
+	desc = "Command the response team from Star Command"
 
 	tags = list("CCIA")
 	landmark_name = "ERTCommander"
@@ -144,27 +144,27 @@
 	mob_name = null
 	mob_name_pick_message = "Pick a name."
 
-/datum/ghostspawner/human/admin/legion_commander
-	short_name = "legionlegate"
-	name = "TCFL Legate"
-	desc = "Command the TCFL onboard BLV The Tower, a legion patrolship from where Task Force XIII - Fortune operates from."
+//datum/ghostspawner/human/admin/legion_commander
+	//short_name = "legionlegate"
+	//name = "TCFL Legate"
+	//desc = "Command the TCFL onboard BLV The Tower, a legion patrolship from where Task Force XIII - Fortune operates from."
 
-	tags = list("CCIA")
-	landmark_name = "TCFLLegate"
-	req_perms = R_CCIAA
+	//tags = list("CCIA")
+	//landmark_name = "TCFLLegate"
+	//req_perms = R_CCIAA
 
 	//Vars related to human mobs
-	outfit = /datum/outfit/admin/tcfl
-	possible_species = list(SPECIES_HUMAN,SPECIES_TAJARA_MSAI,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI, SPECIES_UNATHI,SPECIES_IPC)
-	allow_appearance_change = APPEARANCE_PLASTICSURGERY
+	//outfit = /datum/outfit/admin/tcfl
+	//possible_species = list(SPECIES_HUMAN,SPECIES_TAJARA_MSAI,SPECIES_SKRELL, SPECIES_SKRELL_AXIORI, SPECIES_UNATHI,SPECIES_IPC)
+	//allow_appearance_change = APPEARANCE_PLASTICSURGERY
 
-	assigned_role = "Tau Ceti Foreign Legion Legate"
-	special_role = "TCFL Legate"
-	respawn_flag = null
+	//assigned_role = "Tau Ceti Foreign Legion Legate"
+	//special_role = "TCFL Legate"
+	//respawn_flag = null
 
-	mob_name = null
-	mob_name_prefix = "Lgt. "
-	mob_name_pick_message = "Pick a callsign or last-name."
+	//mob_name = null
+	//mob_name_prefix = "Lgt. "
+	//mob_name_pick_message = "Pick a callsign or last-name."
 
 /*
 	Misc. Odin Roles

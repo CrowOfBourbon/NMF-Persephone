@@ -1,6 +1,6 @@
 /datum/trader/pet_shop
 	name = "Pet Shop Owner"
-	name_language = LANGUAGE_SKRELLIAN
+	name_language = LANGUAGE_TUQ
 	origin = "Pet Shop"
 	trade_flags = TRADER_GOODS|TRADER_MONEY|TRADER_WANTED_ONLY
 	possible_origins = list("Paws-Out", "Pets-R-Smart", "Tentacle Companions", "Xeno-Pets and Assorted Goods", "Barks and Drools")
@@ -133,9 +133,7 @@
 		/obj/item/clothing/head/powdered_wig            = TRADER_THIS_TYPE,
 		/obj/item/clothing/head/helmet/gladiator        = TRADER_THIS_TYPE,
 		/obj/item/clothing/head/plaguedoctorhat         = TRADER_THIS_TYPE,
-		/obj/item/clothing/head/helmet/unathi           = TRADER_THIS_TYPE,
 		/obj/item/clothing/head/helmet/tank             = TRADER_ALL,
-		/obj/item/clothing/head/helmet/amohda           = TRADER_THIS_TYPE,
 		/obj/item/clothing/glasses/monocle              = TRADER_THIS_TYPE,
 		/obj/item/clothing/mask/smokable/pipe           = TRADER_THIS_TYPE,
 		/obj/item/clothing/mask/gas/plaguedoctor        = TRADER_THIS_TYPE,
@@ -143,8 +141,6 @@
 		/obj/item/clothing/suit/judgerobe               = TRADER_THIS_TYPE,
 		/obj/item/clothing/suit/wizrobe/magusred        = TRADER_THIS_TYPE,
 		/obj/item/clothing/suit/wizrobe/magusblue       = TRADER_THIS_TYPE,
-		/obj/item/clothing/suit/armor/unathi            = TRADER_THIS_TYPE,
-		/obj/item/clothing/suit/armor/amohda            = TRADER_THIS_TYPE,
 		/obj/item/clothing/under/gladiator              = TRADER_THIS_TYPE,
 		/obj/item/clothing/under/kilt                   = TRADER_THIS_TYPE,
 		/obj/item/material/harpoon               = TRADER_THIS_TYPE,
@@ -164,7 +160,7 @@
 
 /datum/trader/ship/hardsuit
 	name = "Azazi Guild Seller"
-	name_language = LANGUAGE_UNATHI
+	name_language = LANGUAGE_MHOSTUM
 	origin = "Azazi Bulk Supply Guild"
 	possible_trading_items = list(
 		/obj/item/rig/unathi                    = TRADER_ALL,

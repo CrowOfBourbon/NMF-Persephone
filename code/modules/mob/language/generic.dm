@@ -19,9 +19,9 @@
 	return (copytext(message, length(message)) == "!") ? 4 : 2
 
 // 'basic' language; spoken by default.
-/datum/language/common
-	name = LANGUAGE_TCB
-	desc = "A spiritual successor of Esperanto, established in 2404 in Tau Ceti by Ceti intellectuals. Its unique, fully customized alphabet and structure allow it to be spoken even by most alien species. It's the official language of Tau Ceti and has growing traction in diplomatic circles and Universalists across human space."
+/datum/language/english
+	name = LANGUAGE_ENGLISH
+	desc = "The most common language throughout Human controlled systems, English was already the most prominent language on Earth before Humanity's colonization of its system."
 	speech_verb = list("says")
 	key = "0"
 	flags = RESTRICTED|TCOMSSIM
@@ -34,10 +34,10 @@
 	"the", "ti", "tian", "tita", "tiu", "to", "toj", "ton", "tran", "tre", "tri", "trin", "tro", "trus", "un", "undo", "uno ", "uz", "va", "var", "varm", "vas", "ve", "vek", "ven", "ves", "vi", "via", "vin", "vino", "vint", "vir", "von", "vu", "whe", "wu", "yong", "zem", "zo", "zoj", "zon")
 
 // Galactic common languages (systemwide accepted standards).
-/datum/language/trader
-	name = LANGUAGE_TRADEBAND
-	short = "TRADE"
-	desc = "Descended from latin and romance languages of old Earth, Tradeband remains the main tongue of the upper class of humanity. The language sounds elegant and well structured to most ears. It remains in popular use with traders, diplomats, and those seeking to hold onto a piece of a romantic past."
+/datum/language/luna
+	name = LANGUAGE_LUNIAN
+	short = "LUNA"
+	desc = "Similar to English, Lunian originated from the first colony on Luna. It's a more elegant sounding dialect. "
 	speech_verb = list("enunciates")
 	sing_verb = list("performs")
 	colour = "tradeband"
@@ -54,11 +54,14 @@
 	"veni", "vi", "viam", "vie", "vo", "xus", "za", "zio")
 
 // Criminal language.
-/datum/language/gutter
-	name = LANGUAGE_GUTTER
-	short = "FREE"
-	desc = "A language of renegades and frontiersmen descending from various languages from Earth like Hindi combined into a multi-rooted jumble that sounds incoherent or even barbarian to non-native speakers. This language is the only common cultural identity for humans in the frontier. Speaking this language in itself boldly declares the speaker a free spirit. Often called 'Gutter' by Alliance citizens."
-	speech_verb = list("says")
+/datum/language/mars
+	name = LANGUAGE_MARTIAN
+	short = "MARS"
+	desc = "The Martian language formed during the colonization of New Holden on Mars, becoming the main language on the planet at its peak. \
+	When the Holden disaster occurred, the language was feared to be dying for a while, as most surviving generations went back to Luna or Earth. \
+	Now with the recent return of colonization efforts on Mars, Martianese isn't as prominent as the other three common languages, but those who grew up with it are proud folk. \
+	It is another dialect of English, sounding more akin to the Native American tribal language of old Earth history."
+	speech_verb = list("growls")
 	sing_verb = list("croons")
 	colour = "freespeak"
 	written_style = "freespeak"
@@ -75,7 +78,7 @@
 // Sign language
 /datum/language/sign
 	name = LANGUAGE_SIGN
-	desc = "A signed version of Ceti Basic, though its intent is primarily to help out people who are deaf and mute, "
+	desc = "A signed version of English, though its intent is primarily to help out people who are deaf and mute, "
 	speech_verb = list("signs")
 	signlang_verb = list("signs", "gestures")
 	sing_verb = null

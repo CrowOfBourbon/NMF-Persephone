@@ -56,31 +56,31 @@
 	var/bloodiness = 0		// count of bloodiness
 	var/static/total_mules = 0
 
-/obj/machinery/bot/mulebot/Initialize()
+//obj/machinery/bot/mulebot/Initialize()
 	. = ..()
-	wires = new(src)
-	botcard = new(src)
-	botcard.access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
-	cell = new(src)
-	cell.charge = 2000
-	cell.maxcharge = 2000
-	if(SSradio)
+	//wires = new(src)
+	//botcard = new(src)
+	//botcard.access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
+	//cell = new(src)
+	//cell.charge = 2000
+	//cell.maxcharge = 2000
+	//if(SSradio)
 		SSradio.add_object(src, control_freq, filter = RADIO_MULEBOT)
 		SSradio.add_object(src, beacon_freq, filter = RADIO_NAVBEACONS)
 
-	total_mules++
-	if(!suffix)
+	//total_mules++
+	//if(!suffix)
 		suffix = "#[total_mules]"
-	name = "Mulebot ([suffix])"
+	//name = "Mulebot ([suffix])"
 
-/obj/machinery/bot/mulebot/Destroy()
-	unload(0)
-	qdel(wires)
-	wires = null
-	if(SSradio)
+//obj/machinery/bot/mulebot/Destroy()
+	//unload(0)
+	//qdel(wires)
+	//wires = null
+	//if(SSradio)
 		SSradio.remove_object(src,beacon_freq)
 		SSradio.remove_object(src,control_freq)
-	return ..()
+	//return ..()
 
 // attack by item
 // emag : lock/unlock,
@@ -474,11 +474,11 @@
 	mode = 0
 
 
-/obj/machinery/bot/mulebot/machinery_process()
-	if(!has_power())
+//obj/machinery/bot/mulebot/machinery_process()
+	//if(!has_power())
 		on = 0
 		return
-	if(on)
+	//if(on)
 		var/speed = (wires.Motor1() ? 1:0) + (wires.Motor2() ? 2:0)
 		switch(speed)
 			if(0)
@@ -502,7 +502,7 @@
 
 	if(refresh) updateDialog()
 
-/obj/machinery/bot/mulebot/proc/process_bot()
+//obj/machinery/bot/mulebot/proc/process_bot()
 	switch(mode)
 		if(0)		// idle
 			icon_state = "mulebot0"

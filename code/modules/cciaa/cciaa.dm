@@ -8,7 +8,7 @@
 
 /datum/admins/proc/create_admin_fax(var/department in alldepartments)
 	set name = "Send admin fax"
-	set desc = "Send a fax from Central Command"
+	set desc = "Send a fax from Star Command"
 	set category = "Special Verbs"
 
 	if (!check_rights(R_ADMIN|R_CCIAA|R_FUN))
@@ -31,7 +31,7 @@
 		return
 
 	//todo: sanitize
-	var/input = input(usr, "Please enter a message to reply to via secure connection. NOTE: BBCode does not work, but HTML tags do! Use <br> for line breaks.", "Outgoing message from Centcomm", "") as message|null
+	var/input = input(usr, "Please enter a message to reply to via secure connection. NOTE: BBCode does not work, but HTML tags do! Use <br> for line breaks.", "Outgoing message from Starcomm", "") as message|null
 	if (!input)
 		to_chat(usr, "<span class='warning'>Cancelled.</span>")
 		return
@@ -57,7 +57,7 @@
 		P.stamped = new
 	P.stamped += /obj/item/stamp
 	P.add_overlay(stampoverlay)
-	P.stamps += "<HR><i>This paper has been stamped by the Central Command Quantum Relay.</i>"
+	P.stamps += "<HR><i>This paper has been stamped by the Star Command Quantum Relay.</i>"
 
 	if(fax.receivefax(P))
 		if(announce == 1)
@@ -80,7 +80,7 @@
 		to_chat(usr, "<span class='warning'>You do not have enough powers to do this.</span>")
 		return
 
-	var/data = "<center><a href='?_src_=holder;CentcommFaxReply=1'>Send New Fax</a></center>"
+	var/data = "<center><a href='?_src_=holder;StarcommFaxReply=1'>Send New Fax</a></center>"
 	data += "<hr>"
 	data += "<center><b>Received Faxes:</b></center><br>"
 
@@ -98,7 +98,7 @@
 	else
 		data += "<center>No faxes have been sent out.</center>"
 
-	usr << browse("<HTML><HEAD><TITLE>Centcomm Fax History</TITLE></HEAD><BODY>[data]</BODY></HTML>", "window=Centcomm Fax History")
+	usr << browse("<HTML><HEAD><TITLE>Starcomm Fax History</TITLE></HEAD><BODY>[data]</BODY></HTML>", "window=Starcomm Fax History")
 
 
 /client/proc/launch_ccia_shuttle()

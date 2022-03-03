@@ -15,7 +15,7 @@
 	preview_icon = 'icons/mob/human_races/diona/diona_preview.dmi'
 	bandages_icon = 'icons/mob/bandage.dmi'
 	language = LANGUAGE_ROOTSONG
-	secondary_langs = list(LANGUAGE_SKRELLIAN, LANGUAGE_AZAZIBA)
+	secondary_langs = list(LANGUAGE_TUQ, LANGUAGE_AZAZIBA)
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/kick,
@@ -110,8 +110,8 @@
 
 	max_hydration_factor = -1
 
-	allowed_citizenships = list(CITIZENSHIP_BIESEL, CITIZENSHIP_JARGON, CITIZENSHIP_SOL, CITIZENSHIP_COALITION, CITIZENSHIP_DOMINIA, CITIZENSHIP_IZWESKI, CITIZENSHIP_NONE)
-	allowed_religions = list(RELIGION_QEBLAK, RELIGION_WEISHII, RELIGION_MOROZ, RELIGION_THAKH, RELIGION_SKAKH, RELIGION_ETERNAL, RELIGION_NONE, RELIGION_OTHER)
+	allowed_citizenships = list(CITIZENSHIP_NONE)
+	allowed_religions = list(RELIGION_NONE, RELIGION_OTHER)
 
 	allowed_accents = list(ACCENT_ROOTSONG, ACCENT_VOIDSONG)
 	default_accent = ACCENT_ROOTSONG

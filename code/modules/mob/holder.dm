@@ -426,8 +426,8 @@ var/list/holder_mob_icon_cache = list()
 	item_state = "kitten"
 
 /obj/item/holder/cat/penny
-	name = "Penny"
-	desc = "An important cat, straight from Central Command."
+	name = "Peaches"
+	desc = "An important cat, straight from Star Command."
 	icon_state = "penny"
 	icon_state_dead = "penny_dead"
 	item_state = "penny"

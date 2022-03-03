@@ -194,14 +194,6 @@
 	name = "Shirt, Meat"
 	icon_state = "shirt_meat"
 
-/datum/category_item/underwear/undershirt/shirt_scc
-	name = "Shirt, SCC"
-	icon_state = "shirt_scc"
-
-/datum/category_item/underwear/undershirt/shirt_scc_fem
-	name = "Shirt, SCC feminine"
-	icon_state = "shirt_scc_fem"
-
 /datum/category_item/underwear/undershirt/shirt_nt
 	name = "Shirt, NT"
 	icon_state = "shirt_nano"
@@ -285,22 +277,6 @@
 /datum/category_item/underwear/undershirt/shirt_fleet_fem
 	name = "Shirt, Fleet Feminine"
 	icon_state = "shirt_fleet_fem"
-
-/datum/category_item/underwear/undershirt/shirt_zavodskoi
-	name = "Shirt, Zavodskoi Interstellar"
-	icon_state = "shirt_necropolis"
-
-/datum/category_item/underwear/undershirt/shirt_zavodskoi_fem
-	name = "Shirt, Zavodskoi Interstellar Feminine"
-	icon_state = "shirt_necropolis_fem"
-
-/datum/category_item/underwear/undershirt/shirt_epmc
-	name = "Shirt, EPMC"
-	icon_state = "shirt_epmc"
-
-/datum/category_item/underwear/undershirt/shirt_epmc_fem
-	name = "Shirt, EPMC Feminine"
-	icon_state = "shirt_epmc_fem"
 
 /datum/category_item/underwear/undershirt/polo
 	name = "Polo"

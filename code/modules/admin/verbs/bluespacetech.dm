@@ -92,20 +92,20 @@
 	//Add the rest of the languages
 	//Because universal speak doesn't work right.
 
-	bst.add_language(LANGUAGE_TCB)
-	bst.add_language(LANGUAGE_GUTTER)
+	bst.add_language(LANGUAGE_ENGLISH)
+	bst.add_language(LANGUAGE_MARTIAN)
 	bst.add_language(LANGUAGE_SIGN)
-	bst.add_language(LANGUAGE_TRADEBAND)
+	bst.add_language(LANGUAGE_LUNIAN)
 	// Unathi languages
-	bst.add_language(LANGUAGE_UNATHI)
-	bst.add_language(LANGUAGE_AZAZIBA)
+	bst.add_language(LANGUAGE_MHOSTUM)
+	bst.add_language(LANGUAGE_YZALTUM)
+	bst.add_language(LANGUAGE_ANGLIKIRTAN)
 	// Tajara languages
 	bst.add_language(LANGUAGE_SIIK_MAAS)
-	bst.add_language(LANGUAGE_SIIK_TAJR)
 	bst.add_language(LANGUAGE_SIGN_TAJARA)
 	// Other station species' languages
-	bst.add_language(LANGUAGE_SKRELLIAN)
-	bst.add_language(LANGUAGE_SOL_COMMON)
+	bst.add_language(LANGUAGE_TUQ)
+	bst.add_language(LANGUAGE_NEW_MANDARIN)
 	bst.add_language(LANGUAGE_ROOTSONG)
 	bst.add_language(LANGUAGE_VAURCA)
 	// Synthetics
@@ -489,7 +489,7 @@
 //ID
 /obj/item/card/id/bst
 	icon_state = "centcom"
-	desc = "An ID straight from Central Command. This one looks highly classified."
+	desc = "An ID straight from Star Command. This one looks highly classified."
 
 /obj/item/card/id/bst/Initialize(mapload)
 	. = ..()

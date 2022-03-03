@@ -914,7 +914,7 @@
 			return
 
 		if(L.can_centcom_reply())
-			var/input = sanitize(input(src.owner, "Please enter a message to reply to [key_name(L)] via their headset.","Outgoing message from Centcomm", ""))
+			var/input = sanitize(input(src.owner, "Please enter a message to reply to [key_name(L)] via their headset.","Outgoing message from Starcomm", ""))
 			if(!input)		return
 
 			to_chat(src.owner, "You sent [input] to [L] via a secure channel.")
@@ -922,7 +922,7 @@
 			message_admins("[src.owner] replied to [key_name(L)]'s Centcom message with: \"[input]\"")
 			if(!isAI(L))
 				to_chat(L, "<span class='info'>You hear something crackle in your headset for a moment before a voice speaks.</span>")
-			to_chat(L, "<span class='info'>Please stand by for a message from Central Command.</span>")
+			to_chat(L, "<span class='info'>Please stand by for a message from Star Command.</span>")
 			to_chat(L, "<span class='info'>Message as follows.</span>")
 			to_chat(L, "<span class='notice'>[input]</span>")
 			to_chat(L, "<span class='info'>Message ends.</span>")
@@ -982,7 +982,7 @@
 			H.show(src.owner.mob)
 		return
 
-	else if(href_list["CentcommFaxReply"])
+	else if(href_list["StarcommFaxReply"])
 
 		var/department = null
 		if (href_list["faxMachine"])

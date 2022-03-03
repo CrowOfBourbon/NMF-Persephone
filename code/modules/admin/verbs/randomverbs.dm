@@ -618,9 +618,9 @@ Traitors and the like can also be revived with the previous role mostly intact.
 				return
 
 	if (reporttype == "Template")
-		reporter = sanitizeSafe(input(usr, "Please enter your CCIA name. (blank for CCIAAMS)", "Name") as text|null)
+		reporter = sanitizeSafe(input(usr, "Please enter your SCIA name. (blank for CCIAAMS)", "Name") as text|null)
 		if (reporter)
-			reportbody += "\n\n- [reporter], Central Command Internal Affairs Agent, [commstation_name()]"
+			reportbody += "\n\n- [reporter], Star Command Internal Affairs Agent, [commstation_name()]"
 		else
 			reportbody += "\n\n- CCIAAMS, [commstation_name()]"
 

@@ -95,102 +95,102 @@
 	SSradio.remove_object(src, control_freq)
 	return ..()
 
-/obj/item/radio/integrated/mule
-	var/list/botlist = null		// list of bots
-	var/obj/machinery/bot/mulebot/active 	// the active bot; if null, show bot list
-	var/list/botstatus			// the status signal sent by the bot
-	var/list/beacons
+//obj/item/radio/integrated/mule
+	//var/list/botlist = null		// list of bots
+	//var/obj/machinery/bot/mulebot/active 	// the active bot; if null, show bot list
+	//var/list/botstatus			// the status signal sent by the bot
+	//var/list/beacons
 
-	var/beacon_freq = 1400
-	var/control_freq = BOT_FREQ
+	//var/beacon_freq = 1400
+	//var/control_freq = BOT_FREQ
 
 	// create a new QM cartridge, and register to receive bot control & beacon message
-/obj/item/radio/integrated/mule/Initialize()
+//obj/item/radio/integrated/mule/Initialize()
 	..()
-	SSradio.add_object(src, control_freq, filter = RADIO_MULEBOT)
-	SSradio.add_object(src, beacon_freq, filter = RADIO_NAVBEACONS)
-	return INITIALIZE_HINT_LATELOAD
+	//SSradio.add_object(src, control_freq, filter = RADIO_MULEBOT)
+	//SSradio.add_object(src, beacon_freq, filter = RADIO_NAVBEACONS)
+	//return INITIALIZE_HINT_LATELOAD
 
-/obj/item/radio/integrated/mule/LateInitialize()
-	post_signal(beacon_freq, "findbeacon", "delivery", s_filter = RADIO_NAVBEACONS)
+//obj/item/radio/integrated/mule/LateInitialize()
+	//post_signal(beacon_freq, "findbeacon", "delivery", s_filter = RADIO_NAVBEACONS)
 
-/obj/item/radio/integrated/mule/Destroy()
-	SSradio.remove_object(src, control_freq)
-	SSradio.remove_object(src, beacon_freq)
-	return ..()
+//obj/item/radio/integrated/mule/Destroy()
+	//SSradio.remove_object(src, control_freq)
+	//SSradio.remove_object(src, beacon_freq)
+	//return ..()
 
 	// receive radio signals
 	// can detect bot status signals
 	// and beacon locations
 	// create/populate lists as they are recvd
 
-/obj/item/radio/integrated/mule/receive_signal(datum/signal/signal)
-	if(signal.data["type"] == "mulebot")
-		if(!botlist)
-			botlist = new()
+//obj/item/radio/integrated/mule/receive_signal(datum/signal/signal)
+	//if(signal.data["type"] == "mulebot")
+		//if(!botlist)
+			//botlist = new()
 
-		if(!(signal.source in botlist))
-			botlist += signal.source
+		//if(!(signal.source in botlist))
+			//botlist += signal.source
 
-		if(active == signal.source)
-			var/list/b = signal.data
-			botstatus = b.Copy()
+		//if(active == signal.source)
+			//var/list/b = signal.data
+			//botstatus = b.Copy()
 
-	else if(signal.data["beacon"])
-		if(!beacons)
-			beacons = new()
+	//else if(signal.data["beacon"])
+		//if(!beacons)
+			//beacons = new()
 
-		beacons[signal.data["beacon"] ] = signal.source
+		//beacons[signal.data["beacon"] ] = signal.source
 
 
 //		if(istype(P)) P.updateSelfDialog()
 
-/obj/item/radio/integrated/mule/Topic(href, href_list)
+//obj/item/radio/integrated/mule/Topic(href, href_list)
 	..()
-	var/cmd = "command"
-	if(active) cmd = "command [active.suffix]"
+	//var/cmd = "command"
+	//if(active) cmd = "command [active.suffix]"
 
-	switch(href_list["op"])
+	//switch(href_list["op"])
 
-		if("control")
-			active = locate(href_list["bot"])
-			post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
+		//if("control")
+			//active = locate(href_list["bot"])
+			//post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
 
-		if("scanbots")		// find all bots
-			botlist = null
-			post_signal(control_freq, "command", "bot_status", s_filter = RADIO_MULEBOT)
+		//if("scanbots")		// find all bots
+			//botlist = null
+			//post_signal(control_freq, "command", "bot_status", s_filter = RADIO_MULEBOT)
 
-		if("botlist")
-			active = null
+		//if("botlist")
+			//active = null
 
 
-		if("unload")
-			post_signal(control_freq, cmd, "unload", s_filter = RADIO_MULEBOT)
-			post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
-		if("setdest")
-			if(beacons)
-				var/dest = input("Select Bot Destination", "Mulebot [active.suffix] Interlink", active.destination) as null|anything in beacons
-				if(dest)
-					post_signal(control_freq, cmd, "target", "destination", dest, s_filter = RADIO_MULEBOT)
-					post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
+		//if("unload")
+			//post_signal(control_freq, cmd, "unload", s_filter = RADIO_MULEBOT)
+			//post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
+		//if("setdest")
+			//if(beacons)
+				//var/dest = input("Select Bot Destination", "Mulebot [active.suffix] Interlink", active.destination) as null|anything in beacons
+				//if(dest)
+					//post_signal(control_freq, cmd, "target", "destination", dest, s_filter = RADIO_MULEBOT)
+					//post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
 
-		if("retoff")
-			post_signal(control_freq, cmd, "autoret", "value", 0, s_filter = RADIO_MULEBOT)
-			post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
-		if("reton")
-			post_signal(control_freq, cmd, "autoret", "value", 1, s_filter = RADIO_MULEBOT)
-			post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
+		//if("retoff")
+			//post_signal(control_freq, cmd, "autoret", "value", 0, s_filter = RADIO_MULEBOT)
+			//post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
+		//if("reton")
+			//post_signal(control_freq, cmd, "autoret", "value", 1, s_filter = RADIO_MULEBOT)
+			//post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
 
-		if("pickoff")
-			post_signal(control_freq, cmd, "autopick", "value", 0, s_filter = RADIO_MULEBOT)
-			post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
-		if("pickon")
-			post_signal(control_freq, cmd, "autopick", "value", 1, s_filter = RADIO_MULEBOT)
-			post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
+		//if("pickoff")
+			//post_signal(control_freq, cmd, "autopick", "value", 0, s_filter = RADIO_MULEBOT)
+			//post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
+		//if("pickon")
+			//post_signal(control_freq, cmd, "autopick", "value", 1, s_filter = RADIO_MULEBOT)
+			//post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
 
-		if("stop", "go", "home")
-			post_signal(control_freq, cmd, href_list["op"], s_filter = RADIO_MULEBOT)
-			post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
+		//if("stop", "go", "home")
+			//post_signal(control_freq, cmd, href_list["op"], s_filter = RADIO_MULEBOT)
+			//post_signal(control_freq, cmd, "bot_status", s_filter = RADIO_MULEBOT)
 
 
 

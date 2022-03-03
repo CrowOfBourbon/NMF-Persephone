@@ -42,7 +42,7 @@
 
 	var/list/spawn_types
 
-	var/shuttle_call_restarts = FALSE // if true, calling crew transfer or evac just restarts the round in ten minute
+	var/shuttle_call_restarts = TRUE // if true, calling crew transfer or evac just restarts the round in ten minute
 	var/shuttle_call_restart_timer
 	var/shuttle_docked_message
 	var/shuttle_leaving_dock

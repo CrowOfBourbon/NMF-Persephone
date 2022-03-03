@@ -19,7 +19,7 @@
 
 	total_health = 100 //skeletons are frail
 
-	default_language = LANGUAGE_TCB
+	default_language = LANGUAGE_ENGLISH
 	language = LANGUAGE_CULT
 	name_language = LANGUAGE_CULT
 	unarmed_types = list(/datum/unarmed_attack/claws/strong, /datum/unarmed_attack/bite/sharp)
@@ -103,7 +103,7 @@
 	icobase = 'icons/mob/human_races/r_manifested.dmi'
 	deform = 'icons/mob/human_races/r_manifested.dmi'
 
-	default_language = LANGUAGE_TCB
+	default_language = LANGUAGE_ENGLISH
 	language = LANGUAGE_CULT
 	name_language = LANGUAGE_CULT
 	has_organ = list()
@@ -260,7 +260,7 @@
 	mob_size = 10
 	climb_coeff = 1.35
 
-	name_language = LANGUAGE_UNATHI
+	name_language = LANGUAGE_MHOSTUM
 
 	remains_type = /obj/effect/decal/remains/xeno
 
@@ -277,7 +277,7 @@
 
 	grab_mod = 1.25
 
-	name_language = LANGUAGE_SKRELLIAN
+	name_language = LANGUAGE_TUQ
 
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_SOCKS
 

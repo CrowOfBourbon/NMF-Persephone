@@ -66,26 +66,6 @@
 	name = "Shorts, Army"
 	icon_state = "shorts_army"
 
-/datum/category_item/underwear/bottom/shorts_expedition
-	name = "Shorts, Expedition"
-	icon_state = "shorts_expedition"
-
-/datum/category_item/underwear/bottom/shorts_scc
-	name = "Shorts, SCC"
-	icon_state = "shorts_scc"
-
-/datum/category_item/underwear/bottom/shorts_fleet
-	name = "Shorts, Fleet"
-	icon_state = "shorts_fleet"
-
-/datum/category_item/underwear/bottom/shorts_zavodskoi
-	name = "Shorts, Zavodskoi Interstellar"
-	icon_state = "shorts_necropolis"
-
-/datum/category_item/underwear/bottom/shorts_epmc
-	name = "Shorts, EPMC"
-	icon_state = "shorts_epmc"
-
 /datum/category_item/underwear/bottom/midway
 	name = "Midway Briefs"
 	icon_state = "midway"

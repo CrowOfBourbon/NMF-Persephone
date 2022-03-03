@@ -268,9 +268,9 @@ var/list/admin_departments
 
 	//message badmins that a fax has arrived
 	if (destination == current_map.boss_name)
-		message_admins(sender, "[uppertext(current_map.boss_short)] FAX", rcvdcopy, "CentcommFaxReply", "#006100")
+		message_admins(sender, "[uppertext(current_map.boss_short)] FAX", rcvdcopy, "StarcommFaxReply", "#006100")
 	else if (destination == "External Routing")
-		message_admins(sender, "EXTERNAL ROUTING FAX", rcvdcopy, "CentcommFaxReply", "#1F66A0")
+		message_admins(sender, "EXTERNAL ROUTING FAX", rcvdcopy, "StarcommFaxReply", "#1F66A0")
 
 	set_cooldown(adminfax_cooldown)
 	spawn(50)

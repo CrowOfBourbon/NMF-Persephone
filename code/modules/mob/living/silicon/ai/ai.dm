@@ -156,17 +156,20 @@ var/list/ai_verbs_default = list(
 
 	//Languages
 	add_language(LANGUAGE_ROBOT, TRUE)
-	add_language(LANGUAGE_TCB, TRUE)
-	add_language(LANGUAGE_SOL_COMMON, FALSE)
-	add_language(LANGUAGE_UNATHI, FALSE)
+	add_language(LANGUAGE_ENGLISH, TRUE)
+	add_language(LANGUAGE_NEW_MANDARIN, FALSE)
+	add_language(LANGUAGE_MHOSTUM, TRUE)
+	add_language(LANGUAGE_YZALTUM, TRUE)
+	add_language(LANGUAGE_ANGLIKIRTAN, TRUE)
 	add_language(LANGUAGE_SIIK_MAAS, FALSE)
-	add_language(LANGUAGE_SKRELLIAN, FALSE)
-	add_language(LANGUAGE_TRADEBAND, TRUE)
-	add_language(LANGUAGE_GUTTER, FALSE)
+	add_language(LANGUAGE_TUQ, FALSE)
+	add_language(LANGUAGE_LUNIAN, TRUE)
+	add_language(LANGUAGE_MARTIAN, FALSE)
 	add_language(LANGUAGE_VAURCA, FALSE)
 	add_language(LANGUAGE_ROOTSONG, FALSE)
 	add_language(LANGUAGE_EAL, TRUE)
 	add_language(LANGUAGE_YA_SSA, FALSE)
+	add_language(LANGUAGE_VAURCA_SIGN, FALSE)
 	add_language(LANGUAGE_DELVAHII, FALSE)
 
 
