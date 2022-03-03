@@ -73,7 +73,6 @@ The additional weight of the synthetic skin on the original Titan frame reduces 
 
 	bodyfall_sound = /decl/sound_category/bodyfall_sound
 
-allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
 /datum/species/machine/shell/get_species(var/reference, var/mob/living/carbon/human/H, var/records)
 	if(reference)
@@ -137,7 +136,6 @@ allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACC
 
 	slowdown = 4
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
 	blurb = "IPCs, or Integrated Positronic Chassis, are humanoid robots with a Positronic Brain as their core processor. \
 Following the success of the Xion frame, Titan Universal Manufacturing designed a new IPC model intended for other extreme environments and heavy workloads. \
@@ -333,7 +331,6 @@ frontier operations since their release in 2595. Due to their design for hard si
 
 	examine_color = "#688359"
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
 	blurb = "IPCs, or Integrated Positronic Chassis, are humanoid robots with a Positronic Brain as their core processor. \
 An extremely durable and heavy Industrial model branded by Titan Universal Manufacturing, rolled out in 2623. \
@@ -394,7 +391,6 @@ Overtaxing its hardware will quickly lead to overheating. Like its predecessor, 
 
 	examine_color = "#bc4b00"
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
 	blurb = "IPCs, or Integrated Positronic Chassis, are humanoid robots with a Positronic Brain as their core processor. \
 The \"Xion\" model is the first specialized Titan Universal Manufacturing IPC. \
@@ -457,13 +453,18 @@ T.U.M. first produced these frames for its own use only in 2590, starting the ex
 	grab_mod = 1.1 // Smooth, fast
 	resist_mod = 4 // Not super strong, but still rather strong
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
 	appearance_flags = HAS_EYE_COLOR | HAS_UNDERWEAR | HAS_SOCKS
 
 	examine_color = "#ff00ff"
 
-	blurb = ""
+	blurb = "IPCs, or Integrated Positronic Chassis, are humanoid robots with a Positronic Brain as their core processor. \
+In 2593 the Taylor Research Group decided to throw their hat in the ring as the first and, currently, most successful contender \
+to the Titan Universal Manufacturing monopoly on the IPC market. The sleek-looking TRG-Utility Frame is designed with \
+both speed and precision in mind, allowing these IPCs to be used in work environments Baselines were considered too slow or brutish for. \
+Having taken some inspiration from biological life, the chassis has digitigrade legs that provide the chassis with enhanced speed. \
+A downside to this development was the reduction of metals on the chassis; most plates covering the sensitive interior electronics \
+are polymer casts to reduce the weight of the unit, resulting in a less durable frame."
 
 	has_limbs = list(
 		BP_CHEST  = list("path" = /obj/item/organ/external/chest/ipc/industrial/zenghu),
@@ -541,7 +542,6 @@ Bishops are excellent for mental tasks such as accounting or science. Ever since
 		)
 
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
 /datum/species/machine/bishop/get_light_color(mob/living/carbon/human/H)
 	if (istype(H))
