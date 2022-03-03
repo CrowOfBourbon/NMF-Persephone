@@ -10,11 +10,11 @@
 	burn_mod = 1.2
 	grab_mod = 1
 
-	blurb = "IPCs with humanlike properties. Their focus is on service, civilian, and medical, but there are no \
-	job restrictions. Created in the late days of 2590, the Shell is a controversial IPC model equipped with a synthskin weave applied over its metal chassis \
-	to create an uncannily close approximation of the organic form. Early models of Shell had the advantage of being able to compose themselves of a wide \
-	 variety of organic parts, but contemporary models have been restricted to a single species for the sake of prosthetic integrity. The additional weight of \
-	 the synthskin on the original Titan frame reduces the efficacy of the unit's already strained coolant systems, and increases charge consumption."
+	blurb = "IPCs, or Integrated Positronic Chassis, are humanoid robots with a Positronic Brain as their core processor.\
+Designed in 2632 to exploit openings in the market, the \"Shell\" model is a specific style of frame with an expensive synth-flesh outer casing.\
+Shells are popular in a variety of situations, though their high market cost sees them as rarer amongst less affluent or more dangerous regions.\
+Despite their lifelike appearance, shells can be identified as synthetics at close inspection, even discernable in crowds with the right equipment.\
+The additional weight of the synthetic skin on the original Titan frame reduces the efficacy of the unit's already strained coolant systems, increasing charge consumption."
 
 	num_alternate_languages = 3
 
@@ -73,7 +73,7 @@
 
 	bodyfall_sound = /decl/sound_category/bodyfall_sound
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_DION)
+allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
 /datum/species/machine/shell/get_species(var/reference, var/mob/living/carbon/human/H, var/records)
 	if(reference)
@@ -137,9 +137,16 @@
 
 	slowdown = 4
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_DION)
+	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
-	blurb = "The first commercialized attempt Hephaestus Industries made at an industrial-type IPC. Designed for extra durability and increased weight loads, the first generation Industrial was considered a success, though it possessed some issues. A limited power cell and actuators designed for heavy lifting and not locomotion resulted in a slow and frequently charging machine. A special addition to the chassis makes up for these drawbacks - the ability to simply slot a suit cooling unit onto the model's back and make use of its built-in heat transferal conduits, allowing the Industrial to perform EVA without any extra peripherals such as a voidsuit."
+	blurb = "IPCs, or Integrated Positronic Chassis, are humanoid robots with a Positronic Brain as their core processor. \
+Following the success of the Xion frame, Titan Universal Manufacturing designed a new IPC model intended for other extreme environments and heavy workloads. \
+Designed for extra durability and increased weight loads, the first generation heavy Industrial was considered a success, though it possessed some issues. \
+A limited power cell and actuators designed for heavy lifting over locomotion resulted in a slow and frequently charging machine. \
+A special addition to the chassis makes up for these drawbacks; the ability to simply slot a suit cooling unit onto the model's back \
+and make use of its built-in heat transferal conduits, allowing the Industrial frame to perform EVA without any extra peripherals such as a voidsuit. \
+Its sturdy and reliable frame, strength, and easy temperature control make the G1 a frequent sight in both heavy industry and \
+frontier operations since their release in 2595. Due to their design for hard simple labor, G1s are rarely seen as self-owned."
 
 	icobase = 'icons/mob/human_races/ipc/r_industrial.dmi'
 	deform = 'icons/mob/human_races/ipc/r_industrial.dmi'
@@ -326,9 +333,16 @@
 
 	examine_color = "#688359"
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_DION)
+	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
-	blurb = "An extremely durable and heavy Industrial model branded by Hephaestus Industries. It is their improved Industrial model, with thicker plating and improved power cell. Its actuators struggle to carry the immense weight, however, making the unit quite slow. This chassis would be seen in roles where it would be dangerous or inefficient to use a less durable unit, such as engineering, security, and mining. While this unit still possesses built-in cooling conduits, the increased plating and thickness of said plating proved a difficult challenge for the engineers to develop good cooling, so the unit suffers somewhat from increased heat loads. Overtaxing its hardware will quickly lead to overheating."
+	blurb = "IPCs, or Integrated Positronic Chassis, are humanoid robots with a Positronic Brain as their core processor. \
+An extremely durable and heavy Industrial model branded by Titan Universal Manufacturing, rolled out in 2623. \
+The second-generation industrial frame made multiple improvements over the previous model, featuring thicker plating and an improved power cell. \
+Its actuators struggle to carry the immense weight, making the unit quite slow. \
+This chassis is seen in roles where it is too dangerous or inefficient to use a less durable alternative. Popular roles include engineering, security, \
+and mining. While this unit still possesses built-in cooling conduits, the \
+increased plating proved a difficult challenge for the engineers to develop good cooling, so the unit suffers somewhat from increased heat loads. \
+Overtaxing its hardware will quickly lead to overheating. Like its predecessor, the G2 is common in the frontier and rarely self-owned."
 
 	has_limbs = list(
 		BP_CHEST  = list("path" = /obj/item/organ/external/chest/ipc/industrial/hephaestus),
@@ -380,9 +394,17 @@
 
 	examine_color = "#bc4b00"
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_DION)
+	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
-	blurb = "The Xion Manufacturing Group, being a subsidiary of Hephaestus Industries, saw the original Industrial models and wanted to develop their own chassis based off of the original design. The result is the Xion Industrial model. Sturdy and strong, this chassis is quite powerful and equally durable, with an ample power cell and improved actuators for carrying the increased weight of the body. The Xion model also retains sturdiness without covering the chassis in plating, allowing for the cooling systems to vent heat much easier than the Hephaestus-brand model. This unit can perform EVA without assistance."
+	blurb = "IPCs, or Integrated Positronic Chassis, are humanoid robots with a Positronic Brain as their core processor. \
+The \"Xion\" model is the first specialized Titan Universal Manufacturing IPC. \
+Designed to handle the extreme conditions of Titan, the Xion frame is capable of efficiently operating in lower temperatures without risk of damage to its \
+systems, allowing them to maintain and service Titans automated structures with little upkeep. \
+Sturdy and strong, this chassis is quite powerful and equally durable, with an ample power cell and improved \
+actuators for carrying the increased weight of the body. Designed for cooler environments, the Xion suffers in warmer climates. \
+Upgrades to their meek cooling systems are considered necessary for operation at room temperature and even then cause the Xion to be more sluggish. \
+T.U.M. first produced these frames for its own use only in 2590, starting the export of the specialized IPC in 2598."
+
 
 	has_limbs = list(
 		BP_CHEST  = list("path" = /obj/item/organ/external/chest/ipc/industrial/xion),
@@ -435,13 +457,13 @@
 	grab_mod = 1.1 // Smooth, fast
 	resist_mod = 4 // Not super strong, but still rather strong
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_DION)
+	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
 	appearance_flags = HAS_EYE_COLOR | HAS_UNDERWEAR | HAS_SOCKS
 
 	examine_color = "#ff00ff"
 
-	blurb = "Being a corporation focused primarily on medical sciences and treatments, Zeng-Hu Pharmaceuticals had little interest in the market of synthetics in the beginning (especially considering a good portion of Zeng-Hu employees are Skrellian). However, after seeing the advances in almost all fields of the galactic market after the advent of synthetics, Zeng-Hu set aside some funds for their own robotics department, focused mainly on medical service and even science related operations. Having taken some inspiration from biological life, the chassis has an interesting leg design: digitigrade legs provide the chassis with enhanced speed. A downside to this development was the reduction of metals on the chassis. Most plates covering the sensitive interior electronics are polymer casts to reduce the weight of the unit, resulting in a not-so-durable android."
+	blurb = ""
 
 	has_limbs = list(
 		BP_CHEST  = list("path" = /obj/item/organ/external/chest/ipc/industrial/zenghu),
@@ -488,7 +510,16 @@
 
 	examine_color = "#00afea"
 
-	blurb = "Bishop Cybernetics frames are among the sleeker, flashier frames widely produced for IPCs. This brand-new, high end design has a focus on pioneering energy efficiency without sacrifice, fitting to Bishop's company vision. Cutting-edge technology in power management means this frame can operate longer while running more demanding processing algorithms than most. This extreme push to minimize power draw means this frame can be equipped with all sorts of extra equipment: a hologram for a face, flashing status displays and embedded lights solely meant for show. The one thing holding this frame back from perfection is the same common criticism leveled against almost all Bishop products: the shiny chrome and glass meant to put all of this tech on display means it's exposed and fragile. It's because of Bishop's unrelenting pursuit of vanity in their designs that these frames often suffer from issues with reliability and struggle to safely perform the same work as cheaper, more rugged frames."
+	blurb = "IPCs, or Integrated Positronic Chassis, are humanoid robots with a Positronic Brain as their core processor. \
+Cutting-edge technology in power management means this frame can operate longer while running more demanding processing algorithms than most. \
+This extreme push to minimize power draw means this frame can be equipped with all sorts of extra equipment such as a holographic \
+faceplate, flashing status displays and embedded lights solely meant for show and, most importantly, secondary processing and storing capacities. \
+Like other Taylor models, this frame suffers the same common criticism leveled against almost all Taylor frames, \
+the shiny chrome and glass meant to put all of this tech on display mean it's exposed and fragile. \
+It's because of their pursuit of cutting edge and specialization designs that these frames often suffer from issues with reliability \
+and struggle to safely perform the same work as cheaper, more rugged frames. However, due to their additional tech supporting their positronic brain, \
+Bishops are excellent for mental tasks such as accounting or science. Ever since their introduction in \
+2614, Bishop Frames are a common sight where mental faculties are key. Most Bishop Frames end up Independent due to the nature of their work."
 
 	has_limbs = list(
 		BP_CHEST  = list("path" = /obj/item/organ/external/chest/ipc/industrial/bishop),
@@ -510,7 +541,7 @@
 		)
 
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_DION)
+	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
 
 /datum/species/machine/bishop/get_light_color(mob/living/carbon/human/H)
 	if (istype(H))
