@@ -2698,7 +2698,7 @@
 	name = "legate's closet";
 	req_access = list(108,111)
 	},
-/obj/structure/sign/flag/biesel{
+/obj/structure/sign/flag/nanotrasen{
 	pixel_y = 32
 	},
 /obj/item/shield/energy/legion,
@@ -2713,10 +2713,10 @@
 /obj/item/storage/backpack/satchel,
 /obj/item/clothing/shoes/jackboots/toeless,
 /obj/item/clothing/glasses/sunglasses/aviator,
-/obj/item/flag/biesel/l{
+/obj/item/flag/nanotrasen/l{
 	pixel_y = 8
 	},
-/obj/item/flag/biesel,
+/obj/item/flag/nanotrasen,
 /turf/unsimulated/floor{
 	icon_state = "wood_light"
 	},
@@ -3835,9 +3835,9 @@
 /area/centcom/holding)
 "avW" = (
 /turf/unsimulated/floor{
+	dir = 4;
 	icon_state = "ramptop";
-	name = "staircase";
-	dir = 4
+	name = "staircase"
 	},
 /area/centcom/bar)
 "awh" = (
@@ -6484,7 +6484,7 @@
 	},
 /area/centcom/holding)
 "bcv" = (
-/obj/structure/sign/flag/biesel{
+/obj/structure/sign/flag/nanotrasen{
 	pixel_y = 32
 	},
 /obj/machinery/button/remote/blast_door{
@@ -7660,7 +7660,7 @@
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 10
 	},
-/obj/item/storage/box/tcfl_pamphlet,
+/obj/item/storage/box/donkpockets,
 /turf/unsimulated/floor{
 	icon_state = "carpet5-1"
 	},
@@ -8032,9 +8032,9 @@
 	req_access = list(109)
 	},
 /obj/machinery/door/window{
+	dir = 1;
 	name = "South Checkpoint";
-	req_access = list(109);
-	dir = 1
+	req_access = list(109)
 	},
 /turf/unsimulated/floor/plating,
 /area/centcom/holding)
@@ -8647,9 +8647,9 @@
 "cEa" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window{
+	dir = 1;
 	name = "North Checkpoint";
-	req_access = list(109);
-	dir = 1
+	req_access = list(109)
 	},
 /obj/machinery/door/window{
 	name = "North Checkpoint";
@@ -10530,7 +10530,7 @@
 /turf/space/dynamic,
 /area/shuttle/skipjack)
 "dVZ" = (
-/obj/structure/sign/flag/biesel{
+/obj/structure/sign/flag/nanotrasen{
 	pixel_y = 30
 	},
 /turf/unsimulated/floor{
@@ -15208,16 +15208,16 @@
 	dir = 5
 	},
 /obj/machinery/button/remote/blast_door{
-	pixel_x = 30;
-	pixel_y = -4;
+	id = "south1";
 	name = "Enter";
-	id = "south1"
+	pixel_x = 30;
+	pixel_y = -4
 	},
 /obj/machinery/button/remote/blast_door{
-	pixel_x = 30;
-	pixel_y = 7;
+	id = "south2";
 	name = "Exit";
-	id = "south2"
+	pixel_x = 30;
+	pixel_y = 7
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark2"
@@ -22670,16 +22670,16 @@
 	dir = 10
 	},
 /obj/machinery/button/remote/blast_door{
-	pixel_x = -30;
-	pixel_y = -4;
+	id = "north1";
 	name = "Enter";
-	id = "north1"
+	pixel_x = -30;
+	pixel_y = -4
 	},
 /obj/machinery/button/remote/blast_door{
-	pixel_x = -30;
-	pixel_y = 7;
+	id = "north2";
 	name = "Exit";
-	id = "north2"
+	pixel_x = -30;
+	pixel_y = 7
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark2"
@@ -25310,7 +25310,7 @@
 /obj/effect/floor_decal/corner/lime/diagonal{
 	dir = 8
 	},
-/obj/structure/sign/flag/biesel/left{
+/obj/structure/sign/flag/nanotrasen/left{
 	pixel_y = 32
 	},
 /turf/unsimulated/floor{
@@ -25439,7 +25439,7 @@
 /obj/effect/floor_decal/corner/lime/diagonal{
 	dir = 8
 	},
-/obj/structure/sign/flag/biesel/right{
+/obj/structure/sign/flag/nanotrasen/right{
 	pixel_y = 32
 	},
 /turf/unsimulated/floor{
@@ -26313,9 +26313,9 @@
 	icon_state = "mcorneroverlay1"
 	},
 /turf/unsimulated/floor{
+	dir = 4;
 	icon_state = "ramptop";
-	name = "staircase";
-	dir = 4
+	name = "staircase"
 	},
 /area/centcom/bar)
 "pxn" = (
@@ -26452,9 +26452,9 @@
 	icon_state = "mcorneroverlay1"
 	},
 /turf/unsimulated/floor{
+	dir = 4;
 	icon_state = "ramptop";
-	name = "staircase";
-	dir = 4
+	name = "staircase"
 	},
 /area/centcom/bar)
 "pCm" = (
@@ -26904,7 +26904,7 @@
 /area/shuttle/specops)
 "pMW" = (
 /obj/vehicle/bike/speeder,
-/obj/structure/sign/flag/biesel/left{
+/obj/structure/sign/flag/nanotrasen/left{
 	pixel_y = 32
 	},
 /turf/unsimulated/floor,
@@ -26922,7 +26922,7 @@
 	dir = 4
 	},
 /obj/vehicle/bike/speeder,
-/obj/structure/sign/flag/biesel/right{
+/obj/structure/sign/flag/nanotrasen/right{
 	pixel_y = 32
 	},
 /turf/unsimulated/floor,
@@ -29293,22 +29293,22 @@
 	locked = 0;
 	opened = 1
 	},
-/obj/item/flag/biesel/l{
+/obj/item/flag/nanotrasen/l{
 	pixel_y = 8
 	},
-/obj/item/flag/biesel/l{
+/obj/item/flag/nanotrasen/l{
 	pixel_y = 8
 	},
-/obj/item/flag/biesel{
+/obj/item/flag/nanotrasen{
 	pixel_y = 8
 	},
-/obj/item/flag/biesel{
+/obj/item/flag/nanotrasen{
 	pixel_y = 8
 	},
-/obj/item/flag/biesel{
+/obj/item/flag/nanotrasen{
 	pixel_y = 8
 	},
-/obj/item/storage/box/tcfl_pamphlet,
+/obj/item/storage/box/donkpockets,
 /obj/item/material/twohanded/pike/flag,
 /turf/unsimulated/floor,
 /area/centcom/legion/hangar5)
@@ -30745,8 +30745,8 @@
 /area/centcom/legion)
 "teA" = (
 /mob/living/silicon/decoy{
-	name = "Draconis";
-	icon_state = "ai-matrix"
+	icon_state = "ai-matrix";
+	name = "Draconis"
 	},
 /turf/unsimulated/floor{
 	icon_state = "virtual_reality2"
@@ -32141,7 +32141,7 @@
 	pixel_x = -2;
 	pixel_y = 4
 	},
-/obj/structure/sign/flag/biesel/left{
+/obj/structure/sign/flag/nanotrasen/left{
 	pixel_y = 32
 	},
 /obj/structure/table/standard,
@@ -32262,7 +32262,7 @@
 	pixel_x = 5;
 	pixel_y = 12
 	},
-/obj/structure/sign/flag/biesel/right{
+/obj/structure/sign/flag/nanotrasen/right{
 	pixel_y = 32
 	},
 /obj/structure/table/standard,
@@ -32795,7 +32795,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/structure/sign/flag/biesel{
+/obj/structure/sign/flag/nanotrasen{
 	pixel_x = 5;
 	pixel_y = 32
 	},
@@ -32973,7 +32973,7 @@
 /turf/unsimulated/floor,
 /area/centcom/legion)
 "uSG" = (
-/obj/structure/sign/flag/biesel{
+/obj/structure/sign/flag/nanotrasen{
 	pixel_x = -5;
 	pixel_y = 32
 	},
@@ -33284,9 +33284,7 @@
 /turf/simulated/floor/shuttle/black,
 /area/shuttle/mercenary)
 "vdh" = (
-/obj/effect/floor_decal/spline/fancy{
-	dir = 2
-	},
+/obj/effect/floor_decal/spline/fancy,
 /turf/unsimulated/floor/plating{
 	icon_state = "freezer"
 	},
@@ -33538,9 +33536,7 @@
 /area/antag/raider)
 "vpg" = (
 /obj/structure/table/stone/marble,
-/obj/effect/floor_decal/spline/fancy{
-	dir = 2
-	},
+/obj/effect/floor_decal/spline/fancy,
 /turf/unsimulated/floor/plating{
 	icon_state = "freezer"
 	},
@@ -33910,7 +33906,7 @@
 /area/centcom/holding)
 "vKl" = (
 /obj/structure/undies_wardrobe,
-/obj/structure/sign/flag/biesel{
+/obj/structure/sign/flag/nanotrasen{
 	pixel_y = 32
 	},
 /turf/unsimulated/floor{
@@ -35037,16 +35033,16 @@
 	locked = 0;
 	opened = 1
 	},
-/obj/item/flag/biesel{
+/obj/item/flag/nanotrasen{
 	pixel_y = 8
 	},
-/obj/item/flag/biesel/l{
+/obj/item/flag/nanotrasen/l{
 	pixel_y = 8
 	},
-/obj/item/flag/biesel/l{
+/obj/item/flag/nanotrasen/l{
 	pixel_y = 8
 	},
-/obj/item/storage/box/tcfl_pamphlet,
+/obj/item/storage/box/donkpockets,
 /obj/item/material/twohanded/pike/flag,
 /turf/unsimulated/floor{
 	icon_state = "wood_light"
@@ -35793,7 +35789,7 @@
 	pixel_y = -4
 	},
 /obj/structure/table/standard,
-/obj/structure/sign/flag/biesel{
+/obj/structure/sign/flag/nanotrasen{
 	pixel_x = -32;
 	pixel_y = 32
 	},

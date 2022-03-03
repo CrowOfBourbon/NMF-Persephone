@@ -631,10 +631,16 @@
 	},
 /area/tcommsat/entrance)
 "bz" = (
-/obj/machinery/power/smes/buildable,
 /obj/structure/cable/blue{
 	d2 = 8;
 	icon_state = "0-8"
+	},
+/obj/machinery/power/smes/buildable{
+	charge = 5e+006;
+	input_attempt = 1;
+	input_level = 200000;
+	output_attempt = 1;
+	output_level = 200000
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
@@ -860,10 +866,10 @@
 /area/tcommsat/entrance)
 "tI" = (
 /obj/machinery/airlock_sensor/airlock_interior{
-	pixel_y = 30;
 	frequency = 1212;
 	id_tag = "tcommint";
-	master_tag = "tcommmaster"
+	master_tag = "tcommmaster";
+	pixel_y = 30
 	},
 /obj/machinery/access_button/airlock_interior{
 	frequency = 1212;
@@ -979,9 +985,9 @@
 /area/tcommsat/computer)
 "LP" = (
 /obj/machinery/embedded_controller/radio/airlock/advanced_airlock_controller{
-	pixel_y = 30;
 	frequency = 1212;
 	id_tag = "tcommmaster";
+	pixel_y = 30;
 	tag_airpump = "tcommpump";
 	tag_chamber_sensor = "tcommsensor1";
 	tag_exterior_door = "tcommextdoor";
@@ -991,9 +997,9 @@
 	tag_secure = 1
 	},
 /obj/machinery/airlock_sensor{
-	pixel_y = 20;
 	frequency = 1212;
-	id_tag = "tcommsensor1"
+	id_tag = "tcommsensor1";
+	pixel_y = 20
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
@@ -1075,10 +1081,10 @@
 /area/tcommsat/entrance)
 "Ub" = (
 /obj/machinery/airlock_sensor{
-	pixel_y = 30;
 	frequency = 1212;
 	id_tag = "tcommext";
-	master_tag = "tcommmaster"
+	master_tag = "tcommmaster";
+	pixel_y = 30
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
