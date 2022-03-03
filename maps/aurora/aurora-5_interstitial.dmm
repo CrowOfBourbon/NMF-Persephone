@@ -920,10 +920,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
 /area/medical/upperlevel)
-"bM" = (
-/obj/structure/stairs/south,
-/turf/simulated/open/airless,
-/area/medical/psych)
 "bN" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -944,7 +940,7 @@
 	d2 = 2;
 	icon_state = "12-0"
 	},
-/turf/simulated/open/airless,
+/turf/simulated/open,
 /area/medical/psych)
 "bO" = (
 /obj/machinery/alarm{
@@ -1569,14 +1565,14 @@
 /turf/simulated/floor/plating,
 /area/medical/psych)
 "hD" = (
-/turf/simulated/open/airless,
+/turf/simulated/open,
 /area/medical/psych)
 "MZ" = (
-/obj/effect/shuttle_landmark/burglar/start,
+/obj/effect/shuttle_landmark/burglar/surface,
 /turf/simulated/floor/airless/ceiling,
 /area/space)
 "YN" = (
-/obj/effect/shuttle_landmark/skipjack/start,
+/obj/effect/shuttle_landmark/skipjack/interstitial,
 /turf/simulated/floor/airless/ceiling,
 /area/space)
 
@@ -41537,7 +41533,7 @@ aC
 aW
 bk
 hD
-bM
+hD
 au
 cb
 cm
@@ -42051,7 +42047,7 @@ aE
 aW
 bm
 hD
-bM
+hD
 au
 cd
 co
