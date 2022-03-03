@@ -35,7 +35,7 @@ Titan Universal Manufacturing dominates this market."
 
 	name_language = LANGUAGE_EAL
 	num_alternate_languages = 2
-	secondary_langs = list(LANGUAGE_MARTIAN, LANGUAGE_NEW_MANDARIN, LANGUAGE_LUNIAN, LANGUAGE_ENGLISH, LANGUAGE_EAL)
+	secondary_langs = list(LANGUAGE_MARTIAN, LANGUAGE_NEW_MANDARIN, LANGUAGE_LUNIAN, LANGUAGE_ENGLISH, LANGUAGE_EAL, LANGUAGE_SIGN, LANGUAGE_YZALTUM, LANGUAGE_ANGLIKIRTAN, LANGUAGE_SIIK_MAAS, LANGUAGE_YA_SSA, LANGUAGE_DELVAHII, LANGUAGE_TUQ)
 	ethanol_resistance = -1//Can't get drunk
 	radiation_mod = 0	// not affected by radiation
 	remains_type = /obj/effect/decal/remains/robot
@@ -124,7 +124,7 @@ Titan Universal Manufacturing dominates this market."
 	default_citizenship = CITIZENSHIP_NONE
 	bodyfall_sound = /decl/sound_category/bodyfall_machine_sound
 
-	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_TUQ)
+	allowed_accents = list(ACCENT_RHEA, ACCENT_INTER, ACCENT_EARTH, ACCENT_LUNA, ACCENT_MARS, ACCENT_GALACTIC, ACCENT_TTS, ACCENT_ELO, ACCENT_TANJIR, ACCENT_NAZEER, ACCENT_RAE, ACCENT_ANGL, ACCENT_YALZ, ACCENT_BLIR)
 	allowed_religions = list(RELIGION_NONE, RELIGION_OTHER, RELIGION_CHRISTIANITY, RELIGION_ISLAM, RELIGION_JUDAISM, RELIGION_HINDU, RELIGION_BUDDHISM, RELIGION_TAOISM)
 
 	alterable_internal_organs = list()
