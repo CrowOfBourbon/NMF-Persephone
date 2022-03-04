@@ -1,8 +1,4 @@
-/datum/gear/religion/rosary
-	display_name = "rosary"
-	path = /obj/item/clothing/accessory/rosary
-
-/datum/gear/religion/rosary
+/datum/gear/religion
 	display_name = "rosary"
 	path = /obj/item/clothing/accessory/rosary
 

@@ -18,6 +18,9 @@ var/list/gear_datums = list()
 		var/use_name = initial(G.display_name)
 		var/use_category = initial(G.sort_category)
 
+		if(!use_name)
+			crash_with(G.type)
+
 		if(!loadout_categories[use_category])
 			loadout_categories[use_category] = new /datum/loadout_category(use_category)
 		var/datum/loadout_category/LC = loadout_categories[use_category]
