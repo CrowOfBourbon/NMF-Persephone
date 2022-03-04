@@ -1,18 +1,17 @@
 /datum/accent/skrell
 	name = ACCENT_ELO
-	description = "In the Jargon Federation, the typical skrellian accent has dozens of minute and tiny variations and can be found across a multitude of planets (and their colonies) \
-	and in a wide range of sectors. Its generality has resulted in the belief that it is the 'standard' accent for all Skrell. "
+	description = "High pitched, and delicate, this is the accent of the land dwelling Skrell.\
+	 It's harmonic sound is often the one heard in many Skrellian hymn's and songs. Chirrping and warbling are common sounds"
 	tag_icon = "skrell"
 
 /datum/accent/skrell/dweller
 	name = ACCENT_DWELLER
-	description = "The typical accent of the Homeworld (or Qerrbalak), is very much more distinct and enunciated than other variations of Nral'Malic. It puts specific emphasis on a \
-	melodious manner of speaking, their tones often jumping out of the standard human hearing range."
+	description = "A deep, melodic accent is a tell-tale sign that your Skrell is a water-dweller.\
+	 This accent is often referenced as bellowing by the Xiialts, however, many non-Skrell find the Dweller accent to be one of the more beautifully crafted ones.\
+	 Crooning and croaking are common sounds."
 	tag_icon = "skrell_dweller"
 
 /datum/accent/skrell/blirkite
 	name = ACCENT_BLIR
-	description = "The Qerr'Malic accent is known for being rather soft, even hushed at some points. Because of the moon's tourist industry, it borrows elements from other accents to \
-	form a rather unique mixture that makes specific reference to keeping low tones accessible to non-Skrell, further cementing the overall 'quietness' to other Skrell as their sentences \
-	sound half-finished."
+	description = "The hodge podge of accents. This accent is often jarring with how it bounces from high to low."
 	tag_icon = "skrell_blirk"

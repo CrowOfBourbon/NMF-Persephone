@@ -1,8 +1,8 @@
 //tau ceti sectors
-#define SECTOR_ROMANOVICH			"Romanovich Cloud"
+#define SECTOR_CERBERUS			    "Cerberus System"
 #define SECTOR_TAU_CETI				"Tau Ceti"
 #define SECTOR_CORP_ZONE			"Corporate Reconstruction Zone"
-#define ALL_TAU_CETI_SECTORS		list(SECTOR_ROMANOVICH, SECTOR_TAU_CETI, SECTOR_CORP_ZONE)
+#define ALL_TAU_CETI_SECTORS		list(SECTOR_CERBERUS, SECTOR_TAU_CETI, SECTOR_CORP_ZONE)
 
 //badlands sectors
 #define SECTOR_VALLEY_HALE			"Valley Hale"

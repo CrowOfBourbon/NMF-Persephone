@@ -26,7 +26,7 @@ var/diary_date_string = null
 var/href_logfile        = null
 var/game_version        = "PersephoneStation"
 var/changelog_hash      = ""
-var/game_year           = (text2num(time2text(world.realtime, "YYYY")) + 442)
+var/game_year           = (text2num(time2text(world.realtime, "YYYY")) + 643)
 
 var/round_progressing = 1
 var/master_mode       = "extended" // "extended"
