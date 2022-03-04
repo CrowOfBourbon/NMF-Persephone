@@ -1,11 +1,13 @@
 /datum/citizenship/elodile_empire
 	name = CITIZENSHIP_ELODILE
-	description = "Home of the Skrell, a centralized union of solar systems run by councilors of different ranks and positions. The capital of the Federation is located at the city of \
-	Kal'lo on the core planet Jargon IV, also known as Qerrbalak, within the Jargon system. While the majority of Skrell live within the Jargon Federation, a sizable portion live \
-	abroad. The quality of life within Federation is considered to be the best in the galaxy due to their technological advances, allowing Federation Citizens access to a quality of \
-	life almost unmatched anywhere else in the Spur. \
-	A rogue artificial intelligence, Glorsh-Omega, has traumatized this nation for centuries to come. The Federation is very wary of humanity, who has acquired AI technology \
-	after a Federation tech leak provided them with the research required to create their own AI, as well as allowing them to create IPCs."
+	description = "Elodile Empire is a dictatorship run by a main dictator (Klaark) and his council of generals of different ranks and positions.\
+	 The capital of the Empire is located at the city of Pluq'ooi on the core planet Moqy within the Chargo system.\
+	 The quality of life within Empire is based on the class you're born in. Xiialt are fairly treated, with a system in place that promotes good behavior,\
+	 and heavily punishes behavior that's against the Empire. This class hails the nobles, celebrities, political figures, and prized scientists.\
+	 These Skrell are happy in life and spoiled to keep them happy. The Axiori are considered second class citizens. These Skrell do not have a government stamped passport,\
+	 are quite rebellious in nature, and enjoy a loud nightlife. Axiori water domes are akin to cyberpunk cities, with run down cities running rampant with\
+	 crime and party life. Axiori are constantly being kidnapped by the man and shut up if they speak out too much about their oppression.\
+	 They are allowed to leave the Empire with the stipulation that they never return."
 	consular_outfit = /datum/outfit/job/representative/consular/jargon
 
 	job_species_blacklist = list(

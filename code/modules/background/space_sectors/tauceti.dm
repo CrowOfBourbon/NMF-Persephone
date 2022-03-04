@@ -6,12 +6,10 @@
 	cargo_price_coef = list("nt" = 0.8, "hpi" = 0.8, "zhu" = 0.8, "een" = 1, "get" = 0.8, "arz" = 1, "blm" = 1,
 								"iac" = 1, "zsc" = 1, "vfc" = 1, "bis" = 0,8, "xmg" = 0.8, "npi" = 0.8)
 
-/datum/space_sector/romanovich
-	name = SECTOR_ROMANOVICH
-	description = "The Romanovich Cloud is a shell of icy, rocky and metallic bodies that orbit very distant Tau Ceti, past even the Dust Belt. Rich in deposits of precious and\
-	 semi-precious metals as well as radioactive elements, the Romanovich Cloud is the source of nearly all the raw materials used within Tau Ceti. The cloud is also one of the few\
-	  sources of Phoron, a volatile but highly-sought after compound, known for its uses in the biomedical and energy industries. Most of the sources of Phoron within the Romanovich \
-	  Cloud are under control of NanoTrasen, which has consequently established many high-tech research facilities in the area in the past few years."
+/datum/space_sector/cerberus
+	name = SECTOR_CERBERUS
+	description = "The Cerberus System is the planets, ships and stations that orbit the Cerberus star. It's capital and shining gem could very well be Rhea, the planet of Hopes.\
+	NanoTrasen, an up and coming megacorporation, seems to have taken interest in the planet Hades located here. Persephone is located on Hades."
 
 /datum/space_sector/corp_zone
 	name = SECTOR_CORP_ZONE

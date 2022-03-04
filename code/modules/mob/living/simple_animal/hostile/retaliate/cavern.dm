@@ -1,7 +1,7 @@
 //asteroid cavern creatures
 /mob/living/simple_animal/hostile/retaliate/cavern_dweller
 	name = "cavern dweller"
-	desc = "An alien creature that dwells in the tunnels of the asteroid, commonly found in the Romanovich Cloud."
+	desc = "An alien creature that dwells in the tunnels of the asteroid, commonly found in the Cerberus System."
 	icon = 'icons/mob/npc/cavern.dmi'
 	icon_state = "dweller" //icons from europa station
 	icon_living = "dweller"

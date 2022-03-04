@@ -1,9 +1,7 @@
 /datum/citizenship/galactica
 	name = CITIZENSHIP_GALACTICA
-	description = "The Republic of Biesel is an independent system within the Core of human space. It is heavily tied to the NanoTrasen corporation at nearly every level of government. \
-	It is one of the most populated systems in human space, a financial center, industrial powerhouse and one of the most prestigious systems in the galaxy. It is also very known for \
-	its large xeno population which enjoys various privileges compared to other space powers. With a very lax migration policy, virtually everyone is welcome to live here. However, \
-	unrest and gridlock undermine the government, and the aggressive attitude of the Sol Alliance against its former system has made many worried for the future of the Republic."
+	description = "Galactica can best be described as an up and coming power house. Known for it's lax standards and even laxer policy's, this citizenship is more like a club\
+	card to your local military surplus store. Galactica covers most planets not in the Interstellar Republic, Elodile Empire, Unathi or Tajaran air space."
 	consular_outfit = /datum/outfit/job/representative/consular/ceti
 
 	job_species_blacklist = list(
@@ -46,10 +44,9 @@
 
 /datum/citizenship/interstellar_republic
 	name = CITIZENSHIP_IR
-	description = "A juggernaut in terms of cultural and political influence, the Alliance of Sovereign Solarian Nations (ASSN), commonly referred to as SolGov or the Sol Alliance is \
+	description = "A juggernaut in terms of cultural and political influence, the Interstellar Republic is \
 	by far the largest nation within all of known space. It is arguably the most culturally and linguistically diverse entity within known space, owing primarily to the age of its \
-	colonies and its control over the Sol system and Earth. In recent times, however, Sol Alliance has been failing to hold its grip, and many believe it to be in a state of decline. \
-	It is generally authoritarian, and many aliens here find themselves discriminated against."
+	colonies and its control over the Sol system."
 	consular_outfit = /datum/outfit/job/representative/consular/ceti
 
 	job_species_blacklist = list(

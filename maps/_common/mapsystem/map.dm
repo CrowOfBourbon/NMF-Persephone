@@ -79,7 +79,7 @@
 	var/overmap_z = 0		//If 0 will generate overmap zlevel on init. Otherwise will populate the zlevel provided.
 	var/overmap_event_areas = 0 //How many event "clouds" will be generated
 	var/list/map_shuttles = list() // A list of all our shuttles.
-	var/default_sector = SECTOR_ROMANOVICH //What is the default space sector for this map
+	var/default_sector = SECTOR_CERBERUS //What is the default space sector for this map
 
 	//event messages
 
