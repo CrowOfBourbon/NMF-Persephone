@@ -54286,12 +54286,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/hallway/primary/central_three)
-"bTM" = (
-/obj/effect/floor_decal/corner/mauve{
-	dir = 6
-	},
-/turf/simulated/floor/tiled/white,
-/area/mine/explored)
 "bTN" = (
 /turf/simulated/floor/wood,
 /area/chapel/office)
@@ -55063,18 +55057,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/medical/pharmacy)
-"bVg" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/mine/explored)
 "bVh" = (
 /obj/machinery/light,
 /obj/effect/floor_decal/corner/brown{
@@ -56017,7 +55999,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
-/area/mine/explored)
+/area/medical/medbay2)
 "bWN" = (
 /obj/machinery/vending/snack,
 /turf/simulated/floor/tiled,
@@ -82227,7 +82209,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/mine/explored)
+/area/medical/medbay2)
 "iUR" = (
 /turf/simulated/wall,
 /area/hallway/primary/aft)
@@ -82269,7 +82251,7 @@
 	},
 /obj/machinery/light,
 /turf/simulated/floor/tiled/white,
-/area/mine/explored)
+/area/medical/medbay2)
 "kHW" = (
 /turf/simulated/wall,
 /area/maintenance/substation/engineering)
@@ -82370,7 +82352,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/mine/explored)
+/area/medical/medbay2)
 "tGj" = (
 /obj/structure/banner/unmovable,
 /turf/simulated/floor/tiled{
@@ -122368,9 +122350,9 @@ bkr
 bSJ
 bWi
 bSW
-bTM
+cmo
 kjL
-aaI
+bkr
 baf
 baf
 bkr
@@ -122625,9 +122607,9 @@ bkr
 bkr
 bWj
 bSX
-bVg
+bSX
 rwV
-aaI
+bkr
 baf
 baf
 bkr
@@ -122884,7 +122866,7 @@ bWi
 bSY
 bWM
 ifY
-aaI
+bkr
 baf
 baf
 bkr
@@ -123139,9 +123121,9 @@ bkr
 bkr
 bkr
 bkr
-aaI
-aaI
-aaI
+bkr
+bkr
+bkr
 baf
 baf
 bkr
