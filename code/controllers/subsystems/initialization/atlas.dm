@@ -94,7 +94,7 @@ var/datum/controller/subsystem/atlas/SSatlas
 	if(!selected_sector)
 		if(using_sector_config)
 			log_debug("atlas: [chosen_sector] used in the config file is not a valid space sector")
-		current_sector = new /datum/space_sector/tau_ceti //if all fails, we go with tau ceti
+		current_sector = new /datum/space_sector/cerberus //if all fails, we go with tau ceti
 		log_debug("atlas: Unable to select [chosen_sector] as a valid space sector. Tau Ceti will be used instead.")
 	else
 		current_sector = selected_sector

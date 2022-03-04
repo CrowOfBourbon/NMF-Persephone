@@ -53341,7 +53341,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medbay)
+/area/medical/medbay2)
 "bRT" = (
 /obj/item/device/radio/intercom{
 	canhear_range = 5;
@@ -53356,7 +53356,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medbay3)
+/area/medical/medbay2)
 "bRU" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -5;
@@ -53364,21 +53364,15 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/central_three)
-"bRV" = (
-/turf/simulated/floor/tiled/white,
-/area/medical/medbay3)
 "bRW" = (
 /obj/machinery/alarm{
 	pixel_y = 25
-	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
 	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medbay3)
+/area/medical/medbay2)
 "bRX" = (
 /obj/machinery/firealarm/north,
 /turf/simulated/floor/tiled,
@@ -53399,17 +53393,13 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medbay3)
-"bSa" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/turf/simulated/floor/tiled/white,
 /area/medical/medbay2)
+"bSa" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/rubber,
+/area/crew_quarters/bar)
 "bSb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -53421,10 +53411,8 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
 /area/medical/medbay2)
 "bSd" = (
@@ -54150,20 +54138,8 @@
 	req_access = list(5)
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medbay)
-"bTz" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/medbay3)
+/area/medical/medbay2)
 "bTA" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/machinery/camera/network/medbay{
 	c_tag = "Medbay Equipment Storage Hallway";
 	dir = 1
@@ -54172,25 +54148,16 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medbay3)
-"bTB" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/medbay3)
+/area/medical/medbay2)
 "bTC" = (
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/locker/locker_toilet)
 "bTD" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/medbay3)
+/area/medical/medbay2)
 "bTE" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -54207,12 +54174,10 @@
 /area/medical/medbay2)
 "bTF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 8
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
 /area/medical/medbay2)
 "bTG" = (
@@ -55681,7 +55646,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/plating,
 /area/medical/medbay2)
 "bWk" = (
 /obj/structure/disposalpipe/segment{
@@ -119038,7 +119003,7 @@ bfh
 bfh
 bfh
 bAB
-aMh
+bSa
 aMh
 bmP
 lWE
@@ -120344,7 +120309,7 @@ bPc
 bQl
 baT
 bRT
-bTz
+bTD
 bVf
 bZH
 caz
@@ -120857,8 +120822,8 @@ bNa
 bPe
 bQF
 bQw
-bRV
-bTB
+bJk
+bJk
 bVd
 bZJ
 caH
@@ -121371,7 +121336,7 @@ bLj
 baT
 bJb
 baT
-bSa
+bRS
 bTE
 bWL
 bXG
