@@ -6700,7 +6700,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "amo" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
@@ -6719,7 +6719,7 @@
 	req_access = list(13)
 	},
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "amp" = (
 /obj/structure/table/rack,
 /turf/simulated/floor/snow{
@@ -7089,7 +7089,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "amU" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -10611,7 +10611,7 @@
 	pixel_x = 26
 	},
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "asw" = (
 /obj/structure/sign/securearea{
 	desc = "A warning sign which reads 'RADIOACTIVE AREA'";
@@ -10884,7 +10884,7 @@
 /area/security/prison)
 "asU" = (
 /turf/simulated/wall,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "asV" = (
 /obj/effect/floor_decal/corner/beige/diagonal,
 /obj/structure/table/glass,
@@ -11941,7 +11941,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "auJ" = (
 /turf/simulated/floor/wood,
 /area/security/forensics_office)
@@ -12084,6 +12084,9 @@
 	},
 /obj/structure/disposalpipe/junction/yjunction,
 /obj/effect/floor_decal/corner/blue,
+/obj/structure/showcase{
+	icon_state = "showcase_3"
+	},
 /turf/simulated/floor/tiled{
 	icon_state = "darkmarble"
 	},
@@ -12628,7 +12631,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "avZ" = (
 /obj/structure/table/standard,
 /obj/item/storage/box/bodybags,
@@ -13255,7 +13258,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "axc" = (
 /obj/machinery/door/firedoor,
 /obj/structure/grille,
@@ -13267,7 +13270,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "axd" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
@@ -13278,10 +13281,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "axe" = (
 /turf/simulated/wall/r_wall,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "axf" = (
 /obj/structure/table/rack,
 /obj/random/loot,
@@ -13486,7 +13489,7 @@
 "axD" = (
 /obj/structure/flora/ausbushes/pointybush,
 /turf/simulated/floor/grass/alt,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "axE" = (
 /obj/structure/sign/electricshock{
 	pixel_x = -32
@@ -14637,7 +14640,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aAb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -14786,7 +14789,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/grass/alt,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aAo" = (
 /obj/structure/grille,
 /turf/simulated/floor/airless,
@@ -15030,7 +15033,7 @@
 "aAJ" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/grass/alt,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aAK" = (
 /obj/structure/table/rack,
 /obj/item/pickaxe,
@@ -15071,7 +15074,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aAO" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/snow/plating{
@@ -15318,13 +15321,13 @@
 	dir = 8
 	},
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBk" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
 	},
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBl" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -15336,7 +15339,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBm" = (
 /obj/structure/cryofeed{
 	dir = 1
@@ -15378,7 +15381,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15390,7 +15393,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBs" = (
 /obj/structure/cryofeed{
 	dir = 1
@@ -15413,7 +15416,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBv" = (
 /turf/simulated/wall/r_wall,
 /area/teleporter)
@@ -15432,7 +15435,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBx" = (
 /obj/machinery/light_construct/small,
 /obj/structure/table/rack,
@@ -15525,7 +15528,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/grass/alt,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBF" = (
 /obj/structure/boulder{
 	icon_state = "boulder3"
@@ -15542,14 +15545,14 @@
 	dir = 1
 	},
 /turf/simulated/floor/grass/alt,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
 	},
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBI" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -15565,14 +15568,14 @@
 	dir = 4
 	},
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBK" = (
 /obj/structure/sign/securearea{
 	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
 	name = "KEEP CLEAR: DOCKING AREA"
 	},
 /turf/simulated/wall/r_wall,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBL" = (
 /turf/simulated/wall/r_wall,
 /area/engineering/engine_airlock)
@@ -15581,7 +15584,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBN" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -15589,7 +15592,7 @@
 	},
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/grass/alt,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBO" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -15608,10 +15611,10 @@
 	},
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/grass/alt,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBQ" = (
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBR" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -15640,7 +15643,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBT" = (
 /obj/effect/floor_decal/corner/white{
 	dir = 4
@@ -15655,7 +15658,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBU" = (
 /obj/machinery/access_button{
 	command = "cycle_interior";
@@ -15679,7 +15682,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBV" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -15708,7 +15711,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aBZ" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden,
 /turf/simulated/floor/plating,
@@ -15947,13 +15950,13 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aCp" = (
 /obj/structure/bed/stool/chair/padded/blue{
 	dir = 4
 	},
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aCq" = (
 /obj/machinery/cryopod{
 	dir = 2
@@ -15989,7 +15992,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aCs" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -16031,7 +16034,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aCu" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -16054,7 +16057,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aCv" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -16062,7 +16065,7 @@
 /obj/structure/table/reinforced,
 /obj/random/junk,
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aCw" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -16149,7 +16152,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aCB" = (
 /obj/machinery/door/firedoor{
 	dir = 8;
@@ -16437,23 +16440,23 @@
 /turf/simulated/wall/r_wall,
 /area/maintenance/evahallway)
 "aCX" = (
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/tiled/ramp/bottom{
 	dir = 1;
 	tag = "icon-rampbot (NORTH)"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aCY" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 9
 	},
-/turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
-"aCZ" = (
-/obj/effect/floor_decal/spline/plain{
-	dir = 6
+/obj/machinery/megavendor{
+	layer = 4.3
 	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aDa" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -16473,9 +16476,6 @@
 "aDb" = (
 /turf/simulated/floor/wood,
 /area/hallway/primary/port)
-"aDc" = (
-/turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
 "aDd" = (
 /obj/machinery/light{
 	dir = 1
@@ -16491,8 +16491,14 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
 	},
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
+/obj/structure/banner/unmovable{
+	layer = 4
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aDf" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -16661,7 +16667,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/yellow,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aDv" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -16959,7 +16965,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aDW" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -16981,7 +16987,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/yellow,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aDY" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -17002,7 +17008,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aEa" = (
 /turf/simulated/wall/r_wall,
 /area/ai_monitored/storage/eva)
@@ -17042,7 +17048,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aEf" = (
 /obj/structure/closet/secure_closet/merchant,
 /obj/item/storage/wallet,
@@ -17069,7 +17075,7 @@
 /obj/structure/table/reinforced,
 /obj/random/action_figure,
 /turf/simulated/floor/tiled/yellow,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aEj" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -17151,7 +17157,7 @@
 /obj/structure/table/reinforced,
 /obj/random/junk,
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aEr" = (
 /obj/structure/closet/crate/loot{
 	desc = "A worn container that has been through many long travels.";
@@ -17170,12 +17176,14 @@
 	},
 /area/hallway/primary/port)
 "aEt" = (
-/obj/structure/railing/mapped,
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
 	},
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aEu" = (
 /obj/machinery/merchant_pad,
 /turf/simulated/floor/tiled{
@@ -17251,10 +17259,10 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/yellow,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aEE" = (
 /turf/simulated/floor/tiled/yellow,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aEF" = (
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/bedrooms)
@@ -17434,17 +17442,15 @@
 	icon_state = "plating"
 	},
 /area/mine/explored)
-"aEY" = (
-/obj/structure/railing/mapped,
-/turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
 "aEZ" = (
-/obj/structure/railing/mapped,
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
 	},
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aFa" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/material/glass{
@@ -17465,7 +17471,7 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/effect/map_effect/perma_light,
 /turf/simulated/floor/grass/alt,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aFc" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/crescent,
@@ -17476,15 +17482,19 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aFd" = (
 /obj/structure/sign/electricshock,
 /turf/simulated/wall/r_wall,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aFe" = (
 /obj/effect/floor_decal/industrial/warning,
+/obj/structure/window/full,
+/obj/structure/railing/mapped{
+	dir = 1
+	},
 /turf/simulated/floor/shuttle/advanced,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aFf" = (
 /obj/structure/lattice,
 /turf/simulated/floor/plating,
@@ -17518,7 +17528,7 @@
 "aFj" = (
 /obj/machinery/door/blast/regular,
 /turf/simulated/wall/r_wall,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aFk" = (
 /turf/simulated/wall,
 /area/hallway/secondary/entry/port)
@@ -17849,11 +17859,11 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/yellow,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aFU" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor/tiled/yellow,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aFV" = (
 /obj/machinery/light{
 	dir = 4;
@@ -17889,7 +17899,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/yellow,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aFY" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance{
@@ -17968,7 +17978,7 @@
 	name = "cable"
 	},
 /turf/simulated/floor/shuttle/advanced/alt,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aGe" = (
 /obj/machinery/requests_console{
 	department = "EVA";
@@ -17997,8 +18007,9 @@
 	dir = 1
 	},
 /obj/structure/railing/mapped,
+/obj/structure/window/full,
 /turf/simulated/floor/shuttle/advanced,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aGh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 6
@@ -18205,7 +18216,7 @@
 /area/crew_quarters/toilet)
 "aGD" = (
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aGE" = (
 /obj/structure/sink{
 	dir = 8;
@@ -18293,7 +18304,7 @@
 "aGL" = (
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/lino,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aGM" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -18362,14 +18373,14 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aGS" = (
 /obj/machinery/status_display{
 	layer = 4;
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aGT" = (
 /obj/machinery/atmospherics/binary/passive_gate{
 	dir = 8
@@ -18573,17 +18584,26 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
 	},
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHn" = (
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/tiled/ramp/bottom,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHo" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 10
 	},
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHp" = (
 /obj/machinery/camera/network/exodus{
 	c_tag = "Arrivals Southwest"
@@ -18591,8 +18611,11 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
 	},
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHq" = (
 /obj/machinery/computer/HolodeckControl/Exodus{
 	pixel_x = 30
@@ -18644,11 +18667,11 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/yellow,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHw" = (
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/tiled/yellow,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHx" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -18662,7 +18685,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/yellow,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHy" = (
 /obj/machinery/light{
 	dir = 1
@@ -18732,7 +18755,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHE" = (
 /obj/structure/cable/green{
 	icon_state = "1-4"
@@ -18747,7 +18770,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHG" = (
 /obj/structure/table/wood,
 /turf/simulated/floor/carpet,
@@ -18809,7 +18832,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHQ" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -18829,7 +18852,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHR" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 8
@@ -18844,7 +18867,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHS" = (
 /obj/effect/floor_decal/corner/paleblue,
 /obj/structure/cable/green{
@@ -18857,7 +18880,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHT" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -18889,7 +18912,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aHV" = (
 /obj/effect/large_stock_marker,
 /turf/simulated/floor/tiled{
@@ -19384,8 +19407,14 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
 	},
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
+/obj/structure/banner/unmovable{
+	layer = 4
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aIJ" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -19677,7 +19706,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aJj" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -20278,6 +20307,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/banner/unmovable,
 /turf/simulated/floor/tiled,
 /area/maintenance/evahallway)
 "aKl" = (
@@ -20375,7 +20405,7 @@
 /turf/simulated/floor/tiled/old{
 	icon_state = "rockvault"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aKu" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -20418,11 +20448,10 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
 	},
-/obj/machinery/megavendor/vendor,
 /turf/simulated/floor/tiled/old{
 	icon_state = "rockvault"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aKz" = (
 /obj/machinery/suit_cycler/medical,
 /obj/effect/floor_decal/corner/blue/full{
@@ -20576,7 +20605,7 @@
 /turf/simulated/floor/tiled/old{
 	icon_state = "rockvault"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aKM" = (
 /obj/machinery/door/window/westleft{
 	dir = 2;
@@ -20666,7 +20695,7 @@
 /turf/simulated/floor/tiled/old{
 	icon_state = "rockvault"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aKV" = (
 /obj/machinery/suit_storage_unit/standard_unit,
 /turf/simulated/floor/tiled{
@@ -20923,8 +20952,14 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
 	},
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
+/obj/structure/banner/unmovable{
+	layer = 4
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aLp" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9
@@ -21342,14 +21377,14 @@
 /obj/effect/floor_decal/chapel{
 	dir = 4
 	},
-/obj/structure/bed/stool/chair,
+/obj/structure/banner/christian,
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main)
 "aLZ" = (
 /obj/effect/floor_decal/chapel{
 	dir = 1
 	},
-/obj/structure/bed/stool/chair,
+/obj/structure/banner/jewish,
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main)
 "aMa" = (
@@ -21533,7 +21568,7 @@
 /turf/simulated/floor/tiled/steel{
 	icon_state = "virtual_reality"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aMv" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 5
@@ -21600,10 +21635,11 @@
 /area/maintenance/bar)
 "aMC" = (
 /obj/effect/floor_decal/industrial/warning,
+/obj/structure/window/full,
 /turf/unsimulated/floor/plating{
 	icon_state = "reinforced"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aMD" = (
 /obj/structure/anomaly_container,
 /turf/simulated/floor/tiled/white,
@@ -23713,6 +23749,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/chapel,
+/obj/structure/banner/hindu,
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main)
 "aQJ" = (
@@ -23830,7 +23867,7 @@
 /turf/unsimulated/floor/plating{
 	icon_state = "reinforced"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aQS" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
@@ -24828,9 +24865,11 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
 	},
-/obj/machinery/megavendor,
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aSG" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/white,
@@ -24874,9 +24913,11 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
 	},
-/obj/machinery/megavendor,
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aSM" = (
 /obj/structure/table/wood,
 /obj/structure/window/reinforced{
@@ -24994,9 +25035,11 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
 	},
-/obj/machinery/megavendor,
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aSY" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass_command{
@@ -25894,7 +25937,9 @@
 /turf/simulated/floor/tiled,
 /area/hydroponics)
 "aUi" = (
-/obj/machinery/megavendor/vendor,
+/obj/structure/showcase{
+	icon_state = "showcase_3"
+	},
 /turf/simulated/floor/shuttle/black,
 /area/hallway/secondary/entry/starboard)
 "aUk" = (
@@ -26837,7 +26882,7 @@
 /turf/simulated/floor/tiled/old{
 	icon_state = "rockvault"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aWi" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -27210,7 +27255,7 @@
 	},
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aWJ" = (
 /obj/structure/cable/green,
 /obj/machinery/power/apc/high{
@@ -27524,11 +27569,10 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
 	},
-/obj/machinery/megavendor/vendor,
 /turf/simulated/floor/tiled/old{
 	icon_state = "rockvault"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aXc" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -27809,7 +27853,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aXH" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -27818,13 +27862,13 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aXI" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aXJ" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -27836,7 +27880,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aXK" = (
 /obj/effect/floor_decal/corner/red/full{
 	dir = 1
@@ -28060,13 +28104,17 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aYe" = (
-/obj/effect/floor_decal/spline/plain{
-	dir = 5
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
 	},
-/turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/obj/structure/railing/mapped,
+/obj/structure/window/full,
+/turf/unsimulated/floor/plating{
+	icon_state = "reinforced"
+	},
+/area/hallway/secondary/entry/dock)
 "aYf" = (
 /turf/simulated/floor/snow{
 	temperature = 234.15
@@ -28083,7 +28131,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aYh" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 4
@@ -28095,7 +28143,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aYi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -28141,8 +28189,14 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 10
 	},
+/obj/structure/banner/unmovable{
+	layer = 4
+	},
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aYn" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -28379,7 +28433,7 @@
 /turf/simulated{
 	icon_state = "dark"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aYI" = (
 /obj/machinery/light_switch{
 	pixel_x = -24;
@@ -28608,6 +28662,7 @@
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
 	},
+/obj/structure/banner/unmovable,
 /turf/simulated/floor/tiled,
 /area/bridge)
 "aZa" = (
@@ -28623,7 +28678,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/secondary/entry/starboard)
 "aZc" = (
-/obj/machinery/papershredder,
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
@@ -28633,6 +28687,9 @@
 /obj/machinery/light_switch{
 	pixel_x = 24;
 	pixel_y = -8
+	},
+/obj/structure/showcase{
+	icon_state = "showcase_3"
 	},
 /turf/simulated/floor/tiled,
 /area/bridge)
@@ -28919,19 +28976,19 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aZL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aZM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aZN" = (
 /obj/structure/table/wood,
 /obj/item/storage/bag/books,
@@ -28950,7 +29007,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "aZQ" = (
 /obj/structure/cable/green{
 	icon_state = "1-4"
@@ -29045,7 +29102,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "baa" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -29103,7 +29160,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "bai" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -29898,6 +29955,7 @@
 "bbM" = (
 /obj/machinery/light/small,
 /obj/effect/floor_decal/chapel,
+/obj/structure/banner/orthodox,
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main)
 "bbN" = (
@@ -30412,7 +30470,6 @@
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
-/obj/effect/ghostspawpoint,
 /turf/simulated/floor/tiled,
 /area/bridge)
 "bcE" = (
@@ -30847,9 +30904,11 @@
 "bdu" = (
 /obj/effect/floor_decal/spline/plain,
 /obj/effect/ghostspawpoint,
-/obj/machinery/megavendor,
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "bdv" = (
 /obj/structure/table/wood,
 /obj/item/flame/candle,
@@ -32698,10 +32757,11 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/spline/plain,
+/obj/structure/window/full,
 /turf/unsimulated/floor/plating{
 	icon_state = "reinforced"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "bgH" = (
 /obj/machinery/door/airlock/glass_command{
 	name = "Bridge";
@@ -32995,14 +33055,15 @@
 /turf/simulated/floor/carpet,
 /area/chapel/main)
 "bhe" = (
+/obj/structure/railing/mapped,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/railing/mapped,
+/obj/structure/window/full,
 /turf/unsimulated/floor/plating{
 	icon_state = "reinforced"
 	},
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "bhf" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -33337,9 +33398,11 @@
 /obj/machinery/megavendor{
 	layer = ABOVE_MOB_LAYER
 	},
-/obj/machinery/megavendor,
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "bhM" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
@@ -33993,9 +34056,11 @@
 	name = "JoinLate"
 	},
 /obj/effect/floor_decal/spline/plain,
-/obj/machinery/megavendor,
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
 /turf/simulated/floor/shuttle/black,
-/area/hallway/secondary/entry/departure_lounge)
+/area/hallway/secondary/entry/dock)
 "biZ" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -39321,6 +39386,9 @@
 /obj/machinery/light,
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
+	},
+/obj/structure/showcase{
+	icon_state = "showcase_3"
 	},
 /turf/simulated/floor/tiled{
 	icon_state = "darkmarble"
@@ -47198,7 +47266,7 @@
 /obj/machinery/camera/network/civilian_west{
 	c_tag = "Cargo Lobby"
 	},
-/obj/structure/bed/stool/padded/brown,
+/obj/structure/banner/unmovable,
 /turf/simulated/floor/tiled{
 	icon_state = "lightmarble"
 	},
@@ -59300,6 +59368,7 @@
 	pixel_y = 22
 	},
 /obj/effect/floor_decal/corner/yellow/diagonal,
+/obj/structure/banner/unmovable,
 /turf/simulated/floor/tiled{
 	icon_state = "darkmarble"
 	},
@@ -82139,6 +82208,29 @@
 "cVi" = (
 /turf/simulated/floor/reinforced,
 /area/mine/explored)
+"cYU" = (
+/obj/effect/floor_decal/corner/grey{
+	dir = 10
+	},
+/obj/structure/banner/unmovable,
+/turf/simulated/floor/tiled,
+/area/crew_quarters/sleep)
+"daj" = (
+/obj/effect/floor_decal/chapel{
+	dir = 4
+	},
+/obj/structure/banner/buddhist,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"dEp" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 5
+	},
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
+/turf/simulated/floor/shuttle/black,
+/area/hallway/secondary/entry/dock)
 "fij" = (
 /turf/simulated/wall/r_wall,
 /area/hallway/primary/port)
@@ -82152,6 +82244,15 @@
 	icon_state = "darkmarble"
 	},
 /area/engineering/workshop)
+"hnz" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 5
+	},
+/obj/structure/banner/unmovable,
+/turf/simulated/floor/tiled{
+	icon_state = "darkmarble"
+	},
+/area/security/lobby)
 "ifY" = (
 /obj/machinery/light{
 	dir = 4
@@ -82178,6 +82279,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/medical/medbay2)
+"jms" = (
+/obj/effect/floor_decal/corner/purple/full,
+/obj/structure/banner/unmovable,
+/turf/simulated/floor/tiled,
+/area/hallway/primary/starboard)
 "jDA" = (
 /turf/simulated/wall,
 /area/engineering/atmos)
@@ -82202,6 +82308,12 @@
 "kHW" = (
 /turf/simulated/wall,
 /area/maintenance/substation/engineering)
+"kSP" = (
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
+/turf/simulated/floor/shuttle/black,
+/area/hallway/secondary/entry/dock)
 "lpx" = (
 /obj/machinery/light{
 	dir = 1
@@ -82215,6 +82327,22 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/mine/explored)
+"lsO" = (
+/obj/effect/floor_decal/chapel{
+	dir = 4
+	},
+/obj/structure/banner/muslim,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"lOm" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 6
+	},
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
+/turf/simulated/floor/shuttle/black,
+/area/hallway/secondary/entry/dock)
 "lWE" = (
 /obj/machinery/door/airlock/glass{
 	name = "Galley"
@@ -82278,6 +82406,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/mine/explored)
+"tGj" = (
+/obj/structure/banner/unmovable,
+/turf/simulated/floor/tiled{
+	icon_state = "darkmarble"
+	},
+/area/bridge)
 "tKG" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -82287,6 +82421,23 @@
 "vgB" = (
 /turf/simulated/wall/r_wall,
 /area/assembly/chargebay)
+"wem" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/structure/window/full,
+/obj/structure/railing/mapped{
+	dir = 1
+	},
+/turf/unsimulated/floor/plating{
+	icon_state = "reinforced"
+	},
+/area/hallway/secondary/entry/dock)
+"wfI" = (
+/obj/effect/floor_decal/corner/purple/full{
+	dir = 4
+	},
+/obj/structure/banner/unmovable,
+/turf/simulated/floor/tiled,
+/area/hallway/primary/starboard)
 "wWX" = (
 /turf/simulated/floor/snow{
 	icon_state = "snow0"
@@ -94203,13 +94354,13 @@ aEq
 aGL
 aHD
 aCY
-aEY
-aMC
+kSP
+wem
 aMu
 aQR
 aMu
-bhe
-aDc
+aYe
+kSP
 aHo
 aXH
 aZM
@@ -94459,15 +94610,15 @@ aBY
 aED
 aHw
 aHD
-aYe
-aEY
-aMC
+dEp
+kSP
+wem
 aMu
 aQR
 aMu
-bhe
-aDc
-aCZ
+aYe
+kSP
+lOm
 aXH
 aZM
 bcl
@@ -95231,13 +95382,13 @@ aBP
 aGL
 aHD
 aCY
-aEY
-aMC
+kSP
+wem
 aMu
 aQR
 aMu
-bhe
-aDc
+aYe
+kSP
 aHo
 aXH
 aZM
@@ -95487,15 +95638,15 @@ aCp
 aDX
 aHw
 aHD
-aYe
-aEY
-aMC
+dEp
+kSP
+wem
 aMu
 aQR
 aMu
-bhe
-aDc
-aCZ
+aYe
+kSP
+lOm
 aXH
 aZP
 bco
@@ -96259,13 +96410,13 @@ aBQ
 aGL
 aHD
 aCY
-aEY
-aMC
+kSP
+wem
 aMu
 aQR
 aMu
-bhe
-aDc
+aYe
+kSP
 aHo
 aXH
 aZM
@@ -96515,15 +96666,15 @@ aBQ
 aEE
 aHw
 aHD
-aYe
-aEY
-aMC
+dEp
+kSP
+wem
 aMu
 aQR
 aMu
-bhe
-aDc
-aCZ
+aYe
+kSP
+lOm
 aXH
 aXG
 bbg
@@ -97288,11 +97439,11 @@ aGR
 aHQ
 aDe
 aEZ
-aMC
+wem
 aMu
 aQR
 aMu
-bhe
+aYe
 aHp
 aYm
 aYd
@@ -97545,11 +97696,11 @@ aGD
 aHR
 aKL
 aKt
-aMC
+wem
 aMu
 aQR
 aMu
-bhe
+aYe
 aWh
 aKL
 aYg
@@ -97802,7 +97953,7 @@ aGD
 aHS
 aKU
 aKy
-aMC
+wem
 aMu
 aQR
 aMu
@@ -112211,7 +112362,7 @@ bkw
 bmA
 boh
 aoq
-bdt
+tGj
 bdt
 bdt
 bdt
@@ -112941,7 +113092,7 @@ amf
 aob
 apf
 aoV
-aqq
+hnz
 arp
 arE
 asp
@@ -116300,7 +116451,7 @@ aAq
 aAC
 aCL
 aAC
-aDK
+cYU
 aEK
 aGc
 aIg
@@ -129946,7 +130097,7 @@ bpO
 bqT
 awK
 bwg
-bvn
+jms
 avf
 bAV
 bDr
@@ -130460,7 +130611,7 @@ bpR
 brG
 awK
 bwh
-bwn
+wfI
 aSc
 bBm
 bDx
@@ -130954,7 +131105,7 @@ baf
 aHe
 aIF
 bSi
-aLW
+daj
 aNB
 aLW
 aQI
@@ -131982,7 +132133,7 @@ baf
 baf
 baf
 bSi
-aLW
+lsO
 aPa
 aTS
 bbM
