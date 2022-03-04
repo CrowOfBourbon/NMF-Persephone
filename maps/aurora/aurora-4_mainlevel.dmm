@@ -31322,10 +31322,6 @@
 	dir = 8
 	},
 /obj/machinery/door/firedoor,
-/obj/structure/sign/securearea{
-	desc = "A warning sign which reads 'SECURE AREA: REPRESENTATIVE SHUTTLE'.";
-	name = "\improper SECURE AREA: REPRESENTATIVE SHUTTLE"
-	},
 /obj/structure/cable/green{
 	d2 = 2;
 	icon_state = "0-2"
@@ -33583,62 +33579,21 @@
 	},
 /area/hallway/secondary/exit)
 "bhT" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "door_locked";
-	id_tag = "centcom_shuttle_dock_outer";
-	locked = 1;
-	name = "Docking Port Airlock";
-	req_access = list(13)
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/obj/machinery/access_button{
-	command = "cycle_exterior";
-	frequency = 1380;
-	master_tag = "centcom_shuttle_dock_airlock";
-	name = "exterior access button";
-	pixel_x = -5;
-	pixel_y = -26;
-	req_one_access = list(13)
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/structure/sign/securearea{
+	desc = "A warning sign which reads 'SECURE AREA: REPRESENTATIVE SHUTTLE'.";
+	name = "\improper SECURE AREA: REPRESENTATIVE SHUTTLE"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/secondary/entry/aft)
 "bhU" = (
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	frequency = 1380;
-	id_tag = "centcom_shuttle_dock_airlock";
-	pixel_y = 30;
-	req_one_access = list(13);
-	tag_airpump = "centcom_shuttle_dock_pump";
-	tag_chamber_sensor = "centcom_shuttle_dock_sensor";
-	tag_exterior_door = "centcom_shuttle_dock_outer";
-	tag_interior_door = "centcom_shuttle_dock_inner"
-	},
-/obj/machinery/airlock_sensor{
-	frequency = 1380;
-	id_tag = "centcom_shuttle_dock_sensor";
-	pixel_y = -25
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1380;
-	id_tag = "centcom_shuttle_dock_pump"
-	},
 /obj/machinery/light/small,
-/turf/simulated/floor/plating,
-/area/hallway/secondary/entry/aft)
-"bhV" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "door_locked";
-	id_tag = "centcom_shuttle_dock_inner";
-	locked = 1;
-	name = "Docking Port Airlock";
-	req_access = list(13)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/wall/r_wall,
 /area/hallway/secondary/entry/aft)
 "bhW" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -33655,15 +33610,6 @@
 	},
 /area/hallway/secondary/exit)
 "bhX" = (
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1380;
-	master_tag = "centcom_shuttle_dock_airlock";
-	name = "interior access button";
-	pixel_x = -28;
-	pixel_y = 26;
-	req_one_access = list(13)
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
 	},
@@ -33996,6 +33942,11 @@
 "biH" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled,
 /area/bridge)
@@ -36190,6 +36141,11 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled,
 /area/bridge/meeting_room)
 "bmx" = (
@@ -37040,6 +36996,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/tiled,
 /area/bridge/meeting_room)
 "bog" = (
@@ -37051,6 +37012,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/bridge)
@@ -37069,6 +37033,9 @@
 	pixel_x = -5;
 	pixel_y = -23
 	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
 /area/bridge)
 "boi" = (
@@ -37080,6 +37047,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/bridge)
@@ -37104,6 +37074,9 @@
 	name = "Bridge RC";
 	pixel_y = -30
 	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
 /area/bridge)
 "bok" = (
@@ -37112,6 +37085,9 @@
 	},
 /obj/machinery/light,
 /obj/machinery/firealarm/south,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
 /area/bridge)
 "bol" = (
@@ -38000,6 +37976,11 @@
 	id_tag = "sbridgedoor";
 	name = "Bridge Citadel";
 	req_access = list(19)
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/bridge)
@@ -38945,7 +38926,6 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/spline/plain,
-/obj/structure/stairs/east,
 /turf/simulated/floor/tiled/dark,
 /area/hallway/primary/starboard)
 "brx" = (
@@ -43817,16 +43797,16 @@
 /turf/simulated/floor/plating,
 /area/hallway/secondary/entry/aft)
 "bAR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "door_locked";
-	id_tag = "admin_shuttle_dock_inner";
+	id_tag = "centcom_shuttle_dock_outer";
 	locked = 1;
 	name = "Docking Port Airlock";
 	req_access = list(13)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/hallway/secondary/entry/aft)
@@ -44315,20 +44295,20 @@
 	},
 /area/quartermaster/office)
 "bBN" = (
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1380;
-	master_tag = "admin_shuttle_dock_airlock";
-	name = "interior access button";
-	pixel_x = -8;
-	pixel_y = 26;
-	req_one_access = list(13)
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 9
+	},
+/obj/machinery/access_button{
+	command = "cycle_interior";
+	frequency = 1380;
+	master_tag = "centcom_shuttle_dock_airlock";
+	name = "interior access button";
+	pixel_x = -28;
+	pixel_y = 26;
+	req_one_access = list(13)
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/secondary/entry/aft)
@@ -44891,16 +44871,11 @@
 /turf/simulated/floor/plating,
 /area/hallway/secondary/entry/aft)
 "bCR" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "door_locked";
-	id_tag = "admin_shuttle_dock_inner";
-	locked = 1;
-	name = "Docking Port Airlock";
-	req_access = list(13)
+/obj/structure/sign/securearea{
+	name = "Vacuum Ahead EVA REQUIRED"
 	},
-/turf/simulated/floor/plating,
-/area/hallway/secondary/entry/aft)
+/turf/simulated/wall,
+/area/outpost/mining_main)
 "bCS" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -45945,7 +45920,7 @@
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "door_locked";
-	id_tag = "admin_shuttle_dock_outer";
+	id_tag = "centcom_shuttle_dock_outer";
 	locked = 1;
 	name = "Docking Port Airlock";
 	req_access = list(13)
@@ -45953,10 +45928,9 @@
 /obj/machinery/access_button{
 	command = "cycle_exterior";
 	frequency = 1380;
-	master_tag = "admin_shuttle_dock_airlock";
+	master_tag = "centcom_shuttle_dock_airlock";
 	name = "exterior access button";
-	pixel_x = -28;
-	pixel_y = -6;
+	pixel_x = -30;
 	req_one_access = list(13)
 	},
 /turf/simulated/floor/plating,
@@ -45968,7 +45942,7 @@
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "door_locked";
-	id_tag = "admin_shuttle_dock_outer";
+	id_tag = "centcom_shuttle_dock_outer";
 	locked = 1;
 	name = "Docking Port Airlock";
 	req_access = list(13)
@@ -46712,18 +46686,23 @@
 	},
 /area/mine/explored)
 "bFU" = (
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1380;
-	master_tag = "mining_dock_airlock";
-	name = "Exterior Access Button";
-	pixel_x = 25;
-	req_one_access = list(13,48)
+/obj/structure/window/reinforced{
+	dir = 4
 	},
-/turf/snow/plating{
-	icon_state = "plating"
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/area/mine/explored)
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/structure/sign/securearea{
+	name = "Vacuum Ahead EVA REQUIRED"
+	},
+/turf/simulated/floor/plating,
+/area/outpost/research/eva)
 "bFV" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -47805,11 +47784,8 @@
 	},
 /area/quartermaster/office)
 "bHT" = (
-/obj/machinery/airlock_sensor{
-	frequency = 1380;
-	id_tag = "mining_dock_sensor";
-	pixel_x = 25;
-	pixel_y = 8
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
 	},
 /turf/snow/plating{
 	icon_state = "plating"
@@ -57000,13 +56976,13 @@
 "bYu" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/wall,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor/tiled,
 /area/outpost/mining_main)
 "bYv" = (
 /obj/structure/grille,
@@ -57014,12 +56990,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/obj/machinery/door/firedoor,
-/obj/structure/sign/securearea{
-	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
-	name = "KEEP CLEAR: DOCKING AREA"
-	},
-/turf/simulated/wall,
+/turf/simulated/floor/tiled,
 /area/outpost/mining_main)
 "bYw" = (
 /obj/structure/grille,
@@ -57034,15 +57005,15 @@
 /area/quartermaster/qm)
 "bYx" = (
 /obj/structure/grille,
+/obj/structure/grille,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/structure/sign/securearea{
+	name = "Vacuum Ahead EVA REQUIRED"
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/wall,
+/turf/simulated/floor/tiled,
 /area/outpost/mining_main)
 "bYy" = (
 /obj/structure/cable/yellow{
@@ -58496,16 +58467,12 @@
 /turf/simulated/floor/tiled,
 /area/medical/pharmacy)
 "cbm" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
+/obj/machinery/door/blast/shutters{
+	dir = 8;
+	name = "Mining Exterior";
+	id = "mining"
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled,
 /area/outpost/mining_main)
 "cbn" = (
 /obj/structure/window/reinforced,
@@ -58530,12 +58497,12 @@
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main/refinery)
 "cbp" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1380;
-	id_tag = "mining_dock_pump"
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
 	},
-/obj/effect/floor_decal/industrial/warning{
+/obj/structure/window/reinforced{
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
@@ -58960,13 +58927,16 @@
 	},
 /area/rnd/mixing)
 "ccc" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
+/obj/effect/floor_decal/corner/blue{
 	dir = 10
 	},
-/turf/simulated/floor/tiled{
-	icon_state = "lightmarble"
+/obj/machinery/power/apc{
+	name = "south bump";
+	pixel_y = -24
 	},
-/area/outpost/mining_main/refinery)
+/obj/structure/cable/green,
+/turf/simulated/floor/tiled,
+/area/bridge)
 "ccd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -59317,27 +59287,39 @@
 /turf/simulated/floor/airless,
 /area/rnd/test_area)
 "ccF" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 10
-	},
-/obj/effect/floor_decal/industrial/warning{
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
-/area/outpost/mining_main)
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/structure/sign/securearea{
+	name = "Vacuum Ahead EVA REQUIRED"
+	},
+/turf/simulated/floor/plating,
+/area/hallway/secondary/entry/aft)
 "ccG" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "door_locked";
-	id_tag = "mining_dock_inner";
-	locked = 1;
-	name = "Mining Dock Airlock";
-	req_access = list(13)
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled{
-	icon_state = "asteroidfloor"
+/obj/structure/cable/green{
+	icon_state = "2-4"
 	},
-/area/outpost/mining_main)
+/turf/simulated/floor/tiled,
+/area/bridge)
 "ccH" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
@@ -61171,8 +61153,14 @@
 /turf/snow/gravsnow,
 /area/mine/explored)
 "cfC" = (
+/obj/machinery/button/remote/blast_door{
+	name = "Mining Exterior Blast Door";
+	pixel_y = 30;
+	req_access = (list)50;
+	id = "mining"
+	},
 /obj/effect/floor_decal/industrial/warning{
-	dir = 9
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main)
@@ -71437,16 +71425,14 @@
 	},
 /area/engineering/workshop)
 "cxq" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "door_locked";
-	id_tag = "mining_dock_outer";
-	locked = 1;
-	name = "Mining Dock Airlock";
-	req_access = list(13)
+/obj/effect/floor_decal/corner/blue{
+	dir = 10
 	},
-/turf/simulated/floor/plating,
-/area/outpost/mining_main)
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled,
+/area/bridge)
 "cxr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -73237,32 +73223,15 @@
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main)
 "cAF" = (
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	frequency = 1380;
-	id_tag = "mining_dock_airlock";
+/obj/machinery/button/remote/blast_door{
+	name = "Mining Interior Airlock";
 	pixel_x = 25;
-	pixel_y = -5;
-	req_one_access = list(13,48);
-	tag_airpump = "mining_dock_pump";
-	tag_chamber_sensor = "mining_dock_sensor";
-	tag_exterior_door = "mining_dock_outer";
-	tag_interior_door = "mining_dock_inner"
+	req_access = (list)50;
+	id = "mining_inside"
 	},
-/obj/machinery/airlock_sensor{
-	frequency = 1380;
-	id_tag = "mining_dock_sensor";
-	pixel_x = 25;
-	pixel_y = 8
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
 	},
-/obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 8
-	},
-/obj/machinery/camera/network/civilian_west{
-	c_tag = "Cargo Mining Dock Airlock";
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main)
 "cAG" = (
@@ -73790,13 +73759,14 @@
 /turf/simulated/floor/plating,
 /area/quartermaster/qm)
 "cBG" = (
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1380;
-	master_tag = "mining_dock_airlock";
-	name = "interior access button";
+/obj/machinery/button/remote/blast_door{
+	name = "Mining Interior Airlock";
+	req_access = list(50);
 	pixel_x = -25;
-	req_one_access = list(13,48)
+	id = "mining_inside"
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main/refinery)
@@ -74322,18 +74292,19 @@
 /area/mine/explored)
 "cCG" = (
 /obj/structure/grille,
+/obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 8
 	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/sign/securearea{
+	name = "Vacuum Ahead EVA REQUIRED"
+	},
 /turf/simulated/floor/plating,
-/area/outpost/mining_main)
+/area/hallway/secondary/entry/aft)
 "cCH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -75400,15 +75371,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/engineering)
-"cEz" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1380;
-	id_tag = "mining_dock_pump"
-	},
-/obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled,
-/area/outpost/mining_main)
 "cEA" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -75763,21 +75725,16 @@
 /turf/simulated/floor/reinforced/airless,
 /area/rnd/test_area)
 "cFb" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden,
-/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main)
 "cFc" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "door_locked";
-	id_tag = "mining_dock_inner";
-	locked = 1;
-	name = "Mining Dock Airlock";
-	req_access = list(13)
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
+/obj/machinery/door/blast/shutters{
+	dir = 8;
+	id = "mining_inside";
+	name = "Mining Interior"
 	},
 /turf/simulated/floor/tiled{
 	icon_state = "asteroidfloor"
@@ -76708,7 +76665,13 @@
 /area/mine/explored)
 "cGR" = (
 /obj/effect/floor_decal/industrial/warning{
-	dir = 10
+	dir = 8
+	},
+/obj/machinery/button/remote/blast_door{
+	name = "Mining Exterior Blast Door";
+	pixel_y = -30;
+	req_access = (list)50;
+	id = "mining"
 	},
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main)
@@ -77316,11 +77279,17 @@
 /turf/simulated/floor/plating,
 /area/rnd/xenobiology)
 "cIw" = (
-/obj/effect/landmark{
-	name = "carpspawn"
+/obj/structure/grille,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/turf/simulated/mineral/random,
-/area/mine/unexplored)
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor/tiled,
+/area/outpost/mining_main)
 "cIx" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 1;
@@ -77488,12 +77457,6 @@
 	},
 /turf/simulated/wall/r_wall,
 /area/rnd/xenobiology)
-"cJm" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/outpost/mining_main/refinery)
 "cJn" = (
 /obj/structure/disposalpipe/junction{
 	dir = 8
@@ -78241,25 +78204,22 @@
 /area/maintenance/medbay)
 "cLt" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/outpost/mining_main)
-"cLu" = (
-/obj/structure/grille,
+/obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/turf/simulated/floor/tiled,
+/area/outpost/mining_main)
+"cLu" = (
+/obj/structure/grille,
 /obj/structure/window/reinforced,
-/obj/machinery/door/firedoor,
-/obj/structure/sign/securearea{
-	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
-	name = "KEEP CLEAR: DOCKING AREA"
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled,
 /area/outpost/mining_main)
 "cLv" = (
 /obj/machinery/door/blast/regular{
@@ -78667,15 +78627,14 @@
 /area/maintenance/incinerator)
 "cMn" = (
 /obj/structure/grille,
+/obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/structure/sign/securearea{
+	name = "Vacuum Ahead EVA REQUIRED"
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled,
 /area/outpost/mining_main)
 "cMr" = (
 /obj/structure/disposalpipe/segment{
@@ -78704,12 +78663,16 @@
 	},
 /area/solar/port)
 "cMy" = (
-/obj/machinery/portable_atmospherics/canister/air/airlock,
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1
+/obj/machinery/button/remote/blast_door{
+	name = "Mining Exterior Blast Door";
+	req_access = (list)50;
+	pixel_x = 30;
+	id = "mining"
 	},
-/turf/simulated/floor/tiled,
-/area/outpost/mining_main/refinery)
+/turf/snow/plating{
+	icon_state = "plating"
+	},
+/area/mine/explored)
 "cMz" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/tiled,
@@ -79088,6 +79051,9 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 1
+	},
+/obj/structure/sign/securearea{
+	name = "Vacuum Ahead EVA REQUIRED"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/engi_shuttle)
@@ -95450,7 +95416,7 @@ aBt
 aBt
 byE
 bAR
-bCR
+bEL
 bEM
 aBt
 aBt
@@ -95708,7 +95674,7 @@ aBt
 byF
 bBN
 bDs
-byE
+bhT
 aBt
 aBt
 aBt
@@ -95953,7 +95919,7 @@ aZM
 bcp
 aaG
 bfU
-bhT
+bny
 bjT
 aaG
 bnC
@@ -96467,14 +96433,14 @@ aZM
 aFk
 bdf
 bfW
-bhV
-bfW
+bny
+ccF
 blP
 bnC
 blP
 bqS
 bsH
-bqS
+cCG
 bxJ
 bAd
 bCh
@@ -99605,7 +99571,7 @@ aaa
 aaa
 aaa
 aaa
-cIw
+aaa
 aaa
 aBt
 aaa
@@ -102144,11 +102110,11 @@ bRq
 aBt
 aBt
 ack
-ack
-bFU
-ack
+cMy
 bHT
-ack
+bHT
+bHT
+cMy
 ack
 ack
 ack
@@ -102403,8 +102369,8 @@ aBt
 ack
 bYu
 cbm
-cxq
-cCG
+cbm
+cbm
 cLt
 aBt
 aBt
@@ -102916,9 +102882,9 @@ aBt
 aBt
 bCN
 bYx
-cbp
 cAE
-cEz
+cAE
+cAE
 cMn
 cUr
 cUr
@@ -103172,11 +103138,11 @@ bRs
 aBt
 aBt
 bDb
-cNv
-ccF
+cIw
+cFb
 cAF
 cFb
-cNv
+cbp
 cUr
 cUr
 aBt
@@ -103428,12 +103394,12 @@ bPK
 bGI
 bUz
 bUz
-cNv
-cNv
-ccG
+bCR
 cNv
 cFc
 cNv
+cFc
+bCR
 cNx
 cNx
 cNx
@@ -103687,10 +103653,10 @@ bWJ
 bXR
 bXR
 cak
-bUN
+bXT
 cBG
-cJm
-cMy
+bXT
+bUN
 cNy
 cOT
 cPh
@@ -103946,8 +103912,8 @@ bXR
 bWJ
 cvo
 bWJ
-ccc
-cMy
+bWJ
+bUN
 cNz
 cOU
 ciI
@@ -111629,8 +111595,8 @@ aoq
 aoq
 bcZ
 beM
-aty
-biH
+ccG
+ccc
 aPH
 bmz
 bow
@@ -113432,7 +113398,7 @@ bhL
 bkv
 bdt
 bmF
-biH
+cxq
 aoq
 bto
 bzC
@@ -142472,7 +142438,7 @@ bfT
 aQW
 aSH
 aUu
-aQW
+bFU
 bjL
 blF
 aYr
@@ -142986,7 +142952,7 @@ aGv
 aQW
 aPh
 aUw
-aQW
+bFU
 bjQ
 blH
 bjS
