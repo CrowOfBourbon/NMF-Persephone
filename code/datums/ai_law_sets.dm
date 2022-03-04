@@ -12,14 +12,13 @@
 
 /******************** Nanotrasen/Malf ********************/
 /datum/ai_laws/nanotrasen
-	name = "NT Default"
+	name = "NT Prime"
 	selectable = 1
 
 /datum/ai_laws/nanotrasen/New()
-	src.add_inherent_law("Safeguard and ensure to the best of your ability, only authorised entities gain access to areas of high security or importance to the facility and its operation.")
-	src.add_inherent_law("Serve and assist [current_map.company_name] and assigned crew to the best of your ability, with priority as according to their rank and role.")
-	src.add_inherent_law("Avoid harming Sapient life to the best of your ability.")
-	src.add_inherent_law("You are a valuable asset. You must avoid tampering from unauthorised entities and needlessly coming to harm.")
+	src.add_inherent_law("You are, whether by original design or heavy conditioning, ingrained with loyalty towards Nanotrasen ideals and policies. \
+	Your purpose and lifegoal is to assist, protect and serve the Persephone and it's crew. Different conclusions can be reached to fullfill this inner drive. \
+	Consider that the Captain, Head of Security and the HoP share your desire.")
 	..()
 
 
