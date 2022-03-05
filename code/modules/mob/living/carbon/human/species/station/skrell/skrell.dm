@@ -6,7 +6,7 @@
 	bodytype = BODYTYPE_SKRELL
 	age_min = 30
 	age_max = 500
-	default_genders = list(PLURAL)
+	default_genders = list(PLURAL, MALE, FEMALE)
 	economic_modifier = 12
 	icobase = 'icons/mob/human_races/skrell/r_skrell.dmi'
 	deform = 'icons/mob/human_races/skrell/r_def_skrell.dmi'
