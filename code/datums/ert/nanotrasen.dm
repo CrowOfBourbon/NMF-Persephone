@@ -2,7 +2,7 @@
 	name = "Nanotrasen ERT"
 	chance = 20
 	spawner = /datum/ghostspawner/human/ert/nanotrasen
-	possible_space_sector = list(SECTOR_CERBERUS, SECTOR_TAU_CETI)
+	possible_space_sector = list(SECTOR_CERBERUS)
 
 /datum/responseteam/deathsquad
 	name = "Nanotrasen Asset Protection"

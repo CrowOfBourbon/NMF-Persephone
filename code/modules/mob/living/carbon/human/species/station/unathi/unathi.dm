@@ -56,13 +56,9 @@
 	mob_size = 10
 	climb_coeff = 1.35
 
-	blurb = "A heavily reptillian species, Unathi (or 'Sinta as they call themselves) hail from the Uuosa-Eso \
-	system, which roughly translates to 'burning mother'. A relatively recent addition to the galactic stage, they \
-	suffered immense turmoil after the cultural and economic disruption following first contact with humanity.<br><br>\
-	With their homeworld of Moghes suffering catastrophic climate change from a nuclear war in the recent past, the \
-	Hegemony that rules the majority of the species struggles to find itself in a galaxy filled with dangers far \
-	greater than themselves. They mostly hold ideals of honesty, virtue, martial combat and spirituality above all \
-	else.They prefer warmer temperatures than most species."
+	blurb = "The Unathi (Ou-NAH-thee) are a spacefaring species of humanoid reptiles standing from six to seven feet tall on average. \
+	They have a passing resemblance to Earthen crocodiles with hard scales. They hail from the star system of Bomus with their homeworld of Moghes \
+	as well as the planets of Yzali and Zakkera."
 
 	cold_level_1 = 280 //Default 260 - Lower is better
 	cold_level_2 = 220 //Default 200

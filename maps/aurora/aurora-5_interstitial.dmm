@@ -754,8 +754,8 @@
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
-	icon_state = "1-8";
-	dir = 4
+	dir = 4;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/psych)
@@ -979,17 +979,14 @@
 	dir = 8
 	},
 /obj/structure/lattice,
-/obj/structure/cable/green,
 /obj/machinery/atmospherics/pipe/zpipe/down/supply{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/zpipe/down/scrubbers{
 	dir = 1
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "12-0"
+/obj/structure/cable/green{
+	icon_state = "11-1"
 	},
 /turf/simulated/open,
 /area/medical/psych)
@@ -1644,11 +1641,22 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/medical/psych)
+"fD" = (
+/obj/effect/landmark/start{
+	name = "Psychiatrist"
+	},
+/turf/simulated/floor/carpet,
+/area/medical/psych)
 "hD" = (
 /turf/simulated/open,
 /area/medical/psych)
+"wG" = (
+/turf/simulated/wall/r_wall,
+/area/space)
 "MZ" = (
-/obj/effect/shuttle_landmark/burglar/surface,
+/obj/effect/shuttle_landmark/burglar/surface{
+	name = "Interstital Exposed"
+	},
 /turf/simulated/floor/airless/ceiling,
 /area/space)
 "YN" = (
@@ -30472,15 +30480,15 @@ cq
 cq
 cq
 cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
 cq
 cq
 cq
@@ -30729,15 +30737,15 @@ cq
 cq
 cq
 cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
 cq
 cq
 cq
@@ -30986,15 +30994,15 @@ cq
 cq
 cq
 cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
 cq
 cq
 cq
@@ -31243,15 +31251,15 @@ cq
 cq
 cq
 cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
 cq
 cq
 cq
@@ -31500,15 +31508,15 @@ cq
 cq
 cq
 cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
 cq
 cq
 cq
@@ -31757,15 +31765,15 @@ cq
 cq
 cq
 cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
 cq
 cq
 cq
@@ -32014,15 +32022,15 @@ cq
 cq
 cq
 cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
 cq
 cq
 cq
@@ -32271,15 +32279,15 @@ cq
 cq
 cq
 cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
 cq
 cq
 cq
@@ -32528,15 +32536,15 @@ cq
 cq
 cq
 cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
 cq
 cq
 cq
@@ -32785,15 +32793,15 @@ cq
 cq
 cq
 cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
 cq
 cq
 cq
@@ -33042,15 +33050,15 @@ cq
 cq
 cq
 cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
-cq
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
+wG
 cq
 cq
 cq
@@ -42897,7 +42905,7 @@ au
 aH
 aZ
 bp
-ba
+fD
 bP
 au
 cg

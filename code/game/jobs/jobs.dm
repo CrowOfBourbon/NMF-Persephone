@@ -107,7 +107,8 @@ var/list/civilian_positions = list(
 	"Corporate Reporter",
 	"Chaplain",
 	"Assistant",
-	"Visitor"
+	"Visitor",
+	"Merchant"
 )
 
 
@@ -123,7 +124,6 @@ var/list/nonhuman_positions = list(
 	"AI",
 	"Cyborg",
 	"pAI",
-	"Merchant"
 )
 
 /proc/guest_jobbans(var/job)

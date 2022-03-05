@@ -4,8 +4,8 @@
 	departments = SIMPLEDEPT(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "company officials"
 	selection_color = "#90524b"
 	economic_modifier = 7
@@ -86,8 +86,8 @@
 	departments = SIMPLEDEPT(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "your embassy"
 	selection_color = "#90524b"
 	economic_modifier = 7

@@ -1,8 +1,8 @@
 /datum/species/human/offworlder
 	name = SPECIES_HUMAN_OFFWORLD
 	name_plural = "Off-Worlder Humans"
-	blurb = "The Offworlders are humans that have adapted to zero-G conditions through a lifetime of conditioning, exposure, and physical modification. \
-	They thrive in thinner atmosphere and weightlessness, more often than not utilizing advanced life support and body-bracing equipment to sustain themselves in normal Human environments."
+	blurb = "A slight off shoot of humanity changed by generations of living in space and are often taller than their gravity bound cousins. \
+	They're cultures are as numerous as their fleets and heraldries."
 	hide_name = FALSE
 
 	icobase = 'icons/mob/human_races/human/r_offworlder.dmi'

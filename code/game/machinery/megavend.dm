@@ -1,9 +1,9 @@
 
 /obj/machinery/megavendor
-	name = "\improper NanoTrasen AutoDrobe"
-	desc = "NanoTrasen science proudly brings to you the wardrobe of the future! No more hassle in getting dressed! Order one today!"
+	name = "Trasen Dock"
+	desc = "Trasen Dock Pergola!"
 	icon = 'icons/obj/stationobjs.dmi'
-	icon_state = "tele0"
+	icon_state = "autodrobe3"
 	layer = 2.9
 	anchored = 1
 	density = 0
@@ -12,11 +12,11 @@
 	var/last_reply = 0
 	var/last_slogan = 0 //When did we last pitch?
 	var/slogan_delay = 6000 //How long until we can pitch again?
-	var/change_message = "You feel a pleasant breeze as the autolocker whisks away all of your clothes, packing them neatly in a box."
+	var/change_message = "Have a great shift!"
 
 	// Stuff relating vocalizations
 	var/list/slogan_list = list("Don't deploy just yet! Grab your gear!","Forgetting something?","Don't hop on in your skivvies, mate!","It's not Casual Friday, y'know?","Heaven's above, put some clothes on!")
-	var/shut_up = FALSE //Stop spouting those godawful pitches!
+	var/shut_up = TRUE //Stop spouting those godawful pitches!
 
 /obj/machinery/megavendor/machinery_process()
 	if(((src.last_slogan + src.slogan_delay) <= world.time) && (src.slogan_list.len > 0) && (!src.shut_up) && prob(5))
@@ -28,8 +28,8 @@
 	if(istype(O,/mob/living/carbon/human))
 		var/mob/living/carbon/human/H = O
 		if(!H.megavend)
-			flick("telefast",src)
-			playsound(src,'sound/effects/sparks4.ogg',50,1)
+			flick("autodrobe4",src)
+			playsound(src,'sound/effects/stairs_step.ogg',50,1)
 			megavend(H)
 
 /obj/machinery/megavendor/proc/megavend(var/mob/living/carbon/human/H)
@@ -69,7 +69,7 @@
 		var/obj/item/storage/backpack/B = H.back
 		if(!B.insert_into_storage(gearbox))
 			H.put_in_any_hand_if_possible(gearbox)
-	else		
+	else
 		H.put_in_any_hand_if_possible(gearbox)
 
 	for(var/obj/item/clothing/accessory/A as anything in AC)

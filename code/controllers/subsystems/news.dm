@@ -16,8 +16,8 @@
 
 /datum/controller/subsystem/news/Initialize(timeofday)
 	CreateFeedChannel("Station Announcements", "Automatic Announcement System", 1, 1, "New Station Announcement Available")
-	CreateFeedChannel("Tau Ceti Daily", "CentComm Minister of Information", 1, 1)
-	CreateFeedChannel("The Gibson Gazette", "Editor Carl Ritz", 1, 1)
+	CreateFeedChannel("Hades Daily", "StarComm Minister of Information", 1, 1)
+	CreateFeedChannel("The Interstellar Gazette", "Editor Carl Ritz", 1, 1)
 
 	if (config.news_use_forum_api)
 		load_forum_news_config()
