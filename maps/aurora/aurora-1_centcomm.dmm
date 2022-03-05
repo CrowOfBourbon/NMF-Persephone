@@ -6705,6 +6705,7 @@
 /obj/structure/bed/stool/chair/shuttle{
 	dir = 8
 	},
+/obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/mercenary)
 "bhe" = (
@@ -7382,6 +7383,7 @@
 /obj/machinery/light{
 	icon_state = "tube1"
 	},
+/obj/item/storage/box/shotgunshells,
 /turf/unsimulated/floor{
 	icon_state = "new_reinforced"
 	},
@@ -8194,6 +8196,16 @@
 	icon_state = "steel_dirty"
 	},
 /area/centcom/legion/hangar5)
+"cjl" = (
+/obj/structure/closet/crate/drop/grey,
+/obj/item/roller{
+	pixel_y = 8
+	},
+/obj/item/roller{
+	pixel_y = 8
+	},
+/turf/simulated/floor/shuttle/black,
+/area/shuttle/specops)
 "cjF" = (
 /obj/structure/bed/stool/chair/office/dark{
 	dir = 8
@@ -10103,86 +10115,11 @@
 /turf/unsimulated/wall/darkshuttlewall,
 /area/centcom/ferry)
 "dIG" = (
-/obj/structure/closet{
-	icon_closed = "blue";
-	icon_state = "blue";
-	name = "megacorp clothing"
+/obj/structure/sign/flag/nanotrasen{
+	pixel_y = 30
 	},
-/obj/item/clothing/under/rank/einstein_engines,
-/obj/item/clothing/under/rank/einstein_engines,
-/obj/item/clothing/under/rank/einstein_engines,
-/obj/item/clothing/under/rank/einstein_engines,
-/obj/item/clothing/under/rank/security/eridani,
-/obj/item/clothing/under/rank/security/eridani,
-/obj/item/clothing/under/rank/security/eridani,
-/obj/item/clothing/under/rank/security/eridani,
-/obj/item/clothing/accessory/sleevepatch/erisec,
-/obj/item/clothing/accessory/sleevepatch/erisec,
-/obj/item/clothing/accessory/sleevepatch/erisec,
-/obj/item/clothing/accessory/sleevepatch/erisec,
-/obj/item/clothing/head/softcap/eri,
-/obj/item/clothing/head/softcap/eri,
-/obj/item/clothing/head/softcap/eri,
-/obj/item/clothing/head/beret/security/eri,
-/obj/item/clothing/under/rank/zavodskoi,
-/obj/item/clothing/under/rank/zavodskoi,
-/obj/item/clothing/under/rank/zavodskoi,
-/obj/item/clothing/under/rank/zavodskoi,
-/obj/item/clothing/under/rank/security/zavodskoi/alt,
-/obj/item/clothing/under/rank/security/zavodskoi/alt,
-/obj/item/clothing/under/rank/security/zavodskoi/alt,
-/obj/item/clothing/under/rank/security/zavodskoi/alt,
-/obj/item/clothing/suit/storage/toggle/labcoat/zavodskoi,
-/obj/item/clothing/suit/storage/toggle/labcoat/zavodskoi,
-/obj/item/clothing/accessory/sleevepatch/zavodskoisec,
-/obj/item/clothing/accessory/sleevepatch/zavodskoisec,
-/obj/item/clothing/accessory/sleevepatch/zavodskoisec,
-/obj/item/clothing/accessory/sleevepatch/zavodskoisec,
-/obj/item/clothing/head/beret/security/zavodskoi/alt,
-/obj/item/clothing/head/beret/security/zavodskoi/alt,
-/obj/item/clothing/head/beret/security/zavodskoi/alt,
-/obj/item/clothing/head/beret/security/zavodskoi/alt,
-/obj/item/clothing/head/beret/security/zavodskoi,
-/obj/item/clothing/head/beret/security/zavodskoi,
-/obj/item/clothing/head/beret/security/zavodskoi,
-/obj/item/clothing/head/beret/security/zavodskoi,
-/obj/item/clothing/under/rank/hephaestus/tech,
-/obj/item/clothing/under/rank/hephaestus/tech,
-/obj/item/clothing/under/rank/hephaestus,
-/obj/item/clothing/under/rank/hephaestus,
-/obj/item/clothing/head/beret/heph,
-/obj/item/clothing/head/beret/heph,
-/obj/item/clothing/head/beret/heph,
-/obj/item/clothing/head/beret/heph,
-/obj/item/clothing/suit/storage/toggle/labcoat/heph,
-/obj/item/clothing/suit/storage/toggle/labcoat/heph,
-/obj/item/clothing/under/rank/zeng/alt,
-/obj/item/clothing/under/rank/zeng/alt,
-/obj/item/clothing/under/rank/zeng/alt,
-/obj/item/clothing/under/rank/zeng/civilian,
-/obj/item/clothing/suit/storage/toggle/labcoat/zeng,
-/obj/item/clothing/suit/storage/toggle/labcoat/zeng,
-/obj/item/clothing/head/beret/zeng/alt,
-/obj/item/clothing/head/beret/zeng/alt,
-/obj/item/clothing/head/beret/zeng/alt,
-/obj/item/clothing/head/beret/zeng,
-/obj/item/clothing/accessory/sleevepatch/idrissec,
-/obj/item/clothing/accessory/sleevepatch/idrissec,
-/obj/item/clothing/accessory/sleevepatch/idrissec,
-/obj/item/clothing/accessory/sleevepatch/idrissec,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/clothing/under/rank/security/idris,
-/obj/item/clothing/under/rank/security/idris,
-/obj/item/clothing/under/rank/security/idris,
-/obj/item/clothing/under/rank/security/idris,
-/obj/item/clothing/head/beret/security/idris,
-/obj/item/clothing/head/beret/security/idris,
-/obj/item/clothing/head/beret/security/idris,
-/obj/item/clothing/head/beret/security/idris,
-/turf/unsimulated/floor{
-	icon_state = "new_reinforced"
-	},
-/area/antag/mercenary)
+/turf/unsimulated/wall/steel,
+/area/centcom/specops)
 "dIN" = (
 /obj/item/modular_computer/console/preset/command,
 /obj/machinery/light{
@@ -14496,14 +14433,8 @@
 /area/shuttle/syndicate_elite)
 "gGv" = (
 /obj/structure/table/reinforced/steel,
-/obj/item/gun/projectile/pistol{
-	pixel_y = 6
-	},
-/obj/item/gun/projectile/pistol{
-	layer = 3.01;
-	pixel_x = 2;
-	pixel_y = 2
-	},
+/obj/item/gun/projectile/silenced,
+/obj/item/gun/projectile/silenced,
 /turf/unsimulated/floor,
 /area/antag/burglar)
 "gGx" = (
@@ -16778,23 +16709,11 @@
 /turf/unsimulated/floor/plating,
 /area/shuttle/administration)
 "iod" = (
-/obj/item/ammo_magazine/mc9mm{
-	pixel_x = -3;
-	pixel_y = 16
-	},
-/obj/item/ammo_magazine/mc9mm{
-	pixel_x = -3;
-	pixel_y = 11
-	},
-/obj/item/ammo_magazine/mc9mm{
-	pixel_x = 5;
-	pixel_y = 17
-	},
-/obj/item/ammo_magazine/mc9mm{
-	pixel_x = 5;
-	pixel_y = 12
-	},
 /obj/structure/table/reinforced/steel,
+/obj/item/ammo_magazine/c45m,
+/obj/item/ammo_magazine/c45m,
+/obj/item/ammo_magazine/c45m,
+/obj/item/ammo_magazine/c45m,
 /turf/unsimulated/floor,
 /area/antag/burglar)
 "ioi" = (
@@ -19395,6 +19314,7 @@
 	pixel_y = -10
 	},
 /obj/structure/table/wood,
+/obj/item/ammo_magazine/a556/ap,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -20157,9 +20077,8 @@
 	layer = 2.99;
 	pixel_y = 6
 	},
-/obj/item/gun/energy/gun,
-/obj/item/gun/energy/gun,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/gun/energy/rifle,
 /turf/unsimulated/floor{
 	icon_state = "new_reinforced"
 	},
@@ -21627,6 +21546,7 @@
 /obj/item/gun/projectile/automatic/c20r,
 /obj/item/gun/projectile/automatic/c20r,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/gun/projectile/shotgun/pump/combat,
 /turf/unsimulated/floor{
 	icon_state = "new_reinforced"
 	},
@@ -24020,9 +23940,9 @@
 	layer = 2.99;
 	pixel_y = 6
 	},
-/obj/item/gun/projectile/pistol,
-/obj/item/gun/projectile/pistol,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/gun/energy/pistol,
+/obj/item/gun/energy/pistol,
 /turf/unsimulated/floor{
 	icon_state = "new_reinforced"
 	},
@@ -24451,22 +24371,6 @@
 "nTm" = (
 /obj/structure/table/rack,
 /obj/item/ammo_magazine/mc9mm{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/obj/item/ammo_magazine/mc9mm{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/obj/item/ammo_magazine/mc9mm{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/obj/item/ammo_magazine/mc9mm{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/obj/item/ammo_magazine/mc9mm{
 	pixel_x = 5;
 	pixel_y = 6
 	},
@@ -24624,28 +24528,66 @@
 /turf/simulated/wall,
 /area/merchant_station/warehouse)
 "nYX" = (
-/obj/structure/table/rack,
-/obj/item/tank/emergency_oxygen/double{
-	pixel_y = 1
+/obj/effect/floor_decal/corner_wide/paleblue/diagonal{
+	dir = 8
 	},
-/obj/item/tank/emergency_oxygen/double{
-	pixel_y = 1
+/obj/structure/table/standard,
+/obj/item/reagent_containers/glass/bottle/peridaxon{
+	pixel_x = 8;
+	pixel_y = -8
 	},
-/obj/item/tank/emergency_oxygen/double{
-	pixel_y = 1
+/obj/item/reagent_containers/glass/bottle/peridaxon{
+	pixel_x = 8;
+	pixel_y = -8
 	},
-/obj/item/tank/emergency_oxygen/double{
-	pixel_y = 1
+/obj/item/reagent_containers/glass/bottle/antitoxin{
+	pixel_x = -4;
+	pixel_y = 8
 	},
-/obj/item/tank/emergency_oxygen/double{
-	pixel_y = 1
+/obj/item/reagent_containers/glass/bottle/inaprovaline{
+	pixel_x = 4;
+	pixel_y = 7
 	},
-/obj/item/tank/emergency_oxygen/double{
-	pixel_y = 1
+/obj/item/reagent_containers/glass/bottle/stoxin{
+	pixel_y = 4
 	},
-/turf/unsimulated/floor/plating{
-	icon_state = "dark"
+/obj/item/reagent_containers/glass/bottle/mortaphenyl{
+	pixel_x = 8;
+	pixel_y = 6
 	},
+/obj/item/reagent_containers/glass/bottle/dexalin_plus{
+	pixel_x = 7;
+	pixel_y = -12
+	},
+/obj/item/reagent_containers/glass/bottle/dermaline,
+/obj/item/reagent_containers/glass/bottle/butazoline{
+	pixel_x = -3;
+	pixel_y = -8
+	},
+/obj/item/reagent_containers/glass/bottle/butazoline{
+	pixel_x = -3;
+	pixel_y = -8
+	},
+/obj/item/reagent_containers/syringe,
+/obj/item/nitrilebox{
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/bottle/inaprovaline{
+	pixel_x = 4;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/glass/bottle/thetamycin{
+	pixel_x = 9
+	},
+/obj/item/reagent_containers/glass/bottle/perconol{
+	pixel_x = -7;
+	pixel_y = -4
+	},
+/obj/item/reagent_containers/glass/bottle/perconol{
+	pixel_x = -7;
+	pixel_y = -4
+	},
+/turf/simulated/floor/tiled/dark,
 /area/centcom/specops)
 "nZm" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -24785,7 +24727,6 @@
 "ogz" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/crate/drop,
-/obj/effect/spawner/newbomb/timer/syndicate,
 /obj/effect/spawner/newbomb/timer/syndicate,
 /obj/effect/spawner/newbomb/timer/syndicate,
 /turf/simulated/floor/reinforced,
@@ -25533,8 +25474,6 @@
 	},
 /area/centcom/specops)
 "oQM" = (
-/obj/item/device/paicard,
-/obj/item/device/paicard,
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
@@ -25543,8 +25482,8 @@
 	layer = 6;
 	name = "adjusted railing"
 	},
-/obj/structure/table/steel,
 /obj/effect/floor_decal/spline/plain,
+/obj/machinery/acting/changer,
 /turf/unsimulated/floor{
 	icon = 'icons/turf/flooring/carpet.dmi';
 	icon_state = "rub_carpet"
@@ -25775,9 +25714,6 @@
 /obj/item/clothing/suit/armor/vest/ert/medical,
 /obj/item/clothing/head/helmet/ert/medical,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/sign/flag/coalition{
-	pixel_x = 29
-	},
 /turf/unsimulated/floor{
 	icon_state = "dark2"
 	},
@@ -28155,6 +28091,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 10
 	},
+/obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/mercenary)
 "qVB" = (
@@ -28188,19 +28125,18 @@
 	icon_state = "railing0-1";
 	name = "railing"
 	},
-/obj/item/reagent_containers/glass/beaker/bluespace,
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1";
 	name = "adjusted light fixture";
 	pixel_x = -3
 	},
-/obj/structure/table/steel,
 /obj/machinery/chem_master{
 	dir = 1;
 	pixel_x = -6;
 	pixel_y = 31
 	},
+/obj/structure/closet/crate/drop/grey,
 /turf/unsimulated/floor/plating{
 	icon_state = "dark"
 	},
@@ -29756,6 +29692,14 @@
 	pixel_x = -6
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/ammo_magazine/c762{
+	layer = 2.99;
+	pixel_x = 5
+	},
+/obj/item/ammo_magazine/c762{
+	layer = 2.99;
+	pixel_x = 5
+	},
 /turf/unsimulated/floor{
 	icon_state = "new_reinforced"
 	},
@@ -30616,6 +30560,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
+/obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/mercenary)
 "tbN" = (
@@ -31114,10 +31059,6 @@
 /area/antag/raider)
 "tvs" = (
 /obj/structure/table/rack,
-/obj/item/towel{
-	pixel_y = 8
-	},
-/obj/item/towel,
 /turf/unsimulated/floor{
 	icon_state = "freezerfloor"
 	},
@@ -33843,14 +33784,50 @@
 	},
 /area/shuttle/syndicate_elite)
 "vIS" = (
-/obj/machinery/embedded_controller/radio/simple_docking_controller{
-	frequency = 1337;
-	id_tag = "merc_base";
-	pixel_x = -25;
-	pixel_y = -5
+/obj/machinery/door/window/southleft{
+	desc = "A strong door. An angry note is taped to the front.";
+	name = "VAURCA ONLY, We shouldn't have to say it, but here we are"
 	},
+/obj/structure/table/reinforced/steel{
+	pixel_x = -3;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced/crescent{
+	dir = 4
+	},
+/obj/item/reagent_containers/food/snacks/koisbar_clean{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/snacks/koisbar_clean{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/snacks/koisbar_clean{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/snacks/koisbar_clean{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/snacks/koisbar_clean{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/snacks/koisbar_clean{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/effect/floor_decal/industrial/warning,
+/obj/item/clothing/mask/breath/vaurca/filter,
+/obj/item/clothing/mask/breath/vaurca/filter,
+/obj/item/clothing/mask/breath/vaurca/filter,
+/obj/item/clothing/mask/breath/vaurca/filter,
+/obj/item/clothing/mask/breath/vaurca/filter,
+/obj/item/clothing/mask/breath/vaurca/filter,
 /turf/unsimulated/floor{
-	icon_state = "new_reinforced"
+	icon_state = "engine"
 	},
 /area/antag/mercenary)
 "vJq" = (
@@ -34789,14 +34766,8 @@
 	pixel_x = -8;
 	pixel_y = 7
 	},
-/obj/item/shield/energy{
-	pixel_x = -8;
-	pixel_y = 7
-	},
-/obj/item/shield/energy{
-	pixel_x = -8;
-	pixel_y = 7
-	},
+/obj/item/shield/energy/legion,
+/obj/item/shield/energy/legion,
 /turf/unsimulated/floor{
 	icon_state = "new_reinforced"
 	},
@@ -35023,6 +34994,12 @@
 	icon_state = "tube1"
 	},
 /obj/machinery/mech_recharger,
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	frequency = 1337;
+	id_tag = "merc_shuttle";
+	pixel_x = -25;
+	req_access = list(150)
+	},
 /turf/unsimulated/floor{
 	icon_state = "new_reinforced"
 	},
@@ -35847,10 +35824,7 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
 	},
-/turf/unsimulated/floor{
-	dir = 4;
-	icon_state = "rampbottom"
-	},
+/turf/unsimulated/wall/steel,
 /area/antag/mercenary)
 "wTE" = (
 /obj/effect/floor_decal/spline/plain,
@@ -35973,6 +35947,7 @@
 /area/centcom/legion/hangar5)
 "wXJ" = (
 /obj/effect/shuttle_landmark/merc/start,
+/obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/mercenary)
 "wXM" = (
@@ -36246,8 +36221,9 @@
 	},
 /area/centcom/legion/hangar5)
 "xga" = (
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/mercenary)
+/obj/item/clothing/mask/breath/vaurca/filter,
+/turf/template_noop,
+/area/template_noop)
 "xgg" = (
 /obj/structure/bed/stool/chair/padded/brown{
 	dir = 1
@@ -36319,6 +36295,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/mercenary)
 "xjp" = (
@@ -36399,6 +36376,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
+/obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/mercenary)
 "xkq" = (
@@ -36497,6 +36475,7 @@
 	pixel_y = 25
 	},
 /obj/machinery/meter,
+/obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/mercenary)
 "xoL" = (
@@ -36538,6 +36517,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/mercenary)
 "xrF" = (
@@ -37452,6 +37432,7 @@
 "xTR" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /obj/machinery/light/small,
+/obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/mercenary)
 "xUR" = (
@@ -37505,6 +37486,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/mercenary)
 "xWe" = (
@@ -43218,7 +43200,7 @@ xDD
 xDD
 vfE
 wVv
-xga
+xKx
 tbt
 tbt
 tbt
@@ -43475,11 +43457,11 @@ xDD
 xDD
 vim
 wXJ
-xga
-xga
-xga
-xga
-xga
+xKx
+xKx
+xKx
+xKx
+xKx
 hXk
 gnF
 qEp
@@ -43731,11 +43713,11 @@ xDD
 xDD
 xDD
 viR
-xga
-xga
+xKx
+xKx
 bhd
 bhd
-xga
+xKx
 lGv
 viR
 uul
@@ -46306,7 +46288,7 @@ xux
 xVl
 xVl
 xVl
-dIG
+uaE
 uYK
 gtA
 xVl
@@ -56000,7 +55982,7 @@ ujN
 aau
 rdN
 aCI
-aCv
+cjl
 tuX
 iLs
 ugV
@@ -60362,11 +60344,11 @@ xTG
 xTG
 ndP
 xTG
+dIG
 xTG
+dIG
 xTG
-xTG
-xTG
-xTG
+dIG
 xTG
 eJc
 eJc
@@ -70218,7 +70200,7 @@ aaM
 aaM
 aaM
 aaM
-aaM
+xga
 aaM
 aaM
 aaM

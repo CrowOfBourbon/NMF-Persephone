@@ -3847,7 +3847,9 @@
 /turf/simulated/wall/r_wall,
 /area/engineering/drone_fabrication)
 "ahk" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/floor/snow{
+	temperature = 234.15
+	},
 /area/maintenance/atmos_control)
 "ahl" = (
 /obj/structure/cable/yellow{
@@ -22943,11 +22945,6 @@
 /turf/simulated/floor/tiled,
 /area/hydroponics)
 "aPh" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 8;
-	frequency = 1379;
-	id_tag = "research_pump"
-	},
 /obj/structure/closet/walllocker/emerglocker/east,
 /turf/simulated/floor/tiled,
 /area/outpost/research/eva)
@@ -23908,30 +23905,24 @@
 /turf/simulated/floor/tiled/white,
 /area/outpost/research/anomaly_analysis)
 "aQW" = (
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/structure/sign/securearea{
+	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
+	icon_state = "space";
+	layer = 4;
+	name = "EXTERNAL AIRLOCK"
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced,
-/obj/structure/grille,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/outpost/research/eva)
+/turf/simulated/wall,
+/area/outpost/mining_main)
 "aQX" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "door_locked";
-	id_tag = "research_outer";
-	locked = 1;
-	name = "Research Outpost External Access";
-	req_access = list(10,13)
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	id = "xenoarch_exterior";
+	name = "Xenoarchelogy Exterior"
 	},
 /turf/simulated/floor/tiled,
 /area/outpost/research/eva)
@@ -24878,21 +24869,16 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1379;
-	id_tag = "research_pump"
-	},
-/obj/machinery/airlock_sensor{
-	id_tag = "research_sensor";
-	pixel_x = -25
+/obj/machinery/button/remote/blast_door{
+	req_access = list(65);
+	name = "Xenoarchelogy Exterior Access";
+	id = "xenoarch_exterior";
+	pixel_x = -25;
+	pixel_y = -10
 	},
 /turf/simulated/floor/tiled,
 /area/outpost/research/eva)
 "aSI" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 1
-	},
 /turf/simulated/floor/tiled,
 /area/outpost/research/eva)
 "aSJ" = (
@@ -26016,41 +26002,16 @@
 	},
 /area/outpost/research/hallway)
 "aUu" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1379;
-	id_tag = "research_pump"
-	},
-/obj/effect/floor_decal/industrial/warning,
 /obj/machinery/camera/network/research_outpost{
 	c_tag = "Research Outpost Expedition Airlock";
 	dir = 4
 	},
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	id_tag = "research_airlock";
-	pixel_x = -25;
-	tag_airpump = "research_pump";
-	tag_chamber_sensor = "research_sensor";
-	tag_exterior_door = "research_outer";
-	tag_interior_door = "research_inner"
+/obj/machinery/button/remote/blast_door{
+	req_access = list(65);
+	name = "Xenoarchelogy Interior Access";
+	id = "xenoarch_interior";
+	pixel_x = -25
 	},
-/turf/simulated/floor/tiled,
-/area/outpost/research/eva)
-"aUv" = (
-/obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/pipe/manifold4w/hidden,
-/turf/simulated/floor/tiled,
-/area/outpost/research/eva)
-"aUw" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 8;
-	frequency = 1379;
-	id_tag = "research_pump"
-	},
-/obj/structure/sign/vacuum{
-	pixel_x = 32
-	},
-/obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled,
 /area/outpost/research/eva)
 "aUx" = (
@@ -27909,18 +27870,6 @@
 /obj/machinery/artifact_harvester,
 /turf/simulated/floor/bluegrid,
 /area/outpost/research/emergency_storage)
-"aXP" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "door_locked";
-	id_tag = "research_inner";
-	locked = 1;
-	name = "Research Outpost External Access"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/plating,
-/area/outpost/research/eva)
 "aXQ" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -28790,9 +28739,6 @@
 /turf/simulated/floor/tiled/white,
 /area/hallway/secondary/exit)
 "aZm" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 8
-	},
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
@@ -28801,6 +28747,7 @@
 	dir = 9
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
 /area/outpost/research/hallway)
 "aZn" = (
@@ -32296,21 +32243,6 @@
 	icon_state = "plating"
 	},
 /area/mine/unexplored)
-"bfT" = (
-/obj/machinery/access_button{
-	command = "cycle_exterior";
-	frequency = 1379;
-	master_tag = "toxin_test_airlock";
-	name = "exterior access button";
-	pixel_x = -20;
-	pixel_y = -20;
-	req_access = newlist();
-	req_one_access = list(7,13)
-	},
-/turf/snow/plating{
-	icon_state = "plating"
-	},
-/area/mine/unexplored)
 "bfU" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -33457,18 +33389,6 @@
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/outpost/research/emergency_storage)
-"bhR" = (
-/obj/machinery/portable_atmospherics/canister/air/airlock,
-/obj/machinery/door/window{
-	dir = 4;
-	name = "Air Tank Access";
-	req_one_access = list(47,10,24)
-	},
-/obj/machinery/atmospherics/portables_connector{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/outpost/research/hallway)
 "bhS" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -34579,9 +34499,6 @@
 	},
 /area/hallway/secondary/exit)
 "bjK" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -34597,20 +34514,15 @@
 /turf/simulated/floor/tiled/white,
 /area/outpost/research/hallway)
 "bjL" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/white,
-/area/outpost/research/hallway)
-"bjM" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
+/obj/machinery/button/remote/blast_door{
+	req_access = list(65);
+	name = "Xenoarchelogy Interior Access";
+	id = "xenoarch_interior";
+	pixel_x = -21;
+	pixel_y = 22
 	},
 /turf/simulated/floor/tiled/white,
 /area/outpost/research/hallway)
@@ -34661,9 +34573,6 @@
 	dir = 4;
 	name = "east bump";
 	pixel_x = 24
-	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
 	d2 = 2;
@@ -35550,9 +35459,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/outpost/research/emergency_storage)
 "blE" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9
 	},
@@ -35562,9 +35468,6 @@
 /turf/simulated/floor/tiled/white,
 /area/outpost/research/hallway)
 "blF" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
@@ -35586,9 +35489,6 @@
 /turf/simulated/floor/tiled/white,
 /area/outpost/research/hallway)
 "blG" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -37423,9 +37323,6 @@
 /turf/simulated/floor/tiled,
 /area/assembly/robotics)
 "bpe" = (
-/obj/machinery/atmospherics/binary/pump/on{
-	target_pressure = 200
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
@@ -38448,13 +38345,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/hallway/primary/starboard)
-"bqL" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 6
-	},
-/turf/simulated/floor/tiled/white,
-/area/outpost/research/hallway)
 "bqM" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor/tiled,
@@ -40438,15 +40328,6 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/captain)
-"bum" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 6
-	},
-/turf/simulated/floor/tiled/white,
-/area/outpost/research/hallway)
 "bun" = (
 /obj/machinery/portable_atmospherics/canister/phoron,
 /obj/machinery/light{
@@ -46609,22 +46490,17 @@
 	},
 /area/mine/explored)
 "bFU" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
+/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
-	dir = 8
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	name = "Xenoarchelogy Interior";
+	id = "xenoarch_interior"
 	},
-/obj/structure/window/reinforced,
-/obj/structure/grille,
-/obj/machinery/door/firedoor,
-/obj/structure/sign/securearea{
-	name = "Vacuum Ahead EVA REQUIRED"
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled,
 /area/outpost/research/eva)
 "bFV" = (
 /obj/structure/window/reinforced{
@@ -56878,7 +56754,10 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/sign/securearea{
-	name = "Vacuum Ahead EVA REQUIRED"
+	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
+	icon_state = "space";
+	layer = 4;
+	name = "EXTERNAL AIRLOCK"
 	},
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main)
@@ -57088,23 +56967,14 @@
 	},
 /area/janitor)
 "bYS" = (
-/obj/machinery/door/window/westright{
-	name = "Janitoral Delivery"
+/obj/structure/sign/securearea{
+	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
+	icon_state = "space";
+	layer = 4;
+	name = "EXTERNAL AIRLOCK"
 	},
-/turf/simulated/floor/plating,
-/area/janitor)
-"bYT" = (
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=8";
-	freq = 1400;
-	location = "Janitor"
-	},
-/obj/structure/plasticflaps{
-	opacity = 1
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/janitor)
+/turf/simulated/wall/r_wall,
+/area/outpost/research/eva)
 "bYU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -57378,6 +57248,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/landmark/start{
+	name = "Janitor"
+	},
 /turf/simulated/floor/tiled{
 	icon_state = "darkmarble"
 	},
@@ -57410,7 +57283,6 @@
 	},
 /area/janitor)
 "bZr" = (
-/obj/item/reagent_containers/glass/bucket,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
 	d1 = 2;
@@ -57862,6 +57734,7 @@
 	},
 /obj/item/pen,
 /obj/structure/table/steel,
+/obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
 /turf/simulated/floor/tiled{
 	icon_state = "darkmarble"
@@ -58612,7 +58485,7 @@
 "cbK" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/generic,
-/turf/simulated/floor/plating,
+/turf/simulated/wall,
 /area/maintenance/engineering)
 "cbL" = (
 /obj/structure/cable{
@@ -62134,41 +62007,30 @@
 /turf/simulated/floor/tiled,
 /area/medical/main_storage)
 "chE" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 6
+/turf/simulated/floor/tiled{
+	icon_state = "darkmarble"
 	},
-/obj/machinery/door/airlock/external{
-	icon_state = "door_locked";
-	locked = 1;
-	welded = 1
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/cargo)
-"chF" = (
-/obj/machinery/atmospherics/binary/pump/on{
-	dir = 8;
-	target_pressure = 200
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/cargo)
+/area/janitor)
 "chG" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	dir = 4
+/obj/machinery/button/remote/blast_door{
+	req_access = list(65);
+	name = "Xenoarchelogy Exterior Access";
+	id = "xenoarch_exterior";
+	pixel_y = -22
 	},
-/turf/simulated/floor/plating,
-/area/maintenance/cargo)
+/turf/simulated/floor/snow{
+	temperature = 234.15
+	},
+/area/mine/unexplored)
 "chH" = (
 /obj/structure/disposalpipe/segment,
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/cargo)
 "chI" = (
@@ -62986,18 +62848,20 @@
 /turf/simulated/floor/plating,
 /area/maintenance/research_starboard)
 "ciZ" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 8
+/obj/structure/sign/securearea{
+	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
+	icon_state = "space";
+	layer = 4;
+	name = "EXTERNAL AIRLOCK"
 	},
-/turf/simulated/wall,
-/area/maintenance/cargo)
+/turf/simulated/wall/r_wall,
+/area/outpost/research/anomaly_analysis)
 "cja" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 8
+/obj/effect/landmark/start{
+	name = "Cargo Technician"
 	},
-/obj/machinery/portable_atmospherics/canister/air/airlock,
-/turf/simulated/floor/plating,
-/area/maintenance/cargo)
+/turf/simulated/floor/tiled,
+/area/quartermaster/office)
 "cjb" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
@@ -63675,9 +63539,14 @@
 	},
 /area/engineering/engine_eva)
 "ckg" = (
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/wall,
-/area/maintenance/atmos_control)
+/obj/structure/sign/securearea{
+	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
+	icon_state = "space";
+	layer = 4;
+	name = "EXTERNAL AIRLOCK"
+	},
+/turf/simulated/wall/r_wall,
+/area/outpost/research/hallway)
 "ckh" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
@@ -64409,91 +64278,27 @@
 	dir = 1
 	},
 /turf/simulated/floor/snow{
-	icon_state = "plating"
+	temperature = 234.15
 	},
 /area/mine/explored)
-"clx" = (
-/obj/machinery/access_button{
-	command = "cycle_exterior";
-	frequency = 1379;
-	master_tag = "eng_eva_airlock";
-	name = "exterior access button";
-	pixel_y = 25;
-	req_access = list(13)
-	},
-/turf/simulated/floor/snow{
-	icon_state = "plating"
-	},
-/area/mine/explored)
-"cly" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "door_locked";
-	id_tag = "eng_eva_outer";
-	locked = 1;
-	name = "Engineering EVA External Access";
-	req_access = list(13)
-	},
-/turf/simulated/floor/airless,
-/area/maintenance/atmos_control)
 "clz" = (
-/obj/machinery/airlock_sensor{
-	id_tag = "eng_eva_sensor";
-	pixel_y = 25
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1379;
-	id_tag = "eng_eva_pump"
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 9
-	},
-/turf/simulated/floor/tiled{
-	icon_state = "darkmarble"
-	},
-/area/maintenance/atmos_control)
-"clA" = (
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	id_tag = "eng_eva_airlock";
-	name = "Engineering Airlock Console";
-	pixel_y = 25;
-	req_access = list(13);
-	tag_airpump = "eng_eva_pump";
-	tag_chamber_sensor = "eng_eva_sensor";
-	tag_exterior_door = "eng_eva_outer";
-	tag_interior_door = "eng_eva_inner"
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden{
+/obj/structure/grille,
+/obj/structure/window/reinforced/crescent,
+/obj/structure/window/reinforced/crescent{
 	dir = 4
 	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 5
+/obj/structure/window/reinforced/crescent{
+	dir = 8
 	},
-/turf/simulated/floor/tiled{
-	icon_state = "darkmarble"
+/obj/structure/window/reinforced{
+	dir = 4
 	},
-/area/maintenance/atmos_control)
+/turf/simulated/floor/plating,
+/area/hallway/secondary/entry/dock)
 "clB" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "door_locked";
-	id_tag = "eng_eva_inner";
-	locked = 1;
-	name = "Engineering EVA Internal Access";
-	req_access = list(13)
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/atmos_control)
 "clC" = (
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1379;
-	master_tag = "eng_eva_airlock";
-	name = "interior access button";
-	pixel_y = 25;
-	req_access = list(13)
-	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
@@ -65300,29 +65105,14 @@
 /area/maintenance/research_starboard)
 "cmT" = (
 /obj/machinery/light/small,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 10
-	},
-/turf/simulated/floor/tiled{
-	icon_state = "darkmarble"
-	},
+/turf/simulated/wall,
 /area/maintenance/atmos_control)
 "cmU" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1;
-	frequency = 1379;
-	id_tag = "eng_eva_pump"
-	},
 /obj/machinery/camera/network/security{
 	c_tag = "Engineering Airlock Access";
 	dir = 1
 	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 6
-	},
-/turf/simulated/floor/tiled{
-	icon_state = "darkmarble"
-	},
+/turf/simulated/wall,
 /area/maintenance/atmos_control)
 "cmV" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -67030,10 +66820,6 @@
 	},
 /turf/simulated/floor/airless,
 /area/mine/explored)
-"cpT" = (
-/obj/structure/sign/pods,
-/turf/simulated/wall/r_wall,
-/area/engineering/engine_eva)
 "cpU" = (
 /obj/machinery/hologram/holopad,
 /obj/structure/cable/green{
@@ -78494,7 +78280,10 @@
 	dir = 1
 	},
 /obj/structure/sign/securearea{
-	name = "Vacuum Ahead EVA REQUIRED"
+	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
+	icon_state = "space";
+	layer = 4;
+	name = "EXTERNAL AIRLOCK"
 	},
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main)
@@ -79033,15 +78822,9 @@
 /turf/simulated/floor/plating,
 /area/outpost/mining_main/eva)
 "cNA" = (
-/obj/structure/window/reinforced{
-	dir = 4
+/turf/simulated/floor/tiled{
+	icon_state = "darkmarble"
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/obj/structure/grille,
-/turf/simulated/floor/plating,
 /area/outpost/mining_main/eva)
 "cNB" = (
 /obj/structure/grille,
@@ -79642,10 +79425,16 @@
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main/eva)
 "cOV" = (
-/obj/effect/landmark/start{
-	name = "Shaft Miner"
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
 /area/outpost/mining_main/eva)
 "cPb" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -80082,7 +79871,7 @@
 "cQk" = (
 /obj/machinery/light,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/dispenser,
+/obj/structure/dispenser/oxygen,
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main/eva)
 "cQl" = (
@@ -98163,7 +97952,7 @@ aFj
 aFj
 aFd
 aDZ
-aFc
+clz
 aYd
 bah
 bct
@@ -103336,7 +103125,7 @@ cNv
 cFc
 cNv
 cFc
-bCR
+aQW
 cNx
 cNx
 cNx
@@ -104108,7 +103897,7 @@ bUN
 bWJ
 bWJ
 cMz
-cNz
+cOV
 cOU
 ciI
 ciI
@@ -104623,7 +104412,7 @@ cbc
 bWJ
 bUN
 cfV
-cOV
+cPh
 cPJ
 cPh
 cQk
@@ -105904,7 +105693,7 @@ bSK
 bYJ
 cbj
 cvq
-bWJ
+cbc
 cck
 cNm
 bUz
@@ -107180,7 +106969,7 @@ bHf
 bod
 bJI
 bod
-bod
+cja
 bPQ
 bPU
 bPX
@@ -107456,7 +107245,7 @@ aBt
 aBt
 ahk
 clw
-cDI
+aBt
 coB
 coB
 crk
@@ -107711,9 +107500,9 @@ cbQ
 aBt
 aBt
 aBt
-qba
-clx
-cDI
+ahk
+aBt
+aBt
 coB
 cpM
 crl
@@ -107968,9 +107757,9 @@ cbQ
 aBt
 aBt
 aBt
-qba
-cly
-cly
+ahk
+ahk
+ahk
 coB
 cpN
 crm
@@ -108226,7 +108015,7 @@ cgr
 cgr
 cgr
 qba
-clz
+qba
 cmT
 coB
 cpO
@@ -108480,10 +108269,10 @@ cdX
 cdV
 cbQ
 cbQ
-chE
-ciZ
-ckg
-clA
+cbQ
+cbQ
+qba
+qba
 cmU
 coB
 cpP
@@ -108737,8 +108526,8 @@ cdX
 cdV
 cdX
 cgs
-chF
-cja
+cdX
+cdX
 qba
 clB
 clB
@@ -108994,7 +108783,7 @@ cdX
 cdV
 cfb
 cdX
-chG
+cdX
 cbQ
 qba
 clC
@@ -109771,7 +109560,7 @@ aMH
 aMH
 aMH
 aMH
-cpT
+csG
 crr
 csG
 csG
@@ -115412,9 +115201,9 @@ bSf
 bTH
 bWk
 bDm
-bXH
-bXH
-caG
+chE
+chE
+chE
 bau
 cem
 cfk
@@ -115669,9 +115458,9 @@ bTa
 bTI
 bWl
 bDm
-bYS
-bau
-bau
+bXH
+bXH
+caG
 bau
 cen
 cfk
@@ -115926,7 +115715,7 @@ bTb
 bUE
 bWm
 aMP
-bYT
+bau
 bau
 cbK
 ccV
@@ -141862,8 +141651,8 @@ aQU
 aOB
 aUt
 aQY
-bhR
-bhR
+blA
+blA
 bpb
 bqJ
 aRY
@@ -142114,14 +141903,14 @@ aaa
 aGv
 aac
 aac
-aac
+chG
 aQY
 aQY
 aQY
 aQY
 bjK
 blE
-bpb
+ciZ
 bpb
 bpb
 bpb
@@ -142371,8 +142160,8 @@ aaa
 aGv
 aGv
 aGv
-bfT
-aQW
+aGv
+aQX
 aSH
 aUu
 bFU
@@ -142631,13 +142420,13 @@ aGv
 aGv
 aQX
 aSI
-aUv
-aXP
-bjM
+aSI
+bFU
+bjQ
 blG
 bpe
-bqL
-bum
+bwq
+bwq
 bwq
 bwq
 bwq
@@ -142886,13 +142675,13 @@ aGv
 bed
 bfS
 aGv
-aQW
+aQX
 aPh
-aUw
+aSI
 bFU
 bjQ
 blH
-bjS
+ckg
 bjS
 bjS
 bjS
@@ -143142,10 +142931,10 @@ aaa
 aac
 aQY
 aQY
+bYS
 aQY
 aQY
-aQY
-aQY
+bYS
 aQY
 aQc
 blH
