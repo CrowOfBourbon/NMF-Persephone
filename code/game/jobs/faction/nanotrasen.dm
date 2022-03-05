@@ -28,7 +28,7 @@
 		allowed_role_types += job.type
 
 	// Really shitty hack until I get around to rewriting jobs a bit.
-	var/list/disallowed_roles = list(/datum/job/consular, /datum/job/merchant)
+	var/list/disallowed_roles = list(/datum/job/consular)
 	for(var/disallowed_role in disallowed_roles)
 		allowed_role_types -= disallowed_role
 

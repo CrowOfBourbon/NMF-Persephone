@@ -230,20 +230,6 @@
 		if(istype(player,/mob/abstract/observer) || ((src in player.languages && !within_jamming_range(player)) || check_special_condition(player)))
 			to_chat(player, msg)
 
-/datum/language/bug/format_message(message, verb, speaker_mask)
-	var/message_color = colour
-	var/list/speaker_surname = splittext(speaker_mask, " ")
-	switch(speaker_surname[2])
-		if("Xal")
-			message_color = "vaurca_xal"
-		if("Tila")
-			message_color = "vaurca_til"
-		if("Kix")
-			message_color = "vaurca_unkn"
-	if(copytext(message, 1, 2) == "!")
-		return " projects <span class='message'><span class='[message_color]'>[copytext(message, 2)]</span></span>"
-	return "[verb], <span class='message'><span class='[message_color]'>\"[capitalize(message)]\"</span></span>"
-
 /datum/language/bug_sign
 	name = LANGUAGE_VAURCA_SIGN
 	desc = "WORK IN PROGRESS LORE-WISE"

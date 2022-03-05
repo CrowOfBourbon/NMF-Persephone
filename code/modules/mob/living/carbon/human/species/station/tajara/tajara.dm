@@ -41,7 +41,7 @@
 
 	stamina = 90	// Tajara evolved to maintain a steady pace in the snow, sprinting wastes energy
 	stamina_recovery = 4
-	sprint_speed_factor = 0.65
+	sprint_speed_factor = 1
 	sprint_cost_factor = 0.75
 	bp_base_systolic = 140 // Default 120
 	bp_base_disatolic = 90 // Default 80

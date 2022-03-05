@@ -37,7 +37,7 @@
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/bugbite //weaker version of gut.
 		)
-	
+
 	//num_alternate_languages = 1
 	//secondary_langs = list(LANGUAGE_VAURCA, LANGUAGE_VAURCA_SIGN)
 
@@ -64,7 +64,7 @@
 	mob_size = 30
 	taste_sensitivity = TASTE_DULL
 	blurb = {"MV or Type D: MV forms, the pure born of queens. Type D Vaurcae are the mothers of lesser forms, creating and fertilizing eggs. \
-	Type D forms are rarer than lesser forms, though still make up a considerable population within the hive. Usually seen as chaplains, consulars, visitors and Quartermasters on the station. \ 
+	Type D forms are rarer than lesser forms, though still make up a considerable population within the hive. Usually seen as chaplains, consulars, visitors and Quartermasters on the station. \
 	MV forms are able to advise all lesser forms, who treat type D with respect and love. MV forms can additionally give orders to warriors, who always follow the command of an MV. \
 	No matter what the instruction."}
 

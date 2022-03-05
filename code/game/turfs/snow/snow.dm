@@ -3,7 +3,7 @@
     dynamic_lighting = 2
     icon = 'icons/turf/snow.dmi'
     icon_state = "snow"
-    temperature = T0C-50
+    temperature = T0C-70
     oxygen = MOLES_O2STANDARD
     nitrogen = MOLES_N2STANDARD
     var/list/crossed_dirs = list()

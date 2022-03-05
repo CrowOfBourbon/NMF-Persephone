@@ -63,9 +63,9 @@
 	But due to conflicts with the Tilla hive, workers have been instructed by their local MV forms to be especially ready for conflict at all times, negating their natural pacifism. \
 	<b>Type A are comfortable in any department except security. There will almost never be a Worker in a security position, as they are as a type disposed against combat.</b>"
 
-	cold_level_1 = 100 // Spaceproof, but space still feels cold to them.
-	cold_level_2 = 50
-	cold_level_3 = 1
+	cold_level_1 = 200 // Spaceproof, but space still feels cold to them.
+	cold_level_2 = 100
+	cold_level_3 = 50
 
 	heat_level_1 = 420 // They evolved on a volcanic deathworld.
 	heat_level_2 = 450
@@ -157,7 +157,7 @@
 
 /datum/species/bug/has_psi_potential()
 	return FALSE
-	
+
 /datum/species/bug/is_naturally_insulated()
 	return TRUE
 

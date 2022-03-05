@@ -82142,6 +82142,15 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medbay2)
+"rAd" = (
+/obj/machinery/megavendor{
+	layer = 4.3
+	},
+/obj/effect/landmark{
+	name = "LateJoinMerchant"
+	},
+/turf/simulated/floor/shuttle/black,
+/area/hallway/secondary/entry/dock)
 "tGj" = (
 /obj/structure/banner/unmovable,
 /turf/simulated/floor/tiled{
@@ -95124,7 +95133,7 @@ aMu
 aQR
 aMu
 aYe
-kSP
+rAd
 aHo
 aXH
 aZM

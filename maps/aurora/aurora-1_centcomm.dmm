@@ -26351,9 +26351,6 @@
 	},
 /area/centcom/control)
 "pBa" = (
-/obj/effect/landmark{
-	name = "LateJoinMerchant"
-	},
 /obj/effect/ghostspawpoint/button{
 	desc = "This button is used for summoning an assistant from the upper floors.";
 	dir = 8;

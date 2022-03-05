@@ -24,11 +24,11 @@
 
 	uniform = /obj/item/clothing/under/rank/bartender
 	shoes = /obj/item/clothing/shoes/black
-	
+
 	tab_pda = /obj/item/modular_computer/handheld/pda/civilian/bartender
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/civilian/bartender
 	tablet = /obj/item/modular_computer/handheld/preset/civilian/bartender
-	
+
 	headset = /obj/item/device/radio/headset/headset_service
 	bowman = /obj/item/device/radio/headset/headset_service/alt
 	double_headset = /obj/item/device/radio/headset/alt/double/service
@@ -62,11 +62,11 @@
 	suit = /obj/item/clothing/suit/chef
 	head = /obj/item/clothing/head/chefhat
 	shoes = /obj/item/clothing/shoes/black
-	
+
 	tab_pda = /obj/item/modular_computer/handheld/pda/civilian
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/civilian
 	tablet = /obj/item/modular_computer/handheld/preset/civilian
-	
+
 	headset = /obj/item/device/radio/headset/headset_service
 	bowman = /obj/item/device/radio/headset/headset_service/alt
 	double_headset = /obj/item/device/radio/headset/alt/double/service
@@ -103,11 +103,11 @@
 	suit = /obj/item/clothing/suit/apron
 	shoes = /obj/item/clothing/shoes/black
 	suit_store = /obj/item/device/analyzer/plant_analyzer
-	
+
 	tab_pda = /obj/item/modular_computer/handheld/pda/civilian
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/civilian
 	tablet = /obj/item/modular_computer/handheld/preset/civilian
-	
+
 	headset = /obj/item/device/radio/headset/headset_service
 	bowman = /obj/item/device/radio/headset/headset_service/alt
 	double_headset = /obj/item/device/radio/headset/alt/double/service
@@ -157,11 +157,11 @@
 	shoes = /obj/item/clothing/shoes/brown
 	l_hand = /obj/item/clipboard
 	glasses = /obj/item/clothing/glasses/sunglasses
-	
+
 	tab_pda = /obj/item/modular_computer/handheld/pda/supply/qm
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/supply/qm
 	tablet = /obj/item/modular_computer/handheld/preset/supply/qm
-	
+
 	headset = /obj/item/device/radio/headset/qm
 	bowman = /obj/item/device/radio/headset/qm/alt
 	double_headset = /obj/item/device/radio/headset/alt/double/qm
@@ -193,11 +193,11 @@
 	uniform = /obj/item/clothing/under/rank/cargo
 	id = /obj/item/card/id/silver
 	shoes = /obj/item/clothing/shoes/brown
-	
+
 	tab_pda = /obj/item/modular_computer/handheld/pda/supply
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/supply
 	tablet = /obj/item/modular_computer/handheld/preset/supply
-	
+
 	headset = /obj/item/device/radio/headset/headset_cargo
 	bowman = /obj/item/device/radio/headset/headset_cargo/alt
 	double_headset = /obj/item/device/radio/headset/alt/double/cargo
@@ -233,11 +233,11 @@
 	id = /obj/item/card/id/silver
 	shoes = /obj/item/clothing/shoes/black
 	l_hand = /obj/item/coin/mining
-	
+
 	tab_pda = /obj/item/modular_computer/handheld/pda/supply/miner
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/supply/miner
 	tablet = /obj/item/modular_computer/handheld/preset/civilian
-	
+
 	headset = /obj/item/device/radio/headset/headset_mining
 	bowman = /obj/item/device/radio/headset/headset_mining/alt
 	double_headset = /obj/item/device/radio/headset/alt/double/mining
@@ -279,11 +279,11 @@
 
 	uniform = /obj/item/clothing/under/rank/janitor
 	shoes = /obj/item/clothing/shoes/black
-	
+
 	tab_pda = /obj/item/modular_computer/handheld/pda/civilian/janitor
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/civilian/janitor
 	tablet = /obj/item/modular_computer/handheld/preset/civilian/janitor
-	
+
 	headset = /obj/item/device/radio/headset/headset_service
 	bowman = /obj/item/device/radio/headset/headset_service/alt
 	double_headset = /obj/item/device/radio/headset/alt/double/service
@@ -316,11 +316,11 @@
 
 	uniform = /obj/item/clothing/under/suit_jacket/red
 	shoes = /obj/item/clothing/shoes/black
-	
+
 	tab_pda = /obj/item/modular_computer/handheld/pda/civilian/librarian
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/civilian/librarian
 	tablet = /obj/item/modular_computer/handheld/preset/civilian/librarian
-	
+
 	headset = /obj/item/device/radio/headset/headset_service
 	bowman = /obj/item/device/radio/headset/headset_service/alt
 	double_headset = /obj/item/device/radio/headset/alt/double/service
@@ -336,7 +336,7 @@
 
 	uniform = /obj/item/clothing/under/suit_jacket/red
 	shoes = /obj/item/clothing/shoes/black
-	
+
 	tab_pda = /obj/item/modular_computer/handheld/pda/civilian/librarian
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/civilian/librarian
 	tablet = /obj/item/modular_computer/handheld/preset/civilian/librarian
@@ -372,11 +372,11 @@
 	shoes = /obj/item/clothing/shoes/black
 	r_pocket = /obj/item/barcodescanner
 	l_hand = /obj/item/storage/bag/books
-	
+
 	tab_pda = /obj/item/modular_computer/handheld/pda/civilian/librarian
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/civilian/librarian
 	tablet = /obj/item/modular_computer/handheld/preset/civilian/librarian
-	
+
 	headset = /obj/item/device/radio/headset/headset_service
 	bowman = /obj/item/device/radio/headset/headset_service/alt
 	double_headset = /obj/item/device/radio/headset/alt/double/service
@@ -400,3 +400,50 @@
 	r_hand = /obj/item/storage/bag/circuits/basic
 	l_hand = /obj/item/modular_computer/laptop/preset
 	gloves = /obj/item/modular_computer/handheld/wristbound/preset/advanced/civilian
+
+/datum/job/merchant
+	title = "Merchant"
+	faction = "Station"
+	flag = MERCHANT
+	department_flag = SIMPLEDEPT(DEPARTMENT_CIVILIAN)
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "Head of Personnel"
+	minimal_player_age = 18
+	economic_modifier = 5
+	ideal_character_age = 30
+
+	create_record = TRUE
+	account_allowed = TRUE
+	public_account = FALSE
+	initial_funds_override = 2500
+
+	access = list(access_merchant)
+	minimal_access = list(access_merchant)
+
+	latejoin_at_spawnpoints = TRUE
+
+	outfit = /datum/outfit/job/merchant
+	blacklisted_species = list(SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
+
+/datum/job/merchant/announce(mob/living/carbon/human/H)
+	to_chat(H,"You are a merchant working on the NMF Persephone.")
+
+/datum/job/merchant/New()
+	..()
+	if(prob(config.merchant_chance))
+		spawn_positions = 1
+		total_positions = 1
+
+/datum/outfit/job/merchant
+	name = "Merchant"
+	jobtype = /datum/job/merchant
+
+	uniform =/obj/item/clothing/under/suit_jacket/charcoal
+	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/that
+	id = /obj/item/card/id/merchant
+	tab_pda = /obj/item/modular_computer/handheld/pda/civilian/merchant
+	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/civilian
+	tablet = /obj/item/modular_computer/handheld/preset/civilian
+	r_pocket = /obj/item/device/price_scanner
