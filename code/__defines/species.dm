@@ -21,8 +21,8 @@
 
 #define SPECIES_IPC					"Baseline Frame"
 #define SPECIES_IPC_SHELL			"Shell Frame"
-#define SPECIES_IPC_G1				"Hephaestus G1 Industrial Frame"
-#define SPECIES_IPC_G2				"Hephaestus G2 Industrial Frame"
+#define SPECIES_IPC_G1				"TUM G1 Industrial Frame"
+#define SPECIES_IPC_G2				"TUM G2 Industrial Frame"
 #define SPECIES_IPC_XION			"Xion Industrial Frame"
 #define SPECIES_IPC_ZENGHU			"Rook Frame"
 #define SPECIES_IPC_BISHOP			"Bishop Frame"
