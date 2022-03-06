@@ -2,7 +2,7 @@
 
 /world
 	hub = "Exadv1.spacestation13"
-	name = "NMF Persephone"
+	name = "NMF Persephone-HRP"
 #ifdef HUB_ENABLED
 	hub_password = "kMZy3U5jJHSiBQjr"
 #else
