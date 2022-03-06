@@ -4384,9 +4384,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/snow/plating{
-	icon_state = "plating"
-	},
+/turf/simulated/floor/plating,
 /area/solar/auxstarboard)
 "aig" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -30613,12 +30611,9 @@
 /turf/simulated/floor/plating,
 /area/storage/tech)
 "bcX" = (
-/obj/effect/floor_decal/corner/blue{
-	dir = 5
-	},
-/obj/machinery/megavendor/vendor,
-/turf/simulated/floor/tiled,
-/area/bridge)
+/obj/machinery/computer/cryopod,
+/turf/simulated/wall/r_wall,
+/area/crew_quarters/sleep)
 "bcY" = (
 /turf/simulated/floor/plating,
 /area/maintenance/research_port)
@@ -43078,9 +43073,6 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/mob/living/simple_animal/cat/fluff/Runtime{
-	name = "Buffy"
-	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/cmo)
 "bzN" = (
@@ -44179,7 +44171,9 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/mob/living/simple_animal/cat/penny,
+/mob/living/simple_animal/cat/penny{
+	desc = "A pretty siamese but honestly, shes a bit mean!"
+	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/cmo)
 "bBU" = (
@@ -44300,6 +44294,7 @@
 	name = "Medbay Lobby";
 	req_access = list(5)
 	},
+/obj/item/nitrilebox,
 /turf/simulated/floor/tiled,
 /area/medical/reception)
 "bCe" = (
@@ -45889,16 +45884,16 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor{
+	dir = 4;
+	name = "hazard door east"
+	},
 /obj/machinery/door/window/eastright{
 	base_state = "left";
 	dir = 8;
 	icon_state = "left";
-	name = "Medical Reception";
-	req_access = list(5)
-	},
-/obj/machinery/door/firedoor{
-	dir = 4;
-	name = "hazard door east"
+	name = "Robotics Access";
+	req_access = list(65)
 	},
 /turf/simulated/floor/tiled{
 	icon_state = "darkmarble"
@@ -47085,10 +47080,6 @@
 "bHe" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/light_switch{
-	pixel_x = 24;
-	pixel_y = -8
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/wood,
 /area/crew_quarters/heads/hop)
@@ -48032,7 +48023,7 @@
 /area/medical/first_responder)
 "bIK" = (
 /mob/living/simple_animal/corgi/Ian{
-	name = "Rocky"
+	name = "Scoot"
 	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/heads/hop)
@@ -53077,13 +53068,6 @@
 "bRG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
 /obj/machinery/door/airlock/command{
 	id_tag = "hopdoor";
 	name = "Head of Personnel";
@@ -53321,9 +53305,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/central_three)
 "bSg" = (
-/obj/structure/sign/securearea{
-	pixel_y = 32
-	},
 /obj/machinery/door/firedoor{
 	dir = 8;
 	name = "hazard door west"
@@ -55409,7 +55390,8 @@
 	},
 /mob/living/simple_animal/corgi/fox/Chauncey{
 	gender = "female";
-	name = "Sakura"
+	name = "Sakura";
+	desc = "A lovable fox."
 	},
 /turf/simulated/floor/wood,
 /area/quartermaster/qm)
@@ -57001,6 +56983,7 @@
 /area/medical/icu)
 "bYW" = (
 /obj/structure/table/glass,
+/obj/item/nitrilebox,
 /turf/simulated/floor/tiled/white,
 /area/medical/icu)
 "bYX" = (
@@ -58832,6 +58815,7 @@
 /obj/item/clothing/glasses/science,
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/dropper,
+/obj/item/nitrilebox,
 /turf/simulated/floor/tiled,
 /area/medical/pharmacy)
 "ccu" = (
@@ -60509,6 +60493,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/obj/item/nitrilebox,
 /turf/simulated/floor/tiled,
 /area/medical/main_storage)
 "ceS" = (
@@ -78991,12 +78976,11 @@
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology)
 "cOc" = (
-/obj/structure/sign/securearea{
-	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
-	name = "KEEP CLEAR: DOCKING AREA"
+/obj/machinery/light_switch{
+	pixel_y = -25
 	},
-/turf/snow/gravsnow,
-/area/mine/explored)
+/turf/simulated/floor/wood,
+/area/crew_quarters/heads/hop)
 "cOd" = (
 /obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
@@ -82041,6 +82025,25 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/medical/medbay2)
+"kvn" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light_switch{
+	pixel_y = -25
+	},
+/turf/simulated/floor/tiled{
+	icon_state = "white"
+	},
+/area/security/forensics_office)
 "kHW" = (
 /turf/simulated/wall,
 /area/maintenance/substation/engineering)
@@ -110835,7 +110838,7 @@ bIK
 bML
 bMI
 bML
-bML
+cOc
 aPC
 bSg
 bTI
@@ -111071,7 +111074,7 @@ aVi
 aWN
 baf
 aoq
-bcX
+aZa
 beM
 aty
 biG
@@ -114891,7 +114894,7 @@ alZ
 amI
 aIa
 anU
-aoR
+kvn
 anN
 anN
 anN
@@ -114910,7 +114913,7 @@ axm
 aAe
 axm
 axm
-axm
+bcX
 aCz
 aEB
 axm
@@ -117052,7 +117055,7 @@ cQo
 cew
 cew
 cew
-cOc
+cdQ
 cOp
 cQn
 cQB

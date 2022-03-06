@@ -723,6 +723,12 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"jH" = (
+/obj/machinery/telecomms/bus/preset_one,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
+/area/tcommsat/chamber)
 "jL" = (
 /obj/machinery/porta_turret/xray,
 /obj/machinery/light/small{
@@ -796,6 +802,12 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"pr" = (
+/obj/machinery/telecomms/server/presets/service,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
+/area/tcommsat/chamber)
 "qu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 9
@@ -927,6 +939,12 @@
 	icon_state = "dark"
 	},
 /area/tcommsat/entrance)
+"AP" = (
+/obj/machinery/telecomms/processor/preset_one,
+/turf/simulated/floor/fixed{
+	icon_state = "dark"
+	},
+/area/tcommsat/chamber)
 "AS" = (
 /obj/structure/grille,
 /obj/structure/window/phoronreinforced{
@@ -33455,7 +33473,7 @@ ad
 af
 Id
 Id
-Id
+pr
 aB
 Id
 aP
@@ -34488,7 +34506,7 @@ aD
 aJ
 ai
 aW
-aE
+AP
 af
 ad
 ad
@@ -34745,7 +34763,7 @@ aE
 aK
 ai
 aX
-aD
+jH
 af
 ad
 ad
