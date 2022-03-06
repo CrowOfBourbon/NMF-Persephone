@@ -1,7 +1,7 @@
 #define HUB_ENABLED
 
 /world
-	hub = "NT Hades-NMF Persephone"
+	hub = "Exadv1.spacestation13"
 	name = "NMF Persephone"
 #ifdef HUB_ENABLED
 	hub_password = "kMZy3U5jJHSiBQjr"
