@@ -445,20 +445,15 @@
 /turf/simulated/wall/r_wall,
 /area/tcommsat/entrance)
 "bf" = (
-/obj/structure/cable/blue{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/blue{
-	d1 = 2;
+	d1 = 1;
 	d2 = 4;
-	icon_state = "2-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
@@ -512,11 +507,27 @@
 /area/tcommsat/entrance)
 "bm" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "bn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
@@ -644,6 +655,80 @@
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"bA" = (
+/obj/machinery/power/apc{
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable/cyan{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
+"bC" = (
+/obj/effect/decal/cleanable/cobweb2,
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/item/modular_computer/console/preset/security,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"cL" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "AI Upload Access";
+	req_access = list(16)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_server_room)
+"cQ" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/porta_turret{
+	dir = 8
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"cW" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "AI Upload Access";
+	req_access = list(16)
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_server_room)
+"dj" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/fixed,
+/area/tcommsat/entrance)
 "dp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 4
@@ -682,6 +767,51 @@
 /obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/tcommsat/computer)
+"dH" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_cyborg_station)
+"dI" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"ew" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled{
+	icon_state = "dark"
+	},
+/area/bridge/ailobby)
+"eC" = (
+/obj/structure/table/standard,
+/obj/item/aiModule/freeform,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/item/aiModule/protectStation,
+/obj/item/aiModule/nanotrasen,
+/obj/item/aiModule/reset,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"eZ" = (
+/obj/machinery/computer/message_monitor,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/bluegrid,
+/area/turret_protected/ai_server_room)
 "fj" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -689,6 +819,37 @@
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"fm" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	icon_state = "dark"
+	},
+/area/bridge/ailobby)
+"fB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
 "fI" = (
 /obj/machinery/atmospherics/unary/freezer{
 	icon_state = "freezer_1";
@@ -699,6 +860,62 @@
 	icon_state = "dark"
 	},
 /area/tcommsat/entrance)
+"gh" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/flasher{
+	id = "AI";
+	pixel_y = 24
+	},
+/obj/machinery/porta_turret,
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"gn" = (
+/turf/simulated/floor/fixed,
+/area/bridge/ailobby)
+"gO" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/machinery/computer/aiupload,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"he" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
+"hl" = (
+/turf/simulated/wall,
+/area/turret_protected/ai)
+"hX" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
 "ia" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -717,12 +934,59 @@
 /obj/structure/window/phoronreinforced,
 /turf/simulated/floor/plating,
 /area/tcommsat/computer)
+"iy" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled{
+	icon_state = "dark"
+	},
+/area/bridge/ailobby)
+"iN" = (
+/obj/machinery/ai_status_display{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled{
+	icon_state = "dark"
+	},
+/area/bridge/ailobby)
+"iU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
 "iV" = (
 /obj/structure/table/standard,
+/obj/machinery/camera/network/command{
+	c_tag = "AI - Upload Foyer";
+	dir = 1
+	},
 /turf/simulated/floor/fixed{
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"jb" = (
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_server_room)
 "jH" = (
 /obj/machinery/telecomms/bus/preset_one,
 /turf/simulated/floor/fixed{
@@ -739,6 +1003,19 @@
 	icon_state = "dark"
 	},
 /area/tcommsat/entrance)
+"jQ" = (
+/obj/machinery/porta_turret,
+/obj/item/device/radio/intercom/locked{
+	frequency = 1343;
+	locked_frequency = 1343;
+	name = "Private AI Channel";
+	pixel_x = -5;
+	pixel_y = 22
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
 "jT" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	frequency = 1212;
@@ -755,6 +1032,24 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"kn" = (
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"kt" = (
+/obj/machinery/camera/network/command{
+	c_tag = "AI - Upload Foyer";
+	dir = 1
+	},
+/turf/simulated/floor/greengrid/nitrogen,
+/area/tcommsat/chamber)
 "kH" = (
 /obj/machinery/alarm{
 	pixel_y = 25
@@ -766,6 +1061,80 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"lz" = (
+/obj/machinery/power/port_gen/pacman/mrs,
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"lL" = (
+/obj/structure/table/standard,
+/obj/item/aiModule/asimov,
+/obj/item/aiModule/freeformcore,
+/obj/machinery/door/window{
+	base_state = "right";
+	dir = 4;
+	icon_state = "right";
+	name = "Core Modules";
+	req_access = list(20)
+	},
+/obj/structure/window/reinforced,
+/obj/item/aiModule/corp,
+/obj/item/aiModule/paladin,
+/obj/item/aiModule/robocop,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"lM" = (
+/turf/simulated/floor/tiled{
+	icon_state = "dark"
+	},
+/area/bridge/ailobby)
+"lS" = (
+/obj/machinery/recharge_station,
+/turf/simulated/floor/bluegrid,
+/area/turret_protected/ai_cyborg_station)
+"lY" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"mu" = (
+/obj/machinery/ai_status_display{
+	pixel_y = -32
+	},
+/obj/machinery/camera/network/command{
+	c_tag = "AI - Upload Foyer";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"nf" = (
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"ng" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"ni" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_server_room)
 "nI" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -789,6 +1158,66 @@
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"nY" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_server_room)
+"og" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
+"oo" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/power/sensor{
+	name = "Powernet Sensor - AI Subgrid";
+	name_tag = "AI Subgrid"
+	},
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"ox" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
 "oV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -808,6 +1237,25 @@
 	icon_state = "dark"
 	},
 /area/tcommsat/chamber)
+"px" = (
+/obj/machinery/light/small{
+	dir = 4;
+	name = "adjusted light fixture";
+	pixel_y = 10
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"pP" = (
+/obj/machinery/camera/network/command{
+	c_tag = "AI - Messaging Server";
+	dir = 1
+	},
+/obj/machinery/blackbox_recorder,
+/turf/simulated/floor/bluegrid,
+/area/turret_protected/ai_server_room)
 "qu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 9
@@ -828,8 +1276,34 @@
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
 /turf/simulated/floor/plating,
 /area/tcommsat/entrance)
+"qR" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"ra" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
 "rg" = (
 /obj/structure/grille,
 /obj/structure/window/phoronreinforced{
@@ -843,6 +1317,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/tcommsat/entrance)
+"rh" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/obj/item/modular_computer/console/preset/medical,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
 "rN" = (
 /obj/machinery/light{
 	dir = 4;
@@ -854,6 +1337,26 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"rU" = (
+/obj/machinery/camera/network/command{
+	c_tag = "AI - Upload Foyer";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"rZ" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
 "sj" = (
 /obj/structure/grille,
 /obj/structure/window/phoronreinforced{
@@ -864,18 +1367,83 @@
 	},
 /turf/simulated/floor/plating,
 /area/tcommsat/computer)
+"sl" = (
+/obj/structure/plasticflaps/airtight,
+/obj/machinery/door/airlock/highsecurity{
+	name = "AI Upload";
+	req_access = list(16)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/turret_protected/ai_upload)
+"sr" = (
+/obj/machinery/anti_bluespace,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
 "sF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
 /turf/simulated/wall/r_wall,
 /area/tcommsat/entrance)
-"tz" = (
+"to" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
+	dir = 4
 	},
 /turf/simulated/floor/fixed,
+/area/bridge/ailobby)
+"tz" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"tG" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/status_display{
+	layer = 4;
+	pixel_x = 32
+	},
+/obj/machinery/porta_turret{
+	dir = 8
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
+"tH" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "AI Upload";
+	req_access = list(16)
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/bridge/ailobby)
 "tI" = (
 /obj/machinery/airlock_sensor/airlock_interior{
 	frequency = 1212;
@@ -889,6 +1457,14 @@
 	},
 /turf/simulated/floor/greengrid/nitrogen,
 /area/tcommsat/chamber)
+"ui" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
 "ul" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 4
@@ -900,6 +1476,23 @@
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"uo" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"uH" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
 "uU" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	frequency = 1212;
@@ -913,6 +1506,48 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"vl" = (
+/obj/machinery/ai_slipper,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"vm" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"vo" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"vt" = (
+/obj/effect/landmark{
+	name = "lightsout"
+	},
+/turf/simulated/wall,
+/area/turret_protected/ai)
 "vD" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 8
@@ -922,6 +1557,144 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"wA" = (
+/obj/structure/table/standard,
+/obj/item/aiModule/oxygen,
+/obj/item/aiModule/oneHuman,
+/obj/machinery/door/window{
+	dir = 8;
+	name = "High-Risk Modules";
+	req_access = list(20)
+	},
+/obj/item/aiModule/purge,
+/obj/structure/window/reinforced,
+/obj/item/aiModule/antimov,
+/obj/item/aiModule/teleporterOffline,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"wE" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
+"xy" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
+"xN" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"yi" = (
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"yr" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/vault/bolted{
+	name = "AI core";
+	req_access = list(16)
+	},
+/obj/machinery/door/blast/regular{
+	id = "AICore";
+	name = "AI core maintenance hatch"
+	},
+/turf/simulated/floor/bluegrid,
+/area/turret_protected/ai_upload)
+"yF" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24
+	},
+/obj/structure/cable/cyan{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"yJ" = (
+/obj/machinery/hologram/holopad,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"zr" = (
+/obj/machinery/ai_status_display{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"zt" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/fixed,
+/area/bridge/ailobby)
+"zK" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"zM" = (
+/obj/structure/closet/crate{
+	name = "Camera Assembly Crate"
+	},
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_cyborg_station)
 "zQ" = (
 /obj/structure/table/standard,
 /turf/simulated/floor/fixed{
@@ -939,6 +1712,12 @@
 	icon_state = "dark"
 	},
 /area/tcommsat/entrance)
+"AA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
 "AP" = (
 /obj/machinery/telecomms/processor/preset_one,
 /turf/simulated/floor/fixed{
@@ -953,8 +1732,22 @@
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
+/obj/structure/window/phoronreinforced,
 /turf/simulated/floor/plating,
 /area/tcommsat/entrance)
+"Bi" = (
+/turf/simulated/wall/r_wall,
+/area/turret_protected/ai_upload)
+"Bk" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
 "Bq" = (
 /obj/machinery/turretid{
 	ailock = 1;
@@ -962,6 +1755,44 @@
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"Bs" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"BJ" = (
+/turf/simulated/wall/r_wall,
+/area/turret_protected/ai_server_room)
+"BW" = (
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_server_room)
+"Ce" = (
+/obj/structure/window/full/phoron,
+/turf/simulated/floor/tiled{
+	icon_state = "dark"
+	},
+/area/bridge/ailobby)
+"Ck" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	icon_state = "dark"
+	},
+/area/bridge/ailobby)
 "Cq" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -969,6 +1800,98 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/wall/r_wall,
+/area/tcommsat/entrance)
+"Cw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"Cz" = (
+/obj/machinery/message_server,
+/turf/simulated/floor/bluegrid,
+/area/turret_protected/ai_server_room)
+"CM" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"CN" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "AI Upload";
+	req_access = list(16)
+	},
+/turf/simulated/floor/tiled{
+	icon_state = "dark"
+	},
+/area/bridge/ailobby)
+"Dc" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"Df" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"Dm" = (
+/obj/machinery/door/window{
+	name = "AI Core Door";
+	req_access = list(20)
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/flasher{
+	id = "AI";
+	pixel_x = 22;
+	pixel_y = 24
+	},
+/obj/machinery/turretid/stun{
+	check_synth = 1;
+	name = "AI Chamber turret control";
+	pixel_x = 36;
+	pixel_y = 24
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"Dp" = (
+/obj/machinery/porta_turret,
+/obj/machinery/alarm/cold{
+	pixel_y = 22
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
+"Dr" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/camera/network/command{
+	c_tag = "AI - Upload Foyer";
+	dir = 1
+	},
+/turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "Dy" = (
 /obj/structure/table/standard,
@@ -983,6 +1906,24 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"DE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"Ee" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
 "Et" = (
 /obj/structure/table/standard,
 /obj/random/pizzabox,
@@ -990,17 +1931,261 @@
 	icon_state = "bcarpet"
 	},
 /area/tcommsat/computer)
+"ES" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"EY" = (
+/turf/simulated/floor/tiled{
+	dir = 4;
+	icon_state = "rampbot"
+	},
+/area/tcommsat/entrance)
+"Gm" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/machinery/porta_turret{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"Gt" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	dir = 4;
+	icon_state = "rampbot"
+	},
+/area/tcommsat/entrance)
+"GU" = (
+/obj/item/modular_computer/console/preset/engineering,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"Hc" = (
+/turf/simulated/wall/r_wall,
+/area/space)
+"Ho" = (
+/obj/item/device/radio/intercom/locked{
+	frequency = 1343;
+	locked_frequency = 1343;
+	name = "Private AI Channel";
+	pixel_x = -12;
+	pixel_y = 20
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"Hu" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"Hw" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"HN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/flasher{
+	id = "AI";
+	pixel_x = -22;
+	pixel_y = 24
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
+"HT" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_server_room)
+"HU" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"Ib" = (
+/obj/item/modular_computer/console/preset/research,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
 "Id" = (
 /turf/simulated/floor/fixed{
 	icon_state = "dark"
 	},
 /area/tcommsat/chamber)
+"Ii" = (
+/obj/item/device/radio/intercom{
+	dir = 4;
+	name = "Station Intercom (General)";
+	pixel_x = 27
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"Jp" = (
+/turf/simulated/wall/r_wall,
+/area/turret_protected/ai)
+"Jt" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/cable/cyan{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/super/critical{
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"Jv" = (
+/obj/item/modular_computer/console/preset/research,
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_cyborg_station)
+"Jw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/wall/r_wall,
+/area/turret_protected/ai_upload)
+"JU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"KL" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
 "Ln" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/fixed{
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"LG" = (
+/obj/item/device/radio/intercom{
+	frequency = 1343;
+	name = "Private Channel";
+	pixel_x = 28;
+	pixel_y = 5
+	},
+/obj/item/device/radio/intercom{
+	listening = 0;
+	name = "Custom Channel";
+	pixel_x = -27;
+	pixel_y = 4
+	},
+/obj/effect/landmark/start{
+	name = "AI"
+	},
+/obj/item/device/radio/intercom{
+	broadcasting = 1;
+	name = "Common Channel";
+	pixel_y = 25
+	},
+/obj/machinery/newscaster/security_unit{
+	pixel_x = 32;
+	pixel_y = 32
+	},
+/obj/machinery/requests_console{
+	department = "AI";
+	departmentType = 5;
+	pixel_x = -32;
+	pixel_y = 32
+	},
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/button/remote/blast_door{
+	desc = "A remote control-switch for the AI core maintenance door.";
+	id = "AICore";
+	name = "AI Maintenance Hatch";
+	pixel_x = 17;
+	pixel_y = 25;
+	req_access = list(20)
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
 "LP" = (
 /obj/machinery/embedded_controller/radio/airlock/advanced_airlock_controller{
 	frequency = 1212;
@@ -1028,6 +2213,33 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"LT" = (
+/turf/simulated/wall/r_wall,
+/area/bridge/ailobby)
+"Mi" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"Mo" = (
+/obj/machinery/telecomms/relay/preset/station,
+/turf/simulated/floor/bluegrid,
+/area/turret_protected/ai_server_room)
+"Mp" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/machinery/porta_turret{
+	dir = 4
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
 "Mq" = (
 /obj/structure/cable/blue{
 	d1 = 1;
@@ -1045,6 +2257,16 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"Mw" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/fixed,
+/area/bridge/ailobby)
 "ME" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
@@ -1055,11 +2277,94 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/cable/blue{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"MR" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"MX" = (
+/obj/machinery/door/airlock/vault/bolted{
+	name = "AI core";
+	req_access = list(16)
+	},
+/obj/machinery/door/blast/regular{
+	id = "AICore";
+	name = "AI core maintenance hatch"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"NO" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"Oa" = (
+/obj/structure/plasticflaps/airtight,
+/obj/machinery/door/airlock/highsecurity{
+	name = "AI Upload";
+	req_access = list(16)
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/turret_protected/ai_upload)
+"Om" = (
+/obj/structure/lattice,
+/obj/machinery/power/smes/buildable{
+	charge = 5e+006;
+	input_attempt = 1;
+	input_level = 200000;
+	output_attempt = 1;
+	output_level = 200000
+	},
+/obj/structure/cable/cyan{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"OD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"OW" = (
+/obj/structure/window/full/phoron,
+/turf/simulated/floor/plating,
+/area/bridge/ailobby)
 "Pi" = (
-/turf/simulated/floor/fixed,
-/area/space)
+/turf/simulated/wall/r_wall,
+/area/turret_protected/ai_cyborg_station)
 "Pj" = (
 /obj/structure/grille,
 /obj/structure/window/phoronreinforced{
@@ -1071,12 +2376,54 @@
 /obj/structure/window/phoronreinforced,
 /turf/simulated/floor/plating,
 /area/tcommsat/computer)
+"Pl" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/fixed,
+/area/bridge/ailobby)
+"PI" = (
+/obj/item/stack/material/phoron/full,
+/obj/item/stack/material/phoron/full,
+/obj/structure/closet/crate,
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"PP" = (
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
 "PR" = (
 /obj/machinery/porta_turret/xray,
 /turf/simulated/floor/fixed{
 	icon_state = "dark"
 	},
 /area/tcommsat/entrance)
+"Qk" = (
+/obj/machinery/ai_slipper,
+/obj/machinery/camera/all/command{
+	c_tag = "AI Chamber";
+	dir = 1
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"QH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
 "QM" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -1084,8 +2431,41 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"Rv" = (
+/obj/structure/lattice,
+/turf/simulated/open/airless,
+/area/space)
+"Rz" = (
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -22
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"RE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/anti_bluespace,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"RP" = (
+/obj/machinery/alarm/cold{
+	pixel_y = 22
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
 "So" = (
 /obj/machinery/power/apc{
 	dir = 4;
@@ -1097,6 +2477,57 @@
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"Sx" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/item/modular_computer/console/preset/civilian,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"SR" = (
+/obj/machinery/camera/network/command{
+	c_tag = "AI - Upload Foyer";
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	icon_state = "dark"
+	},
+/area/bridge/ailobby)
+"Th" = (
+/obj/item/device/radio/intercom/locked{
+	frequency = 1343;
+	locked_frequency = 1343;
+	name = "Private AI Channel";
+	pixel_y = -27
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
+"TH" = (
+/obj/machinery/door/airlock/vault/bolted{
+	name = "AI core";
+	req_access = list(16)
+	},
+/obj/machinery/door/blast/regular{
+	id = "AICore";
+	name = "AI core maintenance hatch"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"TO" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_server_room)
 "Ub" = (
 /obj/machinery/airlock_sensor{
 	frequency = 1212;
@@ -1115,9 +2546,101 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"Uh" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/turf/simulated/floor/fixed,
+/area/bridge/ailobby)
+"Uy" = (
+/turf/simulated/wall/r_wall,
+/area/turret_protected/ai_upload_foyer)
+"UY" = (
+/obj/machinery/hologram/holopad,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
+"Va" = (
+/obj/machinery/camera/network/command{
+	c_tag = "AI - Upload Foyer";
+	dir = 1
+	},
+/turf/simulated/floor/fixed,
+/area/bridge/ailobby)
+"Vm" = (
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
 "Vy" = (
 /turf/simulated/floor/tiled/old,
 /area/space)
+"VC" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
+"VX" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/vault/bolted{
+	name = "AI core";
+	req_access = list(16)
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
+"Wu" = (
+/obj/machinery/light,
+/turf/simulated/floor/tiled{
+	icon_state = "dark"
+	},
+/area/bridge/ailobby)
+"WA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
 "WL" = (
 /obj/structure/cable/blue{
 	d1 = 1;
@@ -1142,10 +2665,45 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"WP" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/vault/bolted{
+	name = "AI core";
+	req_access = list(16)
+	},
+/turf/simulated/floor/bluegrid{
+	name = "cooled mainframe floor";
+	temperature = 278
+	},
+/area/turret_protected/ai)
 "Xh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"XK" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/airlock/highsecurity{
+	name = "AI Upload";
+	req_access = list(16)
+	},
+/turf/simulated/floor/tiled{
+	icon_state = "dark"
+	},
+/area/bridge/ailobby)
 "XQ" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -1155,6 +2713,43 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"XT" = (
+/obj/item/device/radio/intercom{
+	dir = 0;
+	name = "Station Intercom (General)";
+	pixel_x = -27
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_cyborg_station)
+"XW" = (
+/obj/machinery/atmospherics/mains_pipe/manifold4w/hidden,
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
+"Yb" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/obj/machinery/camera/network/command{
+	c_tag = "AI Upload";
+	dir = 4
+	},
+/obj/machinery/ai_status_display{
+	pixel_x = -32
+	},
+/obj/machinery/porta_turret{
+	dir = 4
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuit"
+	},
+/area/turret_protected/ai_upload)
+"Ye" = (
+/obj/item/modular_computer/console/preset/command,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai)
 "Yy" = (
 /obj/machinery/ntnet_relay,
 /obj/machinery/light{
@@ -1171,10 +2766,23 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/cable/blue{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "YO" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/blue,
+/obj/machinery/power/apc/super{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
 "Zb" = (
@@ -1186,17 +2794,16 @@
 	},
 /area/tcommsat/chamber)
 "Zc" = (
-/obj/structure/cable/blue{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/hologram/holopad,
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"Zf" = (
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_cyborg_station)
 "Zq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 4
@@ -1206,6 +2813,26 @@
 	temperature = 278
 	},
 /area/tcommsat/computer)
+"Zr" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/computer/borgupload,
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
+"ZT" = (
+/obj/machinery/turretid/stun{
+	control_area = "\improper AI Upload Chamber";
+	name = "AI Upload turret control";
+	pixel_x = 6;
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled,
+/area/turret_protected/ai_upload_foyer)
 
 (1,1,1) = {"
 Vy
@@ -23691,50 +25318,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -23948,50 +25575,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -24205,50 +25832,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -24462,50 +26089,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Pi
+Pi
+Pi
+Pi
+Pi
+Pi
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -24719,50 +26346,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Pi
+lS
+dH
+XT
+dH
+Pi
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -24976,50 +26603,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Pi
+Jv
+Zf
+Zf
+zM
+Pi
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -25233,50 +26860,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Pi
+lS
+Zf
+Zf
+Zf
+Pi
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -25490,50 +27117,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Hc
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Rv
+Hc
+Hc
+Hc
+Hc
+BJ
+BJ
+cW
+BJ
+BJ
+Pi
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -25747,50 +27374,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Hc
+Rv
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+BJ
+eZ
+TO
+Cz
+BJ
+Pi
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -26004,50 +27631,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Jp
+Jp
+Jp
+Jp
+Jp
+Jp
+Jp
+Ye
+Jp
+Jp
+Jp
+Bi
+Bi
+Bi
+Bi
+Bi
+Bi
+BJ
+Mo
+ni
+pP
+BJ
+Pi
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -26261,50 +27888,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Jp
+PI
+vm
+Jp
+Ib
+Mp
+sr
+nf
+nf
+Mp
+Sx
+Bi
+lL
+Zr
+gO
+Yb
+Bi
+nY
+HT
+jb
+BW
+BJ
+Pi
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -26518,50 +28145,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Jp
+lz
+kn
+WP
+HU
+qR
+qR
+qR
+UY
+Bs
+Cw
+TH
+ui
+wE
+og
+bA
+Bi
+BJ
+cL
+BJ
+BJ
+BJ
+LT
+LT
+LT
+LT
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -26775,50 +28402,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Jp
+Vm
+NO
+Jp
+RP
+Vm
+hl
+hl
+Jt
+NO
+CM
+Bi
+jQ
+Bk
+ra
+yi
+sl
+hX
+fB
+PP
+Rz
+mu
+LT
+lM
+iN
+LT
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -27032,50 +28659,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Jp
+Vm
+Om
+Jp
+gh
+Qk
+vt
+LG
+Dm
+vl
+oo
+yr
+HN
+WA
+yJ
+uo
+Jw
+yF
+XW
+QH
+ng
+OD
+tH
+iy
+Wu
+LT
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -27289,50 +28916,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Jp
+Vm
+rZ
+Jp
+Vm
+Vm
+hl
+hl
+KL
+Vm
+iU
+Bi
+Dp
+yi
+Df
+ES
+Oa
+Hw
+DE
+lY
+zK
+zr
+LT
+Ck
+iN
+LT
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -27546,50 +29173,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Jp
+Vm
+Hu
+VX
+vo
+uH
+uH
+uH
+uH
+uH
+dI
+MX
+he
+xy
+VC
+Th
+Bi
+ZT
+ox
+MR
+PP
+PP
+LT
+Ck
+lM
+LT
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -27803,50 +29430,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Jp
+Vm
+Vm
+Jp
+bC
+cQ
+RE
+Ee
+Ee
+Gm
+rh
+Bi
+wA
+yi
+eC
+tG
+Bi
+xN
+Mi
+AA
+PP
+PP
+Ce
+fm
+ew
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -28060,50 +29687,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Jp
+Vm
+px
+Jp
+Jp
+Jp
+Jp
+GU
+Jp
+Jp
+Jp
+Bi
+Bi
+Bi
+Bi
+Bi
+Bi
+Uy
+PP
+JU
+PP
+PP
+Ce
+Ck
+lM
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -28317,50 +29944,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Jp
+Jp
+Jp
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Rv
+Rv
+Rv
+Rv
+Rv
+Hc
+aa
+Rv
+Uy
+Ho
+Dc
+PP
+PP
+Ce
+Ck
+lM
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -28574,50 +30201,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Hc
+Rv
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Uy
+PP
+PP
+Ii
+rU
+Ce
+Ck
+lM
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -28831,50 +30458,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Uy
+Uy
+Uy
+Uy
+Uy
+Ce
+Ck
+SR
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -29088,50 +30715,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Ce
+Ck
+lM
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -29345,50 +30972,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Ce
+Ck
+Wu
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -29602,50 +31229,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Ce
+Ck
+lM
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -29859,50 +31486,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Ce
+fm
+lM
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -30116,50 +31743,50 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Ce
+Ck
+lM
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -30373,15 +32000,6 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
 aa
 aa
 aa
@@ -30399,24 +32017,33 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Ce
+Ck
+lM
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -30630,15 +32257,6 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
 aa
 aa
 aa
@@ -30656,24 +32274,33 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Ce
+Ck
+lM
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -30887,8 +32514,6 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
 aa
 aa
 aa
@@ -30913,24 +32538,26 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+Ce
+Ck
+lM
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -31144,8 +32771,6 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
 aa
 aa
 aa
@@ -31170,24 +32795,26 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+Ce
+Ck
+Wu
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -31401,8 +33028,6 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
 aa
 aa
 aa
@@ -31432,6 +33057,10 @@ aa
 aa
 aa
 aa
+Ce
+Ck
+ew
+Ce
 aa
 aa
 aa
@@ -31439,12 +33068,10 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -31658,8 +33285,6 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
 aa
 aa
 aa
@@ -31689,6 +33314,10 @@ aa
 aa
 aa
 aa
+Ce
+Ck
+lM
+Ce
 aa
 aa
 aa
@@ -31696,12 +33325,10 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -31915,19 +33542,6 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-ac
-aa
 aa
 aa
 aa
@@ -31952,13 +33566,26 @@ aa
 aa
 aa
 aa
+ac
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+Ce
+Ck
+lM
+Ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -32172,8 +33799,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -32201,6 +33828,10 @@ aa
 aa
 aa
 aa
+Ce
+Ck
+SR
+Ce
 aa
 aa
 aa
@@ -32211,11 +33842,7 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
 Vy
 Vy
 Vy
@@ -32429,8 +34056,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -32458,6 +34085,10 @@ bg
 ac
 aa
 aa
+Ce
+Ck
+lM
+Ce
 aa
 aa
 aa
@@ -32468,11 +34099,7 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
 Vy
 Vy
 Vy
@@ -32686,8 +34313,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -32708,13 +34335,17 @@ af
 af
 af
 af
-af
+kt
 ad
 ad
 aa
 aa
 aa
 aa
+Ce
+fm
+lM
+Ce
 aa
 aa
 aa
@@ -32725,11 +34356,7 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
 Vy
 Vy
 Vy
@@ -32943,8 +34570,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -32972,6 +34599,10 @@ aa
 aa
 aa
 aa
+Ce
+Ck
+lM
+Ce
 aa
 aa
 aa
@@ -32982,11 +34613,7 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
 Vy
 Vy
 Vy
@@ -33200,8 +34827,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -33226,6 +34853,13 @@ af
 ad
 ad
 aa
+OW
+OW
+OW
+OW
+XK
+CN
+OW
 aa
 aa
 aa
@@ -33237,13 +34871,6 @@ aa
 aa
 aa
 aa
-aa
-aa
-Vy
-Vy
-Vy
-Vy
-Vy
 Vy
 Vy
 Vy
@@ -33457,8 +35084,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -33483,6 +35110,13 @@ af
 ad
 ad
 aa
+OW
+gn
+gn
+gn
+to
+gn
+OW
 aa
 aa
 aa
@@ -33494,13 +35128,6 @@ aa
 aa
 aa
 aa
-aa
-aa
-Vy
-Vy
-Vy
-Vy
-Vy
 Vy
 Vy
 Vy
@@ -33714,8 +35341,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -33740,6 +35367,13 @@ bc
 ad
 ad
 aa
+OW
+gn
+Uh
+Mw
+Pl
+gn
+OW
 aa
 aa
 aa
@@ -33751,13 +35385,6 @@ aa
 aa
 aa
 aa
-aa
-aa
-Vy
-Vy
-Vy
-Vy
-Vy
 Vy
 Vy
 Vy
@@ -33971,8 +35598,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -33997,6 +35624,13 @@ af
 ad
 ad
 aa
+OW
+gn
+to
+gn
+gn
+gn
+OW
 aa
 aa
 aa
@@ -34008,13 +35642,6 @@ aa
 aa
 aa
 aa
-aa
-aa
-Vy
-Vy
-Vy
-Vy
-Vy
 Vy
 Vy
 Vy
@@ -34228,8 +35855,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -34254,6 +35881,13 @@ af
 ad
 ad
 aa
+OW
+gn
+to
+zt
+gn
+Va
+OW
 aa
 aa
 aa
@@ -34265,13 +35899,6 @@ aa
 aa
 aa
 aa
-aa
-aa
-Vy
-Vy
-Vy
-Vy
-Vy
 Vy
 Vy
 Vy
@@ -34485,8 +36112,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -34511,6 +36138,13 @@ af
 ad
 ad
 aa
+OW
+gn
+to
+gn
+gn
+gn
+OW
 aa
 aa
 aa
@@ -34522,13 +36156,6 @@ aa
 aa
 aa
 aa
-aa
-aa
-Vy
-Vy
-Vy
-Vy
-Vy
 Vy
 Vy
 Vy
@@ -34742,8 +36369,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -34768,6 +36395,13 @@ af
 ad
 ad
 aa
+OW
+gn
+to
+gn
+gn
+gn
+OW
 aa
 aa
 aa
@@ -34779,13 +36413,6 @@ aa
 aa
 aa
 aa
-aa
-aa
-Vy
-Vy
-Vy
-Vy
-Vy
 Vy
 Vy
 Vy
@@ -34999,8 +36626,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -35021,13 +36648,13 @@ af
 aH
 af
 af
-af
+kt
 ad
 ad
 rg
 AS
-AS
-AS
+EY
+Gt
 qB
 be
 be
@@ -35038,11 +36665,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -35256,8 +36883,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -35284,8 +36911,8 @@ be
 bi
 bi
 bi
+dj
 bi
-bi
 be
 be
 be
@@ -35295,11 +36922,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -35513,8 +37140,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -35552,11 +37179,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -35770,8 +37397,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -35809,11 +37436,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -36027,8 +37654,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -36057,7 +37684,7 @@ ul
 az
 bn
 QM
-Xh
+Dr
 oV
 be
 aa
@@ -36066,11 +37693,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -36284,8 +37911,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -36323,11 +37950,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -36541,8 +38168,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -36580,11 +38207,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -36798,8 +38425,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -36837,11 +38464,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -37055,8 +38682,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -37094,11 +38721,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -37312,8 +38939,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -37351,11 +38978,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -37569,8 +39196,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -37608,11 +39235,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -37826,8 +39453,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -37865,11 +39492,11 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -38083,8 +39710,6 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
 aa
 aa
 aa
@@ -38114,7 +39739,6 @@ aa
 aa
 aa
 aa
-Pi
 aa
 aa
 aa
@@ -38122,11 +39746,14 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -38340,8 +39967,6 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
 aa
 aa
 aa
@@ -38379,11 +40004,13 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -38597,8 +40224,8 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
+aa
+aa
 aa
 aa
 aa
@@ -38854,16 +40481,16 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -39111,16 +40738,16 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -39368,16 +40995,6 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
 aa
 aa
 aa
@@ -39404,9 +41021,19 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
@@ -39625,16 +41252,6 @@ Vy
 Vy
 Vy
 Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
-Vy
 aa
 aa
 aa
@@ -39661,9 +41278,19 @@ aa
 aa
 aa
 aa
-Vy
-Vy
-Vy
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Vy
 Vy
 Vy
