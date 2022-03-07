@@ -1248,14 +1248,6 @@
 	temperature = 278
 	},
 /area/turret_protected/ai)
-"pP" = (
-/obj/machinery/camera/network/command{
-	c_tag = "AI - Messaging Server";
-	dir = 1
-	},
-/obj/machinery/blackbox_recorder,
-/turf/simulated/floor/bluegrid,
-/area/turret_protected/ai_server_room)
 "qu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 9
@@ -1809,10 +1801,6 @@
 	icon_state = "rcircuit_off"
 	},
 /area/turret_protected/ai)
-"Cz" = (
-/obj/machinery/message_server,
-/turf/simulated/floor/bluegrid,
-/area/turret_protected/ai_server_room)
 "CM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -2226,7 +2214,6 @@
 /turf/simulated/floor/tiled,
 /area/turret_protected/ai_upload_foyer)
 "Mo" = (
-/obj/machinery/telecomms/relay/preset/station,
 /turf/simulated/floor/bluegrid,
 /area/turret_protected/ai_server_room)
 "Mp" = (
@@ -27401,7 +27388,7 @@ Hc
 BJ
 eZ
 TO
-Cz
+Mo
 BJ
 Pi
 aa
@@ -27658,7 +27645,7 @@ Bi
 BJ
 Mo
 ni
-pP
+Mo
 BJ
 Pi
 aa
