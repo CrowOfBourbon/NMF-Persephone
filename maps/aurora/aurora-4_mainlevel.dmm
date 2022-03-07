@@ -39791,7 +39791,7 @@
 "bxM" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Citadel";
-	req_access = list(150)
+	req_access = list(19)
 	},
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -44448,9 +44448,8 @@
 /obj/machinery/camera/network/command{
 	c_tag = "Bridge West"
 	},
-/turf/simulated/floor/tiled{
-	icon_state = "darkmarble"
-	},
+/obj/machinery/blackbox_recorder,
+/turf/simulated/floor/bluegrid,
 /area/bridge/aibunker)
 "bGT" = (
 /obj/structure/bed/stool/chair/office/dark{
@@ -45307,9 +45306,8 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled{
-	icon_state = "darkmarble"
-	},
+/obj/machinery/message_server,
+/turf/simulated/floor/bluegrid,
 /area/bridge/aibunker)
 "bIu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -71439,9 +71437,8 @@
 	d2 = 2;
 	icon_state = "12-0"
 	},
-/turf/simulated/floor/tiled{
-	icon_state = "dark"
-	},
+/obj/machinery/telecomms/relay/preset/station,
+/turf/simulated/floor/bluegrid,
 /area/engineering)
 "cDF" = (
 /obj/structure/cable/green{
