@@ -48,8 +48,8 @@
 	announcer_channel = "Mercenary"
 
 /obj/item/device/orbital_dropper/icarus_drones
-	name = "icarus painter"
-	desc = "A device used to paint a target, which will then promptly orbitally drop the requested items. This one has been modified to call in Icarus Drones."
+	name = "styx painter"
+	desc = "A device used to paint a target, which will then promptly orbitally drop the requested items. This one has been modified to call in Styx Drones."
 
 	var/num_of_drones = 2
 	drop_amount = 1
@@ -58,7 +58,7 @@
 	emagged = TRUE // to let people drop it in the station
 
 	drop_message_emagged = "NanoTrasen combat drones coming your way! Happy hunting!"
-	announcer_name = "NDV Icarus"
+	announcer_name = "NDV Styx"
 
 	map = null
 

@@ -30,8 +30,8 @@
 
 	station_name = "NMF Persephone"
 	station_short = "Persephone"
-	dock_name = "NTSC Demeter"
-	dock_short = "Demeter"
+	dock_name = "city of Keep"
+	dock_short = "Keep"
 	boss_name = "Star Command"
 	boss_short = "StarCom"
 	company_name = "NanoTrasen"

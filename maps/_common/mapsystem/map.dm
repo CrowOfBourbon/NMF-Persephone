@@ -87,7 +87,7 @@
 	var/meteor_contact_message = "Contact with meteor wave imminent, all hands brace for impact."
 	var/meteor_end_message = "The station has cleared the meteor shower, please return to your stations."
 
-	var/ship_detected_end_message = "The NDV Icarus reports that it has downed an unknown vessel that was approaching your station. Prepare for debris impact - please evacuate the surface level if needed."
+	var/ship_detected_end_message = "The NDV Styx reports that it has downed an unknown vessel that was approaching your station. Prepare for debris impact - please evacuate the surface level if needed."
 	var/ship_meteor_contact_message = "Ship debris colliding now, all hands brace for impact."
 	var/ship_meteor_end_message = "The last of the ship debris has hit or passed by the station, it is now safe to commence repairs."
 
@@ -99,11 +99,11 @@
 	var/radiation_contact_message = "The station has entered the radiation belt. Please remain in a sheltered area until we have passed the radiation belt."
 	var/radiation_end_message = "The station has passed the radiation belt. Please report to medbay if you experience any unusual symptoms. Maintenance will lose all-access again shortly."
 
-	var/list/rogue_drone_detected_messages = list("A combat drone wing operating out of the NDV Icarus has failed to return from a sweep of this sector, if any are sighted approach with caution.",
-													"Contact has been lost with a combat drone wing operating out of the NDV Icarus. If any are sighted in the area, approach with caution.",
-													"Unidentified hackers have targetted a combat drone wing deployed from the NDV Icarus. If any are sighted in the area, approach with caution.")
-	var/rogue_drone_end_message = "Icarus drone control reports the malfunctioning wing has been recovered safely."
-	var/rogue_drone_destroyed_message = "Icarus drone control registers disappointment at the loss of the drones, but the survivors have been recovered."
+	var/list/rogue_drone_detected_messages = list("A combat drone wing operating out of the NDV Styx has failed to return from a sweep of this sector, if any are sighted approach with caution.",
+													"Contact has been lost with a combat drone wing operating out of the NDV Styx. If any are sighted in the area, approach with caution.",
+													"Unidentified hackers have targetted a combat drone wing deployed from the NDV Styx. If any are sighted in the area, approach with caution.")
+	var/rogue_drone_end_message = "Styx drone control reports the malfunctioning wing has been recovered safely."
+	var/rogue_drone_destroyed_message = "Styx drone control registers disappointment at the loss of the drones, but the survivors have been recovered."
 
 /datum/map/New()
 	if(!map_levels)
