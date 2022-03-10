@@ -26,8 +26,8 @@
 
 /datum/away_mission/proc/get_contact_report()
 	var/list/schar = sortList(characteristics) //Sort them alphabetically to avoid metaing based on the order
-	var/ruintext = "<center><img src = ntlogo.png><br><h2><br><b>Icarus Reading Report</h2></b></FONT size><HR></center>"
-	ruintext += "<b><font face='Courier New'>The NDV Icarus sensors have located an away site with the following possible characteristics:</font></b><br><ul>"
+	var/ruintext = "<center><img src = ntlogo.png><br><h2><br><b>Styx Reading Report</h2></b></FONT size><HR></center>"
+	ruintext += "<b><font face='Courier New'>The NDV Styx sensors have located an away site with the following possible characteristics:</font></b><br><ul>"
 
 	for(var/characteristic in schar)
 		if(prob(schar[characteristic]))
