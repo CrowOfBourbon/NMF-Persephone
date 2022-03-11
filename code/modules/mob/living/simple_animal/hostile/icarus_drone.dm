@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/icarus_drone
 	name = "combat drone"
-	desc = "An automated combat drone armed with state of the art weaponry and shielding. This one has the markings of the NDV Icarus on the side."
+	desc = "An automated combat drone armed with state of the art weaponry and shielding. This one has the markings of the NDV Styx on the side."
 	desc_fluff = "Produced by NanoTrasen, these combat drones are often carried and deployed by NDV Drone Carriers to protect local assets."
 	icon_state = "drone3"
 	icon_living = "drone3"
@@ -12,7 +12,7 @@
 	response_help = "pokes"
 	response_disarm = "gently pushes aside"
 	response_harm = "hits"
-	speak = list("ALERT, Icarus Drone active and patrolling!", "Hostile entities in the area!", "Threat parameters nominal.", "Subsystems stable at combat level theta.")
+	speak = list("ALERT, Styx Drone active and patrolling!", "Hostile entities in the area!", "Threat parameters nominal.", "Subsystems stable at combat level theta.")
 	emote_see = list("beeps menacingly", "whirrs threateningly", "scans its immediate vicinity")
 	attack_emote = "shifts its targetting vanes towards"
 	a_intent = I_HURT
