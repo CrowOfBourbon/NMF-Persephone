@@ -914,8 +914,13 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled,
-/area/turret_protected/ai_upload_foyer)
+/area/turret_protected/ai_upload)
 "ia" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -1365,6 +1370,11 @@
 	name = "AI Upload";
 	req_access = list(16)
 	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/turret_protected/ai_upload)
 "sr" = (
@@ -1471,6 +1481,11 @@
 "uo" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/bluegrid{
 	icon_state = "rcircuit_off"
 	},
@@ -1587,17 +1602,12 @@
 	},
 /area/turret_protected/ai_upload)
 "xN" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_y = 24
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/light/small{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/turret_protected/ai_upload_foyer)
+/area/turret_protected/ai_upload)
 "yi" = (
 /turf/simulated/floor/bluegrid{
 	icon_state = "rcircuit_off"
@@ -1634,7 +1644,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled,
-/area/turret_protected/ai_upload_foyer)
+/area/turret_protected/ai_upload)
 "yJ" = (
 /obj/machinery/hologram/holopad,
 /obj/structure/cable/cyan{
@@ -2002,7 +2012,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
-/area/turret_protected/ai_upload_foyer)
+/area/turret_protected/ai_upload)
 "HN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -2423,6 +2433,21 @@
 	},
 /turf/simulated/floor/fixed,
 /area/tcommsat/entrance)
+"QQ" = (
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "rcircuit_off"
+	},
+/area/turret_protected/ai_upload)
 "Rv" = (
 /obj/structure/lattice,
 /turf/simulated/open/airless,
@@ -2819,7 +2844,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled,
-/area/turret_protected/ai_upload_foyer)
+/area/turret_protected/ai_upload)
 
 (1,1,1) = {"
 Vy
@@ -28411,7 +28436,7 @@ Bi
 jQ
 Bk
 ra
-yi
+QQ
 sl
 hX
 fB
@@ -30731,7 +30756,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 lM
 Ce
@@ -30988,7 +31013,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 Wu
 Ce
@@ -31245,7 +31270,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 lM
 Ce
@@ -31502,7 +31527,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 fm
 lM
 Ce
@@ -31759,7 +31784,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 lM
 Ce
@@ -32016,7 +32041,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 lM
 Ce
@@ -32273,7 +32298,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 lM
 Ce
@@ -32530,7 +32555,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 lM
 Ce
@@ -32787,7 +32812,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 Wu
 Ce
@@ -33044,7 +33069,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 ew
 Ce
@@ -33301,7 +33326,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 lM
 Ce
@@ -33558,7 +33583,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 lM
 Ce
@@ -33815,7 +33840,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 SR
 Ce
@@ -34072,7 +34097,7 @@ bg
 ac
 aa
 aa
-Ce
+LT
 Ck
 lM
 Ce
@@ -34329,7 +34354,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 fm
 lM
 Ce
@@ -34586,7 +34611,7 @@ aa
 aa
 aa
 aa
-Ce
+LT
 Ck
 lM
 Ce
@@ -34840,10 +34865,10 @@ af
 ad
 ad
 aa
-OW
-OW
-OW
-OW
+LT
+LT
+LT
+LT
 XK
 CN
 OW
@@ -35097,7 +35122,7 @@ af
 ad
 ad
 aa
-OW
+LT
 gn
 gn
 gn
@@ -35354,7 +35379,7 @@ bc
 ad
 ad
 aa
-OW
+LT
 gn
 Uh
 Mw
@@ -35611,7 +35636,7 @@ af
 ad
 ad
 aa
-OW
+LT
 gn
 to
 gn
@@ -35868,7 +35893,7 @@ af
 ad
 ad
 aa
-OW
+LT
 gn
 to
 zt
@@ -36125,7 +36150,7 @@ af
 ad
 ad
 aa
-OW
+LT
 gn
 to
 gn
@@ -36382,7 +36407,7 @@ af
 ad
 ad
 aa
-OW
+LT
 gn
 to
 gn
