@@ -42,3 +42,13 @@
 	name = ACCENT_MARS
 	description = "With a bit of a twang, the Martian accent hails from it's pioneer origins. Forward, Ho, Mars! OOC: This accent is based on a Mid-West accent"
 	tag_icon = "mars"
+
+/datum/accent/kepler
+	name = ACCENT_KEPLER
+	description = "An accent that's distinctive harsh sounds and choppy words notes the speaker as someone from Kepler 22."
+	tag_icon = "kep"
+
+/datum/accent/harmony
+	name = ACCENT_HARM
+	description = "An accent that places heavy emphasis on changing R's to H's. It's god a southern twang to it."
+	tag_icon = "harm"

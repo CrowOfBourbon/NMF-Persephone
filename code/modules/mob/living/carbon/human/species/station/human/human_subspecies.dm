@@ -21,7 +21,7 @@
 	hazard_low_pressure = 10
 
 	examine_color = "#C2AE95"
-	allowed_accents = list(ACCENT_GALACTIC, ACCENT_RHEA, ACCENT_EARTH, ACCENT_INTER, ACCENT_MARS, ACCENT_LUNA, ACCENT_DION)
+	allowed_accents = list(ACCENT_GALACTIC, ACCENT_RHEA, ACCENT_EARTH, ACCENT_INTER, ACCENT_MARS, ACCENT_LUNA, ACCENT_DION, ACCENT_HARM, ACCENT_KEPLER)
 
 /datum/species/human/offworlder/equip_later_gear(var/mob/living/carbon/human/H)
 	if(istype(H.get_equipped_item(slot_back), /obj/item/storage/backpack) && H.equip_to_slot_or_del(new /obj/item/storage/pill_bottle/rmt(H.back), slot_in_backpack))
