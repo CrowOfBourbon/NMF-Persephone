@@ -17,12 +17,9 @@
 		/datum/unarmed_attack/palm,
 		/datum/unarmed_attack/bite
 	)
-	blurb = "Humanity originated in the Sol system, and over the last four centuries has spread colonies across a wide swathe of space. \
-	They hold a wide range of forms and creeds.<br><br>\
-	The Sol Alliance is still massively influential, but independent human nations have managed to shake off its dominance and forge their \
-	own path. Driven by an unending hunger for wealth, powerful corporate interests are bringing untold wealth to humanity. Unchecked \
-	megacorporations have sparked secretive factions to fight their influence, while there is always the risk of someone digging too \
-	deep into the secrets of the galaxy..."
+	blurb = "Although not a stranger to Space by any means, Humanity had only recently begun expanding out of its home System. \
+	Between the first probe and the first FTL capable spacecraft, Humans were almost always in conflict against one another, but the latest \
+	contacts with foriegn species have strengthened the bond between each other, as they continue to explore the vastness of the galaxy. "
 	num_alternate_languages = 2
 	secondary_langs = list(LANGUAGE_NEW_MANDARIN)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler

@@ -49,7 +49,8 @@
 #define ACCENT_GALACTIC "Galactite"
 #define ACCENT_DION "Dionysite"
 #define ACCENT_MARS "Martian"
-
+#define ACCENT_HARM "Harmonious"
+#define ACCENT_KEPLER "Kepler"
 
 #define ACCENT_NAZEER "Nazeerian"
 #define ACCENT_RAE "Adhomaian"
