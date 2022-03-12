@@ -1,6 +1,8 @@
-# Make sure to delete this placeholder text otherwise it'll look very goofy in your PR.
+# If you did not both _compile and run your changes_, do not make a PR! We are not here to test your experimental changes. Make sure they work on your own end first! Please indicate you both compiled and tested your code in your PR to confirm you have read this.
 
 ## Reminder: Did you set your StrongDMM editor to TGM editing mode? It will prevent conflicts from editing in the default style.
+
+## Delete all this placeholder text after! It'll make you look silly if you don't.
 
 * Please describe the intent of your changes, and what you did change.
 * Please make sure that, in the case of mapping changes, you include images of these changes in the PR's description.
