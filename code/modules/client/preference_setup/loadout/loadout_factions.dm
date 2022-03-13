@@ -1,4 +1,4 @@
-/datum/gear/faction
+/* /datum/gear/faction
 	display_name = "idris cap"
 	path = /obj/item/clothing/head/softcap/security/idris
 	slot = slot_head
@@ -259,3 +259,4 @@
 	path = /obj/item/clothing/accessory/badge/passcard/burszia
 	slot = slot_tie
 	faction = "Hephaestus Industries"
+*/ // begone code
