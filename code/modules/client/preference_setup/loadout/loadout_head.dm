@@ -56,7 +56,7 @@
 	softcaps["softcap, red"] = /obj/item/clothing/head/softcap/red
 	softcaps["softcap, captain"] = /obj/item/clothing/head/softcap/captain
 	softcaps["softcap, security"] = /obj/item/clothing/head/softcap/security
-	softcaps["softcap, security (corporate)"] = /obj/item/clothing/head/softcap/security/corp
+	// softcaps["softcap, security (corporate)"] = /obj/item/clothing/head/softcap/security/corp
 	softcaps["softcap, science"] = /obj/item/clothing/head/softcap/science
 	softcaps["softcap, medical"] = /obj/item/clothing/head/softcap/medical
 	softcaps["softcap, engineering"] = /obj/item/clothing/head/softcap/engineering
@@ -273,12 +273,13 @@
 	display_name = "non la hat"
 	path = /obj/item/clothing/head/nonla
 
-/datum/gear/head/iac/New()
+/* /datum/gear/head/iac/New()
 	..()
 	var/list/iac = list()
 	iac["IAC cap"] = /obj/item/clothing/head/softcap/iac
 	iac["IAC beret"] = /obj/item/clothing/head/beret/iac
 	gear_tweaks += new /datum/gear_tweak/path(iac)
+*/ // corporate things that need to be removed - for now, hidden.
 
 /datum/gear/head/circuitry
 	display_name = "headwear, circuitry (empty)"

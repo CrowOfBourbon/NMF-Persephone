@@ -298,9 +298,9 @@
 	new /obj/item/clothing/suit/armor/carrier/officer(src)
 	new /obj/item/clothing/accessory/arm_guard(src)
 	new /obj/item/clothing/accessory/leg_guard(src)
-	new /obj/item/clothing/under/rank/security/corp(src)
+	/* new /obj/item/clothing/under/rank/security/corp(src)
 	new /obj/item/clothing/head/beret/security/corp(src)
-	new /obj/item/clothing/head/softcap/security/corp(src)
+	new /obj/item/clothing/head/softcap/security/corp(src) */ //corporate things that need to be removed - for now, simply hidden.
 	new /obj/item/clothing/head/helmet/security(src)
 	new /obj/item/clothing/suit/storage/security/officer(src)
 	new /obj/item/clothing/accessory/badge/officer(src)
