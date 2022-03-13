@@ -128,18 +128,6 @@
 	if(istype(spawned_cup) && spawned_cup.reagents)
 		spawned_cup.reagents.set_temperature(T0C + 45)
 
-/datum/gear/banner
-	display_name = "banner selection"
-	path = /obj/item/flag
-	flags = GEAR_HAS_DESC_SELECTION
-
-
-/datum/gear/flag
-	display_name = "flag selection"
-	cost = 2
-	path = /obj/item/flag
-	flags = GEAR_HAS_DESC_SELECTION
-
 /datum/gear/towel
 	display_name = "towel"
 	path = /obj/item/towel
