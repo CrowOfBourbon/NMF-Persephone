@@ -132,9 +132,9 @@
 	new /obj/item/clothing/suit/armor/carrier/hos(src)
 	new /obj/item/clothing/accessory/leg_guard(src)
 	new /obj/item/clothing/accessory/arm_guard(src)
-	new /obj/item/clothing/under/rank/head_of_security/corp(src)
+/* 	new /obj/item/clothing/under/rank/head_of_security/corp(src)
 	new /obj/item/clothing/head/beret/security/hos/corp(src)
-	new /obj/item/clothing/head/hos/corp(src)
+	new /obj/item/clothing/head/hos/corp(src) */
 	new /obj/item/clothing/head/helmet/hos(src)
 	new /obj/item/clothing/suit/storage/security/hos(src)
 	new /obj/item/clothing/accessory/badge/hos(src)
@@ -183,9 +183,9 @@
 	new /obj/item/clothing/suit/armor/carrier/hos(src)
 	new /obj/item/clothing/accessory/leg_guard(src)
 	new /obj/item/clothing/accessory/arm_guard(src)
-	new /obj/item/clothing/under/rank/head_of_security/corp(src)
+/* 	new /obj/item/clothing/under/rank/head_of_security/corp(src)
 	new /obj/item/clothing/head/beret/security/corp(src)
-	new /obj/item/clothing/head/hos/corp(src)
+	new /obj/item/clothing/head/hos/corp(src) */
 	new /obj/item/clothing/head/helmet/hos(src)
 	new /obj/item/clothing/suit/storage/security/hos(src)
 	//Tools
@@ -221,9 +221,9 @@
 	new /obj/item/clothing/suit/armor/carrier/officer(src)
 	new /obj/item/clothing/accessory/arm_guard(src)
 	new /obj/item/clothing/accessory/leg_guard(src)
-	new /obj/item/clothing/under/rank/warden/corp(src)
+/* 	new /obj/item/clothing/under/rank/warden/corp(src)
 	new /obj/item/clothing/head/beret/security/corp(src)
-	new /obj/item/clothing/head/warden/corp(src)
+	new /obj/item/clothing/head/warden/corp(src) */
 	new /obj/item/clothing/head/helmet/security(src)
 	new	/obj/item/clothing/suit/storage/security/warden(src)
 	new /obj/item/clothing/accessory/badge/warden(src)
