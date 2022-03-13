@@ -25,7 +25,7 @@
 	bandanas["bandana, red"] = /obj/item/clothing/head/bandana/red
 	bandanas["bandana, captain"] = /obj/item/clothing/head/bandana/captain
 	bandanas["bandana, security"] = /obj/item/clothing/head/bandana/security
-	bandanas["bandana, security (corporate)"] = /obj/item/clothing/head/bandana/security/corp
+	// bandanas["bandana, security (corporate)"] = /obj/item/clothing/head/bandana/security/corp
 	bandanas["bandana, science"] = /obj/item/clothing/head/bandana/science
 	bandanas["bandana, medical"] = /obj/item/clothing/head/bandana/medical
 	bandanas["bandana, engineering"] = /obj/item/clothing/head/bandana/engineering
@@ -87,7 +87,7 @@
 	berets["beret, red"] = /obj/item/clothing/head/beret/red
 	berets["beret, captain"] = /obj/item/clothing/head/beret/captain
 	berets["beret, security"] = /obj/item/clothing/head/beret/security
-	berets["beret, security (corporate)"] = /obj/item/clothing/head/beret/security/corp
+	// berets["beret, security (corporate)"] = /obj/item/clothing/head/beret/security/corp
 	berets["beret, science"] = /obj/item/clothing/head/beret/science
 	berets["beret, medical"] = /obj/item/clothing/head/beret/medical
 	berets["beret, engineering"] = /obj/item/clothing/head/beret/engineering
@@ -114,9 +114,9 @@
 	..()
 	var/list/wardenhead = list()
 	wardenhead["warden hat, standard"] = /obj/item/clothing/head/warden
-	wardenhead["warden hat, corporate"] = /obj/item/clothing/head/warden/corp
+	// wardenhead["warden hat, corporate"] = /obj/item/clothing/head/warden/corp
 	wardenhead["warden beret, standard"] = /obj/item/clothing/head/beret/security/warden
-	wardenhead["warden beret, corporate"] = /obj/item/clothing/head/beret/security/warden/corp
+	// wardenhead["warden beret, corporate"] = /obj/item/clothing/head/beret/security/warden/corp
 	gear_tweaks += new /datum/gear_tweak/path(wardenhead)
 
 /datum/gear/head/hos
@@ -129,9 +129,9 @@
 	..()
 	var/list/hoshead = list()
 	hoshead["head of security hat, standard"] = /obj/item/clothing/head/hos
-	hoshead["head of security hat, corporate"] = /obj/item/clothing/head/hos/corp
+	// hoshead["head of security hat, corporate"] = /obj/item/clothing/head/hos/corp
 	hoshead["head of security beret, standard"] = /obj/item/clothing/head/beret/security/hos
-	hoshead["head of security beret, corporate"] = /obj/item/clothing/head/beret/security/hos/corp
+	// hoshead["head of security beret, corporate"] = /obj/item/clothing/head/beret/security/hos/corp
 	gear_tweaks += new /datum/gear_tweak/path(hoshead)
 
 /datum/gear/head/hardhat
