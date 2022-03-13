@@ -223,7 +223,7 @@
 	..()
 	var/list/uniform = list()
 	uniform["officer uniform, standard"] = /obj/item/clothing/under/rank/security
-	uniform["officer uniform, corporate"] = /obj/item/clothing/under/rank/security/corp
+	// uniform["officer uniform, corporate"] = /obj/item/clothing/under/rank/security/corp
 	uniform["officer uniform, blue"] = /obj/item/clothing/under/rank/security/blue
 	gear_tweaks += new /datum/gear_tweak/path(uniform)
 
@@ -252,13 +252,13 @@
 	..()
 	var/list/uniform = list()
 	uniform["warden uniform, standard"] = /obj/item/clothing/under/rank/warden
-	uniform["warden uniform, corporate"] = /obj/item/clothing/under/rank/warden/corp
+	// uniform["warden uniform, corporate"] = /obj/item/clothing/under/rank/warden/corp
 	uniform["warden uniform, blue"] = /obj/item/clothing/under/rank/warden/blue
 	gear_tweaks += new /datum/gear_tweak/path(uniform)
 
 /datum/gear/uniform/hos
 	display_name = "uniform, corporate (Head of Security)"
-	path = /obj/item/clothing/under/rank/head_of_security/corp
+	// ath = /obj/item/clothing/under/rank/head_of_security/corp
 	allowed_roles = list("Head of Security")
 
 /datum/gear/uniform/circuitry

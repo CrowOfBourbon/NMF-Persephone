@@ -18,10 +18,10 @@
 		melee = ARMOR_MELEE_SMALL
 		)
 	siemens_coefficient = 0.75
-
+/* 
 /obj/item/clothing/under/rank/security/corp
 	icon_state = "officer_corporate"
-	worn_state = "officer_corporate"
+	worn_state = "officer_corporate" */
 
 /obj/item/clothing/under/rank/security/blue
 	icon_state = "officer_blue"
@@ -47,10 +47,10 @@
 		)
 	siemens_coefficient = 0.75
 
-/obj/item/clothing/under/rank/warden/corp
+/* /obj/item/clothing/under/rank/warden/corp
 	icon_state = "warden_corporate"
 	worn_state = "warden_corporate"
-
+ */
 /obj/item/clothing/under/rank/warden/blue
 	icon_state = "warden_blue"
 	worn_state = "warden_blue"
@@ -105,10 +105,10 @@
 		melee = ARMOR_MELEE_SMALL
 		)
 	siemens_coefficient = 0.75
-
+/* 
 /obj/item/clothing/under/rank/head_of_security/corp
 	icon_state = "hos_corporate"
-	worn_state = "hos_corporate"
+	worn_state = "hos_corporate" */
 
 /*
  * Contractors
