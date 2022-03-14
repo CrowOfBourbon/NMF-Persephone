@@ -66,7 +66,7 @@
 	economic_modifier = 7
 
 	minimum_character_age = 25
-
+	alt_titles = list("Nurse","Trauma Physician")
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics, access_eva)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_genetics, access_eva)
 	outfit = /datum/outfit/job/doctor
@@ -152,7 +152,7 @@
 	economic_modifier = 5
 
 	minimum_character_age = 26
-
+	alt_titles = list("Chemist")
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics)
 	minimal_access = list(access_medical, access_medical_equip, access_pharmacy, access_virology)
 	outfit = /datum/outfit/job/pharmacist
@@ -238,7 +238,7 @@
 	economic_modifier = 4
 
 	minimum_character_age = 20
-
+	alt_titles = list("Paramedic")
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_eva, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_external_airlocks, access_psychiatrist, access_first_responder)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_eva, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_external_airlocks, access_first_responder)
 	outfit = /datum/outfit/job/med_tech
@@ -285,6 +285,7 @@
 	access = list(access_medical, access_surgery, access_medical_equip)
 	minimal_access = list(access_medical, access_surgery, access_medical_equip)
 	minimum_character_age = 18
+	alt_titles = list("Medical Resident")
 	outfit = /datum/outfit/job/intern_med
 	blacklisted_species = list(SPECIES_VAURCA_BULWARK, SPECIES_VAURCA_BREEDER)
 

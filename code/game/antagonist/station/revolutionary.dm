@@ -24,7 +24,7 @@ var/datum/antagonist/revolutionary/revs
 	faction_role_text = "Revolutionary"
 	faction_descriptor = "Revolutionaries"
 	faction_verb = /mob/living/proc/convert_to_rev
-	faction_welcome = "You joined a subversive organization in the Aurora Crew, united under a forward-thinking leader, you must achieve their goals."
+	faction_welcome = "You joined a subversive organization in the Persephone Crew, united under a forward-thinking leader, you must achieve their goals."
 	faction_indicator = "contender"
 	faction_invisible = FALSE
 

@@ -35,7 +35,7 @@
 
 /obj/item/clothing/suit/space
 	name = "space suit"
-	desc = "A suit that protects against low pressure environments. \"NSS AURORA\" is written in large block letters on the back."
+	desc = "A suit that protects against low pressure environments. \"Persephone\" is written in large block letters on the back."
 	icon_state = "space"
 	randpixel = 0
 	center_of_mass = null

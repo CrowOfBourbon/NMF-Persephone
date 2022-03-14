@@ -3,7 +3,7 @@
 	short_name = "ntaps"
 	max_count = 3
 	desc = "Protectors of NanoTrasen's bottom line. The last thing you never see."
-	welcome_message = "The NSS Aurora has been compromised. Recover NanoTrasen assets by any means necessary. Crew expendable."
+	welcome_message = "The Persephone has been compromised. Recover NanoTrasen assets by any means necessary. Crew expendable."
 	outfit = /datum/outfit/admin/deathsquad
 	spawnpoints = list("DeathERTSpawn")
 	possible_species = list(SPECIES_HUMAN)

@@ -20,7 +20,7 @@
 /datum/ghostspawner/human/admin/corporate/ccia_agent
 	short_name = "cciaagent"
 	name = "CCIA Agent"
-	desc = "Board the Aurora, annoy crew with your interviews and get squashed by your own shuttle."
+	desc = "Board the Persephone, annoy crew with your interviews and get squashed by your own shuttle."
 
 	outfit = /datum/outfit/admin/nt/cciaa
 
@@ -53,7 +53,7 @@
 //datum/ghostspawner/human/admin/corporate/scc_agent
 	//short_name = "sccagent"
 	//name = "SCC Agent"
-	//desc = "Board the Aurora, annoy crew with your interviews and get squashed by your own shuttle. But this time you're blue."
+	//desc = "Board the Persephone, annoy crew with your interviews and get squashed by your own shuttle. But this time you're blue."
 
 	//outfit = /datum/outfit/admin/scc
 
@@ -172,7 +172,7 @@
 
 /datum/ghostspawner/human/admin/checkpointsec/prepatory
 	short_name = "checkpointsec_prepatory"
-	name = "Aurora Prepatory Wing Security"
+	name = "Persephone Prepatory Wing Security"
 	desc = "Act as an Odin security officer, guide lost newcomers onto the arrivals shuttle if the need arises."
 
 	enabled = TRUE
