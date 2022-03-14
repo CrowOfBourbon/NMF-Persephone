@@ -1,7 +1,7 @@
 /datum/ghostspawner/matriarchmaintdrone
 	short_name = "matriarchmaintdrone"
 	name = "Matriarch Maintenance Drone"
-	desc = "Delegate tasks to your lesser maintenance drones. Maintain and Improve the Systems on the Aurora."
+	desc = "Delegate tasks to your lesser maintenance drones. Maintain and Improve the Systems on the Persephone."
 	show_on_job_select = FALSE
 	tags = list("Simple Mobs")
 
