@@ -32,8 +32,8 @@
 	name = "automatic .45 pistol"
 	desc = "The x9 tactical pistol is a lightweight fast firing handgun. Uses .45 rounds."
 	icon = 'icons/obj/guns/x9.dmi'
-	icon_state = "x9tactical"
-	item_state = "x9"
+	icon_state = "secgunauto"
+	item_state = "secgunauto"
 	pixel_offset_x = 28
 	pixel_offset_y = 13
 
