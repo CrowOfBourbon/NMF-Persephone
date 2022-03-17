@@ -119,7 +119,7 @@
 
 // Corporate.
 
-/* /obj/item/clothing/head/softcap/security/corp
+/obj/item/clothing/head/softcap/security/corp
 	name = "corporate security cap"
 	desc = "It's field cap in corporate colors. In an oppresive grey, no doubt."
 	icon_state = "corp"
@@ -153,4 +153,3 @@
 	desc = "A tan company-issue Zavokdskoi cap with the symbol of the corporation at its front."
 	icon_state = "zavod"
 	item_state = "zavod"
-*/ //in time, this should be removed. when i did this was not the time.
