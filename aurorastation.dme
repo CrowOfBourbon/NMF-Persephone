@@ -1460,6 +1460,7 @@
 #include "code\modules\client\preference_setup\loadout\loadout_xeno\vaurca.dm"
 #include "code\modules\client\preference_setup\occupation\occupation.dm"
 #include "code\modules\client\preference_setup\other\01_incidents.dm"
+#include "code\modules\client\preference_setup\loadout\loadout_factions.dm"
 #include "code\modules\client\preference_setup\skills\skills.dm"
 #include "code\modules\clothing\chameleon.dm"
 #include "code\modules\clothing\clothing.dm"
