@@ -92,12 +92,12 @@
 	flags_inv = HIDEEARS
 	contained_sprite = TRUE
 
-/obj/item/clothing/head/warden/corp
+/* /obj/item/clothing/head/warden/corp
 	name = "corporate warden hat"
 	desc = "A black warden parade hat. For showing who is in charge of the brig."
 	icon_state = "corp"
 	item_state = "corp"
-
+*/
 /obj/item/clothing/head/hos
 	name = "head of security hat"
 	desc = "The navy blue parade hat of the Head of Security. For showing the officers who's in charge."
@@ -107,8 +107,9 @@
 	flags_inv = HIDEEARS
 	contained_sprite = TRUE
 
-/obj/item/clothing/head/hos/corp
+/* /obj/item/clothing/head/hos/corp
 	name = "corporate head of security hat"
 	desc = "The black parade hat of the Head of Security. For showing the officers who's in charge."
 	icon_state = "corp"
 	item_state = "corp"
+ */
