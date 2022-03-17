@@ -521,21 +521,9 @@
 	icon_state = "passport_coc"
 	item_state = "passport_coc"
 
-/obj/item/clothing/accessory/badge/passport/elyra
-	name = "elyran passport"
-	desc = "A passport issued to a citizen of the Serene Republic of Elyra. Vintage!"
-	icon_state = "passport_elyra"
-	item_state = "passport_elyra"
-
-/obj/item/clothing/accessory/badge/passport/dominia
-	name = "dominian passport"
-	desc = "A passport issued to a resident of the Empire of Dominia. Popular among those whose debt is great but pockets light."
-	icon_state = "passport_dominia"
-	item_state = "passport_dominia"
-
 /obj/item/clothing/accessory/badge/passport/jargon
-	name = "jargon federation passport"
-	desc = "A passport issued to citizens of the Jargon Federation. Shiny, and compact, it's perfect to use on the go."
+	name = "Elodile Empire passport"
+	desc = "A passport issued to citizens of the Elodile Empire. Shiny, and compact, it's perfect to use on the go."
 	icon_state = "passport_jargon"
 	item_state = "passport_jargon"
 	open = CLOSED

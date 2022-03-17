@@ -388,8 +388,8 @@
 	flag_size = 1
 
 /obj/structure/sign/flag/jargon
-	name = "Jargon Federation flag"
-	desc = "The insignia of the Jargon Federation."
+	name = "Elodile Empire Flag"
+	desc = "The insignia of the Elodile Empire."
 	icon_state = "jargon"
 
 /obj/structure/sign/flag/jargon/left
@@ -399,12 +399,12 @@
 	icon_state = "jargon_r"
 
 /obj/item/flag/jargon
-	name = "Jargon Federation flag"
-	desc = "The insignia of the Jargon Federation"
+	name = "Elodile Empire flag"
+	desc = "The insignia of the Elodile Empire"
 	flag_path = "jargon"
 
 /obj/item/flag/jargon/l
-	name = "Large Jargon Federation flag"
+	name = "Large Elodile Empire flag"
 	flag_size = 1
 
 /obj/structure/sign/flag/nanotrasen

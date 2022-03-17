@@ -480,7 +480,7 @@
 
 /obj/item/storage/box/monkeycubes/neaeracubes
 	name = "neaera cube box"
-	desc = "Drymate brand neaera cubes, shipped from Jargon 4. Just add water!"
+	desc = "Drymate brand neaera cubes, shipped from Moqy. Just add water!"
 	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/neaeracube = 5)
 
 /obj/item/storage/box/monkeycubes/vkrexicubes
