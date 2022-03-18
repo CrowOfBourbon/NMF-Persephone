@@ -3,8 +3,8 @@
 	light_color = LIGHT_COLOR_CYAN
 
 /obj/item/rig/skrell
-	name = "jargon suit control module"
-	desc = "A suit control module designed by the Jargon Federation for JFSF operations. It is designed to be sleek and agile, equipped with best protection and technology the Federation has to offer for its elite."
+	name = "Elodile suit control module"
+	desc = "A suit control module designed by the Elodile Empire for EESF operations. It is designed to be sleek and agile, equipped with best protection and technology the Empire has to offer for its elite."
 	icon = 'icons/clothing/rig/jargon.dmi'
 	icon_state = "jargon_rig"
 	suit_type = "jargon suit"

@@ -1,7 +1,7 @@
 /datum/ghostspawner/simplemob/maintdrone
 	short_name = "maintdrone"
 	name = "Maintenance Drone"
-	desc = "Maintain and Improve the Systems on the Aurora."
+	desc = "Maintain and Improve the Systems on the Persephone."
 	show_on_job_select = FALSE
 	tags = list("Simple Mobs")
 

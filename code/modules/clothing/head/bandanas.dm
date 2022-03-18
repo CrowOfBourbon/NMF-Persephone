@@ -85,8 +85,8 @@
 
 // Corporate.
 
-/* /obj/item/clothing/head/bandana/security/corp
+/obj/item/clothing/head/bandana/security/corp
 	name = "corporate security bandana"
 	desc = "It's a security bandana with some fine nanotech lining. Who knew a do-rag could be so oppresive?"
 	icon_state = "corp"
-	item_state = "corp" */
+	item_state = "corp"

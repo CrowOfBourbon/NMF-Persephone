@@ -76,7 +76,7 @@
 	economic_modifier = 5
 
 	minimum_character_age = 25
-
+	alt_titles = list("Electrician","Engine Technician")
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics)
 	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction)
 	outfit = /datum/outfit/job/engineer

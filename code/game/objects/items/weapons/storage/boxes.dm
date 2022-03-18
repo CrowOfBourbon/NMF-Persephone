@@ -480,7 +480,7 @@
 
 /obj/item/storage/box/monkeycubes/neaeracubes
 	name = "neaera cube box"
-	desc = "Drymate brand neaera cubes, shipped from Jargon 4. Just add water!"
+	desc = "Drymate brand neaera cubes, shipped from Moqy. Just add water!"
 	starts_with = list(/obj/item/reagent_containers/food/snacks/monkeycube/wrapped/neaeracube = 5)
 
 /obj/item/storage/box/monkeycubes/vkrexicubes
@@ -788,7 +788,7 @@
 
 /obj/item/storage/box/crabmeat
 	name = "box of crab legs"
-	desc = "A box filled with high-quality crab legs. Shipped to Aurora by popular demand!"
+	desc = "A box filled with high-quality crab legs. Shipped to Persephone by popular demand!"
 	starts_with = list(/obj/item/reagent_containers/food/snacks/crabmeat = 5)
 
 /obj/item/storage/box/tranquilizer

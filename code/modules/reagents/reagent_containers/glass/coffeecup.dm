@@ -80,7 +80,7 @@
 
 /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/jargon
 	name = "\improper Jargon coffee cup"
-	desc = "A purple coffee cup emblazoned with the flag of the Jargon Federation."
+	desc = "A purple coffee cup emblazoned with the flag of the Elodile Empire."
 	icon_state = "coffeecup_jarg"
 
 // Organisations

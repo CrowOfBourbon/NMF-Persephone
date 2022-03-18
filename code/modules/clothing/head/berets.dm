@@ -97,19 +97,18 @@
 	desc = "A beret in security navy blue with a commander's rank emblem. For heads of security that are more inclined towards style than safety."
 	icon_state = "beret_hos"
 	item_state = "beret_hos"
-/*
+
 /obj/item/clothing/head/beret/security/hos/corp
 	name = "corporate commander beret"
 	desc = "A beret in corporate black with a commander's rank emblem. For heads of security that are more inclined towards style than safety."
 	icon_state = "corp"
 	item_state = "corp"
-*/
+
 /obj/item/clothing/head/beret/security/warden
 	name = "warden beret"
 	desc = "A beret in security navy blue with a warden's rank emblem. For wardens that are more inclined towards style than safety."
 	icon_state = "beret_warden"
 	item_state = "beret_warden"
-/*
 /obj/item/clothing/head/beret/security/warden/corp
 	name = "corporate warden beret"
 	desc = "A beret in corporate black with a warden's rank emblem. For wardens that are more inclined towards style than safety."
@@ -195,7 +194,7 @@
 	desc = "A hardy, stark purple sentinel beret with a rubber insignia of a torch, surrounded by red stars and the letters \"TCFL\"."
 	icon_state = "tcfl_sentinel"
 	item_state = "tcfl_sentinel"
-*/
+	
 //centcom
 
 /obj/item/clothing/head/beret/centcom/liaison
