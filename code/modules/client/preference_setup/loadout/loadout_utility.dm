@@ -91,11 +91,6 @@
 	display_name = "camera"
 	path = /obj/item/device/camera
 
-/datum/gear/utility/himeo_kit
-	display_name = "himean voidsuit kit"
-	path = /obj/item/voidsuit_modkit/himeo
-	allowed_roles = list("Cargo Technician", "Shaft Miner", "Quartermaster", "Head of Personnel", "Station Engineer", "Atmospheric Technician", "Chief Engineer", "Engineering Apprentice")
-
 /datum/gear/utility/wheelchair/color
 	display_name = "wheelchair"
 	path = /obj/item/material/stool/chair/wheelchair

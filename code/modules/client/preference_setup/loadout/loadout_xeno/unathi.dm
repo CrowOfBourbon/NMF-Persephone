@@ -293,6 +293,6 @@
 	display_name = "jokfar vest"
 	path = /obj/item/clothing/suit/unathi/jokfar
 	cost = 1
-	whitelisted = list(SPECIES_UNATHI)	
+	whitelisted = list(SPECIES_UNATHI)
 	sort_category = "Xenowear - Unathi"
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
