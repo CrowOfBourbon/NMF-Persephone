@@ -48,7 +48,7 @@
 	gear_tweaks += new /datum/gear_tweak/reagents(lunchables_all_drink_reagents())
 
 /datum/gear/vacflask_cold
-	display_name = "cold vacuum-flask"
+	display_name = "cold vacuum flask"
 	path = /obj/item/reagent_containers/food/drinks/flask/vacuumflask
 
 /datum/gear/vacflask_cold/New()
@@ -62,7 +62,7 @@
 		spawned_flask.reagents.set_temperature(T0C + 5)
 
 /datum/gear/vacflask_hot
-	display_name = "hot vacuum-flask"
+	display_name = "hot vacuum flask"
 	path = /obj/item/reagent_containers/food/drinks/flask/vacuumflask
 
 /datum/gear/vacflask_hot/New()
@@ -102,7 +102,22 @@
 	..()
 	var/list/coffeecups = list()
 	coffeecups["plain coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup
+	coffeecups["sol coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/sol
+	coffeecups["dominian coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/dom
+	coffeecups["NKA coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/nka
+	coffeecups["PRA coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/pra
+	coffeecups["DPRA coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/metal/dpra
+	coffeecups["Sedantis coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/metal/sedantis
+	coffeecups["CoC coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/metal/coc
+	coffeecups["Eridani coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/eridani
+	coffeecups["Elyra coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/elyra
+	coffeecups["Hegemony coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/hegemony
+	coffeecups["Jargon coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/jargon
 	coffeecups["NT coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/nt
+	coffeecups["Hephaestus coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/metal/hepht
+	coffeecups["Idris coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/idris
+	coffeecups["Zeng-Hu coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/zeng
+	coffeecups["TCFL coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/tcfl
 	coffeecups["#1 coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/one
 	coffeecups["#1 monkey coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/puni
 	coffeecups["heart coffee cup"] = /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/heart
@@ -127,6 +142,87 @@
 	var/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/spawned_cup = .
 	if(istype(spawned_cup) && spawned_cup.reagents)
 		spawned_cup.reagents.set_temperature(T0C + 45)
+
+/datum/gear/banner
+	display_name = "banner selection"
+	path = /obj/item/flag
+	flags = GEAR_HAS_DESC_SELECTION
+
+/datum/gear/banner/New()
+	..()
+	var/list/banners = list()
+	banners["banner, Stellar Corporate Conglomerate"] = /obj/item/flag/scc
+	banners["banner, SolGov"] = /obj/item/flag/sol
+	banners["banner, Dominia"] = /obj/item/flag/dominia
+	banners["banner, Elyra"] = /obj/item/flag/elyra
+	banners["banner, Hegemony"] = /obj/item/flag/hegemony
+	banners["banner, Jargon"] = /obj/item/flag/jargon
+	banners["banner, NanoTrasen"] = /obj/item/flag/nanotrasen
+	banners["banner, Eridani Fed"] = /obj/item/flag/eridani
+	banners["banner, Sedantis"] = /obj/item/flag/vaurca
+	banners["banner, People's Republic of Adhomai"] = /obj/item/flag/pra
+	banners["banner, Democratic People's Republic of Adhomai"] = /obj/item/flag/dpra
+	banners["banner, New Kingdom of Adhomai"] = /obj/item/flag/nka
+	banners["banner, Republic of Biesel"] = /obj/item/flag/biesel
+	banners["banner, Dominian Diona"] = /obj/item/flag/diona
+	banners["banner, Trinary Perfection"] = /obj/item/flag/trinaryperfection
+	banners["banner, Hephaestus Industries"] = /obj/item/flag/heph
+	banners["banner, Idris Incorporated"] = /obj/item/flag/idris
+	banners["banner, Zenghu Pharmaceuticals"] = /obj/item/flag/zenghu
+	banners["banner, Zavodskoi Interstellar"] = /obj/item/flag/zavodskoi
+	banners["banner, Coalition of Colonies"] = /obj/item/flag/coalition
+	banners["banner, Confederate States of Fisanduh"] = /obj/item/flag/fisanduh
+	banners["banner, Gadpathur"] = /obj/item/flag/gadpathur
+	banners["banner, Vysoka"] = /obj/item/flag/vysoka
+	gear_tweaks += new /datum/gear_tweak/path(banners)
+
+/datum/gear/standard
+	display_name = "dominian great house standard selection"
+	path = /obj/item/flag
+	flags = GEAR_HAS_DESC_SELECTION
+
+/datum/gear/standard/New()
+	..()
+	var/list/standards = list()
+	standards["standard, Strelitz"] = /obj/item/flag/strelitz
+	standards["standard, Volvalaad"] = /obj/item/flag/volvalaad
+	standards["standard, Kazkhz"] = /obj/item/flag/kazkhz
+	standards["standard, Caladius"] = /obj/item/flag/caladius
+	standards["standard, Zhao"] = /obj/item/flag/zhao
+	gear_tweaks += new /datum/gear_tweak/path(standards)
+
+/datum/gear/flag
+	display_name = "flag selection"
+	cost = 2
+	path = /obj/item/flag
+	flags = GEAR_HAS_DESC_SELECTION
+
+/datum/gear/flag/New()
+	..()
+	var/list/flags = list()
+	flags["flag, Stellar Corporate Conglomerate"] = /obj/item/flag/scc/l
+	flags["flag, SolGov"] = /obj/item/flag/sol/l
+	flags["flag, Dominia"] = /obj/item/flag/dominia/l
+	flags["flag, Elyra"] = /obj/item/flag/elyra/l
+	flags["flag, Hegemony"] = /obj/item/flag/hegemony/l
+	flags["flag, Jargon"] = /obj/item/flag/jargon/l
+	flags["flag, NanoTrasen"] = /obj/item/flag/nanotrasen/l
+	flags["flag, Eridani Fed"] = /obj/item/flag/eridani/l
+	flags["flag, Sedantis"] = /obj/item/flag/vaurca/l
+	flags["flag, People's Republic of Adhomai"] = /obj/item/flag/pra/l
+	flags["flag, Democratic People's Republic of Adhomai"] = /obj/item/flag/dpra/l
+	flags["flag, New Kingdom of Adhomai"] = /obj/item/flag/nka/l
+	flags["flag, Republic of Biesel"] = /obj/item/flag/biesel/l
+	flags["flag, Trinary Perfection"] = /obj/item/flag/trinaryperfection/l
+	flags["flag, Hephaestus Industries"] = /obj/item/flag/heph/l
+	flags["flag, Idris Incorporated"] = /obj/item/flag/idris/l
+	flags["flag, Zeng-Hu Pharmaceuticals"] = /obj/item/flag/zenghu/l
+	flags["flag, Zavodskoi Interstellar"] = /obj/item/flag/zavodskoi/l
+	flags["flag, Coalition of Colonies"] = /obj/item/flag/coalition/l
+	flags["flag, Confederate States of Fisanduh"] = /obj/item/flag/fisanduh/l
+	flags["flag, Gadpathur"] = /obj/item/flag/gadpathur/l
+	flags["flag, Vysoka"] = /obj/item/flag/vysoka/l
+	gear_tweaks += new /datum/gear_tweak/path(flags)
 
 /datum/gear/towel
 	display_name = "towel"
@@ -169,10 +265,29 @@
 	plushies["plushie, firefighter bear"] = /obj/item/toy/plushie/bearfire
 	plushies["plushie, random squid"] = /obj/item/toy/plushie/squid //if someone can figure out how to make color work with these, good luck lmao
 	plushies["plushie, bee"] = /obj/item/toy/plushie/bee
+	plushies["plushie, schlorrgo"] = /obj/item/toy/plushie/schlorrgo
+	plushies["plushie, cool schlorrgo"] = /obj/item/toy/plushie/coolschlorrgo
 	plushies["plushie, slime"] = /obj/item/toy/plushie/slime
 	plushies["plushie, penny"] = /obj/item/toy/plushie/pennyplush
 	plushies["plushie, greimorian"] = /obj/item/toy/plushie/greimorian
+	plushies["plushie, Axic"] = /obj/item/toy/plushie/axic
+	plushies["plushie, Qill"] = /obj/item/toy/plushie/qill
+	plushies["plushie, Xana"] = /obj/item/toy/plushie/xana
+	plushies["plushie, Aphy"] = /obj/item/toy/plushie/ipc
 	gear_tweaks += new /datum/gear_tweak/path(plushies)
+
+/datum/gear/comic
+	display_name = "comic selection"
+	description = "A selection of comics and manga from across the Spur."
+	path = /obj/item/toy/comic
+
+/datum/gear/comic/New()
+	..()
+	var/list/comics = list()
+	comics["comic book"] = /obj/item/toy/comic
+	comics["inspector 404 manga"] = /obj/item/toy/comic/inspector
+	comics["stormman manga"] = /obj/item/toy/comic/stormman
+	gear_tweaks += new /datum/gear_tweak/path(comics)
 
 /datum/gear/toothpaste
 	display_name = "toothpaste and toothbrush"
@@ -207,3 +322,7 @@
 	path =  /obj/item/storage/box/yarn
 	description = "A box containing yarn."
 	flags = null
+
+/datum/gear/gadbook
+	display_name = "gadpathurian morale manual"
+	path = /obj/item/device/litanybook/gadpathur
