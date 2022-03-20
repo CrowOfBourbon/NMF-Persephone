@@ -1,4 +1,4 @@
-/datum/gear/faction
+/* /datum/gear/faction
 	display_name = "idris cap"
 	path = /obj/item/clothing/head/softcap/security/idris
 	slot = slot_head
@@ -192,7 +192,7 @@
 	faction = "Zeng-Hu Pharmaceuticals"
 
 /datum/gear/faction/zenghu_labcoat
-	display_name = "zeng-hu coat selection"
+	display_name = "zeng-hu labcoat selection"
 	path = /obj/item/clothing/suit/storage/toggle/labcoat/zeng
 	slot = slot_wear_suit
 	faction = "Zeng-Hu Pharmaceuticals"
@@ -202,7 +202,6 @@
 	var/list/masks = list()
 	masks["zeng-hu labcoat"] = /obj/item/clothing/suit/storage/toggle/labcoat/zeng
 	masks["zeng-hu labcoat, alt"] = /obj/item/clothing/suit/storage/toggle/labcoat/zeng/alt
-	masks["zeng-hu first responder jacket"] = /obj/item/clothing/suit/storage/toggle/fr_jacket/zeng
 	gear_tweaks += new /datum/gear_tweak/path(masks)
 
 /datum/gear/faction/zenghu_apron
@@ -215,12 +214,6 @@
 	display_name = "zeng-hu vinyl gloves"
 	path = /obj/item/clothing/gloves/zeng
 	slot = slot_gloves
-	faction = "Zeng-Hu Pharmaceuticals"
-
-/datum/gear/faction/zenghu_cloak
-	display_name = "Zeng-Hu Jargon Division cloak"
-	path = /obj/item/clothing/accessory/poncho/shouldercape/qeblak/zeng
-	slot = slot_wear_suit
 	faction = "Zeng-Hu Pharmaceuticals"
 
 /datum/gear/faction/zavodskoi_patch
@@ -262,7 +255,8 @@
 	faction = "Hephaestus Industries"
 
 /datum/gear/faction/heph_passcard
-	display_name = "hephaestus burzsia passcard"
-	path = /obj/item/clothing/accessory/badge/passcard/burzsia
+	display_name = "hephaestus burszia passcard"
+	path = /obj/item/clothing/accessory/badge/passcard/burszia
 	slot = slot_tie
 	faction = "Hephaestus Industries"
+*/ // begone code
