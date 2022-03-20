@@ -134,21 +134,21 @@
 	sort_category = "Xenowear - Vaurca"
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
 
-///datum/gear/augment/language_processor
-//	display_name = "language processor"
-//	description = "An augment that allows a vaurca to speak and understand a related language. These are only used by their respective hives."
-//	path = /obj/item/organ/internal/augment/language/klax
-//	cost = 2
-//	sort_category = "Xenowear - Vaurca"
-//	whitelisted = list(SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BREEDER, SPECIES_VAURCA_BULWARK)
-//	flags = GEAR_NO_SELECTION
+/datum/gear/augment/language_processor
+	display_name = "language processor"
+	description = "An augment that allows a vaurca to speak and understand a related language. These are only used by their respective hives."
+	path = /obj/item/organ/internal/augment/language/klax
+	cost = 2
+	sort_category = "Xenowear - Vaurca"
+	whitelisted = list(SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BREEDER, SPECIES_VAURCA_BULWARK)
+	flags = GEAR_NO_SELECTION
 
-///datum/gear/augment/language_processor/New() // SKRELL AND UNATHI ARENT FRIENDS YET BUT I MIGHT YOINK THIS CODE LATER
-	//..()
-	//var/list/language_processors = list()
-	//language_processors["K'laxan [LANGUAGE_UNATHI] language processor"] = /obj/item/organ/internal/augment/language/klax
-	//language_processors["C'thur [LANGUAGE_TUQ] language processor"] = /obj/item/organ/internal/augment/language/cthur
-	//gear_tweaks += new /datum/gear_tweak/path(language_processors)
+/datum/gear/augment/language_processor/New()
+	..()
+	var/list/language_processors = list()
+	language_processors["K'laxan [LANGUAGE_UNATHI] language processor"] = /obj/item/organ/internal/augment/language/klax
+	language_processors["C'thur [LANGUAGE_SKRELLIAN] language processor"] = /obj/item/organ/internal/augment/language/cthur
+	gear_tweaks += new /datum/gear_tweak/path(language_processors)
 
 /datum/gear/vaurca_lunchbox
 	display_name = "vaurca lunchbox"
@@ -169,7 +169,7 @@
 	gear_tweaks += new /datum/gear_tweak/path(lunchboxes)
 	gear_tweaks += new /datum/gear_tweak/contents(lunchables_vaurca(), lunchables_vaurca_snack(), lunchables_drinks(), lunchables_utensil())
 
-/datum/gear/ears/vaurca/rings
+/datum/gear/ears/vaurca/rings 
 	display_name = "bulwark horn rings"
 	description = "Rings worn by Bulwarks to decorate their horns."
 	cost = 1
