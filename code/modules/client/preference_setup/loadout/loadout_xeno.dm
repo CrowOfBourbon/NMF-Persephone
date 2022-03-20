@@ -18,6 +18,12 @@
 	sort_category = "Xenowear"
 	whitelisted = list(SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BULWARK, SPECIES_UNATHI, SPECIES_TAJARA, SPECIES_TAJARA_ZHAN, SPECIES_TAJARA_MSAI)
 
+/datum/gear/shoes/caligae
+	display_name = "caligae selection"
+	path = /obj/item/clothing/shoes/caligae
+	whitelisted = list(SPECIES_UNATHI, SPECIES_TAJARA, SPECIES_TAJARA_ZHAN, SPECIES_TAJARA_MSAI)
+	sort_category = "Xenowear"
+
 /datum/gear/shoes/caligae/New()
 	..()
 	var/list/caligae = list()

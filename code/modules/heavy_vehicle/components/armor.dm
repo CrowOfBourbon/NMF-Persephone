@@ -22,7 +22,7 @@
 	icon_state = "armor_r"
 	icon_state_broken = "armor_r_broken"
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
+		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_MEDIUM,
 		laser = ARMOR_LASER_MEDIUM,
 		energy = ARMOR_ENERGY_MINOR,
@@ -38,9 +38,9 @@
 	icon_state = "armor_e"
 	icon_state_broken = "armor_e_broken"
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT ,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_PISTOL,
+		melee =ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_MEDIUM,
+		laser = ARMOR_LASER_MEDIUM,
 		energy = ARMOR_ENERGY_SHIELDED,
 		bomb = ARMOR_BOMB_MINOR,
 		bio = ARMOR_BIO_SHIELDED,
@@ -55,9 +55,9 @@
 	icon_state_broken = "armor_c_broken"
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_REVOLVER,
-		laser = ARMOR_LASER_RIFLE,
-		energy = ARMOR_ENERGY_MINOR,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED
 	)
