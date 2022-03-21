@@ -33830,7 +33830,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/wall/r_wall,
+/turf/simulated/floor/tiled,
 /area/outpost/research/emergency_storage)
 "bnt" = (
 /obj/structure/sign/nosmoking_2{
@@ -43217,10 +43217,12 @@
 /turf/simulated/floor/plating,
 /area/outpost/research/isolation_a)
 "bGw" = (
-/obj/machinery/door/window/brigdoor,
+/obj/machinery/door/window/brigdoor{
+	req_access = list(65)
+	},
 /obj/machinery/door/window/brigdoor{
 	dir = 1;
-	req_access = list(63)
+	req_access = list(65)
 	},
 /turf/simulated/floor/tiled,
 /area/outpost/research/isolation_a)
@@ -43233,10 +43235,12 @@
 /turf/simulated/wall/r_wall,
 /area/outpost/research/isolation_b)
 "bGA" = (
-/obj/machinery/door/window/brigdoor,
+/obj/machinery/door/window/brigdoor{
+	req_access = list(65)
+	},
 /obj/machinery/door/window/brigdoor{
 	dir = 1;
-	req_access = list(63)
+	req_access = list(65)
 	},
 /turf/simulated/floor/tiled,
 /area/outpost/research/isolation_b)
