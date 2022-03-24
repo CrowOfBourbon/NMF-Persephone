@@ -238,9 +238,12 @@
 /turf/simulated/floor/ice,
 /area/mine/explored)
 "aaX" = (
-/obj/structure/girder/displaced,
-/turf/simulated/floor/ice,
-/area/mine/explored)
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/bed/stool/chair/office/dark,
+/turf/simulated/floor/tiled{
+	icon_state = "old_dark"
+	},
+/area/merchant_station/warehouse)
 "aaY" = (
 /obj/structure/grille/broken,
 /turf/snow/plating{
@@ -326,20 +329,20 @@
 "abq" = (
 /obj/structure/safe/station,
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "abr" = (
 /obj/structure/table/standard,
 /obj/random/telecrystals,
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "abs" = (
 /obj/structure/table/standard,
-/obj/random/handgun,
+/obj/random/vault_weapon,
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "abt" = (
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "abu" = (
 /obj/structure/table/standard,
 /obj/item/aiModule/oxygen,
@@ -362,7 +365,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "abv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -446,7 +449,7 @@
 "abF" = (
 /obj/machinery/nuclearbomb/station,
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "abG" = (
 /obj/structure/table/standard,
 /obj/random/rig_module,
@@ -456,7 +459,7 @@
 	req_access = list(3)
 	},
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "abH" = (
 /turf/simulated/wall,
 /area/security/range)
@@ -494,11 +497,11 @@
 "abS" = (
 /obj/structure/sign/securearea,
 /turf/simulated/wall/r_wall,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "abT" = (
 /obj/structure/closet/secure_closet/freezer/money,
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "abU" = (
 /obj/structure/table/standard,
 /obj/random/vault_rig,
@@ -507,7 +510,7 @@
 	req_access = list(20)
 	},
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "abV" = (
 /obj/structure/closet/crate,
 /obj/random/loot,
@@ -597,20 +600,20 @@
 /area/mine/explored)
 "acl" = (
 /obj/structure/table/standard,
-/obj/random/prebuilt_ka,
 /obj/machinery/door/window/brigdoor{
 	dir = 4;
 	name = "Weapons locker";
 	req_access = list(3)
 	},
+/obj/random/weapon_and_ammo,
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "acm" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "acn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -624,7 +627,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "aco" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -635,11 +638,11 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "acp" = (
 /obj/machinery/porta_turret,
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "acq" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -723,7 +726,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/marble/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "acx" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -2154,9 +2157,8 @@
 /turf/simulated/floor/plating,
 /area/maintenance/foresolar)
 "afC" = (
-/mob/living/simple_animal/rat/brown/Tom,
-/turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/turf/simulated/wall/r_wall,
+/area/mine/unexplored)
 "afD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -3915,12 +3917,8 @@
 /turf/simulated/floor/marble/dark,
 /area/security/warden)
 "ajo" = (
-/obj/machinery/alarm{
-	dir = 8;
-	pixel_x = 24
-	},
-/turf/simulated/floor/marble/dark,
-/area/security/warden)
+/turf/simulated/wall/r_wall,
+/area/bridge/selfdestruct)
 "ajp" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -14679,13 +14677,13 @@
 /area/hallway/primary/fore)
 "aCE" = (
 /obj/structure/table/standard,
-/obj/random/vault_weapon,
 /obj/machinery/door/window/brigdoor{
 	dir = 8;
 	req_access = list(20)
 	},
+/obj/random/energy,
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "aCF" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -14717,7 +14715,7 @@
 	req_access = list(3)
 	},
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "aCH" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -14740,7 +14738,7 @@
 	},
 /obj/random/vault_rig,
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "aCJ" = (
 /obj/structure/boulder,
 /turf/simulated/floor/ice,
@@ -15397,7 +15395,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "aDT" = (
 /obj/machinery/door/airlock/vault/bolted{
 	req_access = list(20)
@@ -15410,7 +15408,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "aDU" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -26904,7 +26902,6 @@
 /area/crew_quarters/locker)
 "aZo" = (
 /obj/structure/table/wood,
-/obj/structure/table/wood,
 /obj/machinery/door/window/westright{
 	dir = 2;
 	name = "Library Desk Door"
@@ -33377,10 +33374,6 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage)
-"bmq" = (
-/obj/structure/bed/stool/chair/office/dark,
-/turf/simulated/floor/carpet,
-/area/merchant_station)
 "bmv" = (
 /obj/structure/bed/stool/chair/office/dark{
 	dir = 1
@@ -35773,7 +35766,7 @@
 "brc" = (
 /obj/machinery/anti_bluespace,
 /turf/simulated/floor/tiled/dark,
-/area/maintenance/vault)
+/area/bridge/selfdestruct)
 "brd" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
@@ -59815,6 +59808,7 @@
 	dir = 4
 	},
 /obj/item/modular_computer/laptop/preset/research/rd,
+/obj/item/stamp/rd,
 /turf/simulated/floor/tiled,
 /area/rnd/rdoffice)
 "coy" = (
@@ -74390,12 +74384,9 @@
 	},
 /area/mine/unexplored)
 "ipw" = (
-/obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/bed/stool/chair/office/dark,
-/turf/simulated/floor/tiled{
-	icon_state = "old_dark"
-	},
-/area/merchant_station/warehouse)
+/turf/simulated/floor/carpet,
+/area/merchant_station)
 "isJ" = (
 /obj/structure/reagent_dispensers/acid{
 	pixel_y = 32
@@ -75071,7 +75062,14 @@
 /turf/simulated/floor/plating,
 /area/engineering/engine_room)
 "tNo" = (
-/turf/space,
+/obj/effect/overlay/snow,
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/warning/dust,
+/turf/simulated/floor/tiled{
+	icon_state = "asteroid"
+	},
 /area/mine/unexplored)
 "tOJ" = (
 /obj/effect/floor_decal/industrial/warning/dust{
@@ -93265,7 +93263,7 @@ aaa
 aaa
 aaa
 fsb
-bmj
+ipq
 tNo
 aae
 aBt
@@ -93523,7 +93521,7 @@ aaa
 aaa
 aaa
 fsb
-mlr
+bqf
 bzn
 bvb
 bvb
@@ -100267,7 +100265,7 @@ aEf
 aEf
 kvy
 aHK
-bmq
+ipw
 aKm
 aDb
 aHl
@@ -100777,7 +100775,7 @@ aEy
 aBc
 aEy
 ayy
-ipw
+aaX
 aEu
 bxT
 aHK
@@ -103556,10 +103554,10 @@ aBt
 aBt
 aBt
 aaU
-aaI
-aaI
-aaX
-aaI
+abp
+abp
+abp
+abp
 abp
 abp
 abp
@@ -103812,14 +103810,14 @@ aBt
 aBt
 aBt
 aBt
-aBt
-aBt
 abp
-nAn
-nAn
-nAn
-nAn
-nAn
+abp
+abp
+ajo
+ajo
+ajo
+ajo
+ajo
 abW
 acP
 adh
@@ -104068,15 +104066,15 @@ aBt
 aBt
 aBt
 aBt
-aBt
-aBt
-nAn
-nAn
-nAn
-nAn
-nAn
-nAn
-nAn
+abp
+abp
+ajo
+ajo
+ajo
+ajo
+ajo
+ajo
+ajo
 aaR
 acP
 acP
@@ -104324,16 +104322,16 @@ aBt
 aBt
 aBt
 aBt
-aBt
-aBt
-nAn
-nAn
+abp
+abp
+ajo
+ajo
 abG
 acl
 aCG
 abG
-nAn
-nAn
+ajo
+ajo
 acv
 acQ
 acP
@@ -104581,16 +104579,16 @@ aBt
 aBt
 aBt
 aBt
-aBt
-nAn
-nAn
+abp
+ajo
+ajo
 abq
 abt
 abt
 abt
 abt
 brc
-nAn
+ajo
 acC
 acC
 ajq
@@ -104838,16 +104836,16 @@ aBt
 aBt
 aBt
 aBt
-aBt
-nAn
-nAn
+abp
+ajo
+ajo
 abs
 abt
 acp
 abt
 acp
 acm
-nAn
+ajo
 acw
 acV
 acP
@@ -105095,9 +105093,9 @@ aBt
 aBt
 aBt
 aBt
-aBt
-nAn
-nAn
+abp
+ajo
+ajo
 abr
 abt
 abt
@@ -105352,11 +105350,11 @@ aBt
 aBt
 aBt
 aBt
-aBt
-nAn
-nAn
+abp
+ajo
+ajo
 abu
-afC
+abt
 acp
 abt
 acp
@@ -105609,16 +105607,16 @@ aaa
 aBt
 aBt
 aBt
-aBt
-nAn
-nAn
+abp
+ajo
+ajo
 abT
 abt
 abt
 abt
 abt
 aDS
-nAn
+ajo
 acJ
 acP
 acP
@@ -105631,7 +105629,7 @@ ahu
 ajR
 ajR
 aiD
-ajo
+aiT
 ajS
 aiT
 aBe
@@ -105867,15 +105865,15 @@ aaa
 aaa
 aBt
 aBt
-aBt
-nAn
-nAn
+abp
+ajo
+ajo
 abU
 aCE
 aCI
 aCI
-nAn
-nAn
+ajo
+ajo
 acK
 acY
 adC
@@ -106125,15 +106123,15 @@ aaa
 aaa
 aaa
 aBt
-aBt
-nAn
-nAn
-nAn
-nAn
-nAn
-nAn
-nAn
-nAn
+abp
+ajo
+ajo
+ajo
+ajo
+ajo
+ajo
+ajo
+ajo
 nAn
 nAn
 nAn
@@ -106382,15 +106380,15 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-nAn
-nAn
-nAn
-nAn
-nAn
+afC
+afC
+afC
+afC
+ajo
+ajo
+ajo
+ajo
+ajo
 nAn
 nAn
 abQ
