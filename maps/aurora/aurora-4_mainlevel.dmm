@@ -55120,7 +55120,7 @@
 /obj/machinery/button/remote/blast_door{
 	name = "Mining Exterior Blast Door";
 	pixel_y = 30;
-	req_access = (list)50;
+	req_access = list(50);
 	id = "mining"
 	},
 /obj/effect/floor_decal/industrial/warning{
@@ -65840,7 +65840,7 @@
 /obj/machinery/button/remote/blast_door{
 	name = "Mining Interior Airlock";
 	pixel_x = 25;
-	req_access = (list)50;
+	req_access = list(50);
 	id = "mining_inside"
 	},
 /obj/effect/floor_decal/industrial/warning{
@@ -68819,7 +68819,7 @@
 /obj/machinery/button/remote/blast_door{
 	name = "Mining Exterior Blast Door";
 	pixel_y = -30;
-	req_access = (list)50;
+	req_access = list(50);
 	id = "mining"
 	},
 /turf/simulated/floor/tiled,
@@ -70509,7 +70509,7 @@
 "cMy" = (
 /obj/machinery/button/remote/blast_door{
 	name = "Mining Exterior Blast Door";
-	req_access = (list)50;
+	req_access = list(50);
 	pixel_x = 30;
 	id = "mining"
 	},
