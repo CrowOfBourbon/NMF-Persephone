@@ -2296,7 +2296,9 @@
 /area/centcom/holding)
 "ahr" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/door/blast/odin,
+/obj/machinery/door/blast/odin{
+	id = "northtwo"
+	},
 /turf/unsimulated/floor{
 	icon_state = "dark2"
 	},
@@ -14850,13 +14852,13 @@
 	dir = 5
 	},
 /obj/machinery/button/remote/blast_door{
-	id = "south1";
+	id = "southone";
 	name = "Enter";
 	pixel_x = 30;
 	pixel_y = -4
 	},
 /obj/machinery/button/remote/blast_door{
-	id = "south2";
+	id = "southtwo";
 	name = "Exit";
 	pixel_x = 30;
 	pixel_y = 7
@@ -19298,7 +19300,7 @@
 "kIO" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/blast/odin{
-	id = north1
+	id = "northone"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark2"
@@ -22134,13 +22136,13 @@
 	dir = 10
 	},
 /obj/machinery/button/remote/blast_door{
-	id = "north1";
+	id = "northone";
 	name = "Enter";
 	pixel_x = -30;
 	pixel_y = -4
 	},
 /obj/machinery/button/remote/blast_door{
-	id = "north2";
+	id = "northtwo";
 	name = "Exit";
 	pixel_x = -30;
 	pixel_y = 7
@@ -28418,7 +28420,7 @@
 "rFD" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/blast/odin{
-	id = south2
+	id = "southtwo"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark2"
@@ -29955,12 +29957,16 @@
 	},
 /area/shuttle/mercenary)
 "sVJ" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/door/blast/odin,
-/turf/unsimulated/floor{
-	icon_state = "dark2"
+/obj/machinery/button/remote/blast_door{
+	id = "northone";
+	name = "Enter";
+	pixel_x = -30;
+	pixel_y = -4
 	},
-/area/centcom/checkpoint/fore)
+/turf/unsimulated/floor/plating{
+	icon_state = "hydrofloor"
+	},
+/area/centcom/holding)
 "sVK" = (
 /obj/machinery/computer/shuttle_control/multi/legion,
 /turf/simulated/floor/tiled/dark,
@@ -30339,7 +30345,7 @@
 "tix" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/blast/odin{
-	id = north1
+	id = "southone"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark2"
@@ -65091,7 +65097,7 @@ eLs
 ahq
 jja
 rFD
-sVJ
+rFD
 jja
 ahq
 ahq
@@ -66110,7 +66116,7 @@ vbT
 kRY
 aDb
 aUm
-bLK
+sVJ
 vCY
 bUd
 hEz
