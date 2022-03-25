@@ -1,7 +1,7 @@
 // /tg/ posters.
 /datum/poster/tg_1
-	name = "Free Tonto"
-	desc = "A framed shred of a much larger flag, colors bled together and faded from age."
+	name = "Qiiqi Night"
+	desc = "A poster of the infamous Qiiqi Club, lit up in the night."
 	icon_state="poster1"
 
 /datum/poster/tg_2
@@ -20,7 +20,7 @@
 	icon_state="poster4"
 
 /datum/poster/tg_5
-	name = "Mercenary Recruitment Poster"
+	name = "SSyndicate Recruitment Poster"
 	desc = "See the galaxy! Shatter corrupt megacorporations! Join today!"
 	icon_state="poster5"
 

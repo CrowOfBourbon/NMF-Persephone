@@ -164,6 +164,16 @@
 /obj/structure/sign/double/maltesefalcon/right
 	icon_state = "maltesefalcon-right"
 
+/obj/structure/sign/double/qiiqi	//The sign is 64x32, so it needs two tiles. ;3
+	name = "Qiiqi Dive"
+	desc = "The Qiiqi Dive, Fast-paced Night Club."
+
+/obj/structure/sign/double/qiiqi/left
+	icon_state = "qiiqi"
+
+/obj/structure/sign/double/qiiqi/right
+	icon_state = "qiiqiright"
+
 /obj/structure/sign/science			//These 3 have multiple types, just var-edit the icon_state to whatever one you want on the map
 	name = "\improper SCIENCE!"
 	desc = "A warning sign which reads 'SCIENCE!'."

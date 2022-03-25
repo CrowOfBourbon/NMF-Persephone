@@ -137,7 +137,7 @@
 /datum/poster/bay_28
 	icon_state="bsposter28"
 	name = "The Stars Know Love"
-	desc = "This is a movie poster. A bleeding woman is shown drawing a heart in her blood on the window of space ship, it seems to be a romantic Drama."
+	desc = "This is a movie poster. A cyberpunkesque city glistens under a starry night. it seems to be a romantic Drama."
 
 /datum/poster/bay_29
 	icon_state="bsposter29"
@@ -197,7 +197,7 @@
 /datum/poster/bay_40
 	icon_state="bsposter40"
 	name = "Agreeable work environment"
-	desc = "This poster depicts a young woman in a stylish dress. \"Try to aim for a pleasant atmosphere in the workspace. A friendly word can do more than forms in triplicate.\""
+	desc = "This poster depicts a miner on their way outside. \"Try to aim for a pleasant atmosphere in the workspace. A friendly word can do more than forms in triplicate.\""
 
 /datum/poster/bay_41
 	icon_state="bsposter41"
@@ -206,13 +206,13 @@
 
 /datum/poster/bay_42
 	icon_state="bsposter42"
-	name = "Engineering pinup"
-	desc = "This is pin-up poster. A half-naked girl with white hair, toned muscles and stunning blue eyes looks back at you from the poster. Her welding helmet, tattoos and grey jumpsuit hanging around her waist gives a bit of a rugged feel."
+	name = "Raven Mistress pinup"
+	desc = "This is pin-up poster. A raven-haired figure smiles coyly for the camera. "
 
 /datum/poster/bay_43
 	icon_state="bsposter43"
-	name = "Responsible medbay habits, No #3"
-	desc = "A safety poster with a purple-haired surgeon. She looks a bit cross. \"Let the surgeons do their work. NEVER replace or remove a surgery tool from where the surgeon put it.\""
+	name = "NanoTrasen Propaganda Poster"
+	desc = "A tall woman in fur's and a Captain's dress points towards you."
 
 /datum/poster/bay_44
 	icon_state="bsposter44"
@@ -236,8 +236,8 @@
 
 /datum/poster/bay_48
 	icon_state="bsposter48"
-	name = "Borg pinup?"
-	desc = "This is a.. pin-up poster? It is a diagram on an old model of cyborg with a note scribbled in marker on the bottom, on the top there is a large XO written in red marker."
+	name = "NT Logo"
+	desc = "The NanoTrasen Logo."
 
 /datum/poster/bay_49
 	icon_state="bsposter49"
@@ -251,8 +251,8 @@
 
 /datum/poster/bay_51
 	icon_state="bsposter51"
-	name = "space appreciation poster"
-	desc = "This is a poster produced by the Generic Space Company, as a part of a series of commemorative posters on the wonders of space. One of three."
+	name = "Keep's Keeper"
+	desc = "This is a poster showcasing the neon lights of the city of Keep."
 
 /datum/poster/bay_52
 	icon_state="bsposter52"
@@ -289,25 +289,30 @@
 	name = "space bear information poster"
 	desc = "This poster displays a picture of a legendary space bear."
 
+/datum/poster/bay_59
+	icon_state="bsposter59"
+	name = "Technocolor Dreams"
+	desc = "This poster displays a vague city scenery, but the abstract neon colors blur the lines."
+
 /datum/poster/bay_60
 	icon_state = "bsposter60"
 	name = "N.S.S. Aurora"
-	desc = "This poster is a picture of the old, now defunct, N.S.S. Aurora. Commissioned in 2454 and decommissioned in the early days of 2458."
+	desc = "This poster is a picture of the old, now defunct, N.S.S. Aurora. Know your roots. Thanks, Aurora, for everything."
 
 /datum/poster/bay_61
 	icon_state = "bsposter61"
-	name = "Xenobiology Safety Protocols"
-	desc = "This posters warms the crew about the dangers of xenobiology outbreaks."
+	name = "Underwater Biodome"
+	desc = "This posters is of the underwater Skrellian city Olo'qi."
 
 /datum/poster/bay_62
 	icon_state = "bsposter62"
-	name = "Xenobiology Division"
-	desc = "This one depicts a green skrell research director doing autopsy on an alien lifeform."
+	name = "Interstellar Republic Map"
+	desc = "The Sol system, in all her glory. This IR flag poster depicts all the notable planets in the Sol system."
 
 /datum/poster/bay_63
 	icon_state = "bsposter63"
-	name = "Suit Sensors"
-	desc = "This particular one depicts a female doctor tending to an injured crewmember. It says; \"Remember to enable your suit sensors!\"."
+	name = "Poetry Slam Jam"
+	desc = "A poster remembering the first successful Poetry Slam of Persephone."
 
 /datum/poster/bay_64
 	icon_state = "bsposter64"
@@ -326,13 +331,13 @@
 
 /datum/poster/bay_67
 	icon_state = "tcflposter"
-	name = "Tau Ceti Foreign Legion"
-	desc = "A TCFL recruitment poster."
+	name = "Galactica Recruitment Poster"
+	desc = "A Galactica recruitment poster."
 
 /datum/poster/bay_68
-	icon_state = "tcflposter2"
-	name = "Tau Ceti Foreign Legion"
-	desc = "A TCFL recruitment poster showcasing the benefits Synthetics gain when enlisting."
+	icon_state = "ratposter"
+	name = "A Mouse and a Cupcake"
+	desc = "A cute little mouse sitting on a cupcake!"
 
 /datum/poster/bay_69
 	icon_state = "grillposter"
