@@ -71051,11 +71051,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/outpost/mining_main/eva)
-"cNA" = (
-/turf/simulated/floor/tiled{
-	icon_state = "darkmarble"
-	},
-/area/outpost/mining_main/eva)
 "cNB" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -97278,7 +97273,7 @@ cvq
 bWJ
 bWJ
 cMA
-cNA
+cNx
 cOU
 ciI
 ciI
