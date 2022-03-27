@@ -89,7 +89,14 @@ var/list/whitelist_jobconfig = list()
 		log_misc("Failed to load config/alienwhitelist.txt")
 		return 0
 	else
-		alien_whitelist = text2list(text, "\n")
+		// Make use of assoc lists for species WL. 1 is ckey, 2 is species.
+		var/list/templist = text2list(text, "\n")
+		for (var/T in templist)
+			var/list/splitstring = splittext(T, " - ")
+			var/ckey_txt = ckey(splitstring[1])
+			if(!(ckey_txt in alien_whitelist))
+				alien_whitelist[ckey_txt] = list()
+			alien_whitelist[ckey_txt] += splitstring[2]
 		return 1
 
 /proc/is_alien_whitelisted(mob/M, var/species)
@@ -118,11 +125,10 @@ var/list/whitelist_jobconfig = list()
 			return (M.client.whitelist_status & whitelisted_species[species])
 	else
 		if (M && species)
-			for (var/s in alien_whitelist)
-				if (findtext(s,"[M.ckey] - [species]"))
-					return 1
-				if (findtext(s,"[M.ckey] - All"))
-					return 1
+			if(species in alien_whitelist[M.ckey])
+				return 1
+			if("All" in alien_whitelist[M.ckey])
+				return 1
 	return 0
 
 /**
