@@ -206,7 +206,7 @@
 	icon = 'icons/clothing/rig/offworlder.dmi'
 	icon_state = "offworlder_rig"
 	icon_supported_species_tags = null
-	allowed = list(/obj/item/tank, /obj/item/device/flashlight)
+	allowed = list(/obj/item/tank, /obj/item/device/flashlight,/obj/item/storage/backpack)
 	armor = list(
 		bio = ARMOR_BIO_MINOR,
 		rad = ARMOR_RAD_MINOR
