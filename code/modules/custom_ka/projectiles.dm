@@ -27,7 +27,7 @@
 
 /obj/item/projectile/kinetic/proc/do_damage(var/turf/T, var/living_damage = 1, var/mineral_damage = 1)
 	var/datum/gas_mixture/environment = T.return_air()
-	living_damage *= max(1 - (environment.return_pressure() / 100) * 0.75, 0)
+	living_damage *= max(1 - (environment.return_pressure() / 200) * 0.75, 0)
 	new /obj/effect/overlay/temp/kinetic_blast(T)
 	for(var/mob/living/L in T)
 		L.take_overall_damage(min(living_damage, 50))
