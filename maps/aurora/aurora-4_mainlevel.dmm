@@ -6932,6 +6932,7 @@
 "aoK" = (
 /obj/effect/floor_decal/corner/mauve/diagonal,
 /obj/structure/table/standard,
+/obj/item/storage/toolbox/electrical,
 /turf/simulated/floor/tiled/white,
 /area/rnd/lab)
 "aoL" = (
@@ -19855,11 +19856,12 @@
 /turf/simulated/floor/tiled/yellow,
 /area/storage/primary)
 "aMc" = (
-/obj/item/clothing/suit/space/anomaly,
 /obj/item/storage/belt/archaeology,
-/obj/item/clothing/head/helmet/space/anomaly,
 /obj/item/clothing/mask/breath,
 /obj/structure/table/rack,
+/obj/item/clothing/suit/space/void/sci,
+/obj/item/clothing/head/helmet/space/void/sci,
+/obj/item/clothing/shoes/magboots,
 /turf/simulated/floor/tiled/white,
 /area/outpost/research/eva)
 "aMd" = (
@@ -24348,9 +24350,10 @@
 "aUk" = (
 /obj/structure/table/rack,
 /obj/item/storage/belt/archaeology,
-/obj/item/clothing/head/helmet/space/anomaly,
-/obj/item/clothing/suit/space/anomaly,
 /obj/item/clothing/mask/breath,
+/obj/item/clothing/suit/space/void/sci,
+/obj/item/clothing/head/helmet/space/void/sci,
+/obj/item/clothing/shoes/magboots,
 /turf/simulated/floor/tiled/white,
 /area/outpost/research/eva)
 "aUl" = (
@@ -28186,7 +28189,9 @@
 /turf/simulated/floor/plating,
 /area/hallway/secondary/exit)
 "bcb" = (
-/obj/effect/shuttle_landmark/merc/surface,
+/obj/effect/shuttle_landmark/merc/surface{
+	name = "Main level south side"
+	},
 /turf/simulated/floor/snow{
 	temperature = 234.15
 	},
@@ -46466,6 +46471,7 @@
 	},
 /obj/effect/floor_decal/corner/mauve/diagonal,
 /obj/structure/table/standard,
+/obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/white,
 /area/rnd/lab)
 "bNt" = (
@@ -74231,6 +74237,26 @@
 "fij" = (
 /turf/simulated/wall/r_wall,
 /area/hallway/primary/port)
+"frv" = (
+/obj/structure/table/standard,
+/obj/item/stack/material/steel{
+	amount = 50
+	},
+/obj/item/stack/material/steel{
+	amount = 50
+	},
+/obj/item/stack/material/glass{
+	amount = 50;
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/stack/material/glass{
+	amount = 50;
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/turf/simulated/floor/marble/dark,
+/area/rnd/lab)
 "fsb" = (
 /obj/effect/floor_decal/industrial/warning/dust{
 	dir = 5
@@ -74404,6 +74430,20 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/mine/explored)
+"iPA" = (
+/obj/structure/closet/crate{
+	name = "Camera Assembly Crate"
+	},
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/obj/item/camera_assembly,
+/turf/simulated/floor/plating,
+/area/storage/tech)
 "iUR" = (
 /turf/simulated/wall,
 /area/hallway/primary/aft)
@@ -74733,6 +74773,14 @@
 /area/maintenance/vault)
 "nFF" = (
 /obj/effect/map_effect/perma_light/brighter,
+/turf/simulated/floor/snow{
+	temperature = 234.15
+	},
+/area/mine/explored)
+"nJW" = (
+/obj/effect/shuttle_landmark/burglar/blue{
+	name = "Landing Zone near Science"
+	},
 /turf/simulated/floor/snow{
 	temperature = 234.15
 	},
@@ -75191,6 +75239,12 @@
 /obj/effect/floor_decal/corner/mauve/diagonal,
 /turf/simulated/floor/tiled/white,
 /area/rnd/lab)
+"wph" = (
+/obj/effect/shuttle_landmark/burglar/caverns,
+/turf/simulated/floor/snow{
+	temperature = 234.15
+	},
+/area/mine/explored)
 "wuD" = (
 /obj/effect/floor_decal/corner/mauve/diagonal,
 /obj/machinery/firealarm/east,
@@ -85917,7 +85971,7 @@ aBt
 aBt
 aBt
 aBt
-aBt
+wph
 aBt
 aBt
 aBt
@@ -86175,8 +86229,8 @@ aBt
 aBt
 aBt
 aBt
-aaf
-aaf
+aBt
+aBt
 aBt
 aBt
 aBt
@@ -86432,10 +86486,10 @@ aBt
 aBt
 aBt
 aBt
-aaf
-aaf
-aaf
-aaf
+aBt
+aBt
+aBt
+aBt
 aBt
 aBt
 aBt
@@ -86689,10 +86743,10 @@ aBt
 aBt
 aBt
 aBt
-aaf
-aaf
-aaf
-aaf
+aBt
+aBt
+aBt
+aBt
 aBt
 aBt
 aBt
@@ -86947,9 +87001,9 @@ aBt
 aBt
 aBt
 aBt
-aaf
-aaf
-aaf
+aBt
+aBt
+aBt
 aBt
 aBt
 aBt
@@ -87204,8 +87258,8 @@ aaf
 aBt
 aBt
 aBt
-aaf
-aaf
+aBt
+aBt
 aBt
 aBt
 aBt
@@ -105193,7 +105247,7 @@ bex
 ccP
 cee
 cfg
-bex
+iPA
 bbq
 cjj
 cmj
@@ -116282,11 +116336,11 @@ aBt
 aBt
 aBt
 aBt
-aox
-aox
-aox
-aox
-aox
+aac
+aac
+aac
+aac
+aac
 aox
 aox
 aox
@@ -116539,11 +116593,11 @@ aBt
 aBt
 aBt
 aBt
-aox
-aox
-aox
-aox
-aox
+aac
+aac
+aac
+aac
+aac
 aox
 aox
 aox
@@ -116797,10 +116851,10 @@ aBt
 aBt
 aBt
 aBt
-aox
-aox
-aox
-aox
+aac
+aac
+aac
+aac
 aox
 aox
 aox
@@ -117054,10 +117108,10 @@ aBt
 aBt
 aBt
 aBt
-aox
-aox
-aox
-aox
+aac
+aac
+aac
+aac
 aox
 aox
 aox
@@ -117311,10 +117365,10 @@ aBt
 aBt
 aBt
 aBt
-cRy
-aox
-aox
-aox
+aBt
+aac
+aac
+aac
 aox
 aox
 aox
@@ -117568,10 +117622,10 @@ aBt
 aBt
 aBt
 aBt
-cRy
-aox
-aox
-aox
+aBt
+aac
+aac
+aac
 aox
 aox
 aox
@@ -117825,10 +117879,10 @@ aBt
 aBt
 aBt
 aBt
-cRy
-aox
-aox
-aox
+aBt
+aac
+aac
+aac
 aox
 aox
 aox
@@ -118082,10 +118136,10 @@ aBt
 aBt
 aBt
 aBt
-cRy
-cRy
-aox
-aox
+aBt
+aBt
+aac
+aac
 aox
 aox
 aox
@@ -118327,6 +118381,7 @@ aBt
 aBt
 aBt
 aBt
+aBt
 bcb
 aBt
 aBt
@@ -118339,10 +118394,9 @@ aBt
 aBt
 aBt
 aBt
-cRy
-cRy
-aox
-aox
+aBt
+aac
+aac
 aox
 aox
 aox
@@ -118596,10 +118650,10 @@ aBt
 aBt
 aBt
 aBt
-cRy
-cRy
-cRy
-aox
+aBt
+aBt
+aBt
+aac
 aox
 aox
 aox
@@ -118856,7 +118910,7 @@ aBt
 aBt
 aBt
 aBt
-aox
+aac
 aox
 aox
 aox
@@ -119113,7 +119167,7 @@ aBt
 aBt
 aBt
 aBt
-aox
+aac
 aox
 aox
 aox
@@ -119369,8 +119423,8 @@ aBt
 aBt
 aBt
 aBt
-aox
-aox
+aac
+aac
 aox
 aox
 aox
@@ -119626,8 +119680,8 @@ aBt
 aBt
 aac
 aac
-aox
-aox
+aac
+aac
 aox
 aac
 aac
@@ -119883,8 +119937,8 @@ aac
 aac
 aac
 aac
-aox
-aox
+aac
+aac
 aox
 aox
 aox
@@ -120140,8 +120194,8 @@ aac
 aac
 aac
 aac
-aox
-aox
+aac
+aac
 aox
 aox
 aox
@@ -120395,8 +120449,8 @@ aBt
 aBt
 aac
 aac
-aox
-aox
+aac
+aac
 aac
 aac
 aox
@@ -120652,10 +120706,10 @@ aBt
 aBt
 aac
 aac
-aox
-aox
-aox
-aox
+aac
+aac
+aac
+aac
 aox
 aox
 aox
@@ -120909,10 +120963,10 @@ aBt
 aBt
 aBt
 aac
-aox
-aox
-aox
-aox
+aac
+aac
+aac
+aac
 aox
 aox
 aox
@@ -121165,11 +121219,11 @@ aBt
 aBt
 aBt
 aBt
-cRy
-aox
-aox
-aox
-aox
+aBt
+aac
+aac
+aac
+aac
 aox
 aox
 aox
@@ -121423,10 +121477,10 @@ aBt
 aBt
 aBt
 aBt
-aox
-aox
-aox
-aox
+aac
+aac
+aac
+aac
 aox
 aox
 aox
@@ -124194,7 +124248,7 @@ byL
 bAP
 bEr
 bEr
-bHW
+frv
 bRn
 bNI
 cdI
@@ -129349,7 +129403,7 @@ aBt
 aBt
 aBt
 aBt
-aBt
+nJW
 aBt
 aBt
 aBt
