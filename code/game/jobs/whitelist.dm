@@ -93,9 +93,10 @@ var/list/whitelist_jobconfig = list()
 		var/list/templist = text2list(text, "\n")
 		for (var/T in templist)
 			var/list/splitstring = splittext(T, " - ")
-			if(!(splitstring[1] in alien_whitelist))
-				alien_whitelist[splitstring[1]] = list()
-			alien_whitelist[splitstring[1]] += splitstring[2]
+			var/ckey_txt = ckey(splitstring[1])
+			if(!(ckey_txt in alien_whitelist))
+				alien_whitelist[ckey_txt] = list()
+			alien_whitelist[ckey_txt] += splitstring[2]
 		return 1
 
 /proc/is_alien_whitelisted(mob/M, var/species)
