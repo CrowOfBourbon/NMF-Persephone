@@ -2989,24 +2989,24 @@
 	required_reagents = list(/decl/reagent/drink/dynjuice = 1, /decl/reagent/drink/ice = 2, /decl/reagent/drink/sodawater = 2)
 	result_amount = 5
 
-/datum/chemical_reaction/drink/algaesuprise
-	name = "Pl'iuop Algae Surprise"
+/datum/chemical_reaction/drink/elodileelegance
+	name = "Elodile Elegance"
 	id = "algaesuprise"
-	result = /decl/reagent/drink/algaesuprise
+	result = /decl/reagent/drink/elodileelegance
 	required_reagents = list(/decl/reagent/nutriment/virusfood = 2, /decl/reagent/drink/banana = 1)
 	result_amount = 3
 
-/datum/chemical_reaction/drink/xrim
-	name = "Xrim Garden"
+/datum/chemical_reaction/drink/oloqi
+	name = "Olo'qi Garden"
 	id = "xrim"
-	result = /decl/reagent/drink/xrim
+	result = /decl/reagent/drink/oloqi
 	required_reagents = list(/decl/reagent/nutriment/virusfood = 2, /decl/reagent/drink/watermelonjuice = 1, /decl/reagent/drink/orangejuice = 1, /decl/reagent/drink/limejuice = 1, /decl/reagent/drink/zorasoda/cthur = 1)
 	result_amount = 6
 
-/datum/chemical_reaction/drink/rixulin_sundae
-	name = "Rixulin Sundae"
+/datum/chemical_reaction/drink/tuqqisoda
+	name = "Tuq'qi Soda"
 	id = "rixulin_sundae"
-	result = /decl/reagent/alcohol/rixulin_sundae
+	result = /decl/reagent/alcohol/tuqqisoda
 	required_reagents = list(/decl/reagent/nutriment/virusfood = 3, /decl/reagent/wulumunusha = 1, /decl/reagent/alcohol/whitewine = 2)
 	result_amount = 6
 
@@ -3660,7 +3660,7 @@
 	result = /decl/reagent/alcohol/butanol/pulque
 	required_reagents = list(/decl/reagent/alcohol/pulque = 1, /decl/reagent/alcohol/butanol/xuizijuice = 1)
 	result_amount = 2
-	
+
 /datum/chemical_reaction/drink/ichor
 	name = "xsain ichor"
 	id = "ichor"

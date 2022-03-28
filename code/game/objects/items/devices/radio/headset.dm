@@ -84,7 +84,7 @@
 		if(slot_flags & SLOT_TWOEARS)
 			var/obj/item/clothing/ears/OE = (H.l_ear == src ? H.r_ear : H.l_ear)
 			qdel(OE)
-	
+
 	..()
 
 /obj/item/device/radio/headset/attackby(obj/item/W, mob/user)
@@ -204,7 +204,7 @@
 	to_chat(usr, SPAN_NOTICE("\The [src] will now layer [normal_layer ? "over" : "under"] your outerwear."))
 	if (ismob(src.loc))
 		var/mob/M = src.loc
-		M.update_inv_wrists()	
+		M.update_inv_wrists()
 
 /*
  * Civillian
@@ -682,7 +682,7 @@
 	ks2type = /obj/item/device/encryptionkey/ert
 
 /obj/item/device/radio/headset/legion
-	name = "Tau Ceti Foreign Legion radio headset"
+	name = "Interstelar Republic radio headset"
 	desc = "The headset used by NanoTrasen sanctioned response forces."
 	icon_state = "com_headset"
 	ks2type = /obj/item/device/encryptionkey/onlyert

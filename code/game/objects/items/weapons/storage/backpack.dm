@@ -493,9 +493,9 @@
 	desc = "A wizardly backpack worn over one shoulder. This one is in blue and purple colors."
 	icon_state = "courierbagwizard"
 
-/obj/item/storage/backpack/legion
+/obj/item/storage/backpack/interstellar
 	name = "military rucksack"
-	desc = "A sturdy backpack with the emblems and markings of the Tau Ceti Foreign Legion."
+	desc = "A sturdy backpack with the emblems and markings of the Interstellar Republic Legion."
 	icon_state = "legion_bag"
 	empty_delay = 0.8 SECOND
 
@@ -667,7 +667,7 @@
 	set src in usr
 	if(use_check_and_message(usr))
 		return 0
-	hooded = !hooded 
+	hooded = !hooded
 	to_chat(usr, "You [hooded ? "raise" : "lower"] \the [src] hood.")
 	icon_state = "[initial(icon_state)][hooded ? "_up" : ""]"
 	item_state = "icon_state"
@@ -687,7 +687,7 @@
 	icon_state = "medcape"
 	item_state = "medcape"
 
-/obj/item/storage/backpack/cloak/engi 
+/obj/item/storage/backpack/cloak/engi
 	name = "engineering tunnel cloak"
 	desc = "A Vaurca cloak with storage pockets. This one has the engineering department design."
 	icon_state = "engicape"

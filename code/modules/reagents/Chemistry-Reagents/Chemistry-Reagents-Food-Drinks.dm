@@ -3480,17 +3480,17 @@
 
 	glass_center_of_mass = list("x"=16, "y"=9)
 
-/decl/reagent/alcohol/solarian_marine
-	name = "Solarian Marine"
-	description = "Drink too many of these, and you'll wake up invading Tau Ceti."
+/decl/reagent/alcohol/interstellar_marine
+	name = "Interstellar Marine"
+	description = "Drink too many of these, and you'll wake up invading Galactica."
 	reagent_state = LIQUID
 	color = "#33567A"
 	strength = 35
 	taste_description = "polished boots and nationalism"
 
 	glass_icon_state = "solarianmarineglass"
-	glass_name = "Solarian Marine"
-	glass_desc = "Drink too many of these, and you'll wake up invading Tau Ceti."
+	glass_name = "Interstellar Marine"
+	glass_desc = "Drink too many of these, and you'll wake up invading Galactica."
 
 	glass_center_of_mass = list("x"=16, "y"=9)
 
@@ -4256,8 +4256,8 @@
 	if(alien != IS_DIONA)
 		M.make_jittery(10)
 
-/decl/reagent/drink/algaesuprise
-	name = "Pl'iuop Algae Surprise"
+/decl/reagent/drink/elodileelegance
+	name = "Elodile Elegance"
 	color = "#FFFF80"
 	description = "This bubbling drink gives off a faint moldy aroma."
 	taste_description = "swamp fungus"
@@ -4266,8 +4266,8 @@
 	glass_name = "glass of Pl'iuop Algae Surprise"
 	glass_desc = "This bubbling drink gives off a faint moldy aroma."
 
-/decl/reagent/drink/xrim
-	name = "Xrim Garden"
+/decl/reagent/drink/oloqi
+	name = "Olo'qi Garden"
 	color = "#F6668E"
 	description = "A colorful drink that smells a lot like rotten fruit."
 	taste_description = "sweet, fruity slime"
@@ -4276,8 +4276,8 @@
 	glass_name = "glass of Xrim Garden"
 	glass_desc = "A colorful drink that smells a lot like rotten fruit."
 
-/decl/reagent/alcohol/rixulin_sundae
-	name = "Rixulin Sundae"
+/decl/reagent/alcohol/tuqqisoda
+	name = "Tuq'qi Soda"
 	color = "#83E2C6"
 	description = "A fizzing drink that looks like a really great time."
 	taste_description = "spacetime and warbling music"
@@ -4286,7 +4286,7 @@
 	druggy = 30
 
 	glass_icon_state = "rixulin_sundae"
-	glass_name = "glass of Rixulin Sundae"
+	glass_name = "glass of Tuq'qi Soda"
 	glass_desc = "A fizzing drink that looks like a really great time."
 
 /decl/reagent/alcohol/khlibnyz

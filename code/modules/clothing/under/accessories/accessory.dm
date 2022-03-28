@@ -594,19 +594,19 @@
 	item_state = "trinary_shouldercape"
 	overlay_state = "trinary_shouldercape"
 
-//tau ceti legion ribbons
-/obj/item/clothing/accessory/legion
+//interstellar forces ribbons
+/obj/item/clothing/accessory/interstellar
 	name = "seniority ribbons"
-	desc = "A ribbon meant to attach to the chest and sling around the shoulder accompanied by two medallions, marking seniority in a Tau Ceti Foreign Legion."
+	desc = "A ribbon meant to attach to the chest and sling around the shoulder accompanied by two medallions, marking seniority in an Interstellar Republic Task Force."
 	icon_state = "senior_ribbon"
 	item_state = "senior_ribbon"
 	overlay_state = "senior_ribbon"
 	slot = ACCESSORY_SLOT_CAPE
 	flippable = TRUE
 
-/obj/item/clothing/accessory/legion/specialist
+/obj/item/clothing/accessory/interstellar/specialist
 	name = "specialist medallion"
-	desc = "Two small medallions, one worn on the shoulder and the other worn on the chest. Meant to display the rank of specialist troops in a Tau Ceti Foreign Legion."
+	desc = "Two small medallions, one worn on the shoulder and the other worn on the chest. Meant to display the rank of specialist troops in an Interstellar Republic task force."
 	icon_state = "specialist_medallion"
 	item_state = "specialist_medallion"
 	overlay_state = "specialist_medallion"
@@ -631,9 +631,9 @@
 	icon_state = "neckbrace"
 	item_state = "neckbrace"
 
-/obj/item/clothing/accessory/tc_pin
-	name = "Tau Ceti pin"
-	desc = "A small, Tau Ceti flag pin of the Republic of Tau Ceti."
+/obj/item/clothing/accessory/galactica_pin
+	name = "Galactica pin"
+	desc = "A small, Galactica flag pin."
 	icon_state = "tc-pin"
 	item_state = "tc-pin"
 	overlay_state = "tc-pin"
@@ -641,9 +641,9 @@
 	drop_sound = 'sound/items/drop/ring.ogg'
 	pickup_sound = 'sound/items/pickup/ring.ogg'
 
-/obj/item/clothing/accessory/sol_pin
-	name = "Sol Alliance pin"
-	desc = "A small pin of the Sol Alliance, shaped like a golden sun."
+/obj/item/clothing/accessory/ir_pin
+	name = "Interstellar Republic pin"
+	desc = "A small pin of the Interstellar Republic, shaped like a golden sun."
 	icon_state = "sol-pin"
 	item_state = "sol-pin"
 	overlay_state = "sol-pin"

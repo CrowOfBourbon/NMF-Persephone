@@ -77,7 +77,7 @@ The additional weight of the synthetic skin on the original Titan frame reduces 
 /datum/species/machine/shell/get_species(var/reference, var/mob/living/carbon/human/H, var/records)
 	if(reference)
 		return src
-	// it's illegal for shells in Tau Ceti space to not have tags, so their records would have to be falsified
+	// it's illegal for shells in Galactica space to not have tags, so their records would have to be falsified
 	if(records && !H.internal_organs_by_name[BP_IPCTAG])
 		return "Human"
 	return name
