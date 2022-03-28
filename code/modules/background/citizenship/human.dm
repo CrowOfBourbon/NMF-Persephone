@@ -1,4 +1,35 @@
+/datum/citizenship/galactica
+	name = CITIZENSHIP_GALACTICA
+	description = "Galactica can best be described as an up and coming power house. Known for it's lax standards and even laxer policy's, this citizenship is more like a club\
+	card to your local military surplus store. Galactica covers most planets not in the Interstellar Republic, Elodile Empire, Unathi or Tajaran air space."
+	consular_outfit = /datum/outfit/job/representative/consular/ceti
 
+	job_species_blacklist = list(
+		"Consular Officer" = list(
+			SPECIES_VAURCA_WORKER,
+			SPECIES_VAURCA_WARRIOR,
+			SPECIES_VAURCA_BULWARK,
+			SPECIES_TESHARI
+		)
+	)
+
+/datum/citizenship/tau_ceti/get_objectives(mission_level, var/mob/living/carbon/human/H)
+	var/rep_objectives
+
+	switch(mission_level)
+		if(REPRESENTATIVE_MISSION_HIGH)
+			rep_objectives = pick("Compile and report and audit [rand(1,3)] suspicious indivduals who might be spies or otherwise act hostile against Galactica.",
+							"Have [rand(2,6)] crewmembers sign a pledge of loyalty to Galactica.")
+
+		if(REPRESENTATIVE_MISSION_MEDIUM)
+			rep_objectives = pick("Convince [rand(2,4)] Galactiac crewmembers that are not in Command to join the Galactic Peace Keepers.",
+							"Convince [rand(3,6)] crewmembers of Galactic superiority over the Interstellar Republic.")
+		else
+			rep_objectives = pick("Run a questionnaire on Galactica citizens' views on synthetic citizenship.",
+							"Run a questionnaire on Galactica citizens' views on vaurca citizenship.")
+
+
+	return rep_objectives
 
 /datum/outfit/job/representative/consular/ceti
 	name = "Galactica Consular Officer"
@@ -41,7 +72,8 @@
 			SPECIES_VAURCA_WORKER,
 			SPECIES_VAURCA_WARRIOR,
 			SPECIES_VAURCA_BULWARK,
-			SPECIES_VAURCA_BREEDER
+			SPECIES_VAURCA_BREEDER,
+			SPECIES_TESHARI
 		)
 	)
 
