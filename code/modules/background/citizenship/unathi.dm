@@ -37,26 +37,15 @@ These Ensi wield unchecked power and use advanced technology to uphold their app
 
 	switch(mission_level)
 		if(REPRESENTATIVE_MISSION_HIGH)
-			if(isvaurca(H))
-				rep_objectives = pick("Assist K'laxan Nanotrasen personnel with their avowal process",
-								"Obtain [rand(2,3)] sheets of solid phoron below market value, buying directly from the source")
-			else
-				rep_objectives = pick("Encourage [rand(1,2)] Unathi to spread their ideals across the crew.",
+			rep_objectives = pick("Encourage [rand(1,2)] Unathi to spread their ideals across the crew.",
 								"Gather [rand(2,3)] evidences of any marginalization of Unathi beliefs")
 
 		if(REPRESENTATIVE_MISSION_MEDIUM)
-			if(isvaurca(H))
-				rep_objectives = pick("Collect evidence of Nanotrasen being unfair or bigoted to Vaurca or Unathi Employees, to be used as leverage in future labor negotiations",
-								"Upsell K'laxan Vaurca to different command staff. Have one complete a Bound Vaurca requisition form")
-			else
-				rep_objectives = pick("Speak out against any violation of Unathi rights, no matter how small they may seem.",
+			rep_objectives = pick("Speak out against any violation of Unathi rights, no matter how small they may seem.",
 								"Proselytize the religions to the crew",
 								"Encourage [rand(2,4)] Unathi to visit the Ziggaruts on Rhea to enforce faith.")
 		else
-			if(isvaurca(H))
-				rep_objectives = pick("Promote Cultural Exchange between Vaurca, Unathi and other species")
-			else
-				rep_objectives = pick("Ensure all Unathi on station are being respected in their beliefs and customs and traditions",
+			rep_objectives = pick("Ensure all Unathi on station are being respected in their beliefs and customs and traditions",
 								"Obtain [rand(2,3)] sheets of solid phoron below market value.")
 
 	return rep_objectives
@@ -108,26 +97,15 @@ Wealth, hedonism, and overriding personal advancement are the primary goals of e
 
 	switch(mission_level)
 		if(REPRESENTATIVE_MISSION_HIGH)
-			if(isvaurca(H))
-				rep_objectives = pick("Assist K'laxan Nanotrasen personnel with their avowal process",
-								"Obtain [rand(2,3)] sheets of solid phoron below market value, buying directly from the source")
-			else
-				rep_objectives = pick("Encourage [rand(1,2)] Unathi to engage in science experiments or give them money to expand the Sciences.",
+			rep_objectives = pick("Encourage [rand(1,2)] Unathi to engage in science experiments or give them money to expand the Sciences.",
 								"Gather [rand(2,3)] evidences of any marginalization of Unathi beliefs")
 
 		if(REPRESENTATIVE_MISSION_MEDIUM)
-			if(isvaurca(H))
-				rep_objectives = pick("Collect evidence of Nanotrasen being unfair or bigoted to Vaurca or Unathi Employees, to be used as leverage in future labor negotiations",
-								"Upsell K'laxan Vaurca to different command staff. Have one complete a Bound Vaurca requisition form")
-			else
-				rep_objectives = pick("Speak out against any violation of Yzali rights occuring on Perspehone.",
+			rep_objectives = pick("Speak out against any violation of Yzali rights occuring on Perspehone.",
 								"Proselytize the sciences over everything else occuring on the facility.",
 								"Encourage [rand(2,4)] Unathi to consider investing their wealth in the sciences.")
 		else
-			if(isvaurca(H))
-				rep_objectives = pick("Promote Cultural Exchange between Vaurca, Unathi and other species")
-			else
-				rep_objectives = pick("Ensure all Unathi on station are being respected in their beliefs and customs and traditions",
+			rep_objectives = pick("Ensure all Unathi on station are being respected in their beliefs and customs and traditions",
 								"Free Pick.")
 
 	return rep_objectives

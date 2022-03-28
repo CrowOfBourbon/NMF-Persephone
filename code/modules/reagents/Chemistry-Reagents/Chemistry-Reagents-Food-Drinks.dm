@@ -2055,13 +2055,13 @@
 
 /decl/reagent/drink/toothpaste/cold_gate
 	name = "Cold Gate"
-	description = "A C'thur Favorite, guaranteed to make even the bloodiest of warriors mandibles shimmer."
+	description = "A Favorite of the Empire Of Queens, guaranteed to make even the bloodiest of warriors mandibles shimmer."
 	strength = 25
 	taste_description = "mint"
 
 	glass_icon_state = "cold_gate"
 	glass_name = "glass of Cold Gate"
-	glass_desc = "A C'thur Favorite, guaranteed to make even the bloodiest of warriors mandibles shimmer."
+	glass_desc = "A Favorite of the Empire Of Queens, guaranteed to make even the bloodiest of warriors mandibles shimmer."
 	glass_center_of_mass = list("x"=7, "y"=8)
 
 /decl/reagent/drink/toothpaste/waterfresh

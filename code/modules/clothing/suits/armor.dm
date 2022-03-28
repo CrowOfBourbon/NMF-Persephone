@@ -495,25 +495,6 @@
 		bomb = ARMOR_BOMB_PADDED
 	)
 
-// Vaurca version of Unathi armor
-/obj/item/clothing/suit/armor/unathi/klax
-	name = "klaxan hopeful body armor"
-	desc = "An armored chestplate designated to be worn by a K'lax hopeful. The retrofit is only a bit shoddy."
-	icon = 'icons/obj/vaurca_items.dmi'
-	icon_state = "klax_hopeful"
-	item_state = "klax_hopeful"
-	contained_sprite = TRUE
-	species_restricted = list(BODYTYPE_VAURCA)
-	allowed = list(/obj/item/gun/projectile, /obj/item/gun/energy, /obj/item/gun/launcher, /obj/item/melee, /obj/item/reagent_containers/spray/pepper, /obj/item/ammo_magazine, /obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/handcuffs, /obj/item/device/flashlight)
-	siemens_coefficient = 0.35
-	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_MAJOR,
-		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_PADDED,
-		rad = ARMOR_RAD_RESISTANT
-	)
 
 /obj/item/clothing/suit/storage/vest/legion
 	name = "foreign legion armored suit"
