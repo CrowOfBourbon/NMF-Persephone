@@ -301,6 +301,10 @@
 	throwforce = 2
 	slot_flags = SLOT_EARS
 
+	sprite_sheets = list(
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/ears.dmi'
+	)
+
 /obj/item/clothing/ears/attack_hand(mob/user as mob)
 	if (!user) return
 
@@ -377,9 +381,13 @@
 	body_parts_covered = HANDS
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
-	species_restricted = list("exclude",BODYTYPE_UNATHI,BODYTYPE_TAJARA,BODYTYPE_VAURCA, BODYTYPE_GOLEM,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_VAURCA_BULWARK)
+	species_restricted = list("exclude",BODYTYPE_UNATHI,BODYTYPE_TAJARA,BODYTYPE_VAURCA, BODYTYPE_GOLEM,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_VAURCA_BULWARK,BODYTYPE_TESHARI)
 	drop_sound = 'sound/items/drop/gloves.ogg'
 	pickup_sound = 'sound/items/pickup/gloves.ogg'
+
+	sprite_sheets = list(
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/hands.dmi'
+	)
 
 /obj/item/clothing/gloves/update_clothing_icon()
 	if (ismob(src.loc))
@@ -427,6 +435,7 @@
 			species_restricted -= BODYTYPE_UNATHI
 			species_restricted -= BODYTYPE_TAJARA
 			species_restricted -= BODYTYPE_VAURCA
+			species_restricted -= BODYTYPE_TESHARI
 		return
 
 /obj/item/clothing/gloves/mob_can_equip(mob/user, slot, disable_warning = FALSE)
@@ -498,6 +507,10 @@
 	var/light_applied
 	var/brightness_on
 	var/on = 0
+
+	sprite_sheets = list(
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/head.dmi'
+	)
 
 /obj/item/clothing/head/Initialize(mapload, material_key)
 	. = ..()
@@ -660,7 +673,8 @@
 	body_parts_covered = FACE|EYES
 	sprite_sheets = list(
 		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/mask.dmi',
-		BODYTYPE_UNATHI = 'icons/mob/species/unathi/mask.dmi'
+		BODYTYPE_UNATHI = 'icons/mob/species/unathi/mask.dmi',
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/mask.dmi'
 		)
 
 	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_VAURCA_BULWARK)
@@ -780,9 +794,13 @@
 	permeability_coefficient = 0.50
 	force = 0
 	var/overshoes = 0
-	species_restricted = list("exclude",BODYTYPE_UNATHI,BODYTYPE_TAJARA,BODYTYPE_VAURCA,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM)
+	species_restricted = list("exclude",BODYTYPE_UNATHI,BODYTYPE_TAJARA,BODYTYPE_VAURCA,BODYTYPE_VAURCA_BREEDER,BODYTYPE_VAURCA_WARFORM,BODYTYPE_TESHARI)
 	var/silent = 0
 	var/last_trip = 0
+
+	sprite_sheets = list(
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/shoes.dmi'
+	)
 
 /obj/item/clothing/shoes/proc/draw_knife()
 	set name = "Draw Boot Knife"
@@ -897,7 +915,8 @@
 		slot_r_hand_str = 'icons/mob/items/clothing/righthand_suit.dmi'
 		)
 	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/suit.dmi'
+		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/suit.dmi',
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/suit.dmi'
 	)
 	name = "suit"
 	var/fire_resist = T0C+100
@@ -960,7 +979,8 @@
 		slot_r_hand_str = 'icons/mob/items/clothing/righthand_uniforms.dmi'
 		)
 	sprite_sheets = list(
-		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/uniform.dmi'
+		BODYTYPE_VAURCA_BULWARK = 'icons/mob/species/bulwark/uniform.dmi',
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/uniform.dmi'
 	)
 	name = "under"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
@@ -1241,6 +1261,10 @@
 	drop_sound = 'sound/items/drop/ring.ogg'
 	pickup_sound = 'sound/items/pickup/ring.ogg'
 	var/undergloves = TRUE
+
+	sprite_sheets = list(
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/rings.dmi'
+	)
 
 /obj/item/clothing/proc/clothing_class()
 	return "clothing"

@@ -22,6 +22,11 @@
 	drop_sound = 'sound/items/drop/component.ogg'
 	pickup_sound = 'sound/items/pickup/component.ogg'
 
+	sprite_sheets = list(
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/ears.dmi'
+
+	)
+
 /obj/item/device/radio/headset/Initialize()
 	. = ..()
 	internal_channels.Cut()

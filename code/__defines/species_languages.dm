@@ -54,6 +54,7 @@
 #define LANGUAGE_VAURCA_SIGN "Warrior Coordination"
 #define LANGUAGE_AZAZIBA "Sinta'azaziba"
 #define LANGUAGE_SIGN "Sign Language"
+#define LANGUAGE_SCHECHI "Schechi"
 
 // Antag Languages
 #define LANGUAGE_CHANGELING "Changeling"

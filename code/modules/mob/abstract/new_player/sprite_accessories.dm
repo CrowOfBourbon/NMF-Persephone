@@ -1734,14 +1734,14 @@ Follow by example and make good judgement based on length which list to include 
 	icon = 'icons/mob/hair_gradients.dmi'
 	species_allowed = list(/datum/species/human,/datum/species/human/offworlder,/datum/species/machine/shell,/datum/species/machine/shell/rogue,/datum/species/zombie,
 		/datum/species/tajaran,/datum/species/tajaran/zhan_khazan,/datum/species/tajaran/m_sai,/datum/species/zombie/tajara,
-		/datum/species/skrell, /datum/species/skrell/axiori, /datum/species/zombie/skrell, /datum/species/bug, /datum/species/bug/type_b)
+		/datum/species/skrell, /datum/species/skrell/axiori, /datum/species/zombie/skrell, /datum/species/bug, /datum/species/bug/type_b, /datum/species/teshari)
 
 	none
 		name = "None"
 		icon_state = "none"
 		species_allowed = list(/datum/species/human,/datum/species/human/offworlder,/datum/species/machine/shell,/datum/species/machine/shell/rogue,/datum/species/zombie,/datum/species/unathi,/datum/species/zombie/unathi,
 		/datum/species/tajaran,/datum/species/tajaran/zhan_khazan,/datum/species/tajaran/m_sai,/datum/species/zombie/tajara,/datum/species/skrell,/datum/species/skrell/axiori,/datum/species/zombie/skrell, /datum/species/bug,
-		/datum/species/bug/type_b)
+		/datum/species/bug/type_b, /datum/species/teshari)
 
 	fade_up
 		name = "Fade (Up)"
@@ -1817,7 +1817,7 @@ Follow by example and make good judgement based on length which list to include 
 		gender = NEUTER
 		species_allowed = list(/datum/species/human,/datum/species/human/offworlder,/datum/species/machine/shell,/datum/species/machine/shell/rogue,/datum/species/zombie,/datum/species/unathi,/datum/species/zombie/unathi,
 		/datum/species/tajaran,/datum/species/tajaran/zhan_khazan,/datum/species/tajaran/m_sai,/datum/species/zombie/tajara,/datum/species/skrell,/datum/species/skrell/axiori,/datum/species/zombie/skrell,/datum/species/diona,
-		/datum/species/diona/coeu, /datum/species/bug/type_b)
+		/datum/species/diona/coeu, /datum/species/bug/type_b, /datum/species/teshari)
 
 	threeOclock
 		name = "3 O'clock Shadow"
@@ -3033,6 +3033,120 @@ Follow by example and make good judgement based on length which list to include 
 			chatname = "antennae"
 			length = 6
 
+//Teshari plumage
+
+	teshari_tight
+		name = "Teshari tight"
+		species_allowed = list(/datum/species/teshari)
+		icon = 'icons/mob/human_face/teshari_hair.dmi'
+		icon_state = "teshari_tight"
+		chatname = "plumage"
+		length = 1
+
+		teshari_plumage
+			name = "Teshari plumage"
+			icon_state = "teshari_default"
+			chatname = "plumage"
+			length = 2
+
+		teshari_plumage_alt
+			name = "Teshari plumage (alt)"
+			icon_state = "teshari_ears"
+			chatname = "plumage"
+			length = 2
+
+		teshari_spike
+			name = "Teshari spike"
+			icon_state = "teshari_spike"
+			chatname = "plumage"
+			length = 2
+
+		teshari_mohawk
+			name = "Teshari mohawk"
+			icon_state = "teshari_mohawk"
+			chatname = "plumage"
+			length = 2
+
+		teshari_fluffymohawk
+			name = "Teshari fluffy mohawk"
+			icon_state = "teshari_fluffymohawk"
+			chatname = "plumage"
+			length = 2
+
+		teshari_spiky
+			name = "Teshari spiky"
+			icon_state = "teshari_spiky"
+			chatname = "plumage"
+			length = 3
+
+		teshari_burst_short
+			name = "Teshari short starburst"
+			icon_state = "teshari_burst_short"
+			chatname = "plumage"
+			length = 2
+
+		teshari_burst
+			name = "Teshari starburst"
+			icon_state = "teshari_burst"
+			chatname = "plumage"
+			length = 3
+
+		teshari_mane
+			name = "Teshari mane"
+			icon_state = "teshari_mane"
+			chatname = "plumage"
+			length = 3
+
+		teshari_droopy
+			name = "Teshari droopy"
+			icon_state = "teshari_droopy"
+			chatname = "plumage"
+			length = 2
+
+		teshari_pointy
+			name = "Teshari pointy"
+			icon_state = "teshari_pointy"
+			chatname = "plumage"
+			length = 2
+
+		teshari_mushroom
+			name = "Teshari mushroom"
+			icon_state = "teshari_mushroom"
+			chatname = "plumage"
+			length = 2
+
+		teshari_upright
+			name = "Teshari upright"
+			icon_state = "teshari_upright"
+			chatname = "plumage"
+			length = 2
+
+		teshari_backstrafe
+			name = "Teshari backstrafe"
+			icon_state = "teshari_backstrafe"
+			chatname = "plumage"
+			length = 3
+
+		teshari_longway
+			name = "Teshari long way"
+			icon_state = "teshari_longway"
+			chatname = "plumage"
+			length = 4
+
+		teshari_tree
+			name = "Teshari tree"
+			icon_state = "teshari_tree"
+			chatname = "plumage"
+			length = 3
+
+		teshari_twies
+			name = "Teshari twies"
+			icon_state = "teshari_twies"
+			chatname = "plumage"
+			length = 2
+
+
+
 /datum/sprite_accessory/facial_hair
 	taj_goatee
 		icon = 'icons/mob/human_face/tajara_facial_hair.dmi'
@@ -3576,6 +3690,22 @@ Follow by example and make good judgement based on length which list to include 
 		myrmoteras
 			name = "Myrmoteras Mandibles"
 			icon_state = "vaurca_myrmoteras"
+
+//Teshari plumage 'beards'
+	teshari_beard
+		name = "Teshari beard"
+		icon = 'icons/mob/human_face/teshari_facial_hair.dmi'
+		species_allowed = list(/datum/species/teshari)
+		icon_state = "teshari_chin"
+		gender = NEUTER
+
+		teshari_sideburns
+			name = "Teshari sideburns"
+			icon_state = "teshari_sideburns"
+
+		teshari_scraggly
+			name = "Teshari scraggly"
+			icon_state = "teshari_scraggly"
 
 /*
 ////////////////////////////
@@ -5140,3 +5270,10 @@ Follow by example and make good judgement based on length which list to include 
 		icon_state = "taj_patchesface"
 		body_parts = list(BP_HEAD)
 		species_allowed = list(/datum/species/tajaran,/datum/species/tajaran/zhan_khazan,/datum/species/tajaran/m_sai,/datum/species/zombie/tajara)
+
+//teshari markings
+	teshari_heterochomia
+		name = "Teshari heterochomia"
+		icon = "icons/mob/human_races/markings_teshari.dmi"
+		body_parts = list(BP_HEAD)
+		species_allowed = list(/datum/species/teshari)

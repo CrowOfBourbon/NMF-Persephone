@@ -113,6 +113,9 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 	h_style = "Tajaran Ears"
 	. = ..(mapload, SPECIES_TAJARA_ZHAN)
 
+/mob/living/carbon/human/teshari/Initialize(mapload)
+	. = ..(mapload, SPECIES_TESHARI)
+
 /mob/living/carbon/human/industrial/Initialize(mapload)
 	. = ..(mapload, SPECIES_IPC_G1)
 
