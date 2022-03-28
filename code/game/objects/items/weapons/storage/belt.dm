@@ -16,6 +16,10 @@
 	var/show_above_suit = FALSE
 	var/content_overlays = FALSE //If this is true, the belt will gain overlays based on what it's holding
 
+	sprite_sheets = list(
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/belt.dmi'
+	)
+
 /obj/item/storage/belt/proc/update_clothing_icon()
 	if(ismob(src.loc))
 		var/mob/M = src.loc

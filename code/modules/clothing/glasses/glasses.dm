@@ -34,7 +34,8 @@ BLIND     // can't see anything
 	var/normal_layer = TRUE
 	var/shatter_material = /obj/item/material/shard
 	sprite_sheets = list(
-		BODYTYPE_VAURCA_WARFORM = 'icons/mob/species/warriorform/eyes.dmi'
+		BODYTYPE_VAURCA_WARFORM = 'icons/mob/species/warriorform/eyes.dmi',
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/eyes.dmi'
 		)
 	species_restricted = list("exclude",BODYTYPE_VAURCA_BREEDER)
 	drop_sound = 'sound/items/drop/accessory.ogg'

@@ -157,6 +157,72 @@
 	desc = "Rainbow gloves made for Unathi use."
 	species_restricted = list(BODYTYPE_UNATHI)
 
+/obj/item/clothing/gloves/yellow/teshari
+	desc = "These gloves will protect the wearer from electric shock. Made special for Teshari use."
+	name = "teshari electrical gloves"
+	icon_state = "yellow"
+	item_state = "yellow"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	species_restricted = list(BODYTYPE_TESHARI)
+
+/obj/item/clothing/gloves/black/teshari
+	name = "black gloves"
+	desc = "Black gloves made for Teshari use."
+	species_restricted = list(BODYTYPE_UNATHI)
+
+//more snowflake gloves for the custom loadout
+
+/obj/item/clothing/gloves/red/teshari
+ 	name = "red gloves"
+ 	desc = "Red gloves made for Unathi use."
+ 	species_restricted = list(BODYTYPE_TESHARI)
+
+/obj/item/clothing/gloves/blue/teshari
+ 	name = "blue gloves"
+ 	desc = "Blue gloves made for Teshari use."
+ 	species_restricted = list(BODYTYPE_TESHARI)
+
+/obj/item/clothing/gloves/orange/teshari
+ 	name = "orange gloves"
+ 	desc = "Orange gloves made for Teshari use."
+ 	species_restricted = list(BODYTYPE_TESHARI)
+
+/obj/item/clothing/gloves/purple/teshari
+ 	name = "purple gloves"
+ 	desc = "Purple gloves made for Teshari use."
+ 	species_restricted = list(BODYTYPE_TESHARI)
+
+/obj/item/clothing/gloves/brown/teshari
+ 	name = "brown gloves"
+ 	desc = "Brown gloves made for Teshari use."
+ 	species_restricted = list(BODYTYPE_TESHARI)
+
+/obj/item/clothing/gloves/light_brown/teshari
+	name = "light brown gloves"
+	desc = "Light brown gloves made for Teshari use."
+	species_restricted = list(BODYTYPE_TESHARI)
+
+/obj/item/clothing/gloves/green/teshari
+ 	name = "green gloves"
+ 	desc = "Green gloves made for Teshari use."
+ 	species_restricted = list(BODYTYPE_TESHARI)
+
+/obj/item/clothing/gloves/grey/teshari
+	name = "grey gloves"
+	desc = "Grey gloves made for Teshari use."
+	species_restricted = list(BODYTYPE_TESHARI)
+
+/obj/item/clothing/gloves/white/teshari
+	name = "white gloves"
+	desc = "White gloves made for Teshari use."
+	species_restricted = list(BODYTYPE_TESHARI)
+
+/obj/item/clothing/gloves/rainbow/teshari
+	name = "rainbow gloves"
+	desc = "Rainbow gloves made for Teshari use."
+	species_restricted = list(BODYTYPE_TESHARI)
+
 /obj/item/clothing/gloves/evening
 	name = "evening gloves"
 	desc = "A pair of gloves that reach past the elbow."

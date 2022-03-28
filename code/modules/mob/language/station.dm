@@ -197,6 +197,31 @@
 	new_name = first_name + " " + last_name
 	return new_name
 
+/datum/language/schechi
+	name = LANGUAGE_SCHECHI
+	short = "SCH"
+	colour = "schechi"
+	desc = "A chirping and trilling language spoken by the Teshari"
+	speech_verb = "chirps"
+	ask_verb = "chirrups"
+	exclaim_verb = "trills"
+	shout_verb = "trills loudly"
+	sing_verb = "chirps tunefully"
+	key = "v"
+	flags = WHITELISTED|TCOMSSIM
+	space_chance = 50
+//	written_style = "schechi"
+	syllables = list(
+			"ca", "ra", "ma", "sa", "na", "ta", "la", "sha", "scha", "a", "a",
+			"ce", "re", "me", "se", "ne", "te", "le", "she", "sche", "e", "e",
+			"ci", "ri", "mi", "si", "ni", "ti", "li", "shi", "schi", "i", "i"
+		)
+	allow_accents = TRUE
+
+/datum/language/schechi/get_random_name(gender)
+	return ..(gender, 2, 4, 1.5)
+
+
 /datum/language/bug
 	name = LANGUAGE_VAURCA
 	desc = "A localised expression of the Vaurcae hivemind, allowing Vaurcae to communicate from across great distances. \"It's a bugs life.\""

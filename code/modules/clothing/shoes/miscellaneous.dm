@@ -70,7 +70,11 @@
 	icon_state = "sandals"
 	species_restricted = null
 	body_parts_covered = FALSE
-	sprite_sheets = list("Tajara" = 'icons/mob/species/tajaran/shoes.dmi')
+//	sprite_sheets = list("Tajara" = 'icons/mob/species/tajaran/shoes.dmi')
+	sprite_sheets = list(
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/shoes.dmi',
+		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/shoes.dmi'
+	)
 
 /obj/item/clothing/shoes/sandal/marisa
 	desc = "A pair of magic, black shoes."
@@ -91,7 +95,11 @@ obj/item/clothing/shoes/sandal/clogs
 	desc = "A pair of plastic clog shoes."
 	icon_state = "clogs"
 	item_state = "clogs"
-	sprite_sheets = list("Tajara" = 'icons/mob/species/tajaran/shoes.dmi')
+//	sprite_sheets = list("Tajara" = 'icons/mob/species/tajaran/shoes.dmi')
+	sprite_sheets = list(
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/shoes.dmi',
+		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/shoes.dmi'
+	)
 
 /obj/item/clothing/shoes/cyborg
 	name = "cyborg boots"
@@ -231,8 +239,12 @@ obj/item/clothing/shoes/sandal/clogs
 	icon_state = "winterboots_toeless"
 	item_state = "winterboots_toeless"
 	species_restricted = null
+//	sprite_sheets = list(
+//		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/shoes.dmi')
 	sprite_sheets = list(
-		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/shoes.dmi')
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/shoes.dmi',
+		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/shoes.dmi'
+	)
 
 /obj/item/clothing/shoes/caligae
 	name = "caligae"
@@ -247,6 +259,7 @@ obj/item/clothing/shoes/sandal/clogs
 	body_parts_covered = FEET|LEGS
 	species_restricted = null
 	sprite_sheets = list(
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/shoes.dmi',
 		BODYTYPE_TAJARA = 'icons/mob/species/tajaran/shoes.dmi',
 		BODYTYPE_UNATHI = 'icons/mob/species/unathi/shoes.dmi')
 

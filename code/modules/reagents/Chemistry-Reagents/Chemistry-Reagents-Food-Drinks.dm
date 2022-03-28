@@ -131,7 +131,7 @@
 	var/obj/item/organ/internal/parasite/P = M.internal_organs_by_name["blackkois"]
 	if((alien == IS_VAURCA) || (istype(P) && P.stage >= 3))
 		M.adjustToxLoss(1.5 * removed)
-	else if(alien != IS_UNATHI)
+	else if(alien != IS_UNATHI && alien != IS_TESHARI)
 		digest(M,removed, holder = holder)
 
 /decl/reagent/nutriment/proc/digest(var/mob/living/carbon/M, var/removed, var/datum/reagents/holder)
@@ -222,7 +222,7 @@
 	taste_description = "meat"
 
 /decl/reagent/nutriment/protein/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(alien && alien == IS_UNATHI)
+	if(alien && (alien == IS_UNATHI || alien == IS_TESHARI))
 		digest(M,removed, holder = holder)
 		return
 	..()
@@ -256,7 +256,7 @@
 	taste_description = "egg"
 
 /decl/reagent/nutriment/egg/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(alien && alien == IS_UNATHI)
+	if(alien && (alien == IS_UNATHI || alien == IS_TESHARI))
 		digest(M, removed, holder = holder)
 		return
 	..()
@@ -277,9 +277,9 @@
 	color = "#ffdfb0"
 	taste_description = "fat"
 
-//Unathi can digest fats too
+//Unathi and Teshari can digest fats too
 /decl/reagent/nutriment/triglyceride/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(alien && alien == IS_UNATHI)
+	if(alien && (alien == IS_UNATHI || alien == IS_TESHARI))
 		digest(M, removed, holder = holder)
 		return
 	..()

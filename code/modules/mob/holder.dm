@@ -265,6 +265,8 @@ var/list/holder_mob_icon_cache = list()
 	var/list/generate_for_slots = list(slot_l_hand_str, slot_r_hand_str, slot_back_str)
 	slot_flags = SLOT_BACK
 
+/obj/item/holder/human/teshari
+	w_class = ITEMSIZE_HUGE //no putting teshari in bags
 
 /obj/item/holder/proc/sync(var/mob/living/M)
 	src.name = M.name
