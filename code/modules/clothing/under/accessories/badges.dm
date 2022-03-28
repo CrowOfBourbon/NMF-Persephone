@@ -260,8 +260,8 @@
 	desc_fluff = "A passcard is a modern evolution of the state-issued identification card, with all the functionality of a driver's license, birth certificate, passport, or other document, \
 	updated as necessary or able by a central government."
 	icon = 'icons/clothing/accessories/passcards.dmi'
-	icon_state = "passcard_ceti"
-	item_state = "passcard_ceti"
+	icon_state = "passcard_galactica"
+	item_state = "passcard_galactica"
 	contained_sprite = TRUE
 	slot_flags = null
 	w_class = ITEMSIZE_TINY
@@ -275,14 +275,14 @@
 /obj/item/clothing/accessory/badge/passcard/interstellar
 	name = "Interstellar Republic Passcard"
 	desc = "A passcard issued to citizens of the Interstellar Republic, typically from planets such as the Earth, Mars, Luna, Kepler, or Harmonia."
-	icon_state = "passcard_sol"
-	item_state = "passcard_sol"
+	icon_state = "passcard_inter"
+	item_state = "passcard_inter"
 
 /obj/item/clothing/accessory/badge/passcard/freeport
-	name = "Free Port passblade"
-	desc = "A dagger issued as a writ of passage to Free Port Citizens abroad."
-	icon_state = "passcard_ceti"
-	item_state = "passcard_ceti"
+	name = "Free Port passcard"
+	desc = "A passcard issued as a writ of passage to Free Port Citizens abroad."
+	icon_state = "passcard_freeport"
+	item_state = "passcard_freeport"
 	contained_sprite = TRUE
 	slot_flags = null
 	w_class = ITEMSIZE_TINY
@@ -303,8 +303,8 @@
 	name = "Galactica passport"
 	desc = "A passport issued to a citizen of Galactica."
 	icon = 'icons/clothing/accessories/passcards.dmi'
-	icon_state = "passport_ceti"
-	item_state = "passport_ceti"
+	icon_state = "passport_gala"
+	item_state = "passport_gala"
 	contained_sprite = TRUE
 	slot_flags = null
 	w_class = ITEMSIZE_TINY
@@ -338,8 +338,8 @@
 /obj/item/clothing/accessory/badge/passport/interstellar
 	name = "Interstellar Republic passport"
 	desc = "A passport issued to a citizen of the Alliance of Sovereign Solarian Nations, or Sol Alliance. An outdated document for passage abroad."
-	icon_state = "passport_sol"
-	item_state = "passport_sol"
+	icon_state = "passport_inter"
+	item_state = "passport_inter"
 
 /obj/item/clothing/accessory/badge/passport/coc
 	name = "coalition passport"
@@ -350,8 +350,8 @@
 /obj/item/clothing/accessory/badge/passport/elodile
 	name = "Elodile Empire passport"
 	desc = "A passport issued to citizens of the Elodile Empire. Shiny, and compact, it's perfect to use on the go."
-	icon_state = "passport_jargon"
-	item_state = "passport_jargon"
+	icon_state = "passport_elodile"
+	item_state = "passport_elodile"
 	open = CLOSED
 	var/credit_score = 5
 	var/species_tag = ""
