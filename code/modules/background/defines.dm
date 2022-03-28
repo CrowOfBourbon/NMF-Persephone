@@ -72,4 +72,5 @@
 #define ACCENT_BLUESPACE "Bluespace"
 
 #define ACCENT_XAL "Xalliac"
-#define ACCENT_TILLAN "Tillic"
+#define ACCENT_UNK "Unk"
+#define ACCENT_TIL "Tillic"

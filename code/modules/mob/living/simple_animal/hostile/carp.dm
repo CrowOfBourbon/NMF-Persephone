@@ -111,7 +111,7 @@
 
 /mob/living/simple_animal/hostile/carp/russian
 	name = "Ivan the carp"
-	desc = "A feared space carp, nicknamed as Ivan by the old spacemen of Tau Ceti."
+	desc = "A feared space carp, nicknamed as Ivan by the old spacemen of Galactica."
 	icon_state = "carp_russian"
 	icon_living = "carp_russian"
 	icon_dead = "carp_russian_dead"

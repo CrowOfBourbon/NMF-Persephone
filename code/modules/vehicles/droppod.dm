@@ -26,9 +26,9 @@
 
 	var/connected_blastdoor //Connect a blast door's _wifi_id here to have it close when the droppod is launched.
 
-/obj/vehicle/droppod/legion
-	name = "legion drop pod"
-	desc = "A big metal pod painted in the colors of the Tau Ceti Foreign Legion."
+/obj/vehicle/droppod/interstellar
+	name = "interstellar drop pod"
+	desc = "A big metal pod painted in the colors of the Interstellar Republic Forces."
 	icon_state = "legion_pod"
 
 /obj/vehicle/droppod/syndie

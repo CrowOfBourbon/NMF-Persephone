@@ -211,12 +211,12 @@
 		brightness_color = initial(brightness_color)
 	update()
 
-//--Tau Ceti Foreign Legion Shuttle--//
+//--Interstellar Republic Forces Shuttle--//
 
-/obj/machinery/computer/shuttle_control/multi/legion
+/obj/machinery/computer/shuttle_control/multi/interstellar
 	name = "dropship control console"
-	req_access = list(access_legion)
-	shuttle_tag = "Legion Shuttle"
+	req_access = list(access_interstellar)
+	shuttle_tag = "Interstellar Shuttle"
 
 /obj/machinery/computer/shuttle_control/multi/distress
 	name = "shuttle control computer"

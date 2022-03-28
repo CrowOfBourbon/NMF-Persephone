@@ -33,6 +33,12 @@
 	reagents_to_add = list(/decl/reagent/nutriment/protein = 6, /decl/reagent/nutriment/triglyceride = 2, /decl/reagent/toxin/phoron = 27)
 	bitesize = 1.5
 
+/obj/item/reagent_containers/food/snacks/meat/teshari
+	name = "Teshari meat"
+	desc = "A piece of large avian meat"
+	icon_state = "chickenbreast"
+	cooked_icon = "chickenbreast_cooked"
+
 /obj/item/reagent_containers/food/snacks/meat/monkey
 	//same as plain meat
 
@@ -99,4 +105,4 @@
 	name = "bat wings"
 	desc = "Like chicken wings, but with even less meat!"
 	icon_state = "batmeat"
-	reagents_to_add = list(/decl/reagent/nutriment/protein = 1) 
+	reagents_to_add = list(/decl/reagent/nutriment/protein = 1)

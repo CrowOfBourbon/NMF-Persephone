@@ -78,8 +78,8 @@
 	desc = "A coffee cup bearing the flag of the Izweski Hegemony."
 	icon_state = "coffeecup_hegemony"
 
-/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/jargon
-	name = "\improper Jargon coffee cup"
+/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/elodile
+	name = "\improper Elodile coffee cup"
 	desc = "A purple coffee cup emblazoned with the flag of the Elodile Empire."
 	icon_state = "coffeecup_jarg"
 
@@ -89,27 +89,6 @@
 	desc = "A blue NanoTrasen coffee cup."
 	icon_state = "coffeecup_NT"
 
-/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/tcfl
-	name = "\improper Tau Ceti Foreign Legion coffee cup"
-	desc = "A coffee cup with the TCFL emblem emblazoned on it."
-	icon_state = "coffeecup_tcfl"
-
-/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/metal/hepht
-	name = "\improper Hephaestus coffee cup"
-	desc = "A strong coffee cup with the hephaestus logo emblazoned on it."
-	icon_state = "coffeecup_hepht"
-
-/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/idris
-	name = "\improper Idris coffee cup"
-	desc = "An Idris Incorporated coffee cup."
-	icon_state = "coffeecup_idris"
-
-/obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/zeng
-	name = "\improper Zeng-Hu coffee cup"
-	desc = "A coffee cup bearing the Zeng-Hu logo."
-	icon_state = "coffeecup_zeng"
-
-// Symbols, markings
 /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/one
 	name = "#1 coffee cup"
 	desc = "A white coffee cup, prominently featuring a #1."

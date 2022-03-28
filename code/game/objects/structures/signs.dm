@@ -397,23 +397,23 @@
 	name = "Large Hegemony flag"
 	flag_size = 1
 
-/obj/structure/sign/flag/jargon
+/obj/structure/sign/flag/elodile
 	name = "Elodile Empire Flag"
 	desc = "The insignia of the Elodile Empire."
 	icon_state = "jargon"
 
-/obj/structure/sign/flag/jargon/left
+/obj/structure/sign/flag/elodile/left
 	icon_state = "jargon_l"
 
-/obj/structure/sign/flag/jargon/right
+/obj/structure/sign/flag/elodile/right
 	icon_state = "jargon_r"
 
-/obj/item/flag/jargon
+/obj/item/flag/elodile
 	name = "Elodile Empire flag"
 	desc = "The insignia of the Elodile Empire"
 	flag_path = "jargon"
 
-/obj/item/flag/jargon/l
+/obj/item/flag/elodile/l
 	name = "Large Elodile Empire flag"
 	flag_size = 1
 

@@ -269,7 +269,7 @@
 	var/list/allowed_citizenships = list(CITIZENSHIP_GALACTICA, CITIZENSHIP_IR)
 	var/list/allowed_religions = list(RELIGION_NONE, RELIGION_OTHER, RELIGION_CHRISTIANITY, RELIGION_ISLAM, RELIGION_JUDAISM, RELIGION_HINDU, RELIGION_BUDDHISM, RELIGION_TAOISM)
 	var/default_citizenship = CITIZENSHIP_GALACTICA
-	var/list/allowed_accents = list(ACCENT_RHEA, ACCENT_EARTH, ACCENT_INTER, ACCENT_MARS, ACCENT_LUNA, ACCENT_DION, ACCENT_GALACTIC)
+	var/list/allowed_accents = list(ACCENT_RHEA, ACCENT_EARTH, ACCENT_INTER, ACCENT_MARS, ACCENT_LUNA, ACCENT_DION, ACCENT_GALACTIC, ACCENT_HARM, ACCENT_KEPLER)
 	var/default_accent = ACCENT_RHEA
 	var/zombie_type	//What zombie species they become
 	var/list/character_color_presets

@@ -41,14 +41,14 @@
 	req_access = null
 	req_one_access = list(access_engine_equip, access_atmospherics)
 
-/obj/item/device/magnetic_lock/security/legion
-	name = "legion magnetic door lock"
-	req_access = (access_legion)
+/obj/item/device/magnetic_lock/security/interstellar
+	name = "Interstellar magnetic door lock"
+	req_access = (access_interstellar)
 	w_class = ITEMSIZE_SMALL
 
-/obj/item/device/magnetic_lock/security/legion/Initialize()
+/obj/item/device/magnetic_lock/security/interstellar/Initialize()
 	. = ..()
-	desc = "A large, ID locked device used for completely locking down airlocks. This one carries the insignia of the Tau Ceti Foreign Legion."
+	desc = "A large, ID locked device used for completely locking down airlocks. This one carries the insignia of the Interstellar Republic Legion."
 
 /obj/item/device/magnetic_lock/Initialize()
 	. = ..()

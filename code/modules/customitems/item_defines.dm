@@ -226,7 +226,7 @@ All custom items with worn sprites must follow the contained sprite system: http
 
 
 /obj/item/fluff/zhilin_book //Siik'maas-Tau Ceti Basic Dictionary - Zhilin Vadim - fireandglory
-	name = "siik'maas-tau ceti basic dictionary"
+	name = "siik'maas-tau English dictionary"
 	desc = "A hefty dictionary with a simple design on the cover, it seems to be for translations. There's a label on the back denoting that it belongs to a \"Zhilin Vadim\"."
 	icon = 'icons/obj/custom_items/zhilin_book.dmi'
 	icon_override = 'icons/obj/custom_items/zhilin_book.dmi'
@@ -235,7 +235,7 @@ All custom items with worn sprites must follow the contained sprite system: http
 
 /obj/item/fluff/zhilin_book/attack_self(mob/user as mob)
 	user.visible_message("<span class='notice'>[user] starts flipping through \the [src].</span>",
-						"<span class='notice'>You start looking through \the [src], it appears to be filled with translations of Tau-Ceti basic for tajaran users.</span>",
+						"<span class='notice'>You start looking through \the [src], it appears to be filled with translations of English for tajaran users.</span>",
 						"<span class='notice'>You hear pages being flipped.</span>")
 	playsound(src.loc, /decl/sound_category/page_sound, 50, 1)
 
@@ -982,14 +982,14 @@ All custom items with worn sprites must follow the contained sprite system: http
 
 
 /obj/item/clothing/accessory/badge/fluff/kelt_tags //Foreign Legion Holo-Tags - Kelt - toasterstrudes
-	name = "foreign legion holo-tags"
+	name = "Interstellar holo-tags"
 	desc = "A set of holo-tags, on them is the printed name, address, and Serial Code as well as what appears to be a bar code underneath."
 	icon = 'icons/obj/custom_items/kelt_tags.dmi'
 	icon_override = 'icons/obj/custom_items/kelt_tags.dmi'
 	icon_state = "kelt_tags"
 	item_state = "kelt_tags"
 	stored_name = "Kelt"
-	badge_string = "Tau Ceti Foreign Legion"
+	badge_string = "Interstellar Republic Forces"
 	contained_sprite = TRUE
 	slot_flags = SLOT_MASK | SLOT_TIE
 
@@ -1535,25 +1535,6 @@ All custom items with worn sprites must follow the contained sprite system: http
 	icon_state = "cress_sweater"
 	item_state = "cress_sweater"
 	contained_sprite = TRUE
-
-/obj/item/fluff/cress_book //Lyric Book - Emily Cress - mattatlas
-	name = "lyric folder"
-	desc = "An old, slightly faded folder containing various alphabetically organized lyrics of several songs, including musical sheets for guitars. The name on the folder reads \"Hyo\". \
-			The lyrics inside have two copies each: one in Sol Common and one in Tau Ceti Basic. It generally looks to be hard rock or metal, with overall somber lyrics."
-	icon = 'icons/obj/custom_items/cress_items.dmi'
-	icon_override = 'icons/obj/custom_items/cress_items.dmi'
-	icon_state = "cress_book"
-	w_class = ITEMSIZE_SMALL
-	var/list/lyrics = list("Falling Down: A song about holding on to the last glimmer of hope. It's generally pretty motivational. The most recent song of the three.",
-							"Say Something New: A morose song about companionship, and being unable to continue without an undescribed dear friend. Morose, but overall motivational.",
-							"One By One: A song telling an undescribed person to 'give it another try'. It seems to mostly about reconciliation and accepting failure. More somber than the others, and the most dated.")
-
-/obj/item/fluff/cress_book/attack_self(mob/user)
-	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-	user.visible_message("<span class='notice'>[user] begins searching through \the [src]'s pages...</span>")
-	if(do_after(user, 25))
-		to_chat(user, "<span class='notice'>You pick out a song in the folder and read the lyrics: [pick(lyrics)]</span>")
-
 
 /obj/item/modular_computer/laptop/fluff/harrow_laptop //Developer's Laptop - Danny Harrow - brainos
 	name = "developer's laptop"

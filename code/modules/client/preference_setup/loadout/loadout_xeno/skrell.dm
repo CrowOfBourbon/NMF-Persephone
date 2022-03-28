@@ -96,19 +96,26 @@
 	sort_category = "Xenowear - Skrell"
 	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
 
+/datum/gear/chargoprojector
+	display_name = "Chargo Homeworld Projector"
+	description = "A projector that shows holopictures of various hotspots on the Skrell homeworlds."
+	path = /obj/item/skrell_projector
+	whitelisted = list(SPECIES_SKRELL, SPECIES_SKRELL_AXIORI)
+	sort_category = "Xenowear - Skrell"
+
 /datum/gear/accessory/skrell_passport/New()
 	. = ..()
 	gear_tweaks += list(social_credit_tweak)
 
 // the whitelisted list ensures only people with skrell, vaurca, or diona whitelists can reach this check
 /datum/gear/accessory/skrell_passport/check_species_whitelist(mob/living/carbon/human/H)
-	var/static/list/species_list = list(SPECIES_SKRELL, SPECIES_SKRELL_AXIORI, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_WORKER, SPECIES_VAURCA_BREEDER, SPECIES_VAURCA_BULWARK, SPECIES_DIONA, SPECIES_DIONA_COEUS)
+	var/static/list/species_list = list(SPECIES_SKRELL)
 	if(H.species.name in species_list)
 		return TRUE
 	return FALSE
 
 /datum/gear/accessory/skrell_passport/spawn_item(location, metadata, mob/living/carbon/human/H)
-	var/obj/item/clothing/accessory/badge/passport/jargon/J = ..()
+	var/obj/item/clothing/accessory/badge/passport/elodile/J = ..()
 	var/static/list/species_name_to_tag = list(SPECIES_SKRELL = "_s", SPECIES_SKRELL_AXIORI = "_s", SPECIES_VAURCA_WARRIOR = "_v", SPECIES_VAURCA_WORKER = "_v", SPECIES_VAURCA_BREEDER = "_v", SPECIES_VAURCA_BULWARK = "_v", SPECIES_DIONA = "_d", SPECIES_DIONA_COEUS = "_d")
 	var/tag = species_name_to_tag[H.species.name]
 	if(tag)
@@ -134,12 +141,12 @@ datum/gear_tweak/social_credit/get_default()
 	return 5
 
 datum/gear_tweak/social_credit/get_metadata(var/user, var/metadata)
-	var/credit_score = input(user, "Set the credit score your passport will display, refer to the wiki to gauge it. (It will be slightly randomized to simulate Jargon calculations.)", "Social Credit Score") as null|num
+	var/credit_score = input(user, "Set the credit score your passport will display, refer to the wiki to gauge it. (It will be slightly randomized to simulate Elodile calculations.)", "Social Credit Score") as null|num
 	if(credit_score)
 		return round(credit_score, 0.01)
 	return metadata
 
-datum/gear_tweak/social_credit/tweak_item(var/obj/item/clothing/accessory/badge/passport/jargon/PP, var/metadata)
+datum/gear_tweak/social_credit/tweak_item(var/obj/item/clothing/accessory/badge/passport/elodile/PP, var/metadata)
 	if(!istype(PP))
 		return
 	PP.credit_score = metadata + pick(-0.01, 0, 0.01)

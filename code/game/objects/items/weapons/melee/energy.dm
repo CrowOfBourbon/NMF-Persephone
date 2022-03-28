@@ -302,7 +302,7 @@
 
 /obj/item/melee/energy/sword/knife
 	name = "energy utility knife"
-	desc = "Some cheap energy blade, branded at the hilt with the logo of the Tau Ceti Foreign Legion."
+	desc = "Some cheap energy blade."
 	icon_state = "edagger0"
 	base_reflectchance = 10
 	base_block_chance = 10

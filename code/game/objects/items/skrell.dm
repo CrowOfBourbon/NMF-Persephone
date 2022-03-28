@@ -87,7 +87,7 @@
 	matter = list(MATERIAL_GLASS = 200)
 	drop_sound = 'sound/items/drop/glass.ogg'
 	pickup_sound = 'sound/items/pickup/glass.ogg'
-	var/list/worlds_selection = list("Xrim", "Kal'lo", "Nralakk")
+	var/list/worlds_selection = list("Blirkyr", "Olo'qi", "Moqy")
 	var/selected_world
 	var/working = FALSE
 
@@ -124,7 +124,7 @@
 			icon_state = "projector_pink"
 			light_color = LIGHT_COLOR_PINK
 
-		if("Oloqi")
+		if("Olo'qi")
 			icon_state = "projector_blue"
 			light_color = LIGHT_COLOR_BLUE
 
@@ -150,7 +150,7 @@
 										" You see a sandy beach glistening in the sunlight.",
 										"You see beautiful blue plants swaying slowly in the wind.")
 
-			if("OloQi")
+			if("Olo'qi")
 				hologram_message = pick("You see the ocean surface projected on the ceiling.",
 										"You see colorful fish swimming above the projector.",
 										"You hear the muffled sound of waves breaking above you.")
@@ -163,7 +163,7 @@
 		if(hologram_message)
 			visible_message("<span class='notice'>[hologram_message]</span>")
 
-/obj/item/jargontag
+/obj/item/elodiletag
 	name = "\improper Elodile Empire loyalty ear-tag"
 	desc = "An ear-tag that shows the wearer is loyal to the Elodile Empire. A small cable travels into the ear canal..."
 	w_class = ITEMSIZE_SMALL
@@ -174,7 +174,7 @@
 	contained_sprite = TRUE
 	var/fried = FALSE // Doesn't work anymore
 
-/obj/item/jargontag/equipped(mob/living/carbon/human/M)
+/obj/item/elodiletag/equipped(mob/living/carbon/human/M)
 	..()
 	if(fried)
 		return
@@ -184,10 +184,10 @@
 			clamp_on(H)
 
 // Could add some stuff to this in the future? I dunno. I just couldn't figure out how to callback to_chat LOL - geeves
-/obj/item/jargontag/proc/do_loyalty(var/mob/wearer)
+/obj/item/elodiletag/proc/do_loyalty(var/mob/wearer)
 	to_chat(wearer, SPAN_GOOD("You feel an intense feeling of loyalty towards the Elodile Empire surge through your brain."))
 
-/obj/item/jargontag/proc/clamp_on(var/mob/wearer)
+/obj/item/elodiletag/proc/clamp_on(var/mob/wearer)
 	if(fried)
 		return
 	canremove = FALSE
@@ -195,7 +195,7 @@
 	to_chat(wearer, SPAN_WARNING("\The [src] clamps down around your ear, releasing a burst of static before going silent. Something probes at your ear canal..."))
 	addtimer(CALLBACK(src, .proc/do_loyalty, wearer), 15)
 
-/obj/item/jargontag/proc/unclamp()
+/obj/item/elodiletag/proc/unclamp()
 	if(fried)
 		return
 	if(!canremove)
@@ -204,10 +204,10 @@
 		canremove = TRUE
 		fried = TRUE
 
-/obj/item/jargontag/emp_act(severity)
+/obj/item/elodiletag/emp_act(severity)
 	unclamp()
 
-/obj/item/jargontag/emag_act(var/remaining_charges, var/mob/user)
+/obj/item/elodiletag/emag_act(var/remaining_charges, var/mob/user)
 	if(anchored && !canremove)
 		unclamp()
 		return TRUE

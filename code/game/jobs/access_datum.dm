@@ -491,10 +491,10 @@ var/const/access_consular = 72
 	desc = "Merchant Access"
 	access_type = ACCESS_TYPE_CENTCOM
 
-/var/const/access_legion = 111//tau ceti foreign legion access
-/datum/access/legion
-	id = access_legion
-	desc = "Tau Ceti Foreign Legion Access"
+/var/const/access_interstellar = 111//Interstellar Republic Forces access
+/datum/access/interstellar
+	id = access_interstellar
+	desc = "Interstellar Republic Legion Access"
 	access_type = ACCESS_TYPE_CENTCOM
 
 var/const/access_distress = 112

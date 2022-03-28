@@ -44,12 +44,12 @@
 
 	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL
 
-/obj/item/clothing/head/helmet/space/rig/skrell/tup
+/obj/item/clothing/head/helmet/space/rig/skrell/mir
 	light_overlay = "helmet_light_tadpole"
 
-/obj/item/rig/skrell/tup
-	name = "tup suit control module"
-	desc = "A suit control module designed by the Jargon Federation for Tup operations. The best of the best."
+/obj/item/rig/skrell/mir
+	name = "Mir suit control module"
+	desc = "A suit control module designed by the Elodile Empire for Mir operations. The best of the best."
 	icon = 'icons/clothing/rig/tup.dmi'
 	icon_state = "tup_rig"
 	suit_type = "tup suit"
@@ -64,7 +64,7 @@
 		)
 	emp_protection = 95
 
-	helm_type = /obj/item/clothing/head/helmet/space/rig/skrell/tup
+	helm_type = /obj/item/clothing/head/helmet/space/rig/skrell/mir
 
 	initial_modules = list(
 		/obj/item/rig_module/ai_container,

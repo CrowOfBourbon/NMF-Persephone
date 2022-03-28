@@ -82,7 +82,7 @@
 
 /obj/item/material/knife/tacknife
 	name = "tactical knife"
-	desc = "You'd be killing loads of people if this was Medal of Valor: Heroes of Tau Ceti."
+	desc = "You'd be killing loads of people if this was Medal of Valor: Heroes of Interstellar."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "tacknife"
 	item_state = "knife"

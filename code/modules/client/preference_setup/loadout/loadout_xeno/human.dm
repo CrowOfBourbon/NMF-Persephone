@@ -84,6 +84,6 @@
 
 /datum/gear/accessory/offworlder_card
 	display_name = "scarab passblade"
-	path = /obj/item/clothing/accessory/badge/passcard/scarab
+	path = /obj/item/clothing/accessory/badge/passcard/freeport
 	whitelisted = list(SPECIES_HUMAN_OFFWORLD)
 	sort_category = "Xenowear - Human"

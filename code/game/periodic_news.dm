@@ -6,7 +6,7 @@
 		round_time // time of the round at which this should be announced, in seconds
 		message // body of the message
 		author = "NanoTrasen Editor"
-		channel_name = "Tau Ceti Daily"
+		channel_name = "Rhea Galactica News Network"
 		can_be_redacted = 0
 		message_type = "Story"
 
@@ -15,14 +15,14 @@
 		paycuts_suspicion
 			round_time = 60*10
 			message = {"Reports have leaked that NanoTrasen is planning to put paycuts into
-						effect on many of its Research Stations in Tau Ceti. Apparently these research
+						effect on many of its Research Stations in Cerberus. Apparently these research
 						stations haven't been able to yield the expected revenue, and thus adjustments
 						have to be made."}
 			author = "Unauthorized"
 
 		paycuts_confirmation
 			round_time = 60*40
-			message = {"Earlier rumours about paycuts on Research Stations in the Tau Ceti system have
+			message = {"Earlier rumours about paycuts on Research Stations in the Cerberus system have
 						been confirmed. Shockingly, however, the cuts will only affect lower tier
 						personnel. Heads of Staff will, according to our sources, not be affected."}
 			author = "Unauthorized"
@@ -30,7 +30,7 @@
 		human_experiments
 			round_time = 60*90
 			message = {"Unbelievable reports about human experimentation have reached our ears. According
-			 			to a refugee from one of the Tau Ceti Research Stations, their station, in order
+			 			to a refugee from one of the Cerberus Research Stations, their station, in order
 			 			to increase revenue, has refactored several of their facilities to perform experiments
 			 			on live humans, including virology research, genetic manipulation, and \"feeding them
 			 			to the slimes to see what happens\". Allegedly, these test subjects were neither
@@ -44,7 +44,7 @@
 			round_time = 60*20
 			message = {"The new field of research trying to explain several interesting spacetime oddities,
 						also known as \"Bluespace Research\", has reached new heights. Of the several
-						hundred space stations now orbiting in Tau Ceti, fifteen are now specially equipped
+						hundred space stations now orbiting in Cerberus, fifteen are now specially equipped
 						to experiment with and research Bluespace effects. Rumours have it some of these
 						stations even sport functional \"travel gates\" that can instantly move a whole research
 						team to an alternate reality."}
@@ -53,14 +53,14 @@
 
 		cheesy_honkers
 			author = "Editor Carl Ritz"
-			channel_name = "The Interstellar Gazette"
+			channel_name = "The Intersellar Homeward"
 			message = {"Do cheesy honkers increase risk of having a miscarriage? Several health administrations
 						say so!"}
 			round_time = 60 * 15
 
 		net_block
 			author = "Editor Carl Ritz"
-			channel_name = "The Gibson Gazette"
+			channel_name = "The Interstellar Homeward"
 			message = {"Several corporations banding together to block access to 'wetskrell.nt', site administrators
 			claiming violation of net laws."}
 			round_time = 60 * 50

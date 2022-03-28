@@ -238,9 +238,9 @@
 	icon_state = "wflight"
 	item_state = "wflight"
 
-/obj/item/clothing/suit/storage/toggle/leather_jacket/flight/legion
-	name = "tcfl flight jacket"
-	desc = "A Tau Ceti Foreign Legion pilot's jacket. This is the more common, less durable variety, which typically finds itself percolating amongst all ranks of the TCFL."
+/obj/item/clothing/suit/storage/toggle/leather_jacket/flight/interstellar
+	name = "flight jacket"
+	desc = "A pilot's jacket. This is the more common, less durable variety, which typically finds itself percolating amongst all ranks of the IRF."
 	icon_state = "lflight"
 	item_state = "lflight"
 	armor = list(
@@ -248,8 +248,8 @@
 	)
 	siemens_coefficient = 0.75
 
-/obj/item/clothing/suit/storage/toggle/leather_jacket/flight/legion/alt
-	desc = "A Tau Ceti Foreign Legion pilot's jacket made from a silky, shiny nanonylon material and lined with tough, protective synthfabrics."
+/obj/item/clothing/suit/storage/toggle/leather_jacket/flight/interstellar/alt
+	desc = "A pilot's jacket made from a silky, shiny nanonylon material and lined with tough, protective synthfabrics."
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_MINOR,
@@ -461,9 +461,10 @@
 	name = "brown varsity jacket"
 	icon_state = "varsity_brown"
 	item_state = "varsity_brown"
-/obj/item/clothing/suit/storage/legion
-	name = "tcfl jacket"
-	desc = "A pale blue canvas jacket embossed with the insignia of the Tau Ceti Foreign Legion."
+
+/obj/item/clothing/suit/storage/galactica
+	name = "Galactica Forces jacket"
+	desc = "A pale blue canvas jacket embossed with the insignia of the Galactica Forces."
 	icon_state = "tcfljacket"
 	item_state = "tcfljacket"
 

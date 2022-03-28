@@ -156,13 +156,13 @@
 
 /obj/item/clothing/under/pants/musthang
 	name = "must hang jeans"
-	desc = "Made in the finest space jeans factory this side of Tau Ceti."
+	desc = "Made in the finest space jeans factory this side of Cerberus."
 	icon_state = "jeansmustang"
 	item_state = "jeansmustang"
 
 /obj/item/clothing/under/pants/musthangcolour
 	name = "must hang jeans"
-	desc = "Made in the finest space jeans factory this side of Tau Ceti."
+	desc = "Made in the finest space jeans factory this side of Cerberus."
 	icon_state = "mustangcolour"
 	item_state = "mustangcolour"
 	build_from_parts = TRUE

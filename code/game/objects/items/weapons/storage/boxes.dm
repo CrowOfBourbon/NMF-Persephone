@@ -823,9 +823,9 @@
 	desc = "A box full of Sol Aliance visa recommendation slips."
 	starts_with = list(/obj/item/clothing/accessory/badge/sol_visa = 6)
 
-/obj/item/storage/box/ceti_visa
-	name = "TCFL recruitment papers box"
-	desc = "A box full of papers that signify one as a recruit of the Tau Ceti Foreign Legion."
+/obj/item/storage/box/galactica_visa
+	name = "Galactic Forces recruitment papers box"
+	desc = "A box full of papers that signify one as a recruit of the Galactic Forces."
 	starts_with = list(/obj/item/clothing/accessory/badge/tcfl_papers = 6)
 
 /obj/item/storage/box/hadii_card
