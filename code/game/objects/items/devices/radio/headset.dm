@@ -22,6 +22,11 @@
 	drop_sound = 'sound/items/drop/component.ogg'
 	pickup_sound = 'sound/items/pickup/component.ogg'
 
+	sprite_sheets = list(
+		BODYTYPE_TESHARI = 'icons/mob/species/teshari/ears.dmi'
+
+	)
+
 /obj/item/device/radio/headset/Initialize()
 	. = ..()
 	internal_channels.Cut()
@@ -84,7 +89,7 @@
 		if(slot_flags & SLOT_TWOEARS)
 			var/obj/item/clothing/ears/OE = (H.l_ear == src ? H.r_ear : H.l_ear)
 			qdel(OE)
-	
+
 	..()
 
 /obj/item/device/radio/headset/attackby(obj/item/W, mob/user)
@@ -204,7 +209,7 @@
 	to_chat(usr, SPAN_NOTICE("\The [src] will now layer [normal_layer ? "over" : "under"] your outerwear."))
 	if (ismob(src.loc))
 		var/mob/M = src.loc
-		M.update_inv_wrists()	
+		M.update_inv_wrists()
 
 /*
  * Civillian

@@ -810,7 +810,7 @@ mob/living/carbon/human/proc/change_monitor()
 			earpain(3, TRUE, 1)
 		else if (T in range(src, 2))
 			earpain(2, TRUE, 2)
-	
+
 	for (var/mob/living/carbon/human/T in hearers(2, src) - src)
 		if(T.protected_from_sound())
 			continue
@@ -1288,3 +1288,61 @@ mob/living/carbon/human/proc/change_monitor()
 	if (is_listening())
 		visible_message("<b>[src]</b> stops listening intently.")
 		intent_listener -= src
+
+/mob/living/carbon/human/proc/listen_in()
+	set name = "Listen in"
+	set desc = "Allows you to listen in to movement and noises around you."
+	set category = "Abilities"
+
+	if(incapacitated())
+		to_chat(src, "<span class='warning'>You need to recover before you can use this ability.</span>")
+		return
+	if(last_special > world.time)
+		to_chat(src,"<span class='notice'>You need another moment to focus!</span>")
+		return
+	if(ear_deaf > 0 || ear_deaf || is_below_sound_pressure(get_turf(src)))
+		to_chat(src, "<span class='warning'>You are for all intents and purposes currently deaf!</span>")
+		return
+
+	last_special = world.time + 25
+
+	to_chat(src, "<span class='notice'>You take a moment to listen in to your environment...</span>")
+	var/list/dirs = list()
+	for(var/mob/living/L in range(20))
+		var/turf/T = get_turf(L)
+		if(!T || L == src || L.stat == DEAD || is_below_sound_pressure(T) || L.invisibility == INVISIBILITY_LEVEL_TWO)
+			continue
+		var/image/ping_image = image(icon = 'icons/effects/effects.dmi', icon_state = "sonar_ping", loc = src)
+		ping_image.plane = LIGHTING_LAYER+1
+		ping_image.layer = LIGHTING_LAYER+1
+		ping_image.pixel_x = (T.x - src.x) * WORLD_ICON_SIZE
+		ping_image.pixel_y = (T.y - src.y) * WORLD_ICON_SIZE
+		src << ping_image
+		addtimer(CALLBACK(GLOBAL_PROC, /proc/qdel, ping_image), 8)
+		var/direction = num2text(get_dir(src, L))
+		var/dist
+		if(text2num(direction))
+			switch(get_dist(src, L) / client.view)
+				if(0 to 0.2)
+					dist = "very close"
+				if(0.2 to 0.4)
+					dist = "close"
+				if(0.4 to 0.6)
+					dist = "a little ways away"
+				if(0.6 to 0.8)
+					dist = "farther away"
+				else
+					dist = "far away"
+		else
+			dist = "on top of you"
+		LAZYINITLIST(dirs[direction])
+		dirs[direction][dist] += 1
+	for(var/d in dirs)
+		var/list/feedback = list()
+		for(var/dst in dirs[d])
+			feedback += "[dirs[d][dst]] sound\s [dst],"
+		if(feedback.len > 1)
+			feedback[feedback.len - 1] += " and"
+		to_chat(src, SPAN_NOTICE("You hear " + jointext(feedback, " ") + " towards the [dir2text(text2num(d))]."))
+	if(!length(dirs))
+		to_chat(src, SPAN_NOTICE("You hear no sounds but your own."))

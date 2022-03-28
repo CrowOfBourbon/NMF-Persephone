@@ -99,12 +99,19 @@
 	item_state = "nitrile"
 	species_restricted = list(BODYTYPE_TAJARA)
 
-/obj/item/clothing/gloves/latex/nitrile/vaurca 
+/obj/item/clothing/gloves/latex/nitrile/vaurca
 	name = "vaurca nitrile gloves"
 	desc = "Sterile nitrile gloves. Designed for Vaurca use."
 	icon_state = "nitrile"
 	item_state = "nitrile"
 	species_restricted = list(BODYTYPE_VAURCA)
+
+/obj/item/clothing/gloves/latex/nitrile/teshari
+	name = "teshari nitrile gloves"
+	desc = "Sterile nitrile gloves. Designed for Teshari use."
+	icon_state = "nitrile"
+	item_state = "nitrile"
+	species_restricted = list(BODYTYPE_TESHARI)
 
 /obj/item/clothing/gloves/latex/unathi
 	name = "unathi latex gloves"
@@ -120,6 +127,11 @@
 	name = "vaurca latex gloves"
 	desc = "Sterile latex gloves. Designed for Vaurca use."
 	species_restricted = list(BODYTYPE_VAURCA)
+
+/obj/item/clothing/gloves/latex/teshari
+	name = "vaurca latex gloves"
+	desc = "Sterile latex gloves. Designed for Teshari use."
+	species_restricted = list(BODYTYPE_TESHARI)
 
 /obj/item/clothing/gloves/botanic_leather
 	desc = "These leather work gloves protect against thorns, barbs, prickles, spikes and other harmful objects of floral origin."
@@ -139,9 +151,13 @@
 	name = "tajaran leather gloves"
 	species_restricted = list(BODYTYPE_TAJARA)
 
-/obj/item/clothing/gloves/botanic_leather/vaurca 
+/obj/item/clothing/gloves/botanic_leather/vaurca
 	name = "vaurca leather gloves"
 	species_restricted = list(BODYTYPE_VAURCA)
+
+/obj/item/clothing/gloves/botanic_leather/teshari
+	name = "teshari leather gloves"
+	species_restricted = list(BODYTYPE_TESHARI)
 
 	/*
 	Forcegloves.  They amplify force from melee hits as well as muck up disarm and stuff a little.

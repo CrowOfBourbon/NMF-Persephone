@@ -705,7 +705,7 @@
 		return
 
 	var/mob/living/carbon/human/M = user
-	if(M.isMonkey())
+	if(M.isMonkey() || issmall(M))
 		to_chat(user, SPAN_WARNING("It's too heavy for you to stabilize properly."))
 		return
 
