@@ -115,9 +115,6 @@ var/const/NO_EMAG_ACT = -50
 	var/flipped = 0
 	var/wear_over_suit = 0
 
-//	sprite_sheets = list(
-//		BODYTYPE_TESHARI = 'icons/mob/species/teshari/id.dmi'
-//	)
 
 	//alt titles are handled a bit weirdly in order to unobtrusively integrate into existing ID system
 	var/assignment = null	//can be alt title or the actual job
