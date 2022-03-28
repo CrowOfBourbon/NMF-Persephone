@@ -18,8 +18,8 @@
 	contained_sprite = TRUE
 
 /obj/item/clothing/shoes/vaurca/breeder
-	name = "zo'ra representative shoes"
-	desc = "Large shoes used by Zo'ra representatives."
+	name = "xal representative shoes"
+	desc = "Large shoes used by Xallian representatives."
 	icon = 'icons/mob/species/breeder/inventory.dmi'
 	item_state = "typec_shoes"
 	icon_state = "typec_shoes"
@@ -27,19 +27,9 @@
 	species_restricted = list(BODYTYPE_VAURCA_BREEDER)
 	sprite_sheets = list(BODYTYPE_VAURCA_BREEDER = 'icons/mob/species/breeder/shoes.dmi')
 
-/obj/item/clothing/shoes/vaurca/breeder_klax
-	name = "k'lax representative shoes"
-	desc = "Large shoes used by K'lax representatives."
-	icon = 'icons/mob/species/breeder/inventory.dmi'
-	item_state = "typec_shoes_klax"
-	icon_state = "typec_shoes_klax"
-	contained_sprite = FALSE
-	species_restricted = list(BODYTYPE_VAURCA_BREEDER)
-	sprite_sheets = list(BODYTYPE_VAURCA_BREEDER = 'icons/mob/species/breeder/shoes.dmi')
-
 /obj/item/clothing/shoes/vaurca/breeder_cthur
-	name = "c'thur representative shoes"
-	desc = "Large shoes used by C'thur representatives."
+	name = "empire of queens representative shoes"
+	desc = "Large shoes used by E.O.Q representatives."
 	icon = 'icons/mob/species/breeder/inventory.dmi'
 	item_state = "typec_shoes_cthur"
 	icon_state = "typec_shoes_cthur"

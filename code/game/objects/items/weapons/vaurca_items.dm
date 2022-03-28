@@ -121,7 +121,7 @@
 
 /obj/item/vaurca/box
 	name = "puzzle box"
-	desc = "A classic Zo'rane puzzle box, a common sight in Vaurcae colonies."
+	desc = "A classic Xallian puzzle box, a common sight in Vaurcae colonies."
 	icon_state = "puzzlebox"
 	contained_sprite = 1
 	icon = 'icons/obj/vaurca_items.dmi'
@@ -172,8 +172,8 @@
 	contained_sprite = 1
 
 /obj/item/melee/vaurca/rock
-	name = "Sedantis rock"
-	desc = "A large chunk of alien earth from the distant Vaurcan world of Sedantis I. Just looking at it makes you feel funny."
+	name = "Ka'Xillian rock"
+	desc = "A large chunk of alien earth from the distant Vaurcan world of Ka'Xilia. Just looking at it makes you feel funny."
 	icon_state = "glowing"
 	icon = 'icons/obj/vaurca_items.dmi'
 	force = 15
@@ -221,7 +221,7 @@
 	icon = 'icons/obj/vaurca_items.dmi'
 	icon_state = "void"
 	item_state = "void"
-	desc = "A lightweight Zo'rane designed Vaurcan softsuit, for extremely extended EVA operations."
+	desc = "A lightweight Xallian designed Vaurcan softsuit, for extremely extended EVA operations."
 	slowdown = 0
 
 	species_restricted = list(BODYTYPE_VAURCA)
@@ -231,7 +231,7 @@
 
 /obj/item/clothing/head/helmet/space/void/vaurca
 	name = "void helmet"
-	desc = "An alien looking Zo'rane softsuit helmet."
+	desc = "An alien looking Xallian softsuit helmet."
 	contained_sprite = 1
 	icon = 'icons/obj/vaurca_items.dmi'
 	icon_state = "helm_void"
@@ -299,7 +299,7 @@
 	icon = 'icons/obj/vaurca_items.dmi'
 	icon_state = "commando"
 	item_state = "commando"
-	desc = "A design perfected by the Zo'ra, this helmet is commonly used  by frontline warriors of a hive. Ablative design deflects lasers away from the body while providing moderate physical protection."
+	desc = "A design perfected by the Xallian, this helmet is commonly used  by frontline warriors of a hive. Ablative design deflects lasers away from the body while providing moderate physical protection."
 
 	species_restricted = list(BODYTYPE_VAURCA)
 	armor = list(
@@ -312,7 +312,7 @@
 	)
 /obj/item/clothing/head/helmet/space/void/commando
 	name = "commando helmet"
-	desc = "A design perfected by the Zo'ra, this helmet is commonly used  by frontline warriors of a hive. Ablative design deflects lasers away from the body while providing moderate physical protection."
+	desc = "A design perfected by the Xallian, this helmet is commonly used  by frontline warriors of a hive. Ablative design deflects lasers away from the body while providing moderate physical protection."
 	contained_sprite = 1
 	icon = 'icons/obj/vaurca_items.dmi'
 	icon_state = "helm_commando"
@@ -354,7 +354,7 @@
 
 /obj/item/melee/energy/vaurca_zweihander
 	name = "thermal greatblade"
-	desc = "An infamous execution blade of the Zo'ra, due to its size, only the largest Za were able to carry it in active combat."
+	desc = "An infamous execution blade of the Xal, due to its size, only the largest Za were able to carry it in active combat."
 	icon = 'icons/obj/vaurca_items.dmi'
 	icon_state = "greatblade0"
 	item_state = "greatblade0"

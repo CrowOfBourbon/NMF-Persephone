@@ -139,7 +139,7 @@
 	randpixel_xy()
 	var/gift_benefactor = pick("the NanoTrasen Department of Christmas Affairs", "Ethan Trasen", "Joseph Dorne", "Isaac Asimov", "Baal D. Griffon", "Interstellar Republic (Sorry about the blockade!)",
 		"Mercius Interstellar", "Ascher Industries", "Dionysus Conglameratetata", "the Elodile Empire", "Rhea Council for Seasons Greetings",
-		"the Zo'ra Hive","Galactica", "Digital Dingo", "Optimum Jeffrey", "Lemmy and the Clockworks",
+		"the Xal Hive","Galactica", "Digital Dingo", "Optimum Jeffrey", "Lemmy and the Clockworks",
 		"Lord-Regent Not'zar","Jesus Christ","Santa Claus","Mrs. Claus","Sandy Claws","Buddha","Gary","Jesus Christ!",
 		"Admiral Frost","Pirate King Frost", "The Secret NanoTrasen Cabal of Duty Officers", "The Society for the Preservation of Rats", "Officer Beepsky", "Royal",
 		"Buffy","Sakura","Scoot","Pun Pun","Waldo","Odlaw","Crew of the NMF Persephone", "Custodial Staff of the NTSC Demeter","ERT Commander Riker","grey slime (357)","Bob the Blob","People for the Ethical Treatment of Bluespace Bears",

@@ -499,10 +499,10 @@
 	icon_state = "legion_bag"
 	empty_delay = 0.8 SECOND
 
-/obj/item/storage/backpack/typec
+/obj/item/storage/backpack/ma
 	icon = 'icons/mob/species/breeder/inventory.dmi'
-	name = "type c zo'ra wings"
-	desc = "The wings of a CB Caste Vaurca. They are far too small at this stage to permit sustained periods of flight in most situations."
+	name = "type d Xal wings"
+	desc = "The wings of a Ma Caste Vaurca. They look quite large."
 	icon_state = "wings"
 	item_state = "wings"
 	w_class = ITEMSIZE_HUGE
@@ -512,10 +512,10 @@
 	species_restricted = list(BODYTYPE_VAURCA_BREEDER)
 	sprite_sheets = list(BODYTYPE_VAURCA_BREEDER = 'icons/mob/species/breeder/back.dmi')
 
-/obj/item/storage/backpack/typec_klax
+/obj/item/storage/backpack/ma_tilla
 	icon = 'icons/mob/species/breeder/inventory.dmi'
-	name = "type c k'lax wings"
-	desc = "The wings of a CB Caste Vaurca. They are far too small at this stage to permit sustained periods of flight in most situations."
+	name = "type d tilla wings"
+	desc = "The wings of a Ma Caste Vaurca. They look quite large."
 	icon_state = "wings_klax"
 	item_state = "wings_klax"
 	w_class = ITEMSIZE_HUGE
@@ -525,10 +525,10 @@
 	species_restricted = list(BODYTYPE_VAURCA_BREEDER)
 	sprite_sheets = list(BODYTYPE_VAURCA_BREEDER = 'icons/mob/species/breeder/back.dmi')
 
-/obj/item/storage/backpack/typec_cthur
+/obj/item/storage/backpack/ma_eoq
 	icon = 'icons/mob/species/breeder/inventory.dmi'
-	name = "type c c'thur wings"
-	desc = "The wings of a CB Caste Vaurca. They are far too small at this stage to permit sustained periods of flight in most situations."
+	name = "type d e.o.q wings"
+	desc = "The wings of a Ma Caste Vaurca. They look quite large."
 	icon_state = "wings_cthur"
 	item_state = "wings_cthur"
 	w_class = ITEMSIZE_HUGE
@@ -674,12 +674,6 @@
 	var/mob/living/carbon/human/H = src.loc
 	H.update_icon()
 	H.update_inv_back()
-
-/obj/item/storage/backpack/cloak/sedantis
-	name = "Sedantis tunnel cloak"
-	desc = "A Vaurca cloak with storage pockets. This one has the Sedantis flag design."
-	icon_state = "sedcape"
-	item_state = "sedcape"
 
 /obj/item/storage/backpack/cloak/medical
 	name = "medical tunnel cloak"

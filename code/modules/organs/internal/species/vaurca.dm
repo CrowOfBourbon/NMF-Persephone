@@ -1,6 +1,6 @@
 /obj/item/organ/internal/eyes/night/vaurca
 	name = "vaurcaesian eyes"
-	desc = "A set of four vaurcaesian eyes, adapted to the low or no light tunnels of Sedantis."
+	desc = "A set of four vaurcaesian eyes, adapted to the low or no light tunnels of Ka'Xillia."
 	icon_state = "eyes_vaurca"
 	robotic_sprite = null
 	vision_color = /datum/client_color/vaurca

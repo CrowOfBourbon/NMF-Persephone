@@ -477,26 +477,6 @@
 	name = "Large Coalition of Colonies flag"
 	flag_size = 1
 
-/obj/structure/sign/flag/vaurca
-	name = "Sedantis flag"
-	desc = "The emblem of Sedantis on a flag, emblematic of Vaurca longing."
-	icon_state = "sedantis"
-
-/obj/structure/sign/flag/vaurca/left
-	icon_state = "sedantis_l"
-
-/obj/structure/sign/flag/vaurca/right
-	icon_state = "sedantis_r"
-
-/obj/item/flag/vaurca
-	name = "Sedantis flag"
-	desc = "The emblem of Sedantis on a flag, emblematic of Vaurca longing."
-	flag_path = "sedantis"
-
-/obj/item/flag/vaurca/l
-	name = "Large Sedantis flag"
-	flag_size = 1
-
 /obj/structure/sign/flag/america
 	name = "Old World flag"
 	desc = "The banner of an ancient nation, its glory old."

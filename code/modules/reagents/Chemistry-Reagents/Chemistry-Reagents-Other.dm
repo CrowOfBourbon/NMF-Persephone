@@ -490,8 +490,8 @@
 	taste_description = "plhegm"
 
 /decl/reagent/fuel/napalm
-	name = "Zo'rane Fire"
-	description = "A highly flammable and cohesive gel once used commonly in the tunnels of Sedantis. Napalm sticks to kids."
+	name = "Xallian Fire"
+	description = "A highly flammable and cohesive gel once used commonly in the tunnels of Ka'xillia. Napalm sticks to kids."
 	reagent_state = LIQUID
 	color = "#D35908"
 	touch_met = 50

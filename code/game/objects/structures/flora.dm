@@ -211,7 +211,7 @@
 			if(19)
 				desc = "A ropey, aquatic plant with crystaline flowers."
 			if(20)
-				desc = "A bioluminescent half-plant half-fungus hybrid. Said to come from Sedantis I."
+				desc = "A bioluminescent half-plant half-fungus hybrid. Said to come from Ka'Xillia."
 			if(22)
 				desc = "A cone shrub. Sadly doesn't come from Coney Island."
 			if(26)
