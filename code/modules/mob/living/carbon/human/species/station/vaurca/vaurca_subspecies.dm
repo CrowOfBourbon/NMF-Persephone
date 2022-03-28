@@ -4,14 +4,9 @@
 	name_plural = "Type BA"
 	language = LANGUAGE_VAURCA
 	primitive_form = SPECIES_VAURCA_WORKER
-	greater_form = SPECIES_VAURCA_BREEDER
+	greater_form = SPECIES_VAURCA_WARFORM
 	icobase = 'icons/mob/human_races/vaurca/r_vaurcab.dmi'
 	slowdown = 0
-
-	brute_mod = 0.7
-	burn_mod = 1.2
-	oxy_mod = 1
-	radiation_mod = 0.5
 
 	grab_mod = 1.25
 	resist_mod = 1.75
@@ -38,15 +33,15 @@
 		/mob/living/carbon/human/proc/bugbite //weaker version of gut.
 		)
 
-	//num_alternate_languages = 1
-	//secondary_langs = list(LANGUAGE_VAURCA, LANGUAGE_VAURCA_SIGN)
+	num_alternate_languages = 1
+	secondary_langs = list(LANGUAGE_VAURCA, LANGUAGE_VAURCA_SIGN)
 
 /datum/species/bug/type_c
 	name = SPECIES_VAURCA_BREEDER
 	short_name = "vab"
 	name_plural = "Type CB"
 	bodytype = BODYTYPE_VAURCA_BREEDER
-	primitive_form = SPECIES_VAURCA_WARRIOR
+	primitive_form = SPECIES_VAURCA_BULWARK
 	icon_template = 'icons/mob/human_races/vaurca/r_vaurcac.dmi'
 	icobase = 'icons/mob/human_races/vaurca/r_vaurcac.dmi'
 	deform = 'icons/mob/human_races/vaurca/r_vaurcac.dmi'
@@ -68,12 +63,22 @@
 	MV forms are able to advise all lesser forms, who treat type D with respect and love. MV forms can additionally give orders to warriors, who always follow the command of an MV. \
 	No matter what the instruction."}
 
-	age_max = 60
-	default_genders = list(FEMALE)
+	// Bigger bugs need more blood, therefore have faster pumping hearts and therefore warmer bodies.
+	bp_base_systolic = 140 // Default 120
+	bp_base_disatolic = 100 // Default 80
+	low_pulse = 50 // Default 40
+	norm_pulse = 70 // Default 60
+	fast_pulse = 110 // Default 90
+	v_fast_pulse = 160// Default 120
+	max_pulse = 190// Default 160
+	body_temperature = 321.15 // 48°C
+
+	age_max = 150
+	default_genders = list(FEMALE, MALE)
 	economic_modifier = 3
 
 	speech_sounds = list('sound/voice/hiss1.ogg','sound/voice/hiss2.ogg','sound/voice/hiss3.ogg','sound/voice/hiss4.ogg')
-	speech_chance = 50
+	speech_chance = 100
 
 	death_sound = 'sound/voice/hiss6.ogg'
 	damage_overlays = 'icons/mob/human_races/masks/dam_breeder.dmi'
@@ -86,9 +91,6 @@
 	sprint_speed_factor = 1
 	sprint_cost_factor = 0.80
 	stamina_recovery = 3
-
-	allowed_citizenships = list(CITIZENSHIP_XAL)
-	default_citizenship = CITIZENSHIP_XAL
 
 	flags =  NO_SLIP | NO_ARTERIES | PHORON_IMMUNE
 
@@ -135,6 +137,15 @@
 	total_health = 200
 	break_cuffs = TRUE
 	mob_size = 30
+
+	bp_base_systolic = 140 // Default 120
+	bp_base_disatolic = 100 // Default 80
+	low_pulse = 50 // Default 40
+	norm_pulse = 70 // Default 60
+	fast_pulse = 110 // Default 90
+	v_fast_pulse = 160// Default 120
+	max_pulse = 190// Default 160
+	body_temperature = 321.15 // 48°C
 
 	speech_sounds = list('sound/voice/hiss1.ogg','sound/voice/hiss2.ogg','sound/voice/hiss3.ogg','sound/voice/hiss4.ogg')
 	speech_chance = 100
@@ -221,11 +232,20 @@
 		melee = ARMOR_MELEE_SMALL
 	)
 
+	bp_base_systolic = 140 // Default 120
+	bp_base_disatolic = 100 // Default 80
+	low_pulse = 50 // Default 40
+	norm_pulse = 70 // Default 60
+	fast_pulse = 110 // Default 90
+	v_fast_pulse = 160// Default 120
+	max_pulse = 190// Default 160
+	body_temperature = 321.15 // 48°C
+
+	break_cuffs = TRUE
+
 	brute_mod = 0.65
-	burn_mod = 1
-	oxy_mod = 1
+	oxy_mod = 1.2
 	radiation_mod = 0
-	toxins_mod = 3
 
 	grab_mod = 0.8
 	resist_mod = 4
@@ -260,3 +280,75 @@
 
 /datum/species/bug/type_e/can_double_fireman_carry()
 	return TRUE
+
+
+
+/*****************************************************
+!IMPORTANT Relay forms are not confirmed or anywhere near done. This is just here for a base to build off of and expanded on if they do get continued!
+*****************************************************/
+
+/*
+/datum/species/bug/type_la
+	name = SPECIES_VAURCA_RELAY
+	short_name = "rlay"
+	name_plural = "Type C"
+	//icon_template = 'Work In Progress
+
+	unarmed_types = list() // Defenseless, alone anyway
+
+	natural_armor = list(melee = ARMOR_MELEE_MAJOR, ARMOR_LASER_MINOR, ARMOR_BALLISTIC_SMALL) // Reinforced with steel, strong chitin and hard ice or snow.
+
+	rarity_value = 10
+
+	brute_mod = 0.5
+	burn_mod = 0.1
+	oxy_mod = 0
+	radiation_mod = 0
+	bleed_mod = 0.1
+
+	stamina = 5
+
+	max_hydration_factor = -1
+	max_nutrition_factor = -1
+
+	remains_type = /obj/effect/decal/remains/xeno // Temporary
+
+	mob_size = 50 // It's a tower.
+	taste_sensitivity = TASTE_NUMB
+
+	has_organ = list(
+		BP_BRAIN = /obj/item/organ/internal/brain/vaurca,
+		BP_EYES = /obj/item/organ/internal/eyes/night/vaurca,
+		BP_PHEROMONE_PROCESSOR = /obj/item/organ/internal/pheromoneprocessor/vaurca,
+		BP_HEART = /obj/item/organ/internal/heart/vaurca)
+
+	has_limbs = list(
+		BP_CHEST =  list("path" = /obj/item/organ/external/chest/vaurca),
+		BP_GROIN =  list("path" = /obj/item/organ/external/groin/vaurca),
+		BP_HEAD =   list("path" = /obj/item/organ/external/head/vaurca)
+		)
+
+	// The MOST alien
+	bp_base_systolic = 180 // Default 120
+	bp_base_disatolic = 150 // Default 80
+	low_pulse = 60 // Default 40
+	norm_pulse = 90 // Default 60
+	fast_pulse = 140 // Default 90
+	v_fast_pulse = 170 // Default 120
+	max_pulse = 200 // Default 160
+	body_temperature = 343.15 // 70°C
+
+	// Designed to live in extreme conditions, immune to almost all hazards of different worlds.
+	heat_level_1 = 900
+	heat_level_2 = 1300
+	heat_level_3 = 1700
+
+	cold_level_1 = 5
+	cold_level_2 = 1
+	cold_level_3 = -1
+
+	warning_high_pressure = 550
+	hazard_high_pressure = 600
+	warning_low_pressure = 5
+	hazard_low_pressure = -1
+*/

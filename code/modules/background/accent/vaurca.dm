@@ -1,10 +1,14 @@
-/*/datum/accent/zora
+/datum/accent/xal
     name = ACCENT_XAL
-    description = "Zo'rane is the modern day dialect of the Zo'ra hive, composed of buzzing, cheap bisellite voice modulators that manage to sway most voices
-    into a more gender neutral tone, while retaining a distinct alien dialect. To other vaurcae, this accent is reminiscent of the authority the Zo'ra held -
-    regal and noble. Their vocal augments stereotypically have difficulty, typically when producing sounds related to the letter 's', instead substituting with
-    a harsh buzzing in the throat."
+    description = "The accent of the Xallian hive, known for its high quality and mass production. The sound of this accent is known to be alien yet somewhat elegantly Human in its pronunciation."
     tag_icon = "xal"
-*/
 
-//Where the new bug accents will go :)
+/datum/accent/tilla
+    name = ACCENT_TILLA
+    description = "The accent of the Tilla, it strikes fear into all those who hear it. A notably, very alien accent. Riddled with hisses and low-quality buzzes."
+    tag_icon = "tilla"
+
+/datum/accent/empireofqueens
+    name = ACCENT_EMPIRE_OF_QUEENS
+    description = "The wildly varying voice modules of the Empire Of Queens, each hive produces varying quality of these devices, with some sounding akin to the low quality Tilla, others on-par with that of Xallian modules."
+    tag_icon = "eoq"

@@ -11,7 +11,7 @@
 	economic_modifier = 2
 	language = LANGUAGE_VAURCA
 	primitive_form = SPECIES_MONKEY_VAURCA
-	greater_form = SPECIES_VAURCA_WARRIOR
+	greater_form = SPECIES_VAURCA_BULWARK
 	icobase = 'icons/mob/human_races/vaurca/r_vaurca.dmi'
 	deform = 'icons/mob/human_races/vaurca/r_vaurca.dmi'
 	preview_icon = 'icons/mob/human_races/vaurca/vaurca_preview.dmi'
@@ -30,19 +30,32 @@
 	eyes = "vaurca_eyes" //makes it so that eye colour is not changed when skin colour is.
 	eyes_are_impermeable = TRUE
 
-	brute_mod = 0.5
-	burn_mod = 1.5 //2x was a bit too much. we'll see how this goes.
+	burn_mod = 0.3
+	oxy_mod = 1.1
 	toxins_mod = 2 //they're not used to all our weird human bacteria.
-	oxy_mod = 0.6
-	radiation_mod = 0.2 //almost total radiation protection
-	bleed_mod = 2.2
+	radiation_mod = 0.1 //almost total radiation protection
+	bleed_mod = 0.2 //sulfer blood does not flow fast and actually hardens when outside the body
 	injection_mod = 2
+
+	// Bugs have very different biology to other species
+	bp_base_systolic = 150 // Default 120
+	bp_base_disatolic = 110 // Default 80
+	low_pulse = 50 // Default 40
+	norm_pulse = 70 // Default 60
+	fast_pulse = 100 // Default 90
+	v_fast_pulse = 130// Default 120
+	max_pulse = 170// Default 160
+	body_temperature = 317.15 // 44°C
 
 	grab_mod = 1.1
 	resist_mod = 1.75
 
+	warning_high_pressure = 300
+	hazard_high_pressure = 350
+
 	warning_low_pressure = 50
 	hazard_low_pressure = 0
+
 	ethanol_resistance = 2
 	taste_sensitivity = TASTE_SENSITIVE
 	reagent_tag = IS_VAURCA
@@ -77,24 +90,27 @@
 	flesh_color = "#E6E600"
 	base_color = "#575757"
 
+	pain_messages = list("It hurts so much", "You are in too much pain to stand", "You feel an urge to cry out in agony to the hive network")
+
 	halloss_message = "crumbles to the ground, too weak to continue fighting."
 
+	heat_discomfort_level = 400
 	heat_discomfort_strings = list(
-		"Your blood feels like its boiling in the heat.",
+		"You can feel your blood heat your insides.",
 		"You feel uncomfortably warm.",
-		"Your carapace feels hot as the sun."
+		"Your carapace sizzles a soft plume of steam."
 	)
 
 	cold_discomfort_strings = list(
-		"You chitter in the cold.",
-		"You shiver suddenly.",
-		"Your carapace is ice to the touch."
+		"You chitter silently in the cold.",
+		"You feel uncomfortably cold.",
+		"Your carapace forms ice at its surface."
 	)
 
-	stamina = 100			  // Long period of sprinting, but relatively low speed gain
-	sprint_speed_factor = 0.7
-	sprint_cost_factor = 0.30
-	stamina_recovery = 2	//slow recovery
+	stamina = 115
+	sprint_speed_factor = 1.0
+	sprint_cost_factor = 0.40
+	stamina_recovery = 3
 
 	has_organ = list(
 		BP_PHEROMONE_PROCESSOR = /obj/item/organ/internal/pheromoneprocessor/vaurca,
@@ -128,12 +144,12 @@
 
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
 
-	allowed_citizenships = list(CITIZENSHIP_NONE, CITIZENSHIP_XAL)
+	allowed_citizenships = list(CITIZENSHIP_XAL, CITIZENSHIP_EMPIRE_OF_QUEENS, CITIZENSHIP_NONE)
 	allowed_religions = list(RELIGION_COALESCENCE_OF_MINDS, RELIGION_PAST_GODDESS, RELIGION_NONE, RELIGION_OTHER)
-	default_citizenship = CITIZENSHIP_NONE
+	default_citizenship = CITIZENSHIP_XAL
 
 	default_accent = ACCENT_TTS
-	allowed_accents = list(ACCENT_TTS)
+	allowed_accents = list(ACCENT_TTS, ACCENT_XAL, ACCENT_EMPIRE_OF_QUEENS)
 
 	alterable_internal_organs = list(BP_HEART, BP_EYES, BP_LUNGS, BP_STOMACH, BP_APPENDIX)
 
@@ -160,6 +176,11 @@
 
 /datum/species/bug/is_naturally_insulated()
 	return TRUE
+
+/datum/species/vaurca/handle_speech_problems(mob/living/carbon/human/H, list/current_flags, message, message_verb, message_mode)
+	var/obj/item/organ/external/O = H.organs_by_name[BP_HEAD]
+	current_flags[4] = O.is_stump() ? 3 : world.view
+	return current_flags
 
 /datum/species/bug/can_hold_s_store(obj/item/I)
 	if(I.w_class <= ITEMSIZE_SMALL)
