@@ -1084,7 +1084,7 @@
 	taste_description = "alien milk"
 
 	glass_name = "glass of hakhma milk"
-	glass_desc = "A milky substance extracted from the brood sac of the viviparous Hakhma, often consumed by Offworlders and Scarabs."
+	glass_desc = "A milky substance extracted from the brood sac of the viviparous Hakhma, often consumed by Offworlders."
 
 /decl/reagent/drink/milk/schlorrgo
 	name = "Schlorrgo Milk"
@@ -1367,14 +1367,14 @@
 
 /decl/reagent/drink/tea/hakhma_tea
 	name = "Spiced Hakhma Tea"
-	description = "A tea often brewed by Offworlders and Scarabs during important meals."
+	description = "A tea often brewed by Offworlders during important meals."
 	color = "#8F6742"
 	nutrition = 1 //hakhma milk has nutrition 4
 	taste_description = "creamy, cinnamon-spiced alien milk"
 
 	glass_icon_state = "hakhmatea"
 	glass_name = "cup of spiced hakhma tea"
-	glass_desc = "A tea often brewed by Offworlders and Scarabs during important meals."
+	glass_desc = "A tea often brewed by Offworlders during important meals."
 
 /decl/reagent/drink/tea/hakhma_tea/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder) //milk effects
 	..()

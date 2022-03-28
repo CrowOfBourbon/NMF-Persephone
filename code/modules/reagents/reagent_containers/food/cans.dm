@@ -432,7 +432,7 @@
 
 /obj/item/reagent_containers/food/drinks/cans/beetle_milk
 	name = "\improper Hakhma Milk"
-	desc = "A can of Hakhma beetle milk, sourced from Scarab and Drifter communities."
+	desc = "A can of Hakhma beetle milk, sourced from Drifter communities."
 	icon_state = "beetlemilk"
 	center_of_mass = list("x"=17, "y"=10)
 	reagents_to_add = list(/decl/reagent/drink/milk/beetle = 30)
