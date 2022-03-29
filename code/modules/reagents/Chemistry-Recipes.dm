@@ -2997,10 +2997,10 @@
 	result_amount = 3
 
 /datum/chemical_reaction/drink/oloqi
-	name = "Olo'qi Garden"
-	id = "xrim"
+	name = "Olo'qi's Final Call"
+	id = "oloqisfinalcall"
 	result = /decl/reagent/drink/oloqi
-	required_reagents = list(/decl/reagent/nutriment/virusfood = 2, /decl/reagent/drink/watermelonjuice = 1, /decl/reagent/drink/orangejuice = 1, /decl/reagent/drink/limejuice = 1, /decl/reagent/drink/zorasoda/cthur = 1)
+	required_reagents = list(/decl/reagent/nutriment/virusfood = 2, /decl/reagent/drink/watermelonjuice = 1, /decl/reagent/drink/orangejuice = 1, /decl/reagent/drink/limejuice = 1)
 	result_amount = 6
 
 /datum/chemical_reaction/drink/tuqqisoda

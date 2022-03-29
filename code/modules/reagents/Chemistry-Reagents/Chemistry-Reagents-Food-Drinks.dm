@@ -4267,13 +4267,13 @@
 	glass_desc = "This bubbling drink gives off a faint moldy aroma."
 
 /decl/reagent/drink/oloqi
-	name = "Olo'qi Garden"
+	name = "Olo'qi's Final Call"
 	color = "#F6668E"
 	description = "A colorful drink that smells a lot like rotten fruit."
 	taste_description = "sweet, fruity slime"
 
 	glass_icon_state = "xrim"
-	glass_name = "glass of Xrim Garden"
+	glass_name = "glass of Olo'qi's Final Call"
 	glass_desc = "A colorful drink that smells a lot like rotten fruit."
 
 /decl/reagent/alcohol/tuqqisoda
