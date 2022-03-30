@@ -62,26 +62,18 @@
 	desc = "Durable cloth meant to be worn over or attached to the chest pieces of the ESS modules. This one is white and green."
 	icon_state = "ribbon_med"
 
-/obj/item/clothing/accessory/armband/idris
-	name = "\improper Idris Incorporated armband"
-	desc = "A armband, worn by contractors to denote which company they're from. This one shows the Idris Incorporated logo  displayed on a cyan background."
-	icon_state = "idris_armband"
-	overlay_state = "idris_armband"
 
 /obj/item/clothing/accessory/armband/colourable
 	name = "armband"
 	desc = "An armband in 16,777,216 designer colors."
 	icon_state = "armband_colour"
 
-/obj/item/clothing/accessory/armband/tauceti
-	name = "tau ceti armband"
-	desc = "An armband tailored to look like the flag of the Republic of Biesel."
-	desc_fluff = "While initially adopted during the early days of the TCFL to account for a sudden increase in volunteers and a lack of uniforms, during the height of the Republic of Biesel's conflicts with the Sol Alliance,\
-	it has been worn as a symbol of independence and patriotism."
+/obj/item/clothing/accessory/armband/interstellar
+	name = "Interstellar armband"
+	desc = "An armband tailored to look like the flag of the Interstellar Republic"
 	icon_state = "tauceti"
 
-/obj/item/clothing/accessory/armband/scc
-	name = "Stellar Corporate Conglomerate armband"
-	desc = "An armband, tailored with all the colors of the Sellar Corporate Conglomerate."
-	desc_fluff = "The Stellar Corporate Conglomerate, also known as Chainlink, is a joint alliance between the NanoTrasen Corporation, Hephaestus Industries, Idris Incorporated, Zeng-Hu Pharmaceuticals and Zavodskoi Interstellar to exercise an undisputed economic dominance over the Orion Spur."
+/obj/item/clothing/accessory/armband/galatic
+	name = "Galactica United armband"
+	desc = "An armband, tailored with all the colors of the Galactica United flag."
 	icon_state = "scc"

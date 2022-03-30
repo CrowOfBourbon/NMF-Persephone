@@ -1168,7 +1168,7 @@
 
 	req_one_access = list(access_syndicate)
 
-/obj/machinery/porta_turret/legion
+/obj/machinery/porta_turret/interstellar
 	enabled = 0
 	use_power = 0
 	icon_state = "cover_legion"
@@ -1184,7 +1184,7 @@
 	check_records = 0
 	check_access = 1
 	ailock = 1
-	req_one_access = list(access_legion)
+	req_one_access = list(access_interstellar)
 
 #undef TURRET_PRIORITY_TARGET
 #undef TURRET_SECONDARY_TARGET

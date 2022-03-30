@@ -8,7 +8,8 @@
 		"Consular Officer" = list(
 			SPECIES_VAURCA_WORKER,
 			SPECIES_VAURCA_WARRIOR,
-			SPECIES_VAURCA_BULWARK
+			SPECIES_VAURCA_BULWARK,
+			SPECIES_TESHARI
 		)
 	)
 
@@ -32,11 +33,10 @@
 
 /datum/outfit/job/representative/consular/ceti
 	name = "Galactica Consular Officer"
-
 	uniform = /obj/item/clothing/under/lawyer/blue
-	accessory = /obj/item/clothing/accessory/tc_pin
+	accessory = /obj/item/clothing/accessory/galactica_pin
 	backpack_contents = list(
-		/obj/item/storage/box/ceti_visa = 1,
+		/obj/item/storage/box/galactica_visa = 1,
 		/obj/item/stamp/biesel = 1,
 		/obj/item/gun/energy/pistol = 1
 	)
@@ -72,7 +72,8 @@
 			SPECIES_VAURCA_WORKER,
 			SPECIES_VAURCA_WARRIOR,
 			SPECIES_VAURCA_BULWARK,
-			SPECIES_VAURCA_BREEDER
+			SPECIES_VAURCA_BREEDER,
+			SPECIES_TESHARI
 		)
 	)
 

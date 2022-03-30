@@ -65,7 +65,7 @@
 	path = /obj/item/clothing/mask/offworlder/veil
 
 /datum/gear/mask/offworlder/overmask/scarf
-	display_name = "pioneer scarf"
+	display_name = "Fleet scarf"
 	path = /obj/item/clothing/mask/offworlder
 	flags = GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
 
@@ -83,7 +83,7 @@
 	sort_category = "Xenowear - Human"
 
 /datum/gear/accessory/offworlder_card
-	display_name = "scarab passblade"
-	path = /obj/item/clothing/accessory/badge/passcard/scarab
+	display_name = "Free Port Passcard"
+	path = /obj/item/clothing/accessory/badge/passcard/freeport
 	whitelisted = list(SPECIES_HUMAN_OFFWORLD)
 	sort_category = "Xenowear - Human"

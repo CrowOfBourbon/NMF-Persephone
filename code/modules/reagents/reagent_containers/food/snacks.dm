@@ -4990,8 +4990,8 @@
 	reagents_to_add = list(/decl/reagent/nutriment/protein/seafood = 4)
 
 /obj/item/reagent_containers/food/snacks/cb01
-	name = "tau ceti bar"
-	desc = "A dark chocolate caramel and nougat bar made famous in Biesel."
+	name = "Galactic Star Bar"
+	desc = "A dark chocolate caramel and nougat bar made famous in Rhea."
 	filling_color = "#552200"
 	icon_state = "cb01"
 

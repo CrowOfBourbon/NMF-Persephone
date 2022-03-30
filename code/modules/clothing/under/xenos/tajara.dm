@@ -83,7 +83,7 @@
 	icon = 'icons/obj/tajara_items.dmi'
 	icon_state = "raakti_shariim_uniform"
 	item_state = "raakti_shariim_uniform"
-	desc_fluff = "The Raakti Shariim (Royal Peacekeepers in Ceti Basic) are the New Kingdom of Adhomai's policing and \
+	desc_fluff = "The Raakti Shariim (Royal Peacekeepers in English) are the New Kingdom of Adhomai's policing and \
 		peacekeeping force, working closely with both the Royal Constabulary and the Royal Ministry of Intelligence to \
 		seek out internal threats to the Kingdom such as spies, terrorists, and other domestic enemies to the crown. \
 		The Raakti Shariim's uniforms incorporate a dark, navy blue paired with a lilac accent and pale-gold twin-sun \

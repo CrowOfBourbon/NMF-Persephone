@@ -131,7 +131,7 @@
 	var/obj/item/organ/internal/parasite/P = M.internal_organs_by_name["blackkois"]
 	if((alien == IS_VAURCA) || (istype(P) && P.stage >= 3))
 		M.adjustToxLoss(1.5 * removed)
-	else if(alien != IS_UNATHI)
+	else if(alien != IS_UNATHI && alien != IS_TESHARI)
 		digest(M,removed, holder = holder)
 
 /decl/reagent/nutriment/proc/digest(var/mob/living/carbon/M, var/removed, var/datum/reagents/holder)
@@ -222,7 +222,7 @@
 	taste_description = "meat"
 
 /decl/reagent/nutriment/protein/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(alien && alien == IS_UNATHI)
+	if(alien && (alien == IS_UNATHI || alien == IS_TESHARI))
 		digest(M,removed, holder = holder)
 		return
 	..()
@@ -256,7 +256,7 @@
 	taste_description = "egg"
 
 /decl/reagent/nutriment/egg/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(alien && alien == IS_UNATHI)
+	if(alien && (alien == IS_UNATHI || alien == IS_TESHARI))
 		digest(M, removed, holder = holder)
 		return
 	..()
@@ -277,9 +277,9 @@
 	color = "#ffdfb0"
 	taste_description = "fat"
 
-//Unathi can digest fats too
+//Unathi and Teshari can digest fats too
 /decl/reagent/nutriment/triglyceride/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	if(alien && alien == IS_UNATHI)
+	if(alien && (alien == IS_UNATHI || alien == IS_TESHARI))
 		digest(M, removed, holder = holder)
 		return
 	..()
@@ -1084,7 +1084,7 @@
 	taste_description = "alien milk"
 
 	glass_name = "glass of hakhma milk"
-	glass_desc = "A milky substance extracted from the brood sac of the viviparous Hakhma, often consumed by Offworlders and Scarabs."
+	glass_desc = "A milky substance extracted from the brood sac of the viviparous Hakhma, often consumed by Offworlders."
 
 /decl/reagent/drink/milk/schlorrgo
 	name = "Schlorrgo Milk"
@@ -1367,14 +1367,14 @@
 
 /decl/reagent/drink/tea/hakhma_tea
 	name = "Spiced Hakhma Tea"
-	description = "A tea often brewed by Offworlders and Scarabs during important meals."
+	description = "A tea often brewed by Offworlders during important meals."
 	color = "#8F6742"
 	nutrition = 1 //hakhma milk has nutrition 4
 	taste_description = "creamy, cinnamon-spiced alien milk"
 
 	glass_icon_state = "hakhmatea"
 	glass_name = "cup of spiced hakhma tea"
-	glass_desc = "A tea often brewed by Offworlders and Scarabs during important meals."
+	glass_desc = "A tea often brewed by Offworlders during important meals."
 
 /decl/reagent/drink/tea/hakhma_tea/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder) //milk effects
 	..()
@@ -3480,17 +3480,17 @@
 
 	glass_center_of_mass = list("x"=16, "y"=9)
 
-/decl/reagent/alcohol/solarian_marine
-	name = "Solarian Marine"
-	description = "Drink too many of these, and you'll wake up invading Tau Ceti."
+/decl/reagent/alcohol/interstellar_marine
+	name = "Interstellar Marine"
+	description = "Drink too many of these, and you'll wake up invading Galactica."
 	reagent_state = LIQUID
 	color = "#33567A"
 	strength = 35
 	taste_description = "polished boots and nationalism"
 
 	glass_icon_state = "solarianmarineglass"
-	glass_name = "Solarian Marine"
-	glass_desc = "Drink too many of these, and you'll wake up invading Tau Ceti."
+	glass_name = "Interstellar Marine"
+	glass_desc = "Drink too many of these, and you'll wake up invading Galactica."
 
 	glass_center_of_mass = list("x"=16, "y"=9)
 
@@ -4256,8 +4256,8 @@
 	if(alien != IS_DIONA)
 		M.make_jittery(10)
 
-/decl/reagent/drink/algaesuprise
-	name = "Pl'iuop Algae Surprise"
+/decl/reagent/drink/elodileelegance
+	name = "Elodile Elegance"
 	color = "#FFFF80"
 	description = "This bubbling drink gives off a faint moldy aroma."
 	taste_description = "swamp fungus"
@@ -4266,18 +4266,18 @@
 	glass_name = "glass of Pl'iuop Algae Surprise"
 	glass_desc = "This bubbling drink gives off a faint moldy aroma."
 
-/decl/reagent/drink/xrim
-	name = "Xrim Garden"
+/decl/reagent/drink/oloqi
+	name = "Olo'qi's Final Call"
 	color = "#F6668E"
 	description = "A colorful drink that smells a lot like rotten fruit."
 	taste_description = "sweet, fruity slime"
 
 	glass_icon_state = "xrim"
-	glass_name = "glass of Xrim Garden"
+	glass_name = "glass of Olo'qi's Final Call"
 	glass_desc = "A colorful drink that smells a lot like rotten fruit."
 
-/decl/reagent/alcohol/rixulin_sundae
-	name = "Rixulin Sundae"
+/decl/reagent/alcohol/tuqqisoda
+	name = "Tuq'qi Soda"
 	color = "#83E2C6"
 	description = "A fizzing drink that looks like a really great time."
 	taste_description = "spacetime and warbling music"
@@ -4286,7 +4286,7 @@
 	druggy = 30
 
 	glass_icon_state = "rixulin_sundae"
-	glass_name = "glass of Rixulin Sundae"
+	glass_name = "glass of Tuq'qi Soda"
 	glass_desc = "A fizzing drink that looks like a really great time."
 
 /decl/reagent/alcohol/khlibnyz

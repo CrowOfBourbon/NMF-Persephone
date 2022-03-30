@@ -116,11 +116,11 @@
 				else
 					body += "is recovering from plastic surgery in a clinic on [affected_dest.name] for the [pick("second","third","fourth")] time, reportedly having made the decision in response to "
 					body += "[pick("unkind comments by an ex","rumours started by jealous friends",\
-					"the decision to be dropped by a major sponsor","a disasterous interview on Tau Ceti Tonight")]."
+					"the decision to be dropped by a major sponsor","a disasterous interview on Hades Tonight")]."
 			if(TOURISM)
 				body += "Tourists are flocking to [affected_dest.name] after the surprise announcement of [pick("major shopping bargains by a wily retailer",\
 				"a huge new ARG by a popular entertainment company","a secret tour by popular artiste [random_name(pick(MALE,FEMALE))]")]. \
-				Tau Ceti Daily is offering discount tickets for two to see [random_name(pick(MALE,FEMALE))] live in return for eyewitness reports and up to the minute coverage."
+				Hades Daily is offering discount tickets for two to see [random_name(pick(MALE,FEMALE))] live in return for eyewitness reports and up to the minute coverage."
 
 	var/datum/feed_channel/ch =  SSnews.GetFeedChannel(channel)
 	SSnews.SubmitArticle(body, author, ch, null, 1)

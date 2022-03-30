@@ -42,6 +42,7 @@
 #define IS_MACHINE 32
 #define IS_VAURCA  64
 #define IS_UNDEAD  128
+#define IS_TESHARI 256
 
 // Apply status effects
 #define CE_ADRENALINE	"adrenal"		// Like speedboost but different

@@ -9,7 +9,6 @@
 	description = "Spoken on Yzali and is associated with the planets luxuriates, Trade-Princes, and modernity. \
 	It evolved from the language families of the Trade League that settled the planet. There are hundreds of dialects across the planet, \
 	but all of them are, more or less, mutually intelligible."
-
 	tag_icon = "yzl"
 
 /datum/accent/anglikirtan

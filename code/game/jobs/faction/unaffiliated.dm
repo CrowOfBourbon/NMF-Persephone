@@ -6,7 +6,7 @@
 	close. You would often see people lacking a concrete affiliation popping up as
 	reporters, journalists, individual traders. Their presence, though often an inconvenience
 	for the mega corporations, is often necessary to forward the facade of economic freedom
-	that Tau Ceti reports to have.
+	that Galactica reports to have.
 	</p>"}
 
 	allowed_role_types = list(

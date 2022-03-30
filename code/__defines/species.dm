@@ -20,6 +20,8 @@
 #define SPECIES_VAURCA_BULWARK		"Vaurca Bulwark"
 // #define SPECIES_VAURCA_RELAY        "Vaurca Relay"
 
+#define SPECIES_TESHARI				"Teshari"
+
 #define SPECIES_IPC					"Baseline Frame"
 #define SPECIES_IPC_SHELL			"Shell Frame"
 #define SPECIES_IPC_G1				"TUM G1 Industrial Frame"
@@ -81,6 +83,7 @@
 #define BODYTYPE_UNATHI				"Unathi"
 #define BODYTYPE_DIONA				"Diona"
 #define BODYTYPE_TAJARA				"Tajara"
+#define BODYTYPE_TESHARI			"Teshari"
 
 #define BODYTYPE_VAURCA				"Vaurca"
 #define BODYTYPE_VAURCA_BREEDER		"Vaurca Breeder"

@@ -115,6 +115,7 @@ var/const/NO_EMAG_ACT = -50
 	var/flipped = 0
 	var/wear_over_suit = 0
 
+
 	//alt titles are handled a bit weirdly in order to unobtrusively integrate into existing ID system
 	var/assignment = null	//can be alt title or the actual job
 	var/rank = null			//actual job
@@ -510,13 +511,13 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "centcom"
 	assignment = "Kataphract"
 
-/obj/item/card/id/distress/legion
-	name = "\improper Tau Ceti Foreign Legion ID"
-	assignment = "Tau Ceti Foreign Legion Volunteer"
+/obj/item/card/id/distress/interstellar
+	name = "Interstellar Republic Legion ID"
+	assignment = "Interstellar Republic Legion Member"
 	icon_state = "legion"
 
-/obj/item/card/id/distress/legion/New()
-	access = list(access_legion, access_maint_tunnels, access_external_airlocks, access_security, access_engine, access_engine_equip, access_medical, access_research, access_atmospherics, access_medical_equip)
+/obj/item/card/id/distress/interstellar/New()
+	access = list(access_interstellar, access_maint_tunnels, access_external_airlocks, access_security, access_engine, access_engine_equip, access_medical, access_research, access_atmospherics, access_medical_equip)
 	..()
 
 /obj/item/card/id/distress/ap_eridani

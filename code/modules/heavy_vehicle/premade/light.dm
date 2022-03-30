@@ -77,8 +77,8 @@
 	. = ..()
 
 /mob/living/heavy_vehicle/premade/light/legion
-	name = "legion support exosuit"
-	desc = "A light and agile exosuit painted in the colours of the Tau Ceti Foreign Legion."
+	name = "Interstellar support exosuit"
+	desc = "A light and agile exosuit painted in the colours of the Interstellar Republic Forces."
 	icon_state = "odysseus"
 
 	e_color = COLOR_TCFL

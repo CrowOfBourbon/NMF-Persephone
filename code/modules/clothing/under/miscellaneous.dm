@@ -499,9 +499,9 @@
 	icon_state = "whitemedicalgown"
 	worn_state = "whitemedicalgown"
 
-/obj/item/clothing/under/legion
-	name = "Tau Ceti Foreign Legion uniform"
-	desc = "A blue field uniform worn by Tau Ceti Foreign Legion forces."
+/obj/item/clothing/under/interstellar
+	name = "Interstellar Republic Forces uniform"
+	desc = "A blue field uniform worn by IR Forces."
 	icon_state = "taucetilegion"
 	item_state = "bl_suit"
 	worn_state = "taucetilegion"
@@ -509,20 +509,20 @@
 	armor = list(
 		melee = ARMOR_MELEE_MINOR)
 
-/obj/item/clothing/under/legion/sentinel
-	name = "Tau Ceti Foreign Legion sentinel uniform"
-	desc = "A blue field uniform with purple trimming, indicating that the wearer is a sentinel of the TCFL."
+/obj/item/clothing/under/interstellar/sentinel
+	name = "Interstellar Republic Forces sentinel uniform"
+	desc = "A blue field uniform with purple trimming, indicating that the wearer is a sentinel of the IRF."
 	worn_state = "taucetilegion_sentinel"
 
-/obj/item/clothing/under/legion/legate
-	name = "Tau Ceti Foreign Legion legate uniform"
-	desc = "A stark red field uniform worn by senior officers of the Tau Ceti Foreign Legion."
+/obj/item/clothing/under/interstellar/legate
+	name = "Interstellar Republic Forces legate uniform"
+	desc = "A stark red field uniform worn by senior officers of the IRF."
 	icon_state = "taucetilegion_legate"
 	worn_state = "taucetilegion_legate"
 
 /obj/item/clothing/under/legion/pilot
-	name = "Tau Ceti Foreign Legion flightsuit"
-	desc = "A green flightsuit worn by Tau Ceti Foreign Legion pilots."
+	name = "Interstellar Republic Forces flightsuit"
+	desc = "A green flightsuit worn by Interstellar Republic pilots."
 	icon_state = "taucetilegion_pilot"
 	worn_state = "taucetilegion_pilot"
 

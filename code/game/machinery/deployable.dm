@@ -292,11 +292,11 @@ for reference:
 		visible_message("<span class='warning'>BZZzZZzZZzZT</span>")
 		return 1
 
-/obj/machinery/deployable/barrier/legion
+/obj/machinery/deployable/barrier/interstellar
 	name = "legion barrier"
-	desc = "A deployable barrier, bearing the marks of the Tau Ceti Foreign Legion. Swipe your ID card to lock/unlock it."
+	desc = "A deployable barrier, bearing the marks of the Interstellar Republic Legion. Swipe your ID card to lock/unlock it."
 	icon_state = "barrier_legion"
-	req_access = list(access_legion)
+	req_access = list(access_interstellar)
 
 /obj/item/deployable_kit
 	name = "Emergency Floodlight Kit"
@@ -320,11 +320,11 @@ for reference:
 	A.add_fingerprint(user)
 
 /obj/item/deployable_kit/legion_barrier
-	name = "legion barrier kit"
+	name = "Interstellar barrier kit"
 	desc = "A quick assembly kit for deploying id-lockable barriers in the field. Most commonly seen used for crowd control by corporate security."
 	icon_state = "barrier_kit"
 	w_class = ITEMSIZE_SMALL
-	kit_product = /obj/machinery/deployable/barrier/legion
+	kit_product = /obj/machinery/deployable/barrier/interstellar
 
 /obj/item/deployable_kit/surgery_table
 	name = "surgery table assembly kit"
@@ -349,16 +349,16 @@ for reference:
 	new /obj/structure/curtain/open/medical(free_spot, src)
 	new /obj/structure/curtain/open/medical(free_spot, src)
 
-/obj/item/deployable_kit/legion_turret
-	name = "legion blaster turret assembly kit"
-	desc = "A quick assembly kit to deploy a blaster turret in the field. Swipe with a TCFL id card to configure it once assembled."
+/obj/item/deployable_kit/interstellar_turret
+	name = "Interstellar blaster turret assembly kit"
+	desc = "A quick assembly kit to deploy a blaster turret in the field. Swipe with a IRF id card to configure it once assembled."
 	icon = 'icons/obj/turrets.dmi'
 	icon_state = "blaster_turret_kit"
 	item_state = "table_parts"
 	drop_sound = 'sound/items/drop/axe.ogg'
 	pickup_sound = 'sound/items/pickup/axe.ogg'
 	w_class = ITEMSIZE_LARGE
-	kit_product = /obj/machinery/porta_turret/legion
+	kit_product = /obj/machinery/porta_turret/interstellar
 	assembly_time = 15 SECONDS
 
 /obj/item/deployable_kit/iv_drip

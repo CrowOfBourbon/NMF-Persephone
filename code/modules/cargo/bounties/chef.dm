@@ -252,8 +252,8 @@
 			/obj/item/reagent_containers/food/snacks/tajcandy)
 
 /datum/bounty/item/chef/skrell
-	name = "Federation Delicacies"
-	description = "We're holding a luncheon with some Jargon Federation representatives; send some Skrellian dishes!"
+	name = "Empire Delicacies"
+	description = "We're holding a luncheon with some Elodile Empire representatives; send some Skrellian dishes!"
 	reward_low = 3700
 	reward_high = 5700
 	required_count = 3
