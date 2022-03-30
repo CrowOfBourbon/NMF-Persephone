@@ -149,7 +149,7 @@
 	default_citizenship = CITIZENSHIP_XAL
 
 	default_accent = ACCENT_TTS
-	allowed_accents = list(ACCENT_TTS, ACCENT_XAL, ACCENT_EMPIRE_OF_QUEENS)
+	allowed_accents = list(ACCENT_TTS)
 
 	alterable_internal_organs = list(BP_HEART, BP_EYES, BP_LUNGS, BP_STOMACH, BP_APPENDIX)
 
@@ -176,11 +176,6 @@
 
 /datum/species/bug/is_naturally_insulated()
 	return TRUE
-
-/datum/species/vaurca/handle_speech_problems(mob/living/carbon/human/H, list/current_flags, message, message_verb, message_mode)
-	var/obj/item/organ/external/O = H.organs_by_name[BP_HEAD]
-	current_flags[4] = O.is_stump() ? 3 : world.view
-	return current_flags
 
 /datum/species/bug/can_hold_s_store(obj/item/I)
 	if(I.w_class <= ITEMSIZE_SMALL)
