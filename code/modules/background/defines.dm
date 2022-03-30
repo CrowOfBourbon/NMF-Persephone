@@ -13,6 +13,7 @@
 #define CITIZENSHIP_NC "Naziir Coalition"
 
 #define CITIZENSHIP_XAL "Xallian Hive"
+#define CITIZENSHIP_EMPIRE_OF_QUEENS "Empire Of Queens"
 
 #define CITIZENSHIP_NONE "None"
 
@@ -71,6 +72,6 @@
 
 #define ACCENT_BLUESPACE "Bluespace"
 
-#define ACCENT_XAL "Xalliac"
-#define ACCENT_UNK "Unk"
-#define ACCENT_TIL "Tillic"
+#define ACCENT_XAL "Xal Hive"
+#define ACCENT_TILLA "Tilla Hive"
+#define ACCENT_EMPIRE_OF_QUEENS "Empire Of Queens"

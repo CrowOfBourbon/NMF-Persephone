@@ -257,15 +257,14 @@
 
 /datum/language/bug_sign
 	name = LANGUAGE_VAURCA_SIGN
-	desc = "WORK IN PROGRESS LORE-WISE"
+	desc = "A complex language developed by the Empire Of Queens, often used in covert operations. The language is entirely visual-based, exclusively taught to warriors within hives aligned in the Empire Of Queens."
 	speech_verb = list("gesticulates")
-	signlang_verb = list("flicks its antennae", "waves its antennae", "swivels its antennae", "scratches at its eyes", "clacks its mandibles", "clicks its fingers", "waves its hands")
-	sign_adv_length = list("", " briefly", " a few times", " several times in quick succession", " for a while", " quietly")
+	signlang_verb = list("flicks its antennae", "waves its antennae", "swivels its antennae", "scratches at its eyes", "clacks its mandibles")
+	sign_adv_length = list("", " briefly", " a few times", " several times in quick succession", " for a while")
 	sing_verb = null
 	colour = "i"
 	key = "8"
 	flags = NO_STUTTER | SIGNLANG | WHITELISTED
-	partial_understanding = list(LANGUAGE_VAURCA = 5) // Very small amounts of pheromones are released during gesticulation
 
 /datum/language/bug/check_special_condition(var/mob/other)
 	if(istype(other, /mob/living/silicon))

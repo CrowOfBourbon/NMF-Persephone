@@ -927,7 +927,7 @@
 	result_amount = 1
 
 /datum/chemical_reaction/zorafire
-	name = "Zo'rane Fire"
+	name = "Xallian Fire"
 	id = "greekfire"
 	result = /decl/reagent/fuel/napalm
 	required_reagents = list(/decl/reagent/nitroglycerin = 2, /decl/reagent/pyrosilicate = 2, /decl/reagent/toxin/phoron = 3, /decl/reagent/fuel/zoragel = 3)

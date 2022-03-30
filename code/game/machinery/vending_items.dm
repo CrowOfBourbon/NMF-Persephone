@@ -95,7 +95,7 @@
 	charges = 38
 
 /obj/item/device/vending_refill/zora
-	name = "Zo'ra Soda resupply canister"
+	name = "Xal Soda resupply canister"
 	vend_id = "zora"
 	charges = 40
 

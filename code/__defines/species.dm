@@ -18,6 +18,7 @@
 #define SPECIES_VAURCA_BREEDER		"Vaurca Breeder"
 #define SPECIES_VAURCA_WARFORM		"Vaurca Warform"
 #define SPECIES_VAURCA_BULWARK		"Vaurca Bulwark"
+// #define SPECIES_VAURCA_RELAY        "Vaurca Relay"
 
 #define SPECIES_TESHARI				"Teshari"
 

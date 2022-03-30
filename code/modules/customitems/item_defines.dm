@@ -249,19 +249,6 @@ All custom items with worn sprites must follow the contained sprite system: http
 	item_state = "faysal_uniform"
 	contained_sprite = TRUE
 
-
-/obj/item/clothing/glasses/welding/fluff/ghoz_eyes //Prosthetic Vaurca Eyelids - Ka'Akaix'Ghoz Zo'ra - sleepywolf
-	name = "prosthetic vaurca eyelids"
-	desc = "A small contraption of micro-actuators with a button on the side."
-	icon = 'icons/obj/custom_items/ghoz_eyes.dmi'
-	icon_override = 'icons/obj/custom_items/ghoz_eyes.dmi'
-	icon_state = "ghoz_eyes"
-	item_state = "ghoz_eyes"
-	contained_sprite = TRUE
-	action_button_name = "Toggle Eyelids"
-	species_restricted = list(BODYTYPE_VAURCA) //i think this would make sense since those are some kind of vaurca build prothestic
-
-
 /obj/item/clothing/head/det/fluff/leo_hat //Tagged brown hat - Leo Wyatt - keinto
 	name = "tagged brown hat"
 	desc = "A worn mid 20th century brown hat. If you look closely at the back, you can see a an embedded tag from the \"Museum of Terran Culture and Technology\"."
@@ -754,26 +741,6 @@ All custom items with worn sprites must follow the contained sprite system: http
 	icon_state = "talon_coat"
 	item_state = "talon_coat"
 	contained_sprite = TRUE
-
-
-/obj/item/storage/backpack/cloak/fluff/ryn_cloak //Security Tunnel Cloak - Za'Akaix'Ryn Zo'ra - jamchop23334
-	name = "security tunnel cloak"
-	desc = "A blue, tailor-made tunnel cloak with paltry storage options. The fabric is smoother and less abrasive than regular tunnel cloaks, though it looks difficult to wear."
-	icon = 'icons/obj/custom_items/ryn_clothing.dmi'
-	icon_override = 'icons/obj/custom_items/ryn_clothing.dmi'
-	icon_state = "ryn_cloak"
-	item_state = "ryn_cloak"
-	contained_sprite = TRUE
-
-/obj/item/clothing/head/fluff/ryn_hood //Security Tunnel Hood - Za'Akaix'Ryn Zo'ra - jamchop23334
-	name = "security tunnel hood"
-	desc = "A silky smooth blue hood, though its more of a headwrap. You're having a hard time wrapping your head around how to wear this."
-	icon = 'icons/obj/custom_items/ryn_clothing.dmi'
-	icon_override = 'icons/obj/custom_items/ryn_clothing.dmi'
-	icon_state = "ryn_hood"
-	item_state = "ryn_hood"
-	contained_sprite = TRUE
-
 
 /obj/item/sign/fluff/tokash_sign //Shark Jaw Trophy - Suvek Tokash - evandorf
 	name = "shark jaw trophy"

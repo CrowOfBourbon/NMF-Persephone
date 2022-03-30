@@ -24,7 +24,7 @@
 
 /obj/item/clothing/suit/vaurca/shaper
 	name = "shaper robes"
-	desc = "Commonly worn by Preimmients, these robes are meant to catch pheromones, obfuscating hive affiliation."
+	desc = "These robes are meant to catch pheromones, obfuscating hive affiliation. Commonly worn by Hiveless."
 	icon_state = "shaper_robes"
 	item_state = "shaper_robes"
 	sprite_sheets = list(
@@ -33,8 +33,8 @@
 	species_restricted = list(BODYTYPE_VAURCA, BODYTYPE_VAURCA_BULWARK)
 
 /obj/item/clothing/suit/vaurca/breeder
-	name = "zo'ra representative clothes"
-	desc = "A large piece of clothing used by Zo'ra representatives."
+	name = "Xal representative clothes"
+	desc = "A large piece of clothing used by Xallian representatives."
 	icon = 'icons/mob/species/breeder/inventory.dmi'
 	item_state = "representative_clothes"
 	icon_state = "representative_clothes"
@@ -42,19 +42,9 @@
 	species_restricted = list(BODYTYPE_VAURCA_BREEDER)
 	sprite_sheets = list(BODYTYPE_VAURCA_BREEDER = 'icons/mob/species/breeder/suit.dmi')
 
-/obj/item/clothing/suit/vaurca/breeder_klax
-	name = "k'lax representative clothes"
-	desc = "A large piece of clothing used by K'lax representatives."
-	icon = 'icons/mob/species/breeder/inventory.dmi'
-	item_state = "representative_clothes_klax"
-	icon_state = "representative_clothes_klax"
-	contained_sprite = FALSE
-	species_restricted = list(BODYTYPE_VAURCA_BREEDER)
-	sprite_sheets = list(BODYTYPE_VAURCA_BREEDER = 'icons/mob/species/breeder/suit.dmi')
-
 /obj/item/clothing/suit/vaurca/breeder_cthur
-	name = "c'thur representative clothes"
-	desc = "A large piece of clothing used by C'thur representatives."
+	name = "Empire Of Queens representative clothes"
+	desc = "A large piece of clothing used by E.O.Q representatives."
 	icon = 'icons/mob/species/breeder/inventory.dmi'
 	item_state = "representative_clothes_cthur"
 	icon_state = "representative_clothes_cthur"

@@ -3,11 +3,14 @@
 	desc = "A double heart capable of pushing blood in an open circulatory system."
 	icon_state = "vaurca_heart_d-on"
 	organ_tag = BP_HEART
-	parent_organ = BP_CHEST
+	parent_organ = BP_GROIN
 	dead_icon = "vaurca_heart_d-off"
 	max_damage = 90 //two hearts = stronger hearts
 
+
 /obj/item/organ/internal/lungs/vaurca
+	name = "central tracheae"
+	desc = "The tracheae of Vaurcae, it seems to connect to several tubes."
 	icon_state = "lungs_vaurca"
 
 /obj/item/organ/internal/kidneys/vaurca
@@ -38,23 +41,25 @@
 	name = "social stomach"
 	desc = "A vestigial organ that stores food for throphallaxis. It has not seen a practical use since the rise of modern Hives."
 	icon_state = "vaurca_appendix"
+	parent_organ = BP_CHEST
 
 /obj/item/organ/internal/brain/vaurca
-	name = "vaurca brain"
-	desc = "The brain of a Vaurca, being similar to that of an insect; and that of a mammal."	
+	name = "central nervous system"
+	desc = "The brain of a Vaurca, it seems to have a long spine-like tendril creeping out of it."	
 	icon_state = "brain_vaurca"
+	parent_organ = BP_CHEST
 
 /obj/item/organ/internal/pheromoneprocessor/vaurca
 	name = BP_PHEROMONE_PROCESSOR
 	organ_tag = BP_PHEROMONE_PROCESSOR
 	icon_state = "pheromone_processor"
-	desc = "A small, complex organ usually attached to a brain. Used to comprehend complex pheromone carried messages."
+	desc = "A small organ. Used to instinctively comprehend complex pheromone carried messages."
 	parent_organ = BP_HEAD
 
 /obj/item/organ/vaurca/reservoir
 	name = BP_PHORON_RESERVOIR
 	organ_tag = BP_PHORON_RESERVOIR
-	parent_organ = BP_CHEST
+	parent_organ = BP_GROIN
 	icon_state = "phoron_reservoir"
 	robotic = ROBOTIC_ASSISTED
 
@@ -65,7 +70,7 @@
 	icon_state = "filter"
 	robotic = ROBOTIC_MECHANICAL
 
-obj/item/organ/vaurca/neuralsocket/process()
+obj/item/organ/vaurca/pheromoneprocessor/process()
 	if (is_broken())
 		if (all_languages[LANGUAGE_VAURCA] in owner.languages)
 			owner.remove_language(LANGUAGE_VAURCA)
@@ -73,16 +78,16 @@ obj/item/organ/vaurca/neuralsocket/process()
 	else
 		if (!(all_languages[LANGUAGE_VAURCA] in owner.languages))
 			owner.add_language(LANGUAGE_VAURCA)
-			to_chat(owner, "<span class='notice'> Your mind expands, and your thoughts join the unity of the Hivenet.</span>")
+			to_chat(owner, "<span class='notice'> Your mind expands, and your thoughts join the unity of the Hive network.</span>")
 	..()
 
-/obj/item/organ/vaurca/neuralsocket/replaced(var/mob/living/carbon/human/target)
+/obj/item/organ/vaurca/pheromoneprocessor/replaced(var/mob/living/carbon/human/target)
 	if (!(all_languages[LANGUAGE_VAURCA] in owner.languages))
 		owner.add_language(LANGUAGE_VAURCA)
-		to_chat(owner, "<span class='notice'> Your mind expands, and your thoughts join the unity of the Hivenet.</span>")
+		to_chat(owner, "<span class='notice'> Your mind expands, and your thoughts join the unity of the Hive network.</span>")
 	..()
 
-/obj/item/organ/vaurca/neuralsocket/removed(var/mob/living/carbon/human/target)
+/obj/item/organ/vaurca/pheromoneprocessor/removed(var/mob/living/carbon/human/target)
 	if(all_languages[LANGUAGE_VAURCA] in target.languages)
 		target.remove_language(LANGUAGE_VAURCA)
 		to_chat(target, "<span class='warning'>Your mind suddenly grows dark as the unity of the Hive is torn from you.</span>")
@@ -93,7 +98,7 @@ obj/item/organ/vaurca/neuralsocket/process()
 	organ_tag = BP_PHORON_RESERVE
 	parent_organ = BP_CHEST
 	icon_state = "breathing_app"
-	desc = "A capillary tube mesh, stores and moves the phoron into the lungs."
+	desc = "An alien tube mesh, stores and moves the phoron into the lungs."
 	robotic = ROBOTIC_ASSISTED
 	var/datum/gas_mixture/air_contents = null
 	var/distribute_pressure = ((2*ONE_ATMOSPHERE)*O2STANDARD)
@@ -352,36 +357,66 @@ obj/item/organ/vaurca/neuralsocket/process()
 			T.assume_air(leaked_gas)
 
 /obj/item/organ/external/chest/vaurca
+	name = "thorax"
 	limb_flags = 0
 	encased = null
 
 /obj/item/organ/external/groin/vaurca
+	name = "abdomen"
 	limb_flags = ORGAN_CAN_AMPUTATE | ORGAN_CAN_MAIM
+	encased = null
 
 /obj/item/organ/external/arm/vaurca
+	name = "primary left arm"
 	limb_flags = ORGAN_CAN_AMPUTATE | ORGAN_CAN_MAIM
+	encased = null
 
 /obj/item/organ/external/arm/right/vaurca
+	name = "primary right arm"
 	limb_flags = ORGAN_CAN_AMPUTATE | ORGAN_CAN_MAIM
+	encased = null
 
 /obj/item/organ/external/leg/vaurca
+	name = "primary left leg"
 	limb_flags = ORGAN_CAN_AMPUTATE | ORGAN_CAN_MAIM
+	encased = null
 
 /obj/item/organ/external/leg/right/vaurca
+	name = "primary right leg"
 	limb_flags = ORGAN_CAN_AMPUTATE | ORGAN_CAN_MAIM
+	encased = null
 
 /obj/item/organ/external/foot/vaurca
+	name = "left tarsus"
 	limb_flags = ORGAN_CAN_AMPUTATE | ORGAN_CAN_MAIM | ORGAN_CAN_STAND
+	encased = null
 
 /obj/item/organ/external/foot/right/vaurca
+	name = "right tarsus"
 	limb_flags = ORGAN_CAN_AMPUTATE | ORGAN_CAN_MAIM | ORGAN_CAN_STAND
+	encased = null
 
 /obj/item/organ/external/hand/vaurca
+	name = "left grasper"
 	limb_flags = ORGAN_CAN_AMPUTATE | ORGAN_CAN_MAIM | ORGAN_CAN_GRASP
+	encased = null
 
 /obj/item/organ/external/hand/right/vaurca
+	name = "right grasper"
 	limb_flags = ORGAN_CAN_AMPUTATE | ORGAN_CAN_MAIM | ORGAN_CAN_GRASP
+	encased = null
 
 /obj/item/organ/external/head/vaurca
 	limb_flags = ORGAN_CAN_AMPUTATE | ORGAN_CAN_MAIM
 	encased = null
+
+/*
+/obj/item/organ/external/head/relayform/relay
+	name = "primary antenna"
+
+/obj/item/organ/external/chest/relayform/relay
+	name = "upper structure"
+
+/obj/item/organ/external/groin/relayform/relay
+	name = "lower structure"
+*/

@@ -269,7 +269,7 @@
 	return ..()
 
 /obj/item/gun/energy/vaurca/blaster
-	name = "\improper Zo'ra Blaster"
+	name = "\improper Xal Blaster"
 	desc = "An elegant weapon for a more civilized time."
 	icon = 'icons/obj/guns/blaster.dmi'
 	icon_state = "blaster"
@@ -296,7 +296,7 @@
 
 /obj/item/gun/energy/vaurca/typec
 	name = "thermal lance"
-	desc = "A powerful piece of Zo'rane energy artillery, converted to be portable...if you weigh a metric tonne, that is."
+	desc = "A powerful piece of Xallian energy artillery, converted to be portable...if you weigh a metric tonne, that is."
 	icon = 'icons/mob/species/breeder/inventory.dmi'
 	icon_state = "megaglaive0"
 	item_state = "megaglaive"

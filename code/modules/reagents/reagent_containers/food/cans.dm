@@ -350,7 +350,7 @@
 //zoda
 
 /obj/item/reagent_containers/food/drinks/cans/zorasoda
-	name = "\improper Zo'ra Soda Cherry"
+	name = "\improper Xallian Soda Cherry"
 	desc = "A can of cherry energy drink, with V'krexi additives. All good colas come in cherry."
 	icon_state = "zoracherry"
 	center_of_mass = list("x"=16, "y"=8)
@@ -358,7 +358,7 @@
 	reagents_to_add = list(/decl/reagent/drink/zorasoda = 20, /decl/reagent/mental/vaam = 15)
 
 /obj/item/reagent_containers/food/drinks/cans/zorakois
-	name = "\improper Zo'ra Soda Kois Twist"
+	name = "\improper Xallian Soda Kois Twist"
 	desc = "A can of K'ois flavored energy drink, with V'krexi additives. Contains no K'ois, probably contains no palatable flavor."
 	icon_state = "koistwist"
 	center_of_mass = list("x"=16, "y"=8)
@@ -366,7 +366,7 @@
 	reagents_to_add = list(/decl/reagent/drink/zorasoda/kois = 20, /decl/reagent/mental/vaam = 15)
 
 /obj/item/reagent_containers/food/drinks/cans/zoraphoron
-	name = "\improper Zo'ra Soda Phoron Passion"
+	name = "\improper Xallian Soda Phoron Passion"
 	desc = "A can of grape flavored energy drink, with V'krexi additives. Tastes nothing like phoron according to Unbound taste testers."
 	icon_state = "phoronpassion"
 	center_of_mass = list("x"=16, "y"=8)
@@ -374,7 +374,7 @@
 	reagents_to_add = list(/decl/reagent/drink/zorasoda/phoron = 20, /decl/reagent/mental/vaam = 15)
 
 /obj/item/reagent_containers/food/drinks/cans/zorahozm
-	name = "\improper High Octane Zorane Might"
+	name = "\improper High Octane Xallian Might"
 	desc = "A can of fizzy, acidic energy, with plenty of V'krexi additives. Tastes like impaling the bottom of your mouth with a freezing cold spear laced with bees and salt."
 	icon_state = "hozm"
 	center_of_mass = list("x"=16, "y"=8)
@@ -382,7 +382,7 @@
 	reagents_to_add = list(/decl/reagent/drink/zorasoda/hozm = 20, /decl/reagent/mental/vaam = 15)
 
 /obj/item/reagent_containers/food/drinks/cans/zoravenom
-	name = "\improper Zo'ra Soda Sour Venom Grass (Diet!)"
+	name = "\improper Xallian Soda Sour Venom Grass (Diet!)"
 	desc = "A diet can of Venom Grass flavored energy drink, with V'krexi additives. Still tastes like a cloud of stinging polytrinic bees, but calories are nowhere to be found."
 	icon_state = "sourvenomgrass"
 	center_of_mass = list("x"=16, "y"=8)
@@ -390,7 +390,7 @@
 	reagents_to_add = list(/decl/reagent/drink/zorasoda/venomgrass = 20, /decl/reagent/mental/vaam = 15)
 
 /obj/item/reagent_containers/food/drinks/cans/zoraklax
-	name = "\improper Klaxan Energy Crush"
+	name = "\improper Xallian Energy Crush"
 	desc = "A can of orange cream flavored energy drink, with V'krexi additives. Engineered nearly to perfection."
 	icon_state = "klaxancrush"
 	center_of_mass = list("x"=16, "y"=8)
@@ -398,8 +398,8 @@
 	reagents_to_add = list(/decl/reagent/drink/zorasoda/klax = 20, /decl/reagent/mental/vaam = 15)
 
 /obj/item/reagent_containers/food/drinks/cans/zoracthur
-	name = "\improper C'thur Rockin' Raspberry"
-	desc = "A can of blue raspberry flavored energy drink, with V'krexi additives. You're pretty sure this was shipped by mistake, the previous K'laxan Energy Crush wrapper is still partly visible underneath the current one."
+	name = "\improper Xallian Rockin' Raspberry"
+	desc = "A can of blue raspberry flavored energy drink, with V'krexi additives. You're pretty sure this was shipped by mistake, the previous Xallian Energy Crush wrapper is still partly visible underneath the current one."
 	icon_state = "cthurberry"
 	center_of_mass = list("x"=16, "y"=8)
 	can_size_overrides = list("x" = 1)

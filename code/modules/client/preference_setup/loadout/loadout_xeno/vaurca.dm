@@ -21,18 +21,6 @@
 	whitelisted = list(SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR, SPECIES_VAURCA_BREEDER, SPECIES_VAURCA_BULWARK)
 	sort_category = "Xenowear - Vaurca"
 
-/datum/gear/mask/vaurca_expression
-	display_name = "human expression mask"
-	path = /obj/item/clothing/head/expression
-	cost = 1
-	whitelisted = list(SPECIES_VAURCA_WORKER, SPECIES_VAURCA_WARRIOR)
-	sort_category = "Xenowear - Vaurca"
-	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
-
-/datum/gear/mask/vaurca_expression/skrell
-	display_name = "skrell expression mask"
-	path = /obj/item/clothing/head/expression/skrell
-
 /datum/gear/head/shaper
 	display_name = "shaper helmet"
 	path = /obj/item/clothing/head/shaper
@@ -59,7 +47,6 @@
 /datum/gear/cape_selection/New()
 	..()
 	var/list/capes = list()
-	capes["tunnel cloak, Sedantis"] = /obj/item/storage/backpack/cloak/sedantis
 	capes["tunnel cloak, medical"] = /obj/item/storage/backpack/cloak/medical
 	capes["tunnel cloak, engineering"] = /obj/item/storage/backpack/cloak/engi
 	capes["tunnel cloak, atmospherics"] = /obj/item/storage/backpack/cloak/atmos

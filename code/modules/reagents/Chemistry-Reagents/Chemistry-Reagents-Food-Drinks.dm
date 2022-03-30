@@ -2055,13 +2055,13 @@
 
 /decl/reagent/drink/toothpaste/cold_gate
 	name = "Cold Gate"
-	description = "A C'thur Favorite, guaranteed to make even the bloodiest of warriors mandibles shimmer."
+	description = "A Favorite of the Empire Of Queens, guaranteed to make even the bloodiest of warriors mandibles shimmer."
 	strength = 25
 	taste_description = "mint"
 
 	glass_icon_state = "cold_gate"
 	glass_name = "glass of Cold Gate"
-	glass_desc = "A C'thur Favorite, guaranteed to make even the bloodiest of warriors mandibles shimmer."
+	glass_desc = "A Favorite of the Empire Of Queens, guaranteed to make even the bloodiest of warriors mandibles shimmer."
 	glass_center_of_mass = list("x"=7, "y"=8)
 
 /decl/reagent/drink/toothpaste/waterfresh
@@ -4602,8 +4602,8 @@
 //ZZZZOOOODDDDAAAAA
 
 /decl/reagent/drink/zorasoda
-	name = "Zo'ra Soda Cherry"
-	description = "Zo'ra Soda, cherry edition. All good drinks come in cherry."
+	name = "Xallian Soda Cherry"
+	description = "Xallian Soda, cherry edition. All good drinks come in cherry."
 	color = "#102000"
 	adj_sleepy = -2
 	caffeine = 0.4
@@ -4611,7 +4611,7 @@
 	carbonated = TRUE
 
 /decl/reagent/drink/zorasoda/phoron
-	name = "Zo'ra Soda Phoron Passion"
+	name = "Xallian Soda Phoron Passion"
 	description = "Reported to taste nothing like phoron, but everything like grapes."
 	color = "#863333"
 	adj_sleepy = -2
@@ -4620,7 +4620,7 @@
 	carbonated = TRUE
 
 /decl/reagent/drink/zorasoda/kois
-	name = "Zo'ra Soda K'ois Twist"
+	name = "Xallian Soda K'ois Twist"
 	description = "Whoever approved this in marketing needs to be drawn and quartered."
 	color = "#dcd9cd"
 	adj_sleepy = -2
@@ -4634,7 +4634,7 @@
 		M.make_jittery(5)
 
 /decl/reagent/drink/zorasoda/hozm
-	name = "Zo'ra Soda High Octane Zorane Might"
+	name = "Xallian Soda High Octane Zorane Might"
 	description = "It feels like someone is just driving a freezing cold spear through the bottom of your mouth."
 	color = "#365000"
 	adj_sleepy = -3
@@ -4650,7 +4650,7 @@
 		M.drowsiness = 0
 
 /decl/reagent/drink/zorasoda/venomgrass
-	name = "Zo'ra Soda Sour Venom Grass"
+	name = "Xallian Soda Sour Venom Grass"
 	description = "The 'diet' version of High Energy Zorane Might, still tastes like a cloud of stinging polytrinic bees."
 	color = "#100800"
 	adj_sleepy = -3
@@ -4664,7 +4664,7 @@
 		M.make_jittery(5)
 
 /decl/reagent/drink/zorasoda/klax
-	name = "Klaxan Energy Crush"
+	name = "Xallian Energy Crush"
 	description = "An orange, cream soda. It's a wonder it got here."
 	color = "#E78108"
 	adj_sleepy = -3
@@ -4679,7 +4679,7 @@
 		M.make_jittery(5)
 
 /decl/reagent/drink/zorasoda/cthur
-	name = "C'thur Rockin' Raspberry"
+	name = "Xallian Rockin' Raspberry"
 	description = "A raspberry concoction you're pretty sure is already on recall."
 	color = "#0000CD"
 	adj_sleepy = -3
@@ -4844,24 +4844,24 @@
 
 /decl/reagent/drink/toothpaste/caprician_coffee
 	name = "Caprician Coffee"
-	description = "A Vaurcesian take on liqueur coffee, quickly becoming a favorite of the Zo'ra hive."
+	description = "A Vaurcesian take on liqueur coffee, quickly becoming a favorite of the Xallian hive."
 	color = "#C00000"
 	taste_description = "minty coffee"
 	strength = 15
 
 	glass_icon_state = "caprician_coffee"
 	glass_name = "glass of caprician coffee"
-	glass_desc = "A Vaurcesian take on liqueur coffee, quickly becoming a favorite of the Zo'ra hive."
+	glass_desc = "A Vaurcesian take on liqueur coffee, quickly becoming a favorite of the Xallian hive."
 
 /decl/reagent/drink/toothpaste/ichor
 	name = "Xsain Ichor"
-	description = "A slushy beverage popular in Tret, often used as an example of K'laxan pride."
+	description = "A slushy beverage popular in Tret, often used as an example of Xallian pride."
 	color = "#584721"
 	taste_description = "minty cactus water"
 
 	glass_icon_state = "ichor"
 	glass_name = "glass of xsain ichor"
-	glass_desc = "A slushy beverage popular in Tret, often used as an example of K'laxan pride."
+	glass_desc = "A slushy beverage popular in Tret, often used as an example of Xallian pride."
 
 /decl/reagent/alcohol/mojito
 	name = "Mojito"

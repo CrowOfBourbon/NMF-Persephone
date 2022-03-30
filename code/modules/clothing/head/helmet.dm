@@ -310,23 +310,6 @@
 		rad = ARMOR_RAD_MINOR
 	)
 
-/obj/item/clothing/head/helmet/unathi/klax
-	name = "klaxan hopeful helmet"
-	desc = "A helmet designated to be worn by a K'lax hopeful. The retrofit features a modified shape and an extra two eye visors.."
-	icon = 'icons/obj/vaurca_items.dmi'
-	icon_state = "klax_hopeful_helmet"
-	item_state = "klax_hopeful_helmet"
-	species_restricted = list(BODYTYPE_VAURCA)
-	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_PISTOL,
-		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_PADDED,
-		rad = ARMOR_RAD_RESISTANT
-	)
-	siemens_coefficient = 0.35
-
 /obj/item/clothing/head/helmet/tank
 	name = "padded cap"
 	desc = "A padded skullcap for those prone to bumping their heads against hard surfaces."
