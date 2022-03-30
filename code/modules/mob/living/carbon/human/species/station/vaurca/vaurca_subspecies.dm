@@ -78,7 +78,7 @@
 	economic_modifier = 3
 
 	speech_sounds = list('sound/voice/hiss1.ogg','sound/voice/hiss2.ogg','sound/voice/hiss3.ogg','sound/voice/hiss4.ogg')
-	speech_chance = 100
+	speech_chance = 50
 
 	death_sound = 'sound/voice/hiss6.ogg'
 	damage_overlays = 'icons/mob/human_races/masks/dam_breeder.dmi'
