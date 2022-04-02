@@ -4,8 +4,8 @@
 	name_plural = "Type A"
 	category_name = "Vaurca"
 	bodytype = BODYTYPE_VAURCA
-	age_min = 1
-	age_max = 20
+	age_min = 3
+	age_max = 40
 	default_genders = list(NEUTER)
 	selectable_pronouns = null
 	economic_modifier = 2
@@ -149,7 +149,7 @@
 	default_citizenship = CITIZENSHIP_XAL
 
 	default_accent = ACCENT_TTS
-	allowed_accents = list(ACCENT_TTS)
+	allowed_accents = list(ACCENT_TTS, ACCENT_XAL, ACCENT_EMPIRE_OF_QUEENS)
 
 	alterable_internal_organs = list(BP_HEART, BP_EYES, BP_LUNGS, BP_STOMACH, BP_APPENDIX)
 

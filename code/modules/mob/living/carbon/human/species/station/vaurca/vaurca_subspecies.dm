@@ -32,9 +32,10 @@
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/bugbite //weaker version of gut.
 		)
-
-	num_alternate_languages = 1
-	secondary_langs = list(LANGUAGE_VAURCA, LANGUAGE_VAURCA_SIGN)
+	
+	// num_alternate_languages = 1 Language code hurts, we'll do this later.
+	language = LANGUAGE_VAURCA
+	
 
 /datum/species/bug/type_c
 	name = SPECIES_VAURCA_BREEDER
@@ -224,7 +225,7 @@
 	eyes_icons = 'icons/mob/human_face/eyes48x48.dmi'
 	eyes = "bulwark_eyes"
 
-	slowdown = 6
+	slowdown = 3
 
 	unarmed_types = list(/datum/unarmed_attack/claws/vaurca_bulwark)
 
