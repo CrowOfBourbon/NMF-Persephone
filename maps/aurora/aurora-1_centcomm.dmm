@@ -32045,6 +32045,14 @@
 /obj/structure/bed/stool/chair/shuttle{
 	dir = 8
 	},
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "specops_shuttle_fore";
+	name = "forward docking hatch controller";
+	pixel_x = -10;
+	pixel_y = -23;
+	tag_door = "specops_shuttle_fore_hatch"
+	},
 /turf/simulated/floor/shuttle/black,
 /area/shuttle/specops)
 "uJl" = (
@@ -32223,18 +32231,6 @@
 	},
 /turf/space/dynamic,
 /area/antag/raider)
-"uOx" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/embedded_controller/radio/simple_docking_controller{
-	frequency = 1380;
-	id_tag = "specops_shuttle_fore";
-	name = "forward docking hatch controller";
-	pixel_x = -10;
-	pixel_y = -23;
-	tag_door = "specops_shuttle_fore_hatch"
-	},
-/turf/simulated/floor/shuttle/black,
-/area/shuttle/specops)
 "uOL" = (
 /obj/machinery/computer/shuttle_control/multi/raider,
 /obj/effect/floor_decal/corner/red{
@@ -55019,7 +55015,7 @@ ujN
 pMe
 pQe
 pZi
-bQM
+glr
 qer
 iLs
 ugV
@@ -55276,7 +55272,7 @@ ujN
 aau
 rdN
 aCI
-cjl
+aCv
 tuX
 iLs
 ugV
@@ -57331,7 +57327,7 @@ ujN
 ujN
 ufj
 aCx
-uOx
+cjl
 aCX
 vht
 iLs
@@ -57588,7 +57584,7 @@ oQM
 ujN
 hQg
 aCy
-glr
+bQM
 xYs
 wCf
 iLs
