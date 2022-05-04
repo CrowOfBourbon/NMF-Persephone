@@ -5281,9 +5281,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated{
-	icon_state = "dark"
-	},
+/turf/simulated/floor/tiled,
 /area/journalistoffice)
 "Gj" = (
 /obj/machinery/door/airlock/glass{
