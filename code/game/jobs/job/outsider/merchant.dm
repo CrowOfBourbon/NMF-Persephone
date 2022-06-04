@@ -8,7 +8,11 @@
 	supervisors = "Head of Personnel"
 	minimal_player_age = 18
 	economic_modifier = 5
-	ideal_character_age = 30
+	ideal_character_age = list(
+		SPECIES_HUMAN = 30,
+		SPECIES_SKRELL = 60,
+		SPECIES_SKRELL_AXIORI = 60
+	)
 
 	create_record = TRUE
 	account_allowed = TRUE

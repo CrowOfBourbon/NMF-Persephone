@@ -10,7 +10,11 @@
 	supervisors = "the head of personnel"
 	selection_color = "#90524b"
 
-	minimum_character_age = 18
+	minimum_character_age = list(
+		SPECIES_HUMAN = 18,
+		SPECIES_SKRELL = 50,
+		SPECIES_SKRELL_AXIORI = 50
+	)
 
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_bar)
@@ -46,7 +50,11 @@
 	supervisors = "the head of personnel"
 	selection_color = "#90524b"
 
-	minimum_character_age = 18
+	minimum_character_age = list(
+		SPECIES_HUMAN = 18,
+		SPECIES_SKRELL = 50,
+		SPECIES_SKRELL_AXIORI = 50
+	)
 
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_kitchen)
@@ -87,7 +95,11 @@
 	supervisors = "the head of personnel"
 	selection_color = "#90524b"
 
-	minimum_character_age = 18
+	minimum_character_age = list(
+		SPECIES_HUMAN = 18,
+		SPECIES_SKRELL = 50,
+		SPECIES_SKRELL_AXIORI = 50
+	)
 
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_hydroponics)
@@ -140,12 +152,20 @@
 	selection_color = "#90524b"
 	economic_modifier = 5
 
-	minimum_character_age = 22
+	minimum_character_age = list(
+		SPECIES_HUMAN = 22,
+		SPECIES_SKRELL = 60,
+		SPECIES_SKRELL_AXIORI = 60
+	)
 
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 
-	ideal_character_age = 40
+	ideal_character_age = list(
+		SPECIES_HUMAN = 35,
+		SPECIES_SKRELL = 70,
+		SPECIES_SKRELL_AXIORI = 70
+	)
 
 	outfit = /datum/outfit/job/qm
 
@@ -179,7 +199,11 @@
 	supervisors = "the quartermaster and the head of personnel"
 	selection_color = "#90524b"
 
-	minimum_character_age = 18
+	minimum_character_age = list(
+		SPECIES_HUMAN = 18,
+		SPECIES_SKRELL = 50,
+		SPECIES_SKRELL_AXIORI = 50
+	)
 
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_cargo, access_cargo_bot, access_mailsorting)
@@ -216,7 +240,11 @@
 	selection_color = "#90524b"
 	economic_modifier = 5
 
-	minimum_character_age = 18
+	minimum_character_age = list(
+		SPECIES_HUMAN = 18,
+		SPECIES_SKRELL = 50,
+		SPECIES_SKRELL_AXIORI = 50
+	)
 
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_mining, access_mining_station, access_mailsorting)
@@ -300,7 +328,12 @@
 	supervisors = "the head of personnel"
 	selection_color = "#90524b"
 
-	minimum_character_age = 20
+	minimum_character_age = list(
+		SPECIES_HUMAN = 20,
+		SPECIES_SKRELL = 50,
+		SPECIES_SKRELL_AXIORI = 50
+	)
+
 
 	access = list(access_journalist, access_maint_tunnels)
 	minimal_access = list(access_journalist, access_maint_tunnels)
@@ -409,9 +442,19 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Head of Personnel"
-	minimal_player_age = 18
+	minimum_character_age = list(
+		SPECIES_HUMAN = 20,
+		SPECIES_SKRELL = 50,
+		SPECIES_SKRELL_AXIORI = 50
+	)
+
 	economic_modifier = 5
-	ideal_character_age = 30
+	ideal_character_age = list(
+		SPECIES_HUMAN = 20,
+		SPECIES_SKRELL = 50,
+		SPECIES_SKRELL_AXIORI = 50
+	)
+
 
 	create_record = TRUE
 	account_allowed = TRUE

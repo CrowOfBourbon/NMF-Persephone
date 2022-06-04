@@ -11,7 +11,11 @@
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
 
-	minimum_character_age = 30
+	minimum_character_age = list(
+		SPECIES_HUMAN = 30,
+		SPECIES_SKRELL = 80,
+		SPECIES_SKRELL_AXIORI = 80
+	)
 
 	access = list(access_lawyer, access_maint_tunnels)
 	minimal_access = list(access_lawyer)
@@ -93,7 +97,11 @@
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
 
-	minimum_character_age = 30
+	minimum_character_age = list(
+		SPECIES_HUMAN = 30,
+		SPECIES_SKRELL = 80,
+		SPECIES_SKRELL_AXIORI = 80
+	)
 
 	access = list(access_consular, access_maint_tunnels)
 	minimal_access = list(access_consular)
